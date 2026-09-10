@@ -33,7 +33,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia — critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology — inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (83)
+## Todos os casos / All cases (85)
 
 - Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso) — https://causasderaiz.org/caso.html?id=barroso
   EN: Lithium mine in Covas do Barroso — https://causasderaiz.org/caso-en.html?id=barroso
@@ -85,8 +85,6 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Petition against high-rise construction in Madeira admitted to Regional Assembly — https://causasderaiz.org/caso-en.html?id=predios-madeira
 - Contra a Urbanização do Parque Natural de Sintra-Cascais (Ordenamento do território, Sintra, distrito de Lisboa) — https://causasderaiz.org/caso.html?id=sintra-cascais
   EN: Against the Urbanization of Sintra-Cascais Natural Park — https://causasderaiz.org/caso-en.html?id=sintra-cascais
-- Projeto Cultiva: horta escolar e comunitária ameaçada de despejo em Lisboa (Espaço comunitário, Escola Gil Vicente, Graça, Lisboa) — https://causasderaiz.org/caso.html?id=cultiva
-  EN: Cultiva Project: school and community garden threatened with eviction in Lisbon — https://causasderaiz.org/caso-en.html?id=cultiva
 - Parque Eólico do Sudoeste em Santiago do Cacém: Quercus alerta para impactos subavaliados (Parque eólico de grande dimensão, Santiago do Cacém e Cercal do Alentejo, litoral alentejano) — https://causasderaiz.org/caso.html?id=eolico-sudoeste-sines
   EN: Southwest Wind Farm in Santiago do Cacém: Quercus warns of underassessed impacts — https://causasderaiz.org/caso-en.html?id=eolico-sudoeste-sines
 - Sophia e Beira: petição pede suspensão das duas megacentrais solares (Mega-central solar, Fundão, Penamacor e Idanha-a-Nova, Beira Baixa) — https://causasderaiz.org/caso.html?id=sophia-beira
@@ -201,6 +199,10 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Penamacor 2 wind farm revamp authorises felling of 755 protected trees — https://causasderaiz.org/caso-en.html?id=eolico-penamacor-2
 - Pedreira Cerro do Meio: tribunal manda encerrar exploração em Tavira por ruído e poeiras (Pedreiras, Cerro do Meio, União de Freguesias de Luz de Tavira e Santo Estêvão, Tavira, Algarve) — https://causasderaiz.org/caso.html?id=pedreira-cerro-meio-tavira
   EN: Cerro do Meio quarry: court orders closure in Tavira over noise and dust — https://causasderaiz.org/caso-en.html?id=pedreira-cerro-meio-tavira
+- Mina do Gavião em Aljustrel: ZERO defende chumbo ao projeto da Almina (Mineração subterrânea polimetálica, Aljustrel e Rio de Moinhos, distrito de Beja) — https://causasderaiz.org/caso.html?id=mina-gaviao-aljustrel
+  EN: Gavião mine in Aljustrel: ZERO calls for the Almina project to be rejected — https://causasderaiz.org/caso-en.html?id=mina-gaviao-aljustrel
+- Transvase de água do Tejo para o Guadiana: CCDR Alentejo estuda ligação entre bacias (Transferência entre bacias hidrográficas, Bacia do Guadiana, Alentejo) — https://causasderaiz.org/caso.html?id=transvase-tejo-guadiana
+  EN: Tagus–Guadiana water transfer: CCDR Alentejo studies inter-basin link — https://causasderaiz.org/caso-en.html?id=transvase-tejo-guadiana
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.

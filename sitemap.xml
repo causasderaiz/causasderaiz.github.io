@@ -379,18 +379,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://causasderaiz.org/caso.html?id=cultiva</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://causasderaiz.org/caso-en.html?id=cultiva</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://causasderaiz.org/caso.html?id=eolico-sudoeste-sines</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1071,6 +1059,30 @@
   <url>
     <loc>https://causasderaiz.org/caso-en.html?id=pedreira-cerro-meio-tavira</loc>
     <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://causasderaiz.org/caso.html?id=mina-gaviao-aljustrel</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://causasderaiz.org/caso-en.html?id=mina-gaviao-aljustrel</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://causasderaiz.org/caso.html?id=transvase-tejo-guadiana</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://causasderaiz.org/caso-en.html?id=transvase-tejo-guadiana</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
