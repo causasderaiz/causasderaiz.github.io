@@ -1,0 +1,49 @@
+FOTOGRAFIAS
+===========
+Coloca aqui as tuas fotografias com estes nomes exactos (JPG):
+
+cultiva.jpg
+sintra-cascais.jpg
+costa-terra-melides.jpg
+sophia-beira.jpg
+girabolhos.jpg
+marao.jpg
+lagoa-salgada.jpg
+eolico-mira-odemira.jpg
+biometano-torres-novas.jpg
+mina-adagoi.jpg
+sao-luis-odemira.jpg
+pellets-cercal-alentejo.jpg
+pedreira-lajedo-santo-tirso.jpg
+aranha-cavernicola-arrabida.jpg
+trilhos-madeira.jpg
+descontaminacao-ilha-terceira.jpg
+jardins-se-porto.jpg
+incendios.jpg
+apa-icnf.jpg
+
+Enquanto um ficheiro nao existir, a pagina usa automaticamente a imagem
+correspondente do ulmeiro.org.
+
+Formato recomendado: 1600 x 1200 px (4:3) ou maior, JPG com qualidade 80,
+menos de 400 KB por foto. As fotos aparecem cortadas ao centro, tanto no
+quadrado da lista como na faixa larga da ficha - deixa o motivo principal
+ao centro.
+
+LIVRO "O MESMO AR" (livro.html)
+===============================
+Fotografias de abertura de capitulo. Enquanto nao existirem, aparece um
+espaco listado com o nome do ficheiro em falta - nada fica quebrado.
+
+livro-01-planeta.jpg        calor, seca ou fogo no territorio
+livro-02-extrativismo.jpg   mina, pedreira, corte, vedacao
+livro-03-teia.jpg           floresta, dunas, rio, montado
+livro-04-regeneracao.jpg    horta comunitaria, cooperativa, reparacao
+livro-05-infraestrutura.jpg linha de alta tensao, central, data center
+livro-06-manifestacao.jpg   manifestacao, vigilia, caminhada
+livro-07-assembleia.jpg     assembleia, reuniao, entrega de peticao
+
+Formato recomendado: 2400 x 1400 px (horizontal), JPG qualidade 80,
+menos de 600 KB. Aparecem em faixa larga, cortadas ao centro.
+Para creditar a autoria, abre livro.html e substitui "Fotografia: a creditar"
+pelo nome que quiseres.
