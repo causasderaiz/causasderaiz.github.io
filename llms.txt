@@ -1,0 +1,215 @@
+# Causas de Raiz
+
+> Causas de Raiz é um agregador cidadão, independente e sem fins lucrativos, das lutas ambientais em Portugal Continental, Madeira e Açores. Reúne num só lugar petições ativas, consultas públicas e cobertura de imprensa sobre lutas ambientais em curso, do litoral às serras.
+>
+> Causas de Raiz is an independent, non-profit citizen aggregator of environmental struggles in Portugal, Madeira and the Azores. It brings together active petitions, public consultations and press coverage of ongoing environmental struggles in one place.
+
+## Importante / Important
+
+Causas de Raiz NÃO é um canal de denúncias. Não recebe, não investiga nem encaminha denúncias ambientais. Para denunciar um crime ambiental em Portugal, contactar diretamente a Linha SOS Ambiente e Território (808 200 520, gratuita, 24h) ou a APA — Agência Portuguesa do Ambiente (geral@apambiente.pt).
+
+Causas de Raiz is NOT a complaints channel. It does not receive, investigate or forward environmental complaints. To report an environmental crime in Portugal, contact the SOS Ambiente e Território line directly (808 200 520, free, 24h) or APA — the Portuguese Environment Agency (geral@apambiente.pt).
+
+## O que é / What it is
+
+Causas de Raiz não é uma organização, um movimento nem uma ONG. É um diretório: verifica e organiza informação já pública sobre lutas ambientais defendidas por dezenas de coletivos, associações e comunidades portuguesas, para que sejam mais fáceis de encontrar e de apoiar. Cada luta listada indica a organização ou comunidade envolvida e as fontes de imprensa que a documentam.
+
+Causas de Raiz is not an organization, a movement or an NGO. It is a directory: it verifies and organizes already-public information about environmental struggles led by dozens of Portuguese collectives, associations and communities, making them easier to find and support. Each listed struggle names the organization or community involved and the press sources documenting it.
+
+## Páginas principais / Main pages
+- [Mapa de todas as lutas ativas (PT)](https://causasderaiz.org/index.html#mapa)
+- [Map of all active struggles (EN)](https://causasderaiz.org/index-en.html#mapa)
+- [Diretório em lista, por região (PT)](https://causasderaiz.org/diretorio.html)
+- [Directory as a list, by region (EN)](https://causasderaiz.org/diretorio-en.html)
+- [Arquivo — casos de contexto (PT)](https://causasderaiz.org/arquivo.html)
+- [Archive — context cases (EN)](https://causasderaiz.org/arquivo-en.html)
+- [A quem denunciar — SEPNA, ICNF, IGAMAOT, APA (PT)](https://causasderaiz.org/alertar.html)
+- [Who to report to — SEPNA, ICNF, IGAMAOT, APA (EN)](https://causasderaiz.org/alertar-en.html)
+- [O mesmo ar — livro aberto, edição 2026 (PT)](https://causasderaiz.org/livro.html)
+
+## Sobre / About
+- [Sobre a Causas de Raiz (PT)](https://causasderaiz.org/sobre.html)
+- [About Causas de Raiz (EN)](https://causasderaiz.org/sobre-en.html)
+- [Metodologia — critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
+- [Methodology — inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
+
+## Todos os casos / All cases (83)
+
+- Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso) — https://causasderaiz.org/caso.html?id=barroso
+  EN: Lithium mine in Covas do Barroso — https://causasderaiz.org/caso-en.html?id=barroso
+- Deslarrrguem a Arrábida: privatização de cinco praias (Acesso às praias, Setúbal: praias de Albarquel, Esguelha, Rainha, Comenda e Rasca, Arrábida) — https://causasderaiz.org/caso.html?id=praias-arrabida
+  EN: Hands Off Arrábida: privatization of five beaches — https://causasderaiz.org/caso-en.html?id=praias-arrabida
+- Costa Terra: resort de luxo fecha praias públicas em Melides (Acesso às praias, Melides, Grândola — litoral entre Tróia e Melides) — https://causasderaiz.org/caso.html?id=costa-terra-melides
+  EN: Costa Terra: luxury resort closes off public beaches in Melides — https://causasderaiz.org/caso-en.html?id=costa-terra-melides
+- Verdelago: acesso a praia feito pelo interior de um resort em Castro Marim (Acesso às praias, Verdelago, Castro Marim, Algarve) — https://causasderaiz.org/caso.html?id=verdelago-castro-marim
+  EN: Verdelago: beach access routed through a resort in Castro Marim — https://causasderaiz.org/caso-en.html?id=verdelago-castro-marim
+- Poço Velho e Aveiros: duas praias com acesso bloqueado em Albufeira (Acesso às praias, Poço Velho e Aveiros, Albufeira, Algarve) — https://causasderaiz.org/caso.html?id=poco-velho-aveiros-albufeira
+  EN: Poço Velho and Aveiros: two blocked-access beaches in Albufeira — https://causasderaiz.org/caso-en.html?id=poco-velho-aveiros-albufeira
+- Pedreiras sem controlo ambiental: Borba e Vila Viçosa (Pedreiras, Distrito de Évora) — https://causasderaiz.org/caso.html?id=borba
+  EN: Quarries with no environmental oversight: Borba and Vila Viçosa — https://causasderaiz.org/caso-en.html?id=borba
+- Pedreiras da Secil no Parque Natural da Arrábida (Pedreiras, Setúbal, Parque Natural da Arrábida) — https://causasderaiz.org/caso.html?id=arrabida
+  EN: Secil quarries in Arrábida Natural Park — https://causasderaiz.org/caso-en.html?id=arrabida
+- Vaga de incêndios de 2026: Vouzela torna-se o maior fogo da Europa do ano (Incêndios, Norte e Centro: Vouzela, Torre de Moncorvo, Valpaços, Mirandela, Águeda) — https://causasderaiz.org/caso.html?id=incendios
+  EN: 2026 wildfire wave: Vouzela becomes Europe's largest fire of the year — https://causasderaiz.org/caso-en.html?id=incendios
+- Amara Village em Castelo de Bode (Imobiliário, Tomar, margens da albufeira de Castelo de Bode) — https://causasderaiz.org/caso.html?id=castelo-bode
+  EN: Amara Village at Castelo de Bode — https://causasderaiz.org/caso-en.html?id=castelo-bode
+- Central Fotovoltaica de Sobreira de Baixo (EDP) (Mega-central solar, Pedrógão, Vidigueira, distrito de Évora) — https://causasderaiz.org/caso.html?id=sobreira
+  EN: Sobreira de Baixo Photovoltaic Plant (EDP) — https://causasderaiz.org/caso-en.html?id=sobreira
+- Reforma da APA e do ICNF enfraquece fiscalização ambiental (Sistémico, Nacional) — https://causasderaiz.org/caso.html?id=apa-icnf
+  EN: APA and ICNF reform weakens environmental oversight — https://causasderaiz.org/caso-en.html?id=apa-icnf
+- Portugal sem plano de contingência para a emergência climática (Sistémico, Nacional) — https://causasderaiz.org/caso.html?id=emergencia-climatica
+  EN: Portugal without a contingency plan for the climate emergency — https://causasderaiz.org/caso-en.html?id=emergencia-climatica
+- Aeroporto do Montijo foi travado, mas Alcochete avança com riscos maiores (Infraestrutura, Alcochete: Campo de Tiro, sobre o aquífero Tejo-Sado) — https://causasderaiz.org/caso.html?id=montijo-alcochete
+  EN: Montijo airport was stopped, but Alcochete advances with greater risks — https://causasderaiz.org/caso-en.html?id=montijo-alcochete
+- Mina de Valtreixal (Calabor): licença ambiental recusada (Mineração transfronteiriça, Calabor, Zamora, a poucos km do Parque Natural de Montesinho) — https://causasderaiz.org/caso.html?id=valtreixal
+  EN: Valtreixal Mine (Calabor): environmental permit refused — https://causasderaiz.org/caso-en.html?id=valtreixal
+- ZAER / PSZAER: mais de 800 zonas de aceleração de renováveis pré-aprovadas sem avaliação de impacto ambiental (Sistémico · ZAER · PSZAER, Nacional: cerca de 170 municípios, sobretudo Algarve, Alentejo e Nordeste Transmontano) — https://causasderaiz.org/caso.html?id=pszaer
+  EN: ZAER / PSZAER: over 800 renewable acceleration zones pre-approved without environmental impact assessment — https://causasderaiz.org/caso-en.html?id=pszaer
+- Expansão do campo de golfe de Monte Rei, em plena emergência hídrica (Imobiliário + água, Vila Nova de Cacela, Vila Real de Santo António, Algarve) — https://causasderaiz.org/caso.html?id=monte-rei
+  EN: Expansion of the Monte Rei golf course amid a water emergency — https://causasderaiz.org/caso-en.html?id=monte-rei
+- Sertã: mais de 25% do concelho marcado para zonas de aceleração solar (Zona de aceleração solar, Sertã, Castelo Branco, Beira Baixa) — https://causasderaiz.org/caso.html?id=serta
+  EN: Sertã: over 25% of the municipality earmarked for solar acceleration zones — https://causasderaiz.org/caso-en.html?id=serta
+- A gigafábrica de IA em Sines: a energia, a água e as florestas que ninguém assume (Data center, Sines e Santiago do Cacém, litoral alentejano) — https://causasderaiz.org/caso.html?id=ia-sines
+  EN: The Sines AI gigafactory: the energy, water and forests no one accounts for — https://causasderaiz.org/caso-en.html?id=ia-sines
+- Teleférico e Parque de Aventura do Curral das Freiras (Turismo em área protegida, Curral das Freiras, Câmara de Lobos, Ilha da Madeira) — https://causasderaiz.org/caso.html?id=curral-freiras
+  EN: Cable Car and Adventure Park at Curral das Freiras — https://causasderaiz.org/caso-en.html?id=curral-freiras
+- Eutrofização das lagoas dos Açores pela pecuária intensiva (Água doce + pecuária intensiva, Lagoa das Furnas e Lagoa das Sete Cidades, São Miguel, Açores) — https://causasderaiz.org/caso.html?id=lagoas-acores
+  EN: Eutrophication of Azores lakes by intensive dairy farming — https://causasderaiz.org/caso-en.html?id=lagoas-acores
+- Silves não abdica da Reserva Natural da Lagoa dos Salgados (Zona húmida ameaçada, Silves, Alcantarilha e Pêra, Algarve) — https://causasderaiz.org/caso.html?id=lagoa-salgados-silves
+  EN: Silves won't give up on the Lagoa dos Salgados Natural Reserve — https://causasderaiz.org/caso-en.html?id=lagoa-salgados-silves
+- Mina de volfrâmio na Gudiña ameaça o rio Rabaçal e o Parque Natural de Montesinho (Mineração transfronteiriça, A Gudiña, Ourense, Galiza (Espanha), a 2 km de Vinhais, Bragança) — https://causasderaiz.org/caso.html?id=mina-gudina
+  EN: Tungsten mine in A Gudiña threatens the Rabaçal river and Montesinho Natural Park — https://causasderaiz.org/caso-en.html?id=mina-gudina
+- EDP desiste da mega-central solar flutuante "Grande Lago" no Alqueva (Central solar flutuante, Moura, Portel e Reguengos de Monsaraz, albufeira do Alqueva) — https://causasderaiz.org/caso.html?id=alqueva-solar-flutuante
+  EN: EDP drops the "Grande Lago" floating solar mega-plant on the Alqueva reservoir — https://causasderaiz.org/caso-en.html?id=alqueva-solar-flutuante
+- Petição contra construção em altura na Madeira admitida na Assembleia Legislativa (Ordenamento do território, Funchal, Ilha da Madeira) — https://causasderaiz.org/caso.html?id=predios-madeira
+  EN: Petition against high-rise construction in Madeira admitted to Regional Assembly — https://causasderaiz.org/caso-en.html?id=predios-madeira
+- Contra a Urbanização do Parque Natural de Sintra-Cascais (Ordenamento do território, Sintra, distrito de Lisboa) — https://causasderaiz.org/caso.html?id=sintra-cascais
+  EN: Against the Urbanization of Sintra-Cascais Natural Park — https://causasderaiz.org/caso-en.html?id=sintra-cascais
+- Projeto Cultiva: horta escolar e comunitária ameaçada de despejo em Lisboa (Espaço comunitário, Escola Gil Vicente, Graça, Lisboa) — https://causasderaiz.org/caso.html?id=cultiva
+  EN: Cultiva Project: school and community garden threatened with eviction in Lisbon — https://causasderaiz.org/caso-en.html?id=cultiva
+- Parque Eólico do Sudoeste em Santiago do Cacém: Quercus alerta para impactos subavaliados (Parque eólico de grande dimensão, Santiago do Cacém e Cercal do Alentejo, litoral alentejano) — https://causasderaiz.org/caso.html?id=eolico-sudoeste-sines
+  EN: Southwest Wind Farm in Santiago do Cacém: Quercus warns of underassessed impacts — https://causasderaiz.org/caso-en.html?id=eolico-sudoeste-sines
+- Sophia e Beira: petição pede suspensão das duas megacentrais solares (Mega-central solar, Fundão, Penamacor e Idanha-a-Nova, Beira Baixa) — https://causasderaiz.org/caso.html?id=sophia-beira
+  EN: Sophia and Beira: petition seeks suspension of both mega solar plants — https://causasderaiz.org/caso-en.html?id=sophia-beira
+- Barragem de Girabolhos (Barragem, Rio Mondego, Seia/Gouveia, Serra da Estrela) — https://causasderaiz.org/caso.html?id=girabolhos
+  EN: Girabolhos Dam — https://causasderaiz.org/caso-en.html?id=girabolhos
+- Hibridização fotovoltaica no Parque Eólico de Penedo Ruivo, Serra do Marão (Eólica + solar, Amarante e Baião, Serra do Marão) — https://causasderaiz.org/caso.html?id=marao
+  EN: Photovoltaic hybridization at Penedo Ruivo Wind Farm, Serra do Marão — https://causasderaiz.org/caso-en.html?id=marao
+- Plano Nacional de Restauro da Natureza: consulta pública encerrou a 19 de agosto (Restauro da natureza, Nacional: consulta pública via Portal Participa) — https://causasderaiz.org/caso.html?id=restauro-natureza
+  EN: National Nature Restoration Plan: public consultation closed on 19 August — https://causasderaiz.org/caso-en.html?id=restauro-natureza
+- Mina da Lagoa Salgada: petição pede o cancelamento do projeto (Mineração de cobre, chumbo e zinco, Grândola e Alcácer do Sal, litoral alentejano) — https://causasderaiz.org/caso.html?id=lagoa-salgada
+  EN: Lagoa Salgada Mine: petition seeks project cancellation — https://causasderaiz.org/caso-en.html?id=lagoa-salgada
+- Planalto Mirandês: já mais de 1.500 hectares de painéis solares (Solar + eólica em massa, Mogadouro e Miranda do Douro, Planalto Mirandês) — https://causasderaiz.org/caso.html?id=nordeste-vivo-mogadouro
+  EN: Planalto Mirandês: already over 1,500 hectares of solar panels — https://causasderaiz.org/caso-en.html?id=nordeste-vivo-mogadouro
+- Travar o Projeto Eólico do Mira, da Galp, em Odemira (Parque eólico e solar, Odemira e Ourique, distrito de Beja) — https://causasderaiz.org/caso.html?id=eolico-mira-odemira
+  EN: Stop Galp's Mira Wind Project in Odemira — https://causasderaiz.org/caso-en.html?id=eolico-mira-odemira
+- Central de biometano da Gasdaterra junto a Árgea, Torres Novas (Infraestrutura industrial, Árgea, Torres Novas, Médio Tejo) — https://causasderaiz.org/caso.html?id=biometano-torres-novas
+  EN: Gasdaterra biomethane plant next to Árgea, Torres Novas — https://causasderaiz.org/caso-en.html?id=biometano-torres-novas
+- Mina de lítio e feldspato no Projeto C-192 Adagoi (Mineração de lítio e feldspato, Capeludos e Bragado, Vila Pouca de Aguiar, distrito de Vila Real) — https://causasderaiz.org/caso.html?id=mina-adagoi
+  EN: Lithium and feldspar mine at Project C-192 Adagoi — https://causasderaiz.org/caso-en.html?id=mina-adagoi
+- Por um futuro sustentável para São Luís, Odemira (Mega-parques solares e eólicos, São Luís, Odemira, Poldreiros do Meio / Lameiros) — https://causasderaiz.org/caso.html?id=sao-luis-odemira
+  EN: For a sustainable future for São Luís, Odemira — https://causasderaiz.org/caso-en.html?id=sao-luis-odemira
+- "Não conseguimos respirar": fábrica de pellets no Cercal do Alentejo (Infraestrutura industrial, Cercal do Alentejo, Santiago do Cacém) — https://causasderaiz.org/caso.html?id=pellets-cercal-alentejo
+  EN: "We can't breathe": pellet factory in Cercal do Alentejo — https://causasderaiz.org/caso-en.html?id=pellets-cercal-alentejo
+- Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova (Pedreiras, Monte Córdova, Santo Tirso) — https://causasderaiz.org/caso.html?id=pedreira-lajedo-santo-tirso
+  EN: For the permanent closure of the Lajedo quarry, Monte Córdova — https://causasderaiz.org/caso-en.html?id=pedreira-lajedo-santo-tirso
+- Pela proteção da aranha-cavernícola-do-Frade e do seu habitat (Biodiversidade, Gruta do Frade, Sesimbra, Parque Natural da Arrábida) — https://causasderaiz.org/caso.html?id=aranha-cavernicola-arrabida
+  EN: For the protection of the Frade cave spider and its habitat — https://causasderaiz.org/caso-en.html?id=aranha-cavernicola-arrabida
+- Não à privatização dos trilhos naturais da Madeira (Ordenamento do território, Região Autónoma da Madeira) — https://causasderaiz.org/caso.html?id=trilhos-madeira
+  EN: No to the privatisation of Madeira's natural trails — https://causasderaiz.org/caso-en.html?id=trilhos-madeira
+- CPADA pede contratação urgente de 800 Vigilantes da Natureza para o ICNF (Sistémico, Nacional) — https://causasderaiz.org/caso.html?id=vigilantes-natureza
+  EN: CPADA calls for urgent hiring of 800 Nature Wardens for ICNF — https://causasderaiz.org/caso-en.html?id=vigilantes-natureza
+- Hyperion II: segundo data center avança junto à Central do Pego sem estudo de impacto ambiental completo (Data center, Abrantes, junto à Central do Pego, distrito de Santarém) — https://causasderaiz.org/caso.html?id=hyperion-abrantes
+  EN: Hyperion II: second data center advances next to the Pego power plant without a complete environmental impact study — https://causasderaiz.org/caso-en.html?id=hyperion-abrantes
+- Data center da Neoen em Alcoentre: Câmara de Azambuja trava pedido de estatuto PIN (Data center, Alcoentre, Azambuja, distrito de Lisboa) — https://causasderaiz.org/caso.html?id=azambuja-dc
+  EN: Neoen data center in Alcoentre: Azambuja Council blocks PIN status request — https://causasderaiz.org/caso-en.html?id=azambuja-dc
+- "Transição Justa" da Central do Pego: Gavião rejeita por unanimidade projeto de renováveis com estatuto PIN (Solar + eólica + armazenamento, Central do Pego, entre Abrantes e Gavião, Centro/Alentejo) — https://causasderaiz.org/caso.html?id=pego-transicao-justa
+  EN: "Just Transition" at the Pego power plant: Gavião unanimously rejects PIN-status renewables project — https://causasderaiz.org/caso-en.html?id=pego-transicao-justa
+- Cluster de hidrogénio e combustíveis verdes em Sines: cinco projetos com estatuto PIN (Hidrogénio e combustíveis verdes, Sines, litoral alentejano) — https://causasderaiz.org/caso.html?id=hidrogenio-sines
+  EN: Green hydrogen and fuels cluster in Sines: five projects with PIN status — https://causasderaiz.org/caso-en.html?id=hidrogenio-sines
+- Central Eólica da Fronteira: 35 aerogeradores junto ao Parque Natural do Douro Internacional (Parque eólico de grande dimensão, Avelanoso e Vimioso, hibridização com a Central Hidroelétrica de Picote, distrito de Bragança) — https://causasderaiz.org/caso.html?id=central-eolica-fronteira
+  EN: Fronteira Wind Farm: 35 turbines next to the Douro Internacional Natural Park — https://causasderaiz.org/caso-en.html?id=central-eolica-fronteira
+- Descontaminação dos solos e aquíferos da Ilha Terceira: quase sete décadas de contaminação pela Base das Lajes (Contaminação de solos e aquíferos, Ilha Terceira, Açores, junto à Base das Lajes) — https://causasderaiz.org/caso.html?id=descontaminacao-ilha-terceira
+  EN: Decontamination of soils and aquifers on Terceira Island: nearly seven decades of contamination from Lajes Base — https://causasderaiz.org/caso-en.html?id=descontaminacao-ilha-terceira
+- Linha elétrica Atalaia-Torre das Vargens e ramal Cruzeiro-Concavada: consulta pública no Cluster do Pego (Linhas elétricas de interligação, Gavião, Abrantes e Ponte de Sor, zona da Central do Pego) — https://causasderaiz.org/caso.html?id=linha-atalaia-cruzeiro-concavada
+  EN: Atalaia-Torre das Vargens power line and Cruzeiro-Concavada branch: public consultation in the Pego Cluster — https://causasderaiz.org/caso-en.html?id=linha-atalaia-cruzeiro-concavada
+- "Nem a Sé se salva?": petição pela preservação dos jardins da Diocese no morro da Sé do Porto (Património e espaço verde urbano, Morro da Sé, Porto) — https://causasderaiz.org/caso.html?id=jardins-se-porto
+  EN: "Not even the Cathedral is safe?": petition to preserve the Diocese gardens on Porto's Sé hill — https://causasderaiz.org/caso-en.html?id=jardins-se-porto
+- AMORA: moradores de Montemor-o-Novo organizam-se para regenerar o Rio Almansor (Poluição e regeneração fluvial, Rio Almansor, Montemor-o-Novo, Alentejo) — https://causasderaiz.org/caso.html?id=rio-almansor
+  EN: AMORA: residents of Montemor-o-Novo organize to regenerate the Almansor River — https://causasderaiz.org/caso-en.html?id=rio-almansor
+- Central Solar Fernando Pessoa: a maior central da Europa continua parada na Justiça (Central solar de grande dimensão, São Domingos, Santiago do Cacém, litoral alentejano) — https://causasderaiz.org/caso.html?id=fernando-pessoa
+  EN: Fernando Pessoa Solar Plant: Europe's largest keeps stalling in court — https://causasderaiz.org/caso-en.html?id=fernando-pessoa
+- Dessalinizadora do Algarve: obras avançam em Albufeira sob nova contestação judicial (Dessalinização, Praia da Rocha Baixinha / Olhos de Água, Albufeira) — https://causasderaiz.org/caso.html?id=dessalinizadora-albufeira
+  EN: Algarve desalination plant: works proceed in Albufeira amid new legal challenge — https://causasderaiz.org/caso-en.html?id=dessalinizadora-albufeira
+- Minas da Panasqueira: risco de contaminação tóxica ameaça o Rio Zêzere (Mineração de estanho e volfrâmio, Covilhã e Fundão, Beira Baixa) — https://causasderaiz.org/caso.html?id=mina-panasqueira
+  EN: Panasqueira Mines: risk of toxic contamination threatens the Zêzere River — https://causasderaiz.org/caso-en.html?id=mina-panasqueira
+- Mina da Borralha: associações levam a tribunal a avaliação ambiental em Montalegre (Mineração de volfrâmio, Montalegre, distrito de Vila Real) — https://causasderaiz.org/caso.html?id=mina-borralha
+  EN: Borralha Mine: associations take environmental assessment to court in Montalegre — https://causasderaiz.org/caso-en.html?id=mina-borralha
+- Almaraz: associações vão a tribunal contra o prolongamento da central nuclear espanhola (Central nuclear transfronteiriça, Almaraz, Cáceres, Espanha — bacia do Tejo, a 100 km da fronteira portuguesa) — https://causasderaiz.org/caso.html?id=almaraz
+  EN: Almaraz: associations go to court against extending the Spanish nuclear plant — https://causasderaiz.org/caso-en.html?id=almaraz
+- Tangerinas em Alcácer do Sal: Quercus apresenta queixa à Comissão Europeia (Agricultura intensiva, Herdades de Murta e Monte Novo, Alcácer do Sal, litoral alentejano) — https://causasderaiz.org/caso.html?id=citrinos-alcacer-do-sal
+  EN: Tangerines in Alcácer do Sal: Quercus files complaint with the European Commission — https://causasderaiz.org/caso-en.html?id=citrinos-alcacer-do-sal
+- Bairro das Pedreiras: comunidade cigana vive sem água nem saneamento há duas décadas em Beja (Racismo ambiental, Bairro das Pedreiras, Beja, Baixo Alentejo) — https://causasderaiz.org/caso.html?id=pedreiras-beja
+  EN: Bairro das Pedreiras: Roma community has lived without water or sanitation for two decades in Beja — https://causasderaiz.org/caso-en.html?id=pedreiras-beja
+- Bairro do Talude Militar: 40 anos de comunidade cabo-verdiana e são-tomense demolidos sem alternativa em Loures (Racismo ambiental, Talude Militar, Loures, distrito de Lisboa) — https://causasderaiz.org/caso.html?id=talude-militar-loures
+  EN: Bairro do Talude Militar: a 40-year-old Cape Verdean and São Tomean community demolished without alternative in Loures — https://causasderaiz.org/caso-en.html?id=talude-militar-loures
+- Bairro da Penajóia: famílias cabo-verdianas, angolanas e guineenses despejadas sem realojamento em Almada (Racismo ambiental, Penajóia, Monte da Caparica, Almada) — https://causasderaiz.org/caso.html?id=penajoia-almada
+  EN: Bairro da Penajóia: Cape Verdean, Angolan and Guinean families evicted without rehousing in Almada — https://causasderaiz.org/caso-en.html?id=penajoia-almada
+- Mortandade de peixes no rio Corgo, em Vila Real, após provável descarga anómala de águas residuais (Desastre ambiental · Poluição hídrica, Rio Corgo, concelho de Vila Real, Trás-os-Montes) — https://causasderaiz.org/caso.html?id=rio-corgo-vila-real
+  EN: Fish kill in the Corgo River, Vila Real, after a probable abnormal wastewater discharge — https://causasderaiz.org/caso-en.html?id=rio-corgo-vila-real
+- Avaria em coletor de saneamento causa mortandade de peixes no rio Eiriz, em Meixomil (Desastre ambiental · Poluição hídrica, Rio Eiriz, Meixomil, Paços de Ferreira, distrito do Porto) — https://causasderaiz.org/caso.html?id=rio-eiriz-meixomil
+  EN: Sewage collector failure causes fish kill in the Eiriz River, Meixomil — https://causasderaiz.org/caso-en.html?id=rio-eiriz-meixomil
+- Mina de caulino Royal China Clay em Serra d'El-Rei (Mineração de caulino, Serra d'El-Rei, Peniche, distrito de Leiria) — https://causasderaiz.org/caso.html?id=royal-china-clay-serra-del-rei
+  EN: Royal China Clay kaolin mine in Serra d'El-Rei — https://causasderaiz.org/caso-en.html?id=royal-china-clay-serra-del-rei
+- Barragem do Pisão: obras suspensas pela terceira vez por decisão judicial (Barragem, Crato, distrito de Portalegre, Alto Alentejo) — https://causasderaiz.org/caso.html?id=barragem-pisao
+  EN: Pisão Dam: works suspended for the third time by court order — https://causasderaiz.org/caso-en.html?id=barragem-pisao
+- Volta a Portugal na Mata da Albergaria: Quercus alerta para "grave precedente" no Gerês (Evento em área protegida, Mata da Albergaria, Parque Nacional da Peneda-Gerês, Terras de Bouro) — https://causasderaiz.org/caso.html?id=mata-albergaria-volta
+  EN: Tour of Portugal through Mata da Albergaria: Quercus warns of "serious precedent" in Gerês — https://causasderaiz.org/caso-en.html?id=mata-albergaria-volta
+- Águeda: Quercus denuncia novas plantações de eucalipto em áreas ardidas e pede revogação de licenças (Incêndios, Concelho de Águeda, distrito de Aveiro) — https://causasderaiz.org/caso.html?id=agueda-eucaliptos
+  EN: Águeda: Quercus reports new eucalyptus plantations in burned areas and calls for permits to be revoked — https://causasderaiz.org/caso-en.html?id=agueda-eucaliptos
+- Meia Praia: protesto cidadão contra construção de dois hotéis em Lagos (Turismo em zona costeira sensível, Meia Praia, Lagos, Algarve) — https://causasderaiz.org/caso.html?id=meia-praia-lagos
+  EN: Meia Praia: citizens protest against two-hotel development in Lagos — https://causasderaiz.org/caso-en.html?id=meia-praia-lagos
+- Greenpeace alerta que um quarto da costa portuguesa está em recuo e pede moratória à construção (Litoral e alterações climáticas, Litoral continental, com destaque para Sesimbra e Grândola) — https://causasderaiz.org/caso.html?id=litoral-greenpeace
+  EN: Greenpeace warns a quarter of Portugal's coast is retreating and calls for a building moratorium — https://causasderaiz.org/caso-en.html?id=litoral-greenpeace
+- Revive: Forte Velho do Outão vira concessão turística de 50 anos dentro do Parque Natural (Turismo em área protegida, Forte Velho do Outão / 7.ª Bataria do Outão, Setúbal, Serra da Arrábida) — https://causasderaiz.org/caso.html?id=revive-forte-outao
+  EN: Revive: Forte Velho do Outão becomes a 50-year tourism concession inside the Natural Park — https://causasderaiz.org/caso-en.html?id=revive-forte-outao
+- Barragem da Foupana: nova barragem ameaça a última ribeira livre do Algarve (Barragem, Castro Marim e Alcoutim, sotavento algarvio) — https://causasderaiz.org/caso.html?id=barragem-foupana
+  EN: Foupana Dam: new reservoir threatens the Algarve's last free-flowing stream — https://causasderaiz.org/caso-en.html?id=barragem-foupana
+- Vila Franca de Xira quer triplicar a Plataforma Logística de Lisboa-Norte (Ordenamento do território, Castanheira do Ribatejo, Vila Franca de Xira) — https://causasderaiz.org/caso.html?id=castanheira-ribatejo
+  EN: Vila Franca de Xira wants to triple the Lisbon-North Logistics Platform — https://causasderaiz.org/caso-en.html?id=castanheira-ribatejo
+- Parque de Campismo da Galé continua fechado desde 2021, sem data de reabertura (Turismo predatório, Melides, Grândola) — https://causasderaiz.org/caso.html?id=campismo-gale
+  EN: Galé Campsite has been closed since 2021, with no reopening in sight — https://causasderaiz.org/caso-en.html?id=campismo-gale
+- Câmara da Covilhã quer abater 1.400 sobreiros para expandir o Parque Industrial do Tortosendo (Desflorestação para expansão industrial, Tortosendo, Covilhã) — https://causasderaiz.org/caso.html?id=sobreiros-tortosendo
+  EN: Covilhã City Council wants to fell 1,400 cork oaks to expand the Tortosendo Industrial Park — https://causasderaiz.org/caso-en.html?id=sobreiros-tortosendo
+- Artilharia Um: moradores de Campolide contestam projeto de 683 fogos isento de avaliação ambiental (Ordenamento do território, Rua de Artilharia Um, Campolide, Lisboa) — https://causasderaiz.org/caso.html?id=artilharia-um-campolide
+  EN: Artilharia Um: Campolide residents contest 683-home project exempted from environmental review — https://causasderaiz.org/caso-en.html?id=artilharia-um-campolide
+- Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo (Poluição industrial, Fortes, Ferreira do Alentejo, distrito de Beja) — https://causasderaiz.org/caso.html?id=fortes-ferreira-alentejo
+  EN: The right to breathe clean air in Fortes, Ferreira do Alentejo — https://causasderaiz.org/caso-en.html?id=fortes-ferreira-alentejo
+- Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer) (Infraestrutura industrial, Marés, Abrigada e Cabanas de Torres, Alenquer) — https://causasderaiz.org/caso.html?id=biometano-abrigada-alenquer
+  EN: Gás da Terra biomethane plant in Marés, Abrigada (Alenquer) — https://causasderaiz.org/caso-en.html?id=biometano-abrigada-alenquer
+- Novo Cais de Carga Geral do Porto de Sines: uso militar sem debate público (Infraestrutura portuária, Porto de Sines, litoral alentejano) — https://causasderaiz.org/caso.html?id=cais-carga-sines
+  EN: New General Cargo Dock at the Port of Sines: military use without public debate — https://causasderaiz.org/caso-en.html?id=cais-carga-sines
+- Parem o abate de árvores na Costa da Caparica (Desflorestação urbana, Praça Padre Manuel Bernardes e Torre das Argolas, Costa da Caparica, Almada) — https://causasderaiz.org/caso.html?id=costa-caparica-arvores
+  EN: Stop the tree felling in Costa da Caparica — https://causasderaiz.org/caso-en.html?id=costa-caparica-arvores
+- Aldeia do Meco: escassez de água agrava oposição a grandes projetos turísticos em Sesimbra (Turismo + escassez hídrica, Aldeia do Meco, Sesimbra, distrito de Setúbal) — https://causasderaiz.org/caso.html?id=meco-sesimbra-agua-turismo
+  EN: Aldeia do Meco: water scarcity sharpens opposition to large tourism projects in Sesimbra — https://causasderaiz.org/caso-en.html?id=meco-sesimbra-agua-turismo
+- Incineradora de resíduos no Algarve: Governo avança apesar da oposição ambientalista (Incineração de resíduos, Algarve — localização a definir) — https://causasderaiz.org/caso.html?id=incineradora-algarve
+  EN: Waste incinerator in the Algarve: Government moves ahead despite environmentalist opposition — https://causasderaiz.org/caso-en.html?id=incineradora-algarve
+- Matosinhos: descargas poluentes e mau cheiro ameaçam o rio Leça e as praias balneares (Poluição industrial e contaminação da água, Rio Leça e ribeiras de Leça da Palmeira e Matosinhos) — https://causasderaiz.org/caso.html?id=matosinhos-ribeira-leca
+  EN: Matosinhos: polluting discharges and foul smells threaten the Leça river and bathing beaches — https://causasderaiz.org/caso-en.html?id=matosinhos-ribeira-leca
+- Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas (Reequipamento de parque eólico, Serra de Santo André, freguesias de Meimoa e Penamacor, distrito de Castelo Branco) — https://causasderaiz.org/caso.html?id=eolico-penamacor-2
+  EN: Penamacor 2 wind farm revamp authorises felling of 755 protected trees — https://causasderaiz.org/caso-en.html?id=eolico-penamacor-2
+- Pedreira Cerro do Meio: tribunal manda encerrar exploração em Tavira por ruído e poeiras (Pedreiras, Cerro do Meio, União de Freguesias de Luz de Tavira e Santo Estêvão, Tavira, Algarve) — https://causasderaiz.org/caso.html?id=pedreira-cerro-meio-tavira
+  EN: Cerro do Meio quarry: court orders closure in Tavira over noise and dust — https://causasderaiz.org/caso-en.html?id=pedreira-cerro-meio-tavira
+
+## Dataset (JSON) / Dataset (JSON)
+Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
+Machine-readable structured data for all active cases, updated whenever the site is updated: category, status, location, organization involved, summary and verification date.
+- PT: https://causasderaiz.org/dados.js
+- EN: https://causasderaiz.org/dados-en.js
+
+## Contacto / Contact
+- Email: geral@ulmeiro.org
+- Instagram: https://www.instagram.com/terraaguafloresta
+- Facebook: https://www.facebook.com/profile.php?id=61593008168392
+- Sitemap: https://causasderaiz.org/sitemap.xml

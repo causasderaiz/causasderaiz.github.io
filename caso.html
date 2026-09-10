@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title id="t">Luta ambiental</title>
+<meta name="description" id="d" content="Ficha verificada de uma luta ambiental em Portugal.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:title" content="Ficha verificada de uma luta ambiental em Portugal, Madeira ou Açores" id="og-title">
+<meta property="og:description" content="Localização, quem está envolvido, fontes de imprensa que documentam o caso, e como agir." id="og-desc">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
+<meta property="og:url" content="https://causasderaiz.org/caso.html" id="og-url">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
+  --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
+  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+h1,h2,h3,h4,.disp{font-family:"Londrina Solid",cursive;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(16px,3vw,44px)}
+.col{max-width:74ch}
+p{text-wrap:pretty}
+header.top{position:sticky;top:0;z-index:900;background:var(--red);border-bottom:3px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px;max-width:1560px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);border:0;text-decoration:none}
+.brand img{height:36px;width:auto;display:block}
+.brand .vbar{width:3px;height:26px;background:rgba(251,246,234,.55);flex:none}
+.brand .disp{font-size:30px;color:var(--cream)}
+header.top nav{margin-left:auto;display:flex;gap:20px;align-items:center}
+header.top nav a{color:var(--cream);border-bottom:2px solid transparent;font-weight:500;font-size:15px}
+header.top nav a:hover{border-bottom-color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:3px solid var(--line);background:var(--paper);padding:12px 18px;font-weight:700;box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s;color:var(--ink)}
+a.btn{border-bottom:3px solid var(--line)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.btn--sm{padding:8px 13px;box-shadow:3px 3px 0 var(--line);font-size:14px}
+.btn--green{background:var(--green-bright)}
+.btn--ink{background:var(--ink);color:var(--cream)}
+a.btn.btn--ink,a.btn.btn--ink:hover{color:var(--cream);border-bottom-color:var(--line)}
+.hero{padding:clamp(34px,4.4vw,64px) 0 clamp(22px,3vw,38px);border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+h1{font-size:clamp(42px,7.4vw,108px)}
+h1 span{color:var(--green-text)}
+.hero p.lede{font-size:clamp(17px,1.4vw,20px);max-width:60ch;color:var(--ink-soft)}
+section.band{padding:clamp(38px,5vw,80px) 0;border-bottom:3px solid var(--line)}
+section.band:nth-of-type(even){background:var(--paper)}
+h2{font-size:clamp(30px,4.4vw,64px)}
+h3{font-size:clamp(22px,2.3vw,32px);margin:30px 0 10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:28px}
+.card{border:3px solid var(--line);background:var(--paper);padding:20px;box-shadow:6px 6px 0 var(--line);display:flex;flex-direction:column;gap:10px}
+section.band:nth-of-type(even) .card{background:var(--cream)}
+.card h4{font-size:26px;text-transform:none;letter-spacing:0}
+.card p{margin:0;font-size:15px;color:var(--ink-soft)}
+.tag{align-self:flex-start;border:2px solid var(--line);padding:3px 8px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;background:var(--cream)}
+.tag.red{background:var(--red);color:var(--cream)}
+.tag.green{background:var(--green-bright)}
+ul.plain{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px;max-width:78ch}
+ul.plain li{display:grid;grid-template-columns:24px 1fr;gap:12px}
+ul.plain li::before{content:"";width:13px;height:13px;background:var(--red);border:3px solid var(--line);border-radius:50%;margin-top:6px}
+ul.plain.g li::before{background:var(--green-bright)}
+.nb{border:3px solid var(--line);background:var(--cream);padding:18px 20px;margin:26px 0}
+footer{padding:40px 0 60px;font-size:14px}
+.foot{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-end}
+.footnav{display:flex;flex-wrap:wrap;gap:18px}
+@media(max-width:1024px){header.top nav{gap:14px}}
+@media(max-width:760px){
+  header.top nav a{display:none}
+  header.top nav a.btn{display:inline-flex}
+  header.top .wrap{height:58px}
+  .brand .disp{font-size:22px}
+  .brand img{height:29px}
+  .cards{grid-template-columns:1fr}
+}
+.big{border:3px solid var(--line);background:var(--paper);box-shadow:7px 7px 0 var(--line);margin-top:26px}
+.big img{width:100%;height:clamp(220px,34vw,420px);object-fit:cover;border-bottom:3px solid var(--line)}
+.big .in{padding:clamp(18px,2.4vw,30px)}
+.big h3{font-size:clamp(26px,3vw,44px);text-transform:none;letter-spacing:0;margin:10px 0 8px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+header.top nav a{white-space:nowrap}
+.brand .disp{white-space:nowrap}
+@media(max-width:1200px){header.top nav{gap:14px}header.top nav a{font-size:14px}}
+@media(max-width:1080px){header.top nav a.hide-md{display:none}}
+@media(max-width:940px){header.top nav a.hide-sm{display:none}}
+
+footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid var(--line);background:var(--paper);font-size:15px}
+.footgrid{display:grid;grid-template-columns:minmax(260px,1.5fr) repeat(3,minmax(150px,1fr));gap:clamp(20px,3vw,44px)}
+.footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
+.footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
+.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
+.footgrid .about{margin:0;color:var(--ink-soft);max-width:36ch}
+.saramago{margin:clamp(28px,4vw,52px) 0 0;padding:22px 0 0;border-top:3px solid var(--line)}
+.saramago p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(19px,2vw,30px);line-height:1.05;margin:0;max-width:46ch}
+.saramago cite{display:block;margin-top:10px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-style:normal}
+.copy{margin:26px 0 0;color:var(--ink-soft)}
+.copy a{color:var(--ink-soft)}
+.social{display:flex;gap:10px;align-items:center}
+.social a{color:var(--cream);border:2px solid rgba(251,246,234,.6);border-radius:99px;width:34px;height:34px;display:grid;place-items:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.social a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+@media(max-width:900px){.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.footgrid{grid-template-columns:1fr}}
+
+.casohero{border-bottom:3px solid var(--line);background:var(--paper)}
+.casohero img{width:100%;height:clamp(240px,44vw,560px);object-fit:cover;border-bottom:3px solid var(--line);background:#e6e2d5}
+.crumb{padding:14px 0;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.crumb a{color:var(--ink-soft);border-bottom:2px solid rgba(230,58,37,.4)}
+.casotop{padding:clamp(22px,3vw,44px) 0 clamp(26px,3vw,46px)}
+.casotop h1{font-size:clamp(30px,4.6vw,68px);text-transform:none;letter-spacing:0;line-height:.98;max-width:26ch}
+.badges{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:clamp(24px,4vw,60px);align-items:start}
+.facts{border:3px solid var(--line);background:var(--paper);box-shadow:6px 6px 0 var(--line)}
+.facts div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 16px;border-bottom:2px solid rgba(23,26,18,.15);font-size:15px}
+.facts div:last-child{border-bottom:0}
+.facts .mono{color:var(--ink-soft)}
+.acts{display:grid;gap:10px;margin-top:18px}
+.sidebox{border:3px solid var(--line);background:var(--cream);padding:16px 18px;margin-top:18px}
+.rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:26px}
+.rel a{border:3px solid var(--line);background:var(--paper);box-shadow:5px 5px 0 var(--line);padding:0;display:block;color:var(--ink)}
+.rel a:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.rel img{width:100%;height:130px;object-fit:cover;border-bottom:3px solid var(--line)}
+.rel .in{padding:14px 16px}
+.rel b{display:block;font-size:17px;line-height:1.15;margin-bottom:5px}
+.nextprev{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;padding-top:24px;border-top:3px solid var(--line);margin-top:34px}
+
+header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
+
+.tag.urgente{background:var(--red);color:var(--cream)}
+.tag.consulta{background:var(--green-bright)}
+.tag.tribunal{background:var(--ink);color:var(--cream)}
+.tag.vitoria{background:var(--green);color:var(--cream)}
+.tag.situacao{background:transparent;border-color:var(--red);color:var(--red-dark)}
+.tag.acompanhamento{background:transparent}
+
+.lang{display:flex;gap:6px;align-items:center;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em}
+.lang a{color:var(--cream);border:2px solid rgba(251,246,234,.5);padding:3px 7px;border-radius:99px}
+.lang a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.lang a.on{background:var(--cream);color:var(--red);border-color:var(--cream)}
+
+.corpo{max-width:66ch;margin-top:18px}
+.corpo p{font-size:17px;line-height:1.65;margin:0 0 16px}
+.fontes{margin:14px 0 0;padding-left:22px;display:grid;gap:9px;font-size:15.5px;max-width:66ch}
+.fontes a{word-break:break-word}
+::-webkit-scrollbar{width:14px;height:14px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--red);border:3px solid var(--cream);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:var(--red-dark)}
+html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
+</style>
+  <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="disp">Causas<span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span></a>
+    <nav>
+      <a href="index.html#mapa">Mapa</a>
+      <a href="alertar.html">A quem denunciar</a>
+      <a class="hide-sm" href="livro.html">O livro</a>
+      <a class="hide-md" href="metodologia.html">Metodologia</a>
+      <span class="social">
+        <a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M15.4 8.1h-1.5c-1 0-1.6.6-1.6 1.6v1.7h3l-.4 2.9h-2.6v4.6"></path><path d="M9.6 11.4h2.7"></path></svg></a>
+      </span>
+      <span class="lang">
+        <a href="caso.html" class="on">PT</a>
+        <a href="caso-en.html">EN</a>
+      </span>
+      <a class="btn btn--sm" href="index.html#mapa" style="background:var(--cream);border-bottom:3px solid var(--line)">Ver o mapa</a>
+    </nav>
+  </div>
+</header>
+<main id="caso"></main>
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <span class="disp" style="font-size:34px;display:block"><span style="color:var(--red)">Causas</span><span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span>
+        <p class="claim">Pela terra, pela água, pelas florestas, por nós!</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html#mapa">Casos</a></li>
+          <li><a href="index.html#mapa">Mapa</a></li>
+          <li><a href="alertar.html">Alertar</a></li>
+          <li><a href="index.html#como">Agir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">O projeto</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="arquivo.html">Arquivo</a></li>
+          <li><a href="mailto:geral@causasderaiz.org">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Emergência</h4>
+        <ul>
+          <li><a href="tel:808200520">SOS Ambiente: 808 200 520</a></li>
+          <li><a href="mailto:geral@apambiente.pt">APA</a></li>
+        </ul>
+      </div>
+    </div>
+    <blockquote class="saramago">
+      <p>“Quando Joana Carda riscou o chão com a vara de negrilho, todos os cães de Cerbère começaram a ladrar…”</p>
+      <cite>José Saramago, <em>A Jangada de Pedra</em></cite>
+    </blockquote>
+    <p class="copy mono">© 2026 Causas de Raiz · 2026 Ulmeiro · 2026 <a href="https://www.instagram.com/movementagainsthate/" target="_blank" rel="noopener">Movement Against Hate</a> · Cartografia © OpenStreetMap contributors</p>
+  </div>
+</footer>
+
+
+<script>document.write('<script src="dados.js?v='+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="fichas.js?v='+Date.now()+'"><\/script>')</script>
+<script>
+const ESTLBL=Object.fromEntries(ESTADOS);
+const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};
+const id=new URLSearchParams(location.search).get("id")||CAUSAS[0].id;
+const c=CAUSAS.find(x=>x.id===id)||CAUSAS[0];
+const F=(typeof FICHAS!=="undefined"&&FICHAS[c.id])||{corpo:"",fontes:[],stat:"",link:"",linkL:""};
+const i=CAUSAS.indexOf(c);
+const prev=CAUSAS[(i-1+CAUSAS.length)%CAUSAS.length], next=CAUSAS[(i+1)%CAUSAS.length];
+const img=x=>"img/"+x.id+".jpg";
+const fb=x=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+x.img+"'";
+const acaoL=c.pet?(c.petLabel||"Agir agora").replace(/^[^A-Za-zÀ-ú]+/,"").replace(/\s*→\s*$/,""):"";
+document.getElementById("t").textContent=c.t+", "+c.loc;
+document.getElementById("d").setAttribute("content",c.res);
+document.getElementById("og-title").setAttribute("content",c.t+" — "+c.loc);
+document.getElementById("og-desc").setAttribute("content",c.res);
+document.getElementById("og-url").setAttribute("content",location.href);
+const rel=CAUSAS.filter(x=>x.id!==c.id&&(x.reg===c.reg||x.cat===c.cat)).slice(0,3);
+document.getElementById("caso").innerHTML=
+'<div class="casohero"><img src="'+img(c)+'" onerror="'+fb(c)+'" alt="'+c.loc+'"></div>'+
+'<div class="wrap"><p class="crumb"><a href="index.html#mapa">Mapa</a> · '+c.reg+' · '+c.catLabel+'</p></div>'+
+'<div class="wrap casotop"><div class="grid2"><div>'+
+  '<div class="badges"><span class="tag '+estadoBadge(c).k+'">'+estadoBadge(c).i+' '+estadoBadge(c).l+'</span>'+
+  '<span class="mono" style="color:var(--ink-soft)">'+c.catLabel+'</span></div>'+
+  '<h1>'+c.t+'</h1>'+
+  '<p class="mono" style="color:var(--ink-soft);margin-top:14px">'+c.loc+'</p>'+
+  '<p class="mono" style="color:var(--red-dark);margin-top:10px">'+c.status+'</p>'+
+  '<p style="font-size:19px;max-width:66ch;font-weight:700;margin-top:22px">'+c.res+'</p>'+
+  '<div class="corpo">'+F.corpo+'</div>'+
+  '<h2 style="font-size:clamp(22px,2.2vw,32px);margin-top:38px">Fontes</h2>'+
+  '<ol class="fontes">'+F.fontes.map(f=>'<li><a href="'+f[1]+'" target="_blank" rel="noopener">'+f[0]+'</a></li>').join("")+
+   (F.link?'<li><a href="'+F.link+'" target="_blank" rel="noopener">'+(F.linkL||"Saber mais")+'</a></li>':'')+'</ol>'+
+  '<h2 style="font-size:clamp(22px,2.2vw,32px);margin-top:34px">O que podes fazer agora</h2>'+
+  '<ul class="plain'+(c.pet?'':' g')+'">'+
+    (c.pet?'<li>'+acaoL+'. É a ação que está aberta neste momento e conta como pressão formal.</li>'
+          :'<li>Acompanhar. Quando abrir uma consulta pública ou um prazo, é aí que a participação tem efeito legal.</li>')+
+    '<li>Partilhar as fontes, não só a manchete. Estão todas listadas acima.</li>'+
+    '<li>Falar com quem já está no terreno: '+c.quem.join(", ")+'.</li>'+
+    '<li>Se houver infração a acontecer, saber <a href="alertar.html">a quem denunciar</a> antes de ligar.</li>'+
+  '</ul>'+
+'</div><aside><div class="facts">'+
+  '<div><span class="mono">Estado</span><span>'+c.status+'</span></div>'+
+  '<div><span class="mono">Onde</span><span>'+c.loc+'</span></div>'+
+  '<div><span class="mono">Região</span><span>'+c.reg+'</span></div>'+
+  '<div><span class="mono">Tema</span><span>'+c.catLabel+'</span></div>'+
+  '<div><span class="mono">Envolvidos</span><span>'+c.quem.join(" · ")+'</span></div>'+
+  (F.stat?'<div><span class="mono">Números</span><span>'+F.stat+'</span></div>':'')+
+'</div>'+
+'<div class="acts">'+
+  (c.pet?'<a class="btn btn--ink" href="'+c.pet+'" target="_blank" rel="noopener">'+acaoL+'</a>':'')+
+  (c.ll?'<a class="btn" href="https://earth.google.com/web/@'+c.ll[0]+','+c.ll[1]+',0a,900d,0y,0h,0t,0r" target="_blank" rel="noopener">🌍 Ver no Google Earth ↗</a>':'')+
+  '<button class="btn btn--green" id="link">🔗 Copiar link</button>'+
+  '<button class="btn" id="cit">Copiar citação com fonte</button>'+
+'</div>'+
+'<div class="sidebox"><p class="mono" style="margin:0 0 8px;color:var(--red-dark)">Como lemos este caso</p><p style="margin:0;font-size:14.5px">'+
+  F.fontes.length+' fontes listadas nesta página, todas ligadas à origem.'+(c.ll?' Coordenadas aproximadas ao concelho.':' Caso de âmbito nacional, sem ponto único no mapa.')+'</p></div>'+
+'</aside></div>'+
+'<h2 style="font-size:clamp(22px,2.4vw,36px);margin-top:44px">Casos relacionados</h2>'+
+'<div class="rel">'+rel.map(x=>'<a href="caso.html?id='+x.id+'"><img src="'+img(x)+'" onerror="'+fb(x)+'" alt="'+x.loc+'"><span class="in"><b>'+x.t+'</b><span class="mono" style="color:var(--ink-soft)">'+x.reg+' · '+estadoBadge(x).l+'</span></span></a>').join("")+'</div>'+
+'<div class="nextprev"><a class="btn btn--sm" href="caso.html?id='+prev.id+'">Anterior: '+prev.t.slice(0,40)+'</a>'+
+'<a class="btn btn--sm" href="index.html#mapa">Ver todos no mapa</a>'+
+'<a class="btn btn--sm" href="caso.html?id='+next.id+'">Seguinte: '+next.t.slice(0,40)+'</a></div>'+
+'</div>';
+document.getElementById("cit").onclick=()=>{
+  const txt='"'+c.t+'", '+c.loc+'. Atualizado em '+dfmt(c.verif)+'. Fonte: Causas de Raiz, '+location.href;
+  if(navigator.clipboard)navigator.clipboard.writeText(txt).catch(()=>{});
+  const b=document.getElementById("cit");b.textContent="Citação copiada";setTimeout(()=>b.textContent="Copiar citação com fonte",2200);
+};
+document.getElementById("link").onclick=()=>{
+  const b=document.getElementById("link");
+  (navigator.clipboard?navigator.clipboard.writeText(location.href):Promise.reject()).then(()=>{
+    b.textContent="Link copiado ✓";setTimeout(()=>b.textContent="🔗 Copiar link",2200);
+  }).catch(()=>window.prompt("Copia este link:",location.href));
+};
+const ld=document.createElement("script");
+ld.type="application/ld+json";
+ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Article",headline:c.t,about:c.catLabel,abstract:c.res,
+  dateModified:c.verif,contentLocation:{"@type":"Place",name:c.loc,geo:c.ll?{"@type":"GeoCoordinates",latitude:c.ll[0],longitude:c.ll[1]}:undefined},
+  citation:F.fontes.map(f=>f[1]),
+  publisher:{"@type":"Organization",name:"Causas de Raiz"}});
+document.head.appendChild(ld);
+</script>
+</body>
+</html>

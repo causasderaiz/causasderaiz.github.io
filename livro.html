@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Causas de Raiz: o livro aberto sobre a crise climática, o poder e as comunidades que ainda decidem</title>
+<meta name="description" content="Livro aberto sobre a crise climática, o extrativismo e o colapso da biodiversidade, com dados verificados, pensamento credível e uma chave dicotómica para agir em emergência.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:title" content="Causas de Raiz: o livro aberto sobre a crise climática, o poder e as comunidades que ainda decidem">
+<meta property="og:description" content="Um retrato honesto e um caminho concreto para agir. Livro aberto, para copiar, imprimir e distribuir.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
+<meta property="og:url" content="https://causasderaiz.org/livro.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
+  --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
+  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.disp{font-family:"Londrina Solid",cursive;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+button{cursor:pointer;font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+.col{max-width:74ch}
+p{text-wrap:pretty}
+
+header.top{position:sticky;top:0;z-index:60;background:var(--red);border-bottom:3px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);border:0;text-decoration:none}
+.brand img{height:36px;width:auto;display:block}
+.brand .vbar{width:3px;height:26px;background:rgba(251,246,234,.55);flex:none}
+.brand .mark{width:20px;height:20px;background:var(--cream);border:3px solid var(--line);border-radius:50%}
+.brand .disp{font-size:30px;color:var(--cream)}
+header.top nav{margin-left:auto;display:flex;gap:20px;align-items:center}
+header.top nav a{color:var(--cream);border-bottom:2px solid transparent;font-weight:500}
+header.top nav a:hover{border-bottom-color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:3px solid var(--line);background:var(--paper);padding:12px 18px;font-weight:700;box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s;color:var(--ink)}
+a.btn{border-bottom:3px solid var(--line)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.btn--green{background:var(--green-bright)}
+.btn--ink{background:var(--ink);color:var(--cream)}
+a.btn.btn--ink,a.btn.btn--ink:hover{color:var(--cream);border-bottom-color:var(--line)}
+.btn--sm{padding:8px 13px;box-shadow:3px 3px 0 var(--line);font-size:14px}
+
+/* capa */
+.cover{padding:clamp(40px,6vw,90px) 0 clamp(30px,4vw,54px);border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+.cover h1{font-size:clamp(66px,17vw,240px);letter-spacing:-.01em}
+.cover h1 span{color:var(--red)}
+.cover .sub{font-size:clamp(19px,2.1vw,28px);max-width:34ch;margin:clamp(16px,2vw,26px) 0 0;font-weight:500}
+.cover .kicker{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;margin-bottom:clamp(14px,2vw,24px)}
+.coverfoot{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:34px;align-items:end;margin-top:clamp(26px,4vw,50px)}
+.coverfoot p{margin:0;color:var(--ink-soft)}
+.openbook{border:3px solid var(--line);background:var(--paper);padding:16px 18px;box-shadow:6px 6px 0 var(--line)}
+
+/* índice */
+.toc{border-bottom:3px solid var(--line);background:var(--paper)}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.toc li{border-right:3px solid var(--line);border-bottom:2px solid rgba(23,26,18,.15)}
+.toc a{display:flex;gap:14px;align-items:baseline;padding:16px 20px;border:0;color:var(--ink);font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:22px;line-height:1}
+.toc a:hover{background:var(--ink);color:var(--cream)}
+.toc a i{font-family:"Space Mono",monospace;font-size:11px;font-style:normal;color:var(--red);flex:none}
+.toc a:hover i{color:var(--green-bright-text)}
+
+/* capítulos */
+section.ch{padding:clamp(46px,6vw,92px) 0;border-bottom:3px solid var(--line)}
+section.ch:nth-of-type(even){background:var(--paper)}
+.chhead{display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;margin-bottom:22px}
+.chnum{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.16em;border:2px solid var(--line);padding:4px 9px}
+h2{font-size:clamp(36px,6vw,86px)}
+h3{font-size:clamp(24px,2.6vw,36px);margin:34px 0 10px}
+.lede{font-size:clamp(19px,1.7vw,23px);max-width:60ch;margin:0 0 8px}
+.drop::first-letter{font-family:"Londrina Solid",cursive;font-size:4.1em;float:left;line-height:.78;padding:2px 12px 0 0;color:var(--red)}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin:34px 0}
+.fig{border:3px solid var(--line);background:var(--cream);padding:18px;box-shadow:6px 6px 0 var(--line)}
+section.ch:nth-of-type(even) .fig{background:var(--paper)}
+.fig b{font-family:"Londrina Solid",cursive;font-size:clamp(42px,5vw,68px);display:block;line-height:.86;color:var(--red)}
+.fig:nth-child(even) b{color:var(--green-text)}
+.fig p{margin:8px 0 0;font-size:15px;color:var(--ink-soft)}
+.pull{border-top:3px solid var(--line);border-bottom:3px solid var(--line);padding:24px 0;margin:38px 0}
+.pull p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(26px,3.6vw,52px);line-height:1;margin:0;max-width:30ch}
+.pull cite{display:block;margin-top:12px;font-style:normal}
+.nb{border:3px solid var(--line);background:var(--cream);padding:18px 20px;margin:28px 0}
+section.ch:nth-of-type(even) .nb{background:var(--cream)}
+.nb .mono{color:var(--red-dark)}
+table{width:100%;border-collapse:collapse;margin:28px 0;font-size:16px}
+th,td{text-align:left;padding:13px 14px;border-bottom:2px solid rgba(23,26,18,.18);vertical-align:top}
+thead th{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom:3px solid var(--line)}
+tbody tr td:first-child{color:var(--red-dark)}
+tbody tr td:last-child{color:var(--green-text)}
+ul.plain{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px;max-width:78ch}
+ul.plain li{display:grid;grid-template-columns:26px 1fr;gap:12px}
+ul.plain li::before{content:"";width:13px;height:13px;background:var(--red);border:3px solid var(--line);border-radius:50%;margin-top:7px}
+ul.plain.g li::before{background:var(--green-bright)}
+.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:30px}
+.voice{border:3px solid var(--line);background:var(--cream);padding:18px;box-shadow:5px 5px 0 var(--line)}
+section.ch:nth-of-type(even) .voice{background:var(--paper)}
+.voice h4{font-size:26px;margin-bottom:4px}
+.voice .mono{color:var(--ink-soft);display:block;margin-bottom:9px}
+.voice p{margin:0;font-size:15px}
+.circles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:30px}
+.circle{border:3px solid var(--line);padding:20px;background:var(--paper);box-shadow:6px 6px 0 var(--line)}
+.circle .n{font-family:"Londrina Solid",cursive;font-size:56px;line-height:.8;color:var(--red)}
+.circle:nth-child(2) .n{color:var(--green-text)}
+.circle:nth-child(3) .n{color:var(--ink)}
+
+/* chave dicotómica */
+.key{background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line);padding:clamp(46px,6vw,92px) 0}
+.key h2,.key h3{color:var(--cream)}
+.key .lede{color:rgba(251,246,234,.8)}
+.keybox{border:3px solid var(--cream);background:rgba(251,246,234,.05);margin-top:34px}
+.keystep{padding:clamp(20px,3vw,34px)}
+.keyq{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(26px,3.4vw,46px);line-height:1;margin:10px 0 22px}
+.keyopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.keyopt{text-align:left;border:3px solid var(--cream);background:transparent;color:var(--cream);padding:16px 18px;font-weight:700;font-size:17px;transition:background .12s,color .12s}
+.keyopt:hover{background:var(--green-bright);color:var(--ink);border-color:var(--green-bright-text)}
+.keyres{border-top:3px solid var(--cream);padding:clamp(20px,3vw,34px);background:rgba(24,192,112,.1)}
+.keyres h3{font-size:clamp(24px,2.8vw,40px);margin-bottom:12px}
+.keyres ol{margin:0;padding-left:22px;display:grid;gap:10px}
+.keyres .tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.keypath{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-bright-text)}
+.keyres a{color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)}
+.keynav{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.keynav button{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:9px 14px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.keynav button:hover{background:var(--cream);color:var(--ink)}
+
+/* fotografias */
+.photo{margin:38px 0 0;border:3px solid var(--line);box-shadow:7px 7px 0 var(--line);background:var(--cream);overflow:hidden}
+.photo img{width:100%;height:clamp(240px,42vw,520px);object-fit:cover;display:block}
+.photo .ph{height:clamp(240px,42vw,520px);display:grid;place-items:center;text-align:center;padding:24px;
+  background:repeating-linear-gradient(135deg,rgba(23,26,18,.09) 0 6px,transparent 6px 16px),var(--paper)}
+.photo .ph span{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);max-width:44ch;line-height:1.9}
+.photo figcaption{border-top:3px solid var(--line);padding:11px 15px;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);background:var(--paper);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+
+/* fecho e fontes */
+.close{padding:clamp(50px,7vw,110px) 0;border-bottom:3px solid var(--line);background:var(--red);color:var(--cream)}
+.close h2{color:var(--cream);font-size:clamp(40px,8vw,120px)}
+.close p{font-size:clamp(18px,1.8vw,24px);max-width:56ch}
+.close .btn{background:var(--cream)}
+.sources{padding:clamp(40px,5vw,80px) 0;background:var(--paper);border-bottom:3px solid var(--line)}
+.sources ol{columns:2;column-gap:44px;font-size:14.5px;color:var(--ink-soft);padding-left:20px}
+.sources li{margin-bottom:9px;break-inside:avoid}
+footer{padding:40px 0 64px;font-size:14px}
+.foot{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-end}
+
+@media(max-width:1024px){
+  .coverfoot{grid-template-columns:1fr}
+  .toc li{border-right:0}
+  header.top nav a{font-size:15px}
+}
+@media(max-width:700px){
+  body{font-size:16px}
+  .sources ol{columns:1}
+  header.top nav a{display:none}
+  .brand .disp{font-size:24px}
+  .drop::first-letter{font-size:3.2em}
+}
+@media print{
+  header.top,.keynav,.toc{display:none}
+  body{background:#fff}
+  section.ch,.key,.close{border:0;page-break-inside:avoid}
+  .key{background:#fff;color:#000}
+  .key h2,.key h3,.key .lede{color:#000}
+}
+
+header.top nav a{white-space:nowrap}
+.brand .disp{white-space:nowrap}
+@media(max-width:1200px){header.top nav{gap:14px}header.top nav a{font-size:14px}}
+@media(max-width:1080px){header.top nav a.hide-md{display:none}}
+@media(max-width:940px){header.top nav a.hide-sm{display:none}}
+
+footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid var(--line);background:var(--paper);font-size:15px}
+.footgrid{display:grid;grid-template-columns:minmax(260px,1.5fr) repeat(3,minmax(150px,1fr));gap:clamp(20px,3vw,44px)}
+.footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
+.footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
+.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
+.footgrid .about{margin:0;color:var(--ink-soft);max-width:36ch}
+.saramago{margin:clamp(28px,4vw,52px) 0 0;padding:22px 0 0;border-top:3px solid var(--line)}
+.saramago p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(19px,2vw,30px);line-height:1.05;margin:0;max-width:46ch}
+.saramago cite{display:block;margin-top:10px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-style:normal}
+.copy{margin:26px 0 0;color:var(--ink-soft)}
+.copy a{color:var(--ink-soft)}
+.social{display:flex;gap:10px;align-items:center}
+.social a{color:var(--cream);border:2px solid rgba(251,246,234,.6);border-radius:99px;width:34px;height:34px;display:grid;place-items:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.social a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+@media(max-width:900px){.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.footgrid{grid-template-columns:1f
+
+header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
+::-webkit-scrollbar{width:14px;height:14px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--red);border:3px solid var(--cream);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:var(--red-dark)}
+html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
+</style>
+  <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="disp">Causas<span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span></a>
+    <nav>
+      <a href="index.html#mapa">Mapa</a>
+      <a href="alertar.html">A quem denunciar</a>
+      <a class="hide-sm" href="livro.html">O livro</a>
+      <a class="hide-md" href="metodologia.html">Metodologia</a>
+      <a class="btn btn--sm" href="index.html#mapa" style="background:var(--cream);border-bottom:3px solid var(--line)">Ver o mapa</a>
+    </nav>
+  </div>
+</header>
+
+<section class="cover">
+  <div class="wrap">
+    <div class="kicker">
+      <span class="mono">Ecologia · Terra · Ação · Edição 2026</span>
+      <span class="mono" style="color:var(--red-dark)">Livro aberto: copia, imprime, distribui</span>
+    </div>
+    <h1>Causas<br><span>de raiz</span></h1>
+    <p class="sub">Ninguém observa a crise climática de fora. Respira-se o mesmo ar que aquece, bebe-se da mesma água que escasseia, e cada causa registada neste mapa está ligada a todas as outras por baixo da terra, como as raízes de árvores que parecem separadas à superfície. É dentro desta teia que se pode agir.</p>
+    <div class="coverfoot">
+      <p>Aqui estão os números verificados, quem decide o que acontece no território, e um caminho concreto para o que se pode fazer esta semana, no lugar onde se vive. A terra não é um cenário. É o corpo que se partilha com tudo o que nele respira.</p>
+      <div class="openbook">
+        <p class="mono" style="margin:0 0 8px;color:var(--red-dark)">Como usar</p>
+        <p style="margin:0;font-size:15px">Este livro pode ler-se de seguida, ou abrir-se diretamente na <a href="#chave">chave da emergência</a> por quem já tem um caso em mãos. Cada número indicado tem fonte reunida no fim. Copia-se, fotocopia-se, lê-se em voz alta numa assembleia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="toc">
+  <div class="wrap" style="padding:0">
+    <ol>
+      <li><a href="#c1"><i>01</i>O estado do planeta, agora</a></li>
+      <li><a href="#c2"><i>02</i>Extrativismo: a lógica que nos trouxe aqui</a></li>
+      <li><a href="#c3"><i>03</i>Sistemas vivos e a sexta extinção</a></li>
+      <li><a href="#c4"><i>04</i>Pensar com quem já pensou isto</a></li>
+      <li><a href="#c5"><i>05</i>Decrescimento e regeneração</a></li>
+      <li><a href="#c6"><i>06</i>IA, big tech e o assalto à água</a></li>
+      <li><a href="#c7"><i>07</i>A COP30 e o Pacote de Belém</a></li>
+      <li><a href="#c8"><i>08</i>Três futuros ainda em disputa</a></li>
+      <li><a href="#chave"><i>09</i>Chave dicotómica da emergência</a></li>
+      <li><a href="#c10"><i>10</i>O poder está na associação</a></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="ch" id="c1">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 01</span><span class="mono" style="color:var(--ink-soft)">Diagnóstico</span></div>
+    <h2>O estado do planeta, agora</h2>
+    <div class="col">
+      <p class="lede drop">Isto não começa com um número. Começa com a terra: a mesma que sustentou o avô de cada um, a mesma cujas raízes atravessam uma oliveira no Alentejo e um carvalho na Serra da Estrela, unindo-os por baixo, onde ninguém vê. Não existe um "lá fora" de onde observar a crise com distância confortável. Respira-se o mesmo ar que aquece, e é dentro dele, não fora dele, que se planta, se repara, se resiste.</p>
+    </div>
+    <div class="figs">
+      <div class="fig"><span class="mono">Temperatura global</span><b>+1,47 °C</b><p>2025 foi o terceiro ano mais quente alguma vez registado, atrás de 2024 e 2023. Os últimos três anos foram, em conjunto, os primeiros a ultrapassar em média o limiar de 1,5 °C do Acordo de Paris.</p></div>
+      <div class="fig"><span class="mono">CO₂ atmosférico</span><b>432 ppm</b><p>Em maio de 2026 o Observatório de Mauna Loa registou o valor mensal mais alto de sempre. O CO₂ acumula-se hoje a um ritmo cerca de três vezes superior ao dos anos 1960.</p></div>
+      <div class="fig"><span class="mono">Calor extremo</span><b>50%</b><p>Metade da superfície terrestre registou em 2025 mais dias de calor extremo do que a média histórica, uma condição que mata.</p></div>
+      <div class="fig"><span class="mono">Oceanos</span><b>+92%</b><p>A maior parte do calor extra retido no sistema terrestre é absorvida pelos oceanos. Ao aquecerem, absorvem cada vez menos CO₂: a solubilidade do gás diminui com o calor.</p></div>
+    </div>
+    <div class="col">
+      <p>Ondas de calor percorreram a Europa, a Ásia, a América do Norte, não ao mesmo tempo, mas como se fossem o mesmo acontecimento a repetir-se em sotaques diferentes. Incêndios devoraram território em Espanha, no Canadá, no sul da Califórnia, devolvendo à atmosfera o carbono que traz mais calor, e mais calor traz mais fogo. Um ciclo que se alimenta a si próprio não precisa de vilão à porta: já está instalado, e alimenta-se a cada dia que se adia a resposta. As florestas e os solos, castigados pela seca, vão perdendo a capacidade de ajudar a respirar. Quanto mais se aquece o planeta, menos ele consegue travar o aquecimento seguinte. A Terra, também ela, fica sem fôlego.</p>
+      <p>Nada disto fica a flutuar em gráficos. Desce até ao preço do tomate no supermercado, ao seguro que sobe sem aviso, à prestação da casa, a quem é obrigado a deixar a sua terra e a quem a câmara decide, ou não, indemnizar. Há coisas demasiado grandes para caber num só olhar: ninguém as vê inteiras, sente-se sempre apenas uma fatia, e essa fatia chega, mais cedo ou mais tarde, às compras da semana.</p>
+    </div>
+
+    <figure class="photo" data-file="livro-01-planeta.jpg">
+      <div class="ph"><span>Fotografia 01, Calor, seca ou fogo no território, imagem do presente que já habitamos<br>ficheiro: img/livro-01-planeta.jpg</span></div>
+      <figcaption><span>Calor, seca ou fogo no território, imagem do presente que já habitamos</span></figcaption>
+    </figure>
+    <div class="pull"><p>Não estamos a ver isto de fora. Estamos dentro, e é aqui dentro que se age.</p></div>
+  </div>
+</section>
+
+<section class="ch" id="c2">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 02</span><span class="mono" style="color:var(--ink-soft)">Causa estrutural</span></div>
+    <h2>Extrativismo: a lógica que nos trouxe aqui</h2>
+    <div class="col">
+      <p class="lede drop">Chame-se-lhe pelo nome certo. A crise do clima não caiu do céu, nem foi um erro coletivo distribuído por igual entre todos. Nasceu de um modelo que, há séculos, decidiu que a terra, a água e o trabalho das pessoas eram matéria-prima a esgotar, e não vida a partilhar.</p>
+      <p>A extração em grande escala nasceu com a colonização. Impérios europeus construíram economias inteiras à volta da prata, do açúcar, do algodão, da borracha e do trabalho escravizado, e usaram a riqueza de continentes inteiros para financiar fábricas noutros. A Revolução Industrial não mudou a regra, apenas trocou de fornecedor: ouro e especiarias por carvão e petróleo. Mantém-se a mesma divisão entre quem extrai e quem paga a conta; muda apenas a forma como se apresenta.</p>
+      <h3>Responsabilidades concretas, não culpas difusas</h3>
+      <p>O <em>Carbon Majors Report</em>, do investigador Richard Heede, mostra que apenas cem produtores de combustíveis fósseis e cimento estão ligados a mais de 70% das emissões industriais de gases com efeito de estufa desde 1988. O que isto significa é que não foi a humanidade inteira, num assomo coletivo de descuido, que trouxe o mundo até aqui. Foi um punhado de empresas e Estados que conheciam o risco desde os anos 1970 e 1980, pelos relatórios dos seus próprios cientistas, e que escolheram financiar campanhas de dúvida em vez de mudar de rumo.</p>
+    </div>
+    <div class="figs">
+      <div class="fig"><span class="mono">Um facto, não uma opinião</span><b>100</b><p>Empresas ligadas a mais de 70% das emissões industriais globais de gases com efeito de estufa desde 1988.</p></div>
+      <div class="fig"><span class="mono">Sabiam</span><b>1970s</b><p>Década em que relatórios internos da própria indústria fóssil descreviam o aquecimento que hoje medimos.</p></div>
+    </div>
+    <div class="col">
+      <h3>A ideia de "recurso ilimitado" é uma escolha política</h3>
+      <p>Durante milénios, muitas sociedades trataram bosques, águas e solos como bens de todos, com regras e limites passados de geração em geração. Aqui chamávamos-lhes baldios. A ideia de que a natureza é uma reserva sem fundo, pronta a ser gasta, não vem escrita em nenhum gene nosso. Vem de uma história concreta, muitas vezes imposta à força, e ainda hoje é defendida sobretudo por quem lucra com ela.</p>
+    <figure class="photo" data-file="livro-02-extrativismo.jpg">
+      <div class="ph"><span>Fotografia 02, Extração no terreno: mina, pedreira, corte ou vedação<br>ficheiro: img/livro-02-extrativismo.jpg</span></div>
+      <figcaption><span>Extração no terreno: mina, pedreira, corte ou vedação</span></figcaption>
+    </figure>
+    </div>
+    <div class="col">
+      <p>Sair deste modelo não é trocar uma fonte de energia por outra, mantendo tudo na mesma com painéis solares em vez de chaminés. É deixar de crescer sem fim num planeta que tem fim, e isso vale também quando a extração se apresenta pintada de verde: uma mega-central solar dentro da Rede Natura, uma mina de lítio anunciada como parte "da transição", uma pedreira que dá emprego a doze pessoas e retira água a trezentas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="c3">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 03</span><span class="mono" style="color:var(--ink-soft)">Biodiversidade</span></div>
+    <h2>Sistemas vivos e a sexta extinção</h2>
+    <div class="col">
+      <p class="lede drop">Enquanto vamos contando graus, há uma segunda perda a acontecer ao lado, com muito menos atenção: a vida selvagem a esvaziar-se. Muitos cientistas já lhe chamam pelo nome que lhe cabe, a sexta extinção em massa da história da Terra.</p>
+    </div>
+    <div class="figs">
+      <div class="fig"><span class="mono">Relatório Planeta Vivo 2024 (WWF)</span><b>73%</b><p>Queda média na abundância das populações de vertebrados selvagens monitorizadas entre 1970 e 2020. O que mais preocupa a comunidade científica não é a extinção total de espécies: é o colapso do número de indivíduos, que fragiliza redes ecológicas inteiras antes de qualquer espécie desaparecer oficialmente.</p></div>
+      <div class="fig"><span class="mono">Ritmo</span><b>100–1000×</b><p>Estimativas publicadas entre 2024 e 2025 colocam a taxa atual de extinção entre cem e mil vezes acima do ritmo considerado natural pelo registo fóssil.</p></div>
+      <div class="fig"><span class="mono">IPBES</span><b>1 milhão</b><p>Espécies em risco de perda até ao final do século, caso as tendências atuais não sejam revertidas.</p></div>
+    </div>
+    <div class="nb">
+      <p class="mono" style="margin:0 0 8px">Honestidade científica</p>
+      <p style="margin:0">Há cientistas que contestam a expressão "extinção em massa" no sentido geológico estrito, por as taxas atuais ainda não atingirem a escala das cinco grandes extinções do passado. O que ninguém contesta é o colapso de abundância: documentado, mensurável e em curso.</p>
+    </div>
+    <div class="col">
+      <p>Destruição de habitat pela desflorestação e pela agricultura industrial, pesca a mais, comércio ilegal de animais, poluição química, o próprio aquecimento. Tudo isto ao mesmo tempo, e nenhum sistema vivo aguenta uma pressão destas para sempre. As causas não são nenhum mistério por decifrar. O que existe é resistência a travá-las, porque travá-las mexe com o dinheiro de quem lucra.</p>
+      <p>Ver o clima como parte do mesmo corpo vivo muda a forma de julgar as soluções. Não chega limpar as emissões de uma central se ao mesmo tempo se corta floresta, se gasta o solo e se esvazia o mar. Ou se trata tudo em conjunto, ou o que se está a fazer é só mudar o problema de sítio, e ele volta, disfarçado de solução.</p>
+    </div>
+
+    <figure class="photo" data-file="livro-03-teia.jpg">
+      <div class="ph"><span>Fotografia 03, Vida no lugar que se defende: floresta, dunas, rio, montado<br>ficheiro: img/livro-03-teia.jpg</span></div>
+      <figcaption><span>Vida no lugar que se defende: floresta, dunas, rio, montado</span></figcaption>
+    </figure>
+    <div class="pull"><p>Estamos dentro da teia, não à frente dela.</p></div>
+  </div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 04</span><span class="mono" style="color:var(--ink-soft)">Pensamento</span></div>
+    <h2>Pensar com quem já pensou isto</h2>
+    <div class="col">
+      <p class="lede">Os dados dizem o que está a acontecer, mas não dizem como viver com isso. Para essa parte há trabalho feito, e reconhecido pela academia, sobre clima, bens comuns, economia e as histórias que contamos sobre a Terra.</p>
+    </div>
+    <div class="voices">
+      <div class="voice"><h4>Emanuele Coccia</h4><span class="mono">Filosofia · EHESS, Paris</span><p>Em <em>A Vida das Plantas</em> e <em>Metamorfoses</em> mostra que respirar já é misturar-se. O ar não é um cenário à nossa volta, é o mesmo corpo que todos os vivos partilham. Não há "ambiente" separado de nós, há mergulho. Toda a vida da Terra é a continuação de uma só vida, que vai mudando de forma.</p></div>
+      <div class="voice"><h4>Timothy Morton</h4><span class="mono">Teoria ecológica · Rice University</span><p>Chamou "hiperobjetos" às coisas que nos ultrapassam em tamanho e em duração: o clima, o plástico, a radioatividade. Estamos dentro delas, e por isso a ideia de "salvar o planeta" visto de fora não funciona. A ecologia começa quando deixamos de esperar consolo.</p></div>
+      <div class="voice"><h4>Robin Wall Kimmerer</h4><span class="mono">Botânica · nação Potawatomi</span><p>Em <em>Braiding Sweetgrass</em> junta botânica e conhecimento indígena: o que recebemos da terra pede algo de volta. Não é stock, é troca. Agradecer, aqui, é uma forma de política.</p></div>
+      <div class="voice"><h4>Donna Haraway</h4><span class="mono">Feminismo e ciência · UC Santa Cruz</span><p><em>Staying with the Trouble</em>: ficar com o problema em vez de fugir para a fé na tecnologia ou para o gozo do fim. Fazer família fora do sangue e fora da espécie, porque ninguém se salva sozinho.</p></div>
+      <div class="voice"><h4>Anna Lowenhaupt Tsing</h4><span class="mono">Antropologia · UC Santa Cruz</span><p><em>O Cogumelo no Fim do Mundo</em> segue um cogumelo em florestas destruídas para mostrar como a vida, e também a economia, se refazem nas ruínas, em arranjos frágeis e coletivos.</p></div>
+      <div class="voice"><h4>Elinor Ostrom</h4><span class="mono">Prémio Nobel de Economia 2009</span><p>Provou, com décadas de trabalho de campo, que grupos organizados geram melhor a água, o pasto e a pesca do que o mercado ou um Estado distante, desde que tenham regras próprias e poder real de decidir. É a base científica da autonomia local.</p></div>
+      <div class="voice"><h4>Vandana Shiva</h4><span class="mono">Física e ativista · Índia</span><p>Defende há décadas que comer com autonomia e proteger a diversidade são a base da justiça climática, contra a monocultura e a dependência de químicos. A semente como bem comum, não como patente.</p></div>
+      <div class="voice"><h4>Wangari Maathai</h4><span class="mono">Prémio Nobel da Paz 2004</span><p>O Movimento Cinturão Verde plantou dezenas de milhões de árvores em África, juntando reflorestação, direitos das mulheres e participação política. Árvores e liberdade no mesmo gesto.</p></div>
+      <div class="voice"><h4>Donella Meadows</h4><span class="mono">Ciência de sistemas · MIT</span><p>Coautora de <em>Limites do Crescimento</em> (1972). Mostrou com modelos que o crescimento material não pode continuar para sempre num planeta com fim. Meio século depois, os dados seguem a curva que descreveu.</p></div>
+      <div class="voice"><h4>Kate Raworth</h4><span class="mono">Economia · Oxford e Amsterdão</span><p>A Economia do Donut: um espaço seguro entre um mínimo social e um limite ecológico. Uma economia que troca a pergunta "quanto cresce?" pela pergunta "quem fica de fora?".</p></div>
+      <div class="voice"><h4>Jason Hickel</h4><span class="mono">Economia ecológica · ICTA-UAB</span><p>Reúne a evidência de que separar crescimento do PIB e uso de recursos não está a acontecer à escala nem à velocidade necessárias, e propõe reduzir o consumo material nos países ricos de forma planeada, com redistribuição.</p></div>
+      <div class="voice"><h4>Naomi Klein</h4><span class="mono">Jornalismo e investigação · UBC</span><p>Documentou como o choque e a catástrofe servem para avançar privatizações, e porque é que o clima é, antes de tudo, uma disputa sobre poder e propriedade.</p></div>
+      <div class="voice"><h4>Ailton Krenak</h4><span class="mono">Pensamento indígena · Academia Brasileira de Letras</span><p><em>Ideias para Adiar o Fim do Mundo</em>: para muitos povos o fim do mundo já aconteceu, mais de uma vez. Adiar o fim é contar outras histórias e recusar a ideia de humanidade que se separou da Terra.</p></div>
+      <div class="voice"><h4>Bruno Latour</h4><span class="mono">Sociologia da ciência · Prémio Holberg</span><p>Perguntou onde é que aterramos: de que território dependemos para viver e quem o está a tornar inabitável. A política do ambiente começa nessa descrição concreta.</p></div>
+      <div class="voice"><h4>Joanna Macy</h4><span class="mono">Ecologia profunda e budismo</span><p>O Trabalho que Reconecta ajuda grupos a atravessar o luto pelo que se perde sem ficarem parados, passando da dor para o que se faz em conjunto. Sem esta parte, poucas lutas duram dez anos.</p></div>
+      <div class="voice"><h4>Ecofeminismo</h4><span class="mono">Maria Mies, Ariel Salleh, Silvia Federici</span><p>Mostraram que explorar a natureza e não pagar o trabalho de cuidar, feito sobretudo por mulheres, são a mesma conta. Não há mudança ecológica sem repartir o cuidado.</p></div>
+    </div>
+    <div class="col">
+      <p style="margin-top:30px">Pode parecer estranho reunir catorze vozes tão diferentes num só espaço: uma bióloga, uma filósofa francesa, um economista distinguido com o Nobel, uma antropóloga que segue cogumelos por florestas destruídas. E, no entanto, é exatamente por não concordarem em quase nada que vale a pena ouvi-las em conjunto. Há apenas um ponto onde tropeçam umas nas outras, sem se terem combinado: nenhuma acredita que se sai desta crise apenas com mais tecnologia, dentro da mesma economia de sempre. E todas, à sua maneira, dizem a mesma coisa: a vida não é uma posse. É algo de que se faz parte.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="c5">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 05</span><span class="mono" style="color:var(--ink-soft)">Alternativa</span></div>
+    <h2>Decrescimento e regeneração</h2>
+    <div class="col">
+      <p class="lede drop">Se não é possível crescer sem fim num planeta que tem fim, a pergunta que se impõe é simples, mesmo que a resposta incomode: o que fica no lugar desse crescimento? Uma das propostas mais discutidas hoje, entre economistas e movimentos de rua, chama-se decrescimento, e já inquieta antes mesmo de ser explicada.</p>
+      <p>Decrescimento não é pobreza planeada, ainda que o nome inquiete. É reduzir de forma justa o consumo de materiais e de energia nos países mais ricos, repartir melhor o que já existe, e substituir a régua com que se mede o que vale a pena: saúde, tempo, vizinhança e água limpa, em vez do Produto Interno Bruto, que nada diz sobre se uma vida corre bem.</p>
+    </div>
+    <table>
+      <thead><tr><th>Modelo extrativista dominante</th><th>Proposta regenerativa</th></tr></thead>
+      <tbody>
+        <tr><td>Crescimento do PIB como medida de sucesso</td><td>Bem-estar coletivo e limites ecológicos como bússola</td></tr>
+        <tr><td>Obsolescência programada e consumo acelerado</td><td>Durabilidade, reparação e economia circular</td></tr>
+        <tr><td>Propriedade privada e acumulação individual</td><td>Bens comuns e gestão partilhada de recursos</td></tr>
+        <tr><td>Hierarquia entre humanos e natureza</td><td>Reciprocidade e interdependência com os ecossistemas</td></tr>
+        <tr><td>Decisão tomada longe, por quem não vive no lugar</td><td>Decisão de quem lá vive, com informação e poder</td></tr>
+      </tbody>
+    </table>
+    <div class="col">
+      <h3>Reparar, não só travar o pior</h3>
+      <p>Sustentabilidade, no melhor dos casos, é não piorar mais depressa. Há práticas que vão mais longe e devolvem solo, água e vida ao território: rotação e pousio, pastoreio bem feito, sebes e árvores nas parcelas, compostagem, recuperação de linhas de água, reparar e reutilizar em vez de comprar outra vez. Nada disto é novidade, é conhecimento antigo, só que agora medido com instrumentos que confirmam o que já se sabia.</p>
+    </div>
+
+    <figure class="photo" data-file="livro-04-regeneracao.jpg">
+      <div class="ph"><span>Fotografia 04, Prática regenerativa: horta comunitária, cooperativa, reparação, assembleia<br>ficheiro: img/livro-04-regeneracao.jpg</span></div>
+      <figcaption><span>Prática regenerativa: horta comunitária, cooperativa, reparação, assembleia</span></figcaption>
+    </figure>
+    <div class="nb">
+      <p class="mono" style="margin:0 0 8px">Uma proposta em disputa</p>
+      <p style="margin:0">O decrescimento é uma das propostas em debate, não a única, e não há consenso entre economistas. Outras defendem que a inovação e a eficiência conseguem separar crescimento e impacto ambiental. Até hoje, os dados que mostrariam essa separação a nível global continuam poucos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="c6">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 06</span><span class="mono" style="color:var(--ink-soft)">Nova frente</span></div>
+    <h2>IA, big tech e o assalto à água e à democracia</h2>
+    <div class="col">
+      <p class="lede drop">Há uma frente de extração nova, e esta nem sequer se esconde: cada resposta escrita por um chatbot tem um custo físico, em água, eletricidade e terreno. Essa conta paga-se sempre nalgum lugar, e esse lugar tem nome: aquíferos, linhas de alta tensão, faturas de eletricidade de quem mora ao lado da máquina.</p>
+    </div>
+    <div class="figs">
+      <div class="fig"><span class="mono">Água · EUA, 2025</span><b>1 bilião L</b><p>Litros consumidos apenas pelos data centers norte-americanos, volume comparável à procura anual de toda a cidade de Nova Iorque.</p></div>
+      <div class="fig"><span class="mono">Treino de um modelo</span><b>215</b><p>Campos de futebol de área equivalente ocupada, e cerca de mil milhões de litros de água, segundo estimativa de 2026 do Instituto de Água, Ambiente e Saúde da Universidade das Nações Unidas.</p></div>
+      <div class="fig"><span class="mono">Eletricidade · 2025</span><b>448 TWh</b><p>Consumo dos data centers a nível global, em crescimento a cada geração de processadores.</p></div>
+      <div class="fig"><span class="mono">Irlanda</span><b>20%</b><p>Parte de toda a eletricidade do país já consumida por data centers.</p></div>
+    </div>
+    <div class="col">
+      <p>No Chile há aquíferos a caminho do esgotamento. No México e nos Estados Unidos, moradores enfrentaram novos centros de dados em zonas onde a água já escasseava, e ganharam alguns desses braços de ferro. Em Portugal a mesma lógica veste outra roupa: mega-centrais solares dentro da Rede Natura, minas de lítio ao lado de aldeias, centrais de biometano a poucas centenas de metros das casas.</p>
+      <h3>Poder concentrado, democracia sob pressão</h3>
+      <p>A água e a energia são só metade da conta. A outra metade é política, e essa não aparece na fatura. Sete das maiores empresas de tecnologia e inteligência artificial gastaram cerca de 50 milhões de dólares a fazer pressão junto do poder federal norte-americano só nos primeiros nove meses de 2025, quase 400 mil dólares por cada dia de sessão do Congresso, segundo a organização Issue One. Ao mesmo tempo, comités financiados por essas mesmas empresas entraram direto nas campanhas eleitorais.</p>
+      <ul class="plain">
+        <li>As redes por onde passam a comunicação, a busca e a informação estão nas mãos de muito poucas empresas privadas.</li>
+        <li>Ninguém fora dessas empresas sabe que regras decidem o que milhões de pessoas veem, e o que não chegam a ver.</li>
+        <li>Dinheiro dessas empresas entra diretamente em eleições, em vários países democráticos.</li>
+      </ul>
+    <figure class="photo" data-file="livro-05-infraestrutura.jpg">
+      <div class="ph"><span>Fotografia 05, Infraestrutura: linha de muito alta tensão, central, data center, mega-solar<br>ficheiro: img/livro-05-infraestrutura.jpg</span></div>
+      <figcaption><span>Infraestrutura: linha de muito alta tensão, central, data center, mega-solar</span></figcaption>
+    </figure>
+    </div>
+    <div class="col">
+      <p>Isto não é uma recusa da tecnologia, nunca foi. É a recusa de que a conta continue escondida do lado de fora do ecrã. Quem retirou minérios das colónias e queimou petróleo sem nunca contabilizar o dano retira hoje água de aquíferos frágeis e capacidade de decidir das populações, sem pedir licença nem prestar contas, com o mesmo rosto de sempre.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="c7">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 07</span><span class="mono" style="color:var(--ink-soft)">Negociação global</span></div>
+    <h2>A COP30 e o Pacote de Belém</h2>
+    <div class="col">
+      <p class="lede drop">Em novembro de 2025, a Conferência do Clima da ONU foi pela primeira vez até à Amazónia, para Belém, no Pará. Não foi acaso. Foi levar a mesa de negociação para dentro de uma das florestas que mais decidem, sozinha, o clima do planeta inteiro.</p>
+      <p>Ao fim de duas semanas, 195 países chegaram a consenso e aprovaram o Pacote de Belém, 29 decisões, no décimo aniversário do Acordo de Paris. Entre os compromissos:</p>
+      <ul class="plain g">
+        <li>Mobilizar 1,3 biliões de dólares por ano até 2035 para financiamento climático global.</li>
+        <li>Triplicar o financiamento para adaptação às alterações climáticas até 2035.</li>
+        <li>Criar o Mecanismo de Belém para uma Transição Justa, com as pessoas e a repartição de custos no centro.</li>
+        <li>Lançar o Acelerador Global de Implementação e a Missão Belém para 1,5 °C.</li>
+        <li>Definir 59 indicadores voluntários para medir o progresso da Meta Global de Adaptação.</li>
+      </ul>
+    </div>
+    <div class="nb">
+      <p class="mono" style="margin:0 0 8px">O que ficou de fora, e não por acaso</p>
+      <p style="margin:0">O texto final não trouxe nenhum compromisso obrigatório de abandono dos combustíveis fósseis. Foi o ponto mais disputado: dezenas de países defenderam-no, países produtores travaram-no, e a indústria do petróleo esteve nas negociações com delegações próprias. O secretário-geral da ONU, António Guterres, admitiu que a distância entre onde estamos e o que a ciência pede continua demasiado grande.</p>
+    </div>
+    <div class="col">
+      <p>O presidente da COP30, André Corrêa do Lago, disse que Belém não deveria ficar na memória como o fim de uma conferência, mas como o início de uma década de viragem. Fora da sala de negociações, porém, o gelo continua a derreter ao seu próprio ritmo, um ritmo que nenhuma cimeira, por si só, consegue alterar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="c8">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 08</span><span class="mono" style="color:var(--ink-soft)">Cenários</span></div>
+    <h2>Três futuros ainda em disputa</h2>
+    <div class="col">
+      <p class="lede drop">Nenhum futuro está encerrado. Mas nem todos permanecem igualmente abertos: cada ano que passa sem cortes profundos fecha uma porta no corredor, não todas de uma vez, mas uma a uma.</p>
+    </div>
+    <div class="figs">
+      <div class="fig"><span class="mono">Se nada mudar</span><b>2,7–3,1 °C</b><p>Aquecimento até ao fim do século mantendo as políticas atuais: eventos extremos generalizados, deslocação em massa de populações costeiras, colapso de ecossistemas inteiros.</p></div>
+      <div class="fig"><span class="mono">Se cumprirmos o prometido</span><b>2,3–2,5 °C</b><p>Compromissos nacionais totalmente implementados. Muito acima do limite de segurança, mas significativamente melhor do que a inação.</p></div>
+      <div class="fig"><span class="mono">O caminho estreito</span><b>~1,5 °C</b><p>Exige cortes profundos e rápidos já nesta década, com regeneração massiva de ecossistemas capazes de voltar a absorver carbono. A ultrapassagem temporária deste limiar é já considerada muito provável: a questão passou a ser por quanto tempo, e com que intensidade, ficamos acima dele.</p></div>
+    </div>
+    <div class="col">
+      <p>A diferença entre estes três números não é destino, é o resultado de decisões que ainda vão ser tomadas, ou adiadas, em governos, em empresas, em assembleias de freguesia. Prever uma extinção não é aceitá-la. Só quer dizer que o prazo encurtou, e que cada decisão tomada aqui perto pesa agora mais do que pesava.</p>
+    </div>
+
+    <figure class="photo" data-file="livro-06-manifestacao.jpg">
+      <div class="ph"><span>Fotografia 06, Manifestação, vigília ou caminhada, as pessoas que decidiram não deixar passar<br>ficheiro: img/livro-06-manifestacao.jpg</span></div>
+      <figcaption><span>Manifestação, vigília ou caminhada, as pessoas que decidiram não deixar passar</span></figcaption>
+    </figure>
+    <div class="pull"><p>A atmosfera não negoceia. A política negoceia, e é aí que entramos.</p></div>
+  </div>
+</section>
+
+<section class="key" id="chave">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum" style="border-color:var(--cream)">Capítulo 09</span><span class="mono" style="color:var(--green-bright-text)">Ferramenta</span></div>
+    <h2>Chave dicotómica da emergência</h2>
+    <p class="lede">Funciona como as chaves de identificação usadas em biologia: a cada passo, duas opções. Responde-se ao que se passa junto de casa, e chega-se ao caminho adequado ao caso em mãos, com os meios que existem em Portugal.</p>
+    <div class="keybox">
+      <div class="keystep" id="keystep"></div>
+      <div class="keyres" id="keyres" style="display:none"></div>
+    </div>
+    <div class="keynav">
+      <button id="kback">← Passo anterior</button>
+      <button id="kreset">Começar de novo</button>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="c10">
+  <div class="wrap">
+    <div class="chhead"><span class="chnum">Capítulo 10</span><span class="mono" style="color:var(--ink-soft)">Ação</span></div>
+    <h2>O poder está na associação</h2>
+    <div class="col">
+      <p class="lede drop">Diante de números destes é normal sentir que não há nada a fazer, sozinho. E não há mesmo, sozinho. Isto não se decide entre a pessoa e o sistema, como se fossem dois lados de uma mesa. Precisamos dos dois, em círculos que se vão abrindo um a seguir ao outro, sabendo que o círculo de fora pesa sempre mais do que o de dentro.</p>
+    </div>
+    <div class="circles">
+      <div class="circle"><div class="n">01</div><h3 style="margin:10px 0 8px;font-size:26px">Círculo pessoal</h3>
+        <ul class="plain"><li>Gastar menos materiais e menos energia onde der, sem culpa e sem perfeição, e sem que isso sirva de desculpa para deixar o resto para depois.</li><li>Aprender a ler os números e partilhar o que está verificado, contra quem nega e contra quem só espalha desespero.</li><li>Voltar aos ciclos do ano: horta, tempo no campo, atenção às estações. É o que segura as pessoas numa luta que dura anos.</li></ul></div>
+      <div class="circle"><div class="n">02</div><h3 style="margin:10px 0 8px;font-size:26px">Círculo comunitário</h3>
+        <ul class="plain g"><li>Entrar em cooperativas de energia, hortas coletivas, grupos de compra, oficinas de reparação.</li><li>Ir às assembleias e às consultas sobre uso do solo, transportes e espaços verdes. São públicas.</li><li>Montar redes de ajuda entre vizinhos, que é o que funciona quando chega o fogo ou a cheia.</li><li>Constituir associação: uma associação pode pedir documentos, apresentar queixas e ir a tribunal. Um grupo informal não pode.</li></ul></div>
+      <div class="circle"><div class="n">03</div><h3 style="margin:10px 0 8px;font-size:26px">Círculo sistémico</h3>
+        <ul class="plain"><li>Usar o voto e a participação para exigir uma transição justa e o fim efetivo dos fósseis, sem contar com a boa vontade de quem ganha dinheiro com eles.</li><li>Apoiar quem trabalha o ambiente junto com as condições de vida e a igualdade, porque isto não cai igual em cima de todos.</li><li>Exigir regras obrigatórias sobre a água, a energia e as contas dos data centers e da inteligência artificial.</li><li>Responsabilizar quem mais emite, em vez de passar para cada um de nós um peso que é do sistema.</li></ul></div>
+    </div>
+
+    <figure class="photo" data-file="livro-07-assembleia.jpg">
+      <div class="ph"><span>Fotografia 07, Assembleia, reunião de vizinhos ou entrega de petição<br>ficheiro: img/livro-07-assembleia.jpg</span></div>
+      <figcaption><span>Assembleia, reunião de vizinhos ou entrega de petição</span></figcaption>
+    </figure>
+    <div class="pull"><p>A esperança não é a convicção de que algo vai correr bem, mas a certeza de que algo faz sentido.</p><cite class="mono">Václav Havel</cite></div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <p class="mono" style="color:var(--cream);opacity:.85">Convite</p>
+    <h2>O ar que nos rodeia</h2>
+    <p>Isto não se resolve com um herói, nem com a figura do consumidor perfeito, figura que nunca existiu, e que serve sobretudo para manter a atenção fixa no saco do lixo em vez de em quem decide. Resolve-se com muita gente ligada entre si, com as mãos na terra, a dizer em voz alta quem extrai, quem lucra, quem paga, e a decidir em conjunto como se quer viver neste lugar.</p>
+    <p>É para isso que serve reunir as causas num só lugar: para que nenhuma fique só, como se pertencesse apenas a quem a vive, quando na verdade pertence a todos, ao mesmo tempo. Para que se saiba, hoje, qual o próximo passo a dar.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+      <a class="btn" href="index.html#mapa">Ver o mapa</a>
+      <a class="btn" href="#chave">Usar a chave da emergência</a>
+    </div>
+  </div>
+</section>
+
+<section class="sources" id="fontes">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft)">Verificação</p>
+    <h2 style="font-size:clamp(30px,4vw,58px);margin-bottom:22px">Fontes</h2>
+    <ol>
+      <li>Organização Meteorológica Mundial (OMM/WMO), boletins sobre gases com efeito de estufa e estado do clima global, 2024–2026.</li>
+      <li>NOAA / Observatório de Mauna Loa, série de concentração de CO₂ desde 1958.</li>
+      <li>Copernicus Climate Change Service, anos mais quentes registados.</li>
+      <li>WWF, <em>Relatório Planeta Vivo 2024</em>, Índice Planeta Vivo, 1970–2020.</li>
+      <li>IPBES, avaliações globais sobre biodiversidade e serviços dos ecossistemas.</li>
+      <li>Richard Heede / InfluenceMap, <em>Carbon Majors Report</em>, emissões atribuídas a produtores desde 1988.</li>
+      <li>Universidade das Nações Unidas, Instituto de Água, Ambiente e Saúde (UNU-INWEH), consumo de água e energia de data centers e de treino de modelos de IA, 2026.</li>
+      <li>Issue One, despesas de lobbying das grandes tecnológicas nos EUA, 2025.</li>
+      <li>UNFCCC, decisões da COP30 e Pacote de Belém, novembro de 2025.</li>
+      <li>Climate Action Tracker, projeções de aquecimento por nível de ambição política.</li>
+      <li>Emanuele Coccia, <em>A Vida das Plantas</em> (2016) e <em>Metamorfoses</em> (2020).</li>
+      <li>Timothy Morton, <em>Hyperobjects</em> (2013) e <em>Dark Ecology</em> (2016).</li>
+      <li>Robin Wall Kimmerer, <em>Braiding Sweetgrass</em> (2013).</li>
+      <li>Donna Haraway, <em>Staying with the Trouble</em> (2016).</li>
+      <li>Anna Lowenhaupt Tsing, <em>The Mushroom at the End of the World</em> (2015).</li>
+      <li>Elinor Ostrom, <em>Governing the Commons</em> (1990), Prémio Nobel de Economia 2009.</li>
+      <li>Donella Meadows et al., <em>Limites do Crescimento</em> (1972).</li>
+      <li>Kate Raworth, <em>Doughnut Economics</em> (2017).</li>
+      <li>Jason Hickel, <em>Less is More</em> (2020) e artigos sobre desacoplamento.</li>
+      <li>Naomi Klein, <em>This Changes Everything</em> (2014).</li>
+      <li>Ailton Krenak, <em>Ideias para Adiar o Fim do Mundo</em> (2019).</li>
+      <li>Bruno Latour, <em>Onde Aterrar?</em> (2017).</li>
+      <li>Joanna Macy e Molly Brown, <em>Coming Back to Life</em>.</li>
+      <li>Maria Mies e Vandana Shiva, <em>Ecofeminism</em> (1993); Ariel Salleh, <em>Ecofeminism as Politics</em> (1997); Silvia Federici, <em>Caliban and the Witch</em> (2004).</li>
+      <li>Wangari Maathai, <em>Unbowed</em> (2006), Prémio Nobel da Paz 2004.</li>
+      <li>Casos documentados em Portugal Continental, Madeira e Açores: <a href="index.html#mapa">o mapa deste site</a>.</li>
+    </ol>
+    <p class="mono" style="color:var(--ink-soft);margin-top:20px">Cada número desta edição vem de instituições científicas, relatórios públicos ou obras revistas pela academia. Onde a ciência ainda discute, fica dito no texto.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <span class="disp" style="font-size:34px;display:block"><span style="color:var(--red)">Causas</span><span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span>
+        <p class="claim">Pela terra, pela água, pelas florestas, por nós!</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html#mapa">Casos</a></li>
+          <li><a href="index.html#mapa">Mapa</a></li>
+          <li><a href="alertar.html">Alertar</a></li>
+          <li><a href="index.html#como">Agir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">O projeto</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="arquivo.html">Arquivo</a></li>
+          <li><a href="mailto:geral@causasderaiz.org">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Emergência</h4>
+        <ul>
+          <li><a href="tel:808200520">SOS Ambiente: 808 200 520</a></li>
+          <li><a href="mailto:geral@apambiente.pt">APA</a></li>
+        </ul>
+      </div>
+    </div>
+    <blockquote class="saramago">
+      <p>“Quando Joana Carda riscou o chão com a vara de negrilho, todos os cães de Cerbère começaram a ladrar…”</p>
+      <cite>José Saramago, <em>A Jangada de Pedra</em></cite>
+    </blockquote>
+    <p class="copy mono">© 2026 Causas de Raiz · 2026 Ulmeiro · 2026 <a href="https://www.instagram.com/movementagainsthate/" target="_blank" rel="noopener">Movement Against Hate</a> · Cartografia © OpenStreetMap contributors</p>
+  </div>
+</footer>
+
+<script>
+const CHAVE={
+  start:{q:"O que tens em mãos é um evento a acontecer agora (incêndio, cheia, calor extremo, descarga) ou uma ameaça ao território?",
+    a:{t:"Um evento em curso, agora",go:"evento"},b:{t:"Uma ameaça ao território (obra, projeto, licença)",go:"ameaca"}},
+  evento:{q:"Há risco imediato para pessoas ou para a saúde pública?",
+    a:{t:"Sim, há risco imediato",go:"r_emergencia"},b:{t:"Não, o risco imediato passou",go:"r_pos"}},
+  ameaca:{q:"A intervenção já está no terreno, ou ainda é um projeto no papel?",
+    a:{t:"Já está no terreno: máquinas, cortes, vedações",go:"terreno"},b:{t:"Ainda é projeto, plano ou pedido de licença",go:"papel"}},
+  terreno:{q:"Consegues confirmar que a obra tem licença e avaliação ambiental?",
+    a:{t:"Não consigo confirmar, ou parece ilegal",go:"r_ilegal"},b:{t:"Sim, está licenciada",go:"r_licenciada"}},
+  papel:{q:"Existe consulta pública aberta, com prazo a correr?",
+    a:{t:"Sim, há prazo a correr",go:"r_consulta"},b:{t:"Não, ou já terminou",go:"grupo"}},
+  grupo:{q:"Já existe um grupo, comissão ou associação local a acompanhar isto?",
+    a:{t:"Sim, já existe gente organizada",go:"r_reforcar"},b:{t:"Não, ainda não há ninguém",go:"r_comecar"}},
+  r_emergencia:{titulo:"Emergência a decorrer, proteger primeiro",caminho:"Evento em curso, risco imediato",
+    passos:["Liga 112. Para fogo, poluição, descargas ou peixe morto no rio, liga também a Linha SOS Ambiente e Território: 808 200 520 (GNR/SEPNA).",
+      "Não te aproximes para filmar. Registo só em segurança: hora, local, direção do fumo ou da descarga, coordenadas do telemóvel.",
+      "Avisa a vizinhança: quem vive sozinho, quem é idoso, quem depende de eletricidade para equipamento médico, quem não tem carro.",
+      "Ponto de encontro e local com sombra, água ou abrigo, combinados por escrito num grupo que já exista (associação, junta, escola).",
+      "Guarda tudo o que registares. É prova para depois, e é o que dá força ao passo seguinte."],
+    nota:"Quando a emergência passar, volta a esta chave e escolhe a opção do risco já passado."},
+  r_pos:{titulo:"Depois do evento, transformar o dano em obrigação",caminho:"Evento em curso, risco já passado",
+    passos:["Junta tudo: fotografias com data, testemunhos, prejuízos, análises se existirem. Uma pasta partilhada por várias pessoas dura mais do que a memória de uma.",
+      "Pede à Câmara e à APA, por escrito, o que aconteceu e o que vai ser feito. Tens direito de acesso a documentos administrativos.",
+      "Leva o caso à Assembleia Municipal. É público, fica em ata e obriga a resposta.",
+      "Exige o que a lei já prevê: plano municipal de adaptação, faixas de gestão de combustível, plano de emergência revisto, fiscalização.",
+      "Deixa o registo público, para não cair no esquecimento. É isso que impede a repetição."],
+    nota:"Quando a mesma coisa acontece duas e três vezes no mesmo lugar, esse historico é o argumento mais forte que existe."},
+  r_ilegal:{titulo:"Suspeita de ilegalidade, prova e denúncia",caminho:"Ameaça, já no terreno, sem licença confirmada",
+    passos:["Fotografa e filma com data e coordenadas, sempre do mesmo ponto e em dias diferentes. Uma sequência prova mais do que uma imagem.",
+      "Denuncia ao SEPNA/GNR (808 200 520) e à APA por escrito. Pede o número de registo da queixa: sem número, não existe.",
+      "Pede à Câmara Municipal cópia do processo de licenciamento (direito de acesso a informação administrativa, prazo legal de resposta).",
+      "Vê em que zona está: PDM, Reserva Ecológica Nacional, Reserva Agrícola Nacional, Rede Natura 2000. É aqui que a maioria dos casos se decide.",
+      "Contacta uma associação com apoio técnico e jurídico (Quercus, LPN, ZERO, GEOTA, FAPAS) e põe o caso no mapa, para não ficar sozinho."],
+    nota:"Nunca acuses sem documento. A força está nas datas, nos números de registo e nas respostas que nunca chegaram."},
+  r_licenciada:{titulo:"Obra licenciada, atacar o processo",caminho:"Ameaça, já no terreno, licenciada",
+    passos:["Pede o Estudo de Impacto Ambiental e a Declaração de Impacto Ambiental. São públicos.",
+      "Procura as falhas habituais: impactos somados que não foram avaliados, participação pública mal feita, alterações ao projeto depois da aprovação, condições impostas e não cumpridas.",
+      "Compara com o que já foi decidido em projetos parecidos. Uma decisão anterior contra vale muito.",
+      "Procura apoio jurídico (LPN, ClientEarth e associações com experiência em tribunal). Uma associação constituída pode agir em juízo; um grupo informal não pode.",
+      "Ao mesmo tempo, imprensa local e regional. O incómodo público muda decisões que os pareceres já não mudam."],
+    nota:"Uma licença não é o fim da linha. É um ato administrativo, e atos administrativos podem ser contestados."},
+  r_consulta:{titulo:"Consulta pública aberta, a janela legal",caminho:"Ameaça no papel, prazo a correr",
+    passos:["Participa no portal Participa da APA (participa.apambiente.pt) ou na plataforma indicada no anúncio, antes do prazo.",
+      "Escreve com as tuas palavras. Cem cópias do mesmo formulário valem menos do que dez textos concretos: o teu poço, o teu caminho, o teu trabalho, o que ali vês todos os dias.",
+      "Pede por escrito uma sessão pública de esclarecimento no concelho. Muitas vezes acontece só porque alguém pediu.",
+      "Junta os vizinhos com o prazo à vista: cartaz no café, mensagem no grupo da aldeia, hora e link para participar.",
+      "Junta uma petição pública (peticaopublica.com ou Assembleia da República). A petição dá visibilidade, a consulta pública tem efeito legal. Fazem-se as duas."],
+    nota:"Prazo perdido é direito perdido. Marca a data hoje, no calendário de todos."},
+  r_reforcar:{titulo:"Já há gente, reforçar e constituir associação",caminho:"Ameaça sem prazo aberto, grupo já existente",
+    passos:["Constituir associação dá poder real: pedir documentos, apresentar queixas, receber apoios e estar em tribunal.",
+      "Divide as funções por escrito: documentos, imprensa, jurídico, terreno, redes sociais. A maioria destes processos acaba por cansaço, não por falta de razão.",
+      "Fala com quem já ganhou um caso parecido noutro concelho. Poupa anos de tentativa e erro.",
+      "Faz o teu próprio calendário: assembleias municipais, reuniões, datas do processo. Assim deixas de andar atrás do calendário de quem promove a obra.",
+      "Mantém a informação atualizada no mapa, com data de verificação. É assim que jornalistas e investigadores chegam a ti."],
+    nota:"Cuidar de quem está nisto faz parte do trabalho: revezar, reconhecer o desgaste, encontros que não sejam só reuniões."},
+  r_comecar:{titulo:"Ainda não há ninguém, os primeiros cinco passos",caminho:"Ameaça sem prazo aberto, sem grupo",
+    passos:["Fala com três vizinhos esta semana. Três pessoas já são um grupo. Uma pessoa é um caso individual, e um caso individual ignora-se.",
+      "Procura os documentos: PDM em vigor, projetos entregues à APA, concessões na DGEG, atas da Assembleia Municipal. Está quase tudo online.",
+      "Marca uma reunião num sítio que as pessoas conheçam, sociedade recreativa, café, salão da junta, com hora de início, tema e hora de fim.",
+      "Contacta uma associação nacional para apoio técnico e um jornalista local para a primeira notícia. A primeira notícia muda a escala do que é possível.",
+      "Põe a causa no mapa e abre petição. A partir daí, quem procurar por este território encontra-te."],
+    nota:"A maior parte dos casos ganhos começou assim: três pessoas e uma pasta de documentos."}
+};
+const hist=[];
+let atual="start";
+const el=id=>document.getElementById(id);
+function mostra(k){
+  const n=CHAVE[k];
+  if(n.q){
+    el("keyres").style.display="none";
+    el("keystep").innerHTML='<span class="mono" style="color:var(--green-bright-text)">Passo '+(hist.length+1)+'</span>'+
+      '<p class="keyq">'+n.q+'</p><div class="keyopts">'+
+      '<button class="keyopt" data-go="'+n.a.go+'">'+n.a.t+'</button>'+
+      '<button class="keyopt" data-go="'+n.b.go+'">'+n.b.t+'</button></div>';
+    el("keystep").querySelectorAll(".keyopt").forEach(b=>b.onclick=()=>{hist.push(atual);atual=b.dataset.go;mostra(atual);});
+  }else{
+    el("keystep").innerHTML='<span class="keypath">'+n.caminho+'</span>';
+    el("keyres").style.display="block";
+    el("keyres").innerHTML='<h3>'+n.titulo+'</h3><ol>'+n.passos.map(p=>'<li>'+p+'</li>').join("")+'</ol>'+
+      '<p style="margin-top:16px;opacity:.85"><b>Nota:</b> '+n.nota+'</p>'+
+      '<div class="tools"><a class="btn btn--green" href="index.html#mapa">Ver casos semelhantes no mapa</a>'+
+      '<a class="btn" href="mailto:geral@causasderaiz.org?subject=Novo%20caso%20para%20o%20mapa" style="background:transparent;color:var(--cream);border-color:var(--cream);box-shadow:5px 5px 0 rgba(251,246,234,.35)">Avisar do meu caso</a></div>';
+  }
+}
+document.querySelectorAll(".photo[data-file]").forEach(fig=>{
+  const src="img/"+fig.dataset.file, probe=new Image();
+  probe.onload=()=>{
+    const img=document.createElement("img");
+    img.src=src;img.alt=fig.querySelector("figcaption span").textContent;img.loading="lazy";
+    fig.querySelector(".ph").replaceWith(img);
+  };
+  probe.src=src;
+});
+el("kback").onclick=()=>{if(hist.length){atual=hist.pop();mostra(atual);}};
+el("kreset").onclick=()=>{hist.length=0;atual="start";mostra(atual);};
+mostra(atual);
+</script>
+</body>
+</html>

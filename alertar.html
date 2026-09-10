@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>A quem denunciar um problema ambiental em Portugal</title>
+<meta name="description" content="Responde a quatro perguntas e descobre que entidade tem capacidade para atuar no teu caso: emergências, fauna e flora, poluição, urbanismo ou acesso à costa.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:title" content="A quem denunciar um problema ambiental em Portugal">
+<meta property="og:description" content="Responde a quatro perguntas e descobre que entidade tem capacidade para atuar no teu caso: emergências, fauna e flora, poluição, urbanismo ou acesso à costa.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
+<meta property="og:url" content="https://causasderaiz.org/alertar.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
+  --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
+  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+h1,h2,h3,h4,.disp{font-family:"Londrina Solid",cursive;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(16px,3vw,44px)}
+.col{max-width:74ch}
+p{text-wrap:pretty}
+header.top{position:sticky;top:0;z-index:900;background:var(--red);border-bottom:3px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px;max-width:1560px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);border:0;text-decoration:none}
+.brand img{height:36px;width:auto;display:block}
+.brand .vbar{width:3px;height:26px;background:rgba(251,246,234,.55);flex:none}
+.brand .disp{font-size:30px;color:var(--cream)}
+header.top nav{margin-left:auto;display:flex;gap:20px;align-items:center}
+header.top nav a{color:var(--cream);border-bottom:2px solid transparent;font-weight:500;font-size:15px}
+header.top nav a:hover{border-bottom-color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:3px solid var(--line);background:var(--paper);padding:12px 18px;font-weight:700;box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s;color:var(--ink)}
+a.btn{border-bottom:3px solid var(--line)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.btn--sm{padding:8px 13px;box-shadow:3px 3px 0 var(--line);font-size:14px}
+.btn--green{background:var(--green-bright)}
+.btn--ink{background:var(--ink);color:var(--cream)}
+a.btn.btn--ink,a.btn.btn--ink:hover{color:var(--cream);border-bottom-color:var(--line)}
+.hero{padding:clamp(34px,4.4vw,64px) 0 clamp(22px,3vw,38px);border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+h1{font-size:clamp(42px,7.4vw,108px)}
+h1 span{color:var(--green-text)}
+.hero p.lede{font-size:clamp(17px,1.4vw,20px);max-width:60ch;color:var(--ink-soft)}
+section.band{padding:clamp(38px,5vw,80px) 0;border-bottom:3px solid var(--line)}
+section.band:nth-of-type(even){background:var(--paper)}
+h2{font-size:clamp(30px,4.4vw,64px)}
+h3{font-size:clamp(22px,2.3vw,32px);margin:30px 0 10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:28px}
+.card{border:3px solid var(--line);background:var(--paper);padding:20px;box-shadow:6px 6px 0 var(--line);display:flex;flex-direction:column;gap:10px}
+section.band:nth-of-type(even) .card{background:var(--cream)}
+.card h4{font-size:26px;text-transform:none;letter-spacing:0}
+.card p{margin:0;font-size:15px;color:var(--ink-soft)}
+.tag{align-self:flex-start;border:2px solid var(--line);padding:3px 8px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;background:var(--cream)}
+.tag.red{background:var(--red);color:var(--cream)}
+.tag.green{background:var(--green-bright)}
+ul.plain{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px;max-width:78ch}
+ul.plain li{display:grid;grid-template-columns:24px 1fr;gap:12px}
+ul.plain li::before{content:"";width:13px;height:13px;background:var(--red);border:3px solid var(--line);border-radius:50%;margin-top:6px}
+ul.plain.g li::before{background:var(--green-bright)}
+.nb{border:3px solid var(--line);background:var(--cream);padding:18px 20px;margin:26px 0}
+footer{padding:40px 0 60px;font-size:14px}
+.foot{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-end}
+.footnav{display:flex;flex-wrap:wrap;gap:18px}
+@media(max-width:1024px){header.top nav{gap:14px}}
+@media(max-width:760px){
+  header.top nav a{display:none}
+  header.top nav a.btn{display:inline-flex}
+  header.top .wrap{height:58px}
+  .brand .disp{font-size:22px}
+  .brand img{height:29px}
+  .cards{grid-template-columns:1fr}
+}
+.tool{background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line);padding:clamp(34px,4.4vw,70px) 0}
+.tool h2,.tool h3{color:var(--cream)}
+.box{border:3px solid var(--cream);margin-top:26px}
+.step{padding:clamp(20px,3vw,34px)}
+.q{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(24px,3.1vw,42px);line-height:1;margin:10px 0 22px}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.opt{text-align:left;border:3px solid var(--cream);background:transparent;color:var(--cream);padding:15px 18px;font-weight:700;font-size:17px}
+.opt:hover{background:var(--green-bright);color:var(--ink);border-color:var(--green-bright-text)}
+.res{border-top:3px solid var(--cream);padding:clamp(20px,3vw,34px);background:rgba(24,192,112,.1)}
+.res h3{font-size:clamp(22px,2.6vw,36px);margin-bottom:6px}
+.res .who{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-bright-text)}
+.contact{display:grid;gap:12px;margin-top:20px}
+.contact a,.contact div.c{border:3px solid var(--cream);padding:14px 16px;display:grid;gap:3px;color:var(--cream);background:transparent}
+.contact a:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.contact b{font-family:"Londrina Solid",cursive;font-size:26px;text-transform:uppercase}
+.contact span{font-size:14px;opacity:.85}
+.renav{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.renav button{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:9px 14px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.renav button:hover{background:var(--cream);color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin-top:26px;font-size:15px}
+th,td{text-align:left;padding:12px 14px;border-bottom:2px solid rgba(23,26,18,.18);vertical-align:top}
+thead th{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom:3px solid var(--line)}
+td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercase;font-weight:400}
+
+header.top nav a{white-space:nowrap}
+.brand .disp{white-space:nowrap}
+@media(max-width:1200px){header.top nav{gap:14px}header.top nav a{font-size:14px}}
+@media(max-width:1080px){header.top nav a.hide-md{display:none}}
+@media(max-width:940px){header.top nav a.hide-sm{display:none}}
+
+footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid var(--line);background:var(--paper);font-size:15px}
+.footgrid{display:grid;grid-template-columns:minmax(260px,1.5fr) repeat(3,minmax(150px,1fr));gap:clamp(20px,3vw,44px)}
+.footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
+.footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
+.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
+.footgrid .about{margin:0;color:var(--ink-soft);max-width:36ch}
+.saramago{margin:clamp(28px,4vw,52px) 0 0;padding:22px 0 0;border-top:3px solid var(--line)}
+.saramago p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(19px,2vw,30px);line-height:1.05;margin:0;max-width:46ch}
+.saramago cite{display:block;margin-top:10px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-style:normal}
+.copy{margin:26px 0 0;color:var(--ink-soft)}
+.copy a{color:var(--ink-soft)}
+.social{display:flex;gap:10px;align-items:center}
+.social a{color:var(--cream);border:2px solid rgba(251,246,234,.6);border-radius:99px;width:34px;height:34px;display:grid;place-items:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.social a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+@media(max-width:900px){.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.footgrid{grid-template-columns:1fr}}
+
+header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
+
+.lang{display:flex;gap:6px;align-items:center;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em}
+.lang a{color:var(--cream);border:2px solid rgba(251,246,234,.5);padding:3px 7px;border-radius:99px}
+.lang a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.lang a.on{background:var(--cream);color:var(--red);border-color:var(--cream)}
+::-webkit-scrollbar{width:14px;height:14px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--red);border:3px solid var(--cream);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:var(--red-dark)}
+html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
+</style>
+  <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="disp">Causas<span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span></a>
+    <nav>
+      <a href="index.html#mapa">Mapa</a>
+      <a href="alertar.html">A quem denunciar</a>
+      <a class="hide-sm" href="livro.html">O livro</a>
+      <a class="hide-md" href="metodologia.html">Metodologia</a>
+      <span class="social">
+        <a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M15.4 8.1h-1.5c-1 0-1.6.6-1.6 1.6v1.7h3l-.4 2.9h-2.6v4.6"></path><path d="M9.6 11.4h2.7"></path></svg></a>
+      </span>
+      <span class="lang">
+        <a href="alertar.html" class="on">PT</a>
+        <a href="alertar-en.html">EN</a>
+      </span>
+      <a class="btn btn--sm" href="index.html#mapa" style="background:var(--cream);border-bottom:3px solid var(--line)">Ver o mapa</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 14px">Denunciar</p>
+    <h1>A quem <span>denunciar</span></h1>
+    <p class="lede">Responde a três ou quatro perguntas simples para saberes que entidade tem, de facto, capacidade para atuar no teu caso. As associações ambientalistas emitem pareceres e fazem pressão pública, mas normalmente não têm poder de fiscalização no terreno. Quem atua são as entidades que aparecem aqui.</p>
+  </div>
+</section>
+
+<section class="tool">
+  <div class="wrap">
+    <h2>Encontra a entidade certa</h2>
+    <div class="box">
+      <div class="step" id="step"></div>
+      <div class="res" id="res" style="display:none"></div>
+    </div>
+    <div class="renav">
+      <button id="back">Pergunta anterior</button>
+      <button id="reset">Recomeçar</button>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Todos os contactos, num só lugar</h2>
+    <table>
+      <thead><tr><th>Entidade</th><th>Contacto</th><th>Para que serve</th></tr></thead>
+      <tbody>
+        <tr><td><b>112</b></td><td><a href="tel:112">Emergência nacional</a></td><td>Perigo imediato para pessoas.</td></tr>
+        <tr><td><b>117</b></td><td><a href="tel:117">Proteção à Floresta</a></td><td>Incêndios florestais.</td></tr>
+        <tr><td><b>SOS Ambiente e Território</b></td><td><a href="tel:808200520">808 200 520</a> · <a href="mailto:sepna@gnr.pt">sepna@gnr.pt</a></td><td>Primeiro contacto para quase tudo. Recebe a denúncia e encaminha para a entidade certa. GNR/SEPNA, 24 horas.</td></tr>
+        <tr><td><b>ICNF</b></td><td><a href="tel:213124800">21 312 4800</a> · <a href="mailto:icnf@icnf.pt">icnf@icnf.pt</a></td><td>Áreas protegidas, fauna e flora selvagens.</td></tr>
+        <tr><td><b>IGAMAOT</b></td><td><a href="https://www.igamaot.gov.pt/pt/espaco-publico/denunciar/apresentar-denuncia" target="_blank" rel="noopener">Portal iFAMA</a></td><td>Denúncia formal por escrito, com poder de investigar entidades e empresas.</td></tr>
+        <tr><td><b>APA</b></td><td><a href="mailto:geral@apambiente.pt">geral@apambiente.pt</a></td><td>Licenciamento ambiental, água e resíduos.</td></tr>
+        <tr><td><b>Câmara Municipal</b></td><td>Fiscalização urbanística local</td><td>Obras e ocupação de terreno sem licença. Este tipo de denúncia não pode ser anónima.</td></tr>
+        <tr><td><b>Polícia Marítima</b></td><td><a href="https://www.amn.pt" target="_blank" rel="noopener">amn.pt</a></td><td>Acesso a praias e à costa. Contacta a capitania do porto mais próximo.</td></tr>
+        <tr><td><b>Provedor de Justiça</b></td><td><a href="https://www.provedor-jus.pt" target="_blank" rel="noopener">provedor-jus.pt</a></td><td>Quando a entidade competente não responde nem age.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap col">
+    <h2>E as associações como a Quercus, o GEOTA ou a ZERO?</h2>
+    <p>Estas organizações têm um papel técnico e de pressão pública: produzem estudos, emitem pareceres em consultas públicas, levam casos a tribunal e dão visibilidade aos casos junto da imprensa e do Parlamento.</p>
+    <p>O que normalmente não fazem é fiscalizar no terreno nem obrigar uma entidade a agir de imediato. Para isso servem as entidades acima. Depois de denunciares, se quiseres reforçar a pressão pública, vê no mapa quem já está a lutar por esse caso.</p>
+    <div class="nb">
+      <p class="mono" style="margin:0 0 8px;color:var(--red-dark)">Antes de ligar</p>
+      <p style="margin:0">A denúncia é muito mais eficaz com fotografias ou vídeo, coordenadas do telemóvel, data e hora. Se a situação for dentro de um Parque Natural ou da Rede Natura 2000, diz isso logo na primeira frase. Pede sempre o número de registo da queixa.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+const T={
+  q1:{q:"A situação está a acontecer agora, com perigo imediato? Um incêndio ativo, alguém a maltratar um animal neste momento, um derrame em curso?",
+    a:{t:"Sim, é urgente",go:"r_emerg"},b:{t:"Não, mas quero denunciar",go:"q2"},n:"Pergunta 1 de 5"},
+  q2:{q:"Envolve fauna selvagem, corte de árvores protegidas, ou acontece dentro de uma área protegida?",
+    a:{t:"Sim",go:"r_fauna"},b:{t:"Não",go:"q3"},n:"Pergunta 2 de 5"},
+  q3:{q:"Envolve poluição, descargas ilegais, resíduos, ruído industrial ou outra infração ambiental?",
+    a:{t:"Sim",go:"r_polui"},b:{t:"Não",go:"q4"},n:"Pergunta 3 de 5"},
+  q4:{q:"É sobre uma obra ou construção sem licença, ou ocupação ilegal de terreno?",
+    a:{t:"Sim",go:"r_obra"},b:{t:"Não",go:"q5"},n:"Pergunta 4 de 5"},
+  q5:{q:"É sobre o acesso a uma praia, à costa ou a uma zona marítima?",
+    a:{t:"Sim",go:"r_costa"},b:{t:"Não, é outra coisa",go:"r_duvida"},n:"Última pergunta"},
+  r_emerg:{who:"Emergência",t:"Liga já",
+    p:"Se houver perigo para pessoas, começa sempre pelo 112. Para incêndios florestais, o 117 vai diretamente para a Proteção à Floresta.",
+    c:[["tel:112","112","Número Nacional de Emergência"],["tel:117","117","Proteção à Floresta, só incêndios florestais"],["tel:808200520","808 200 520","SOS Ambiente e Território, GNR/SEPNA, 24 horas. Para qualquer situação ambiental urgente que não seja risco de vida."]]},
+  r_fauna:{who:"Fauna, flora e áreas protegidas",t:"GNR/SEPNA e ICNF",
+    p:"São as duas entidades com capacidade de atuação direta no terreno. Regista fotografias, localização exata e hora antes de contactar. Se for dentro de um Parque Natural, menciona-o logo.",
+    c:[["tel:808200520","808 200 520","SOS Ambiente e Território, GNR/SEPNA, 24 horas. sepna@gnr.pt"],["tel:213124800","21 312 4800","ICNF, entidade gestora das áreas protegidas. icnf@icnf.pt"]]},
+  r_polui:{who:"Poluição e infrações ambientais",t:"SOS Ambiente, IGAMAOT e APA",
+    p:"Começa pela linha SOS Ambiente: recebe a informação e encaminha para a entidade competente, incluindo a IGAMAOT.",
+    c:[["tel:808200520","808 200 520","Primeiro contacto. Recebe e encaminha a denúncia."],["https://www.igamaot.gov.pt/pt/espaco-publico/denunciar/apresentar-denuncia","Portal iFAMA","IGAMAOT. Denúncia formal por escrito, com poder de investigar entidades e empresas."],["mailto:geral@apambiente.pt","geral@apambiente.pt","APA. Licenciamento ambiental, água e resíduos."]]},
+  r_obra:{who:"Urbanismo e construção ilegal",t:"Câmara Municipal",
+    p:"A fiscalização de obras e da ocupação de terreno é competência do município onde a situação acontece. Este tipo de denúncia não pode ser anónima. Procura fiscalização urbanística mais o nome do concelho, ou usa o Balcão do Munícipe. Se a Câmara não responder nem agir, sobe a denúncia à IGAMAOT e, em último caso, ao Provedor de Justiça.",
+    c:[["https://www.igamaot.gov.pt/pt/espaco-publico/denunciar/apresentar-denuncia","Portal iFAMA","IGAMAOT, quando a Câmara não age."],["https://www.provedor-jus.pt","provedor-jus.pt","Provedor de Justiça, último recurso administrativo."]]},
+  r_costa:{who:"Acesso à costa",t:"Polícia Marítima",
+    p:"As praias são espaço público. Nenhuma concessão pode impedir o acesso ou a permanência de banhistas fora da área licenciada.",
+    c:[["https://www.amn.pt","amn.pt","Polícia Marítima, Autoridade Marítima Nacional. Contacta a capitania do porto mais próximo do local."]]},
+  r_duvida:{who:"Não tens a certeza",t:"Começa pela SOS Ambiente e Território",
+    p:"Se o teu caso não encaixa em nenhuma das opções anteriores, esta linha é o melhor ponto de partida: recebe a denúncia e encaminha-a para a entidade certa, seja GNR/SEPNA, IGAMAOT ou CCDR.",
+    c:[["tel:808200520","808 200 520","SOS Ambiente e Território. sepna@gnr.pt"]]}
+};
+const hist=[];let cur="q1";
+const g=id=>document.getElementById(id);
+function show(k){
+  const n=T[k];
+  if(n.q){
+    g("res").style.display="none";
+    g("step").innerHTML='<span class="mono" style="color:var(--green-bright-text)">'+n.n+'</span><p class="q">'+n.q+'</p>'+
+      '<div class="opts"><button class="opt" data-go="'+n.a.go+'">'+n.a.t+'</button><button class="opt" data-go="'+n.b.go+'">'+n.b.t+'</button></div>';
+    g("step").querySelectorAll(".opt").forEach(b=>b.onclick=()=>{hist.push(cur);cur=b.dataset.go;show(cur)});
+  }else{
+    g("step").innerHTML='<span class="mono" style="color:var(--green-bright-text)">'+n.who+'</span>';
+    g("res").style.display="block";
+    g("res").innerHTML='<h3>'+n.t+'</h3><p style="max-width:66ch">'+n.p+'</p><div class="contact">'+
+      n.c.map(c=>'<a href="'+c[0]+'"'+(c[0].startsWith("http")?' target="_blank" rel="noopener"':'')+'><b>'+c[1]+'</b><span>'+c[2]+'</span></a>').join("")+
+      '</div><p style="margin-top:18px"><a href="index.html#mapa" style="color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)">Ver casos semelhantes no mapa</a></p>';
+  }
+}
+g("back").onclick=()=>{if(hist.length){cur=hist.pop();show(cur)}};
+g("reset").onclick=()=>{hist.length=0;cur="q1";show(cur)};
+show(cur);
+</script>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <span class="disp" style="font-size:34px;display:block"><span style="color:var(--red)">Causas</span><span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span>
+        <p class="claim">Pela terra, pela água, pelas florestas, por nós!</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html#mapa">Casos</a></li>
+          <li><a href="index.html#mapa">Mapa</a></li>
+          <li><a href="alertar.html">Alertar</a></li>
+          <li><a href="index.html#como">Agir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">O projeto</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="arquivo.html">Arquivo</a></li>
+          <li><a href="mailto:geral@causasderaiz.org">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Emergência</h4>
+        <ul>
+          <li><a href="tel:808200520">SOS Ambiente: 808 200 520</a></li>
+          <li><a href="mailto:geral@apambiente.pt">APA</a></li>
+        </ul>
+      </div>
+    </div>
+    <blockquote class="saramago">
+      <p>“Quando Joana Carda riscou o chão com a vara de negrilho, todos os cães de Cerbère começaram a ladrar…”</p>
+      <cite>José Saramago, <em>A Jangada de Pedra</em></cite>
+    </blockquote>
+    <p class="copy mono">© 2026 Causas de Raiz · 2026 Ulmeiro · 2026 <a href="https://www.instagram.com/movementagainsthate/" target="_blank" rel="noopener">Movement Against Hate</a> · Cartografia © OpenStreetMap contributors</p>
+  </div>
+</footer>
+</body>
+</html>

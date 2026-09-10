@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Diretório dos casos — Causas de Raiz</title>
+<meta name="description" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores: 83 casos documentados, 24 com petição ativa. Informação verificada, localização, quem está envolvido e como agir. Fonte: causasderaiz.org.">
+
+<meta property="og:title" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores">
+<meta property="og:description" content="83 casos documentados, 24 com petição ativa, região a região. Informação verificada para consultar, imprimir ou citar.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
+<meta property="og:url" content="https://causasderaiz.org/diretorio.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
+  --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
+  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+h1,h2,h3,.disp{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-weight:400;line-height:.92;margin:0}
+.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 24px}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+button{cursor:pointer}
+img{display:block;max-width:100%}
+
+header.top{position:sticky;top:0;z-index:1200;background:var(--red);border-bottom:3px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);border:0;text-decoration:none}
+.brand img{height:36px;width:auto;display:block}
+.brand .vbar{width:3px;height:26px;background:rgba(251,246,234,.55);flex:none}
+.brand .mark{width:20px;height:20px;background:var(--cream);border:3px solid var(--line);border-radius:50%}
+.brand .disp{font-size:30px;color:var(--cream)}
+.top nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.top nav a{color:var(--cream);border-bottom:2px solid transparent;font-weight:500}
+.top nav a:hover{border-bottom-color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:3px solid var(--line);background:var(--paper);padding:10px 16px;font-weight:700;box-shadow:4px 4px 0 var(--line);transition:transform .12s,box-shadow .12s}
+a.btn{color:var(--ink)}
+a.btn.btn--ink,a.btn.btn--ink:hover{color:var(--cream);border-bottom-color:var(--line)}
+.btn--ink:hover{background:#000;color:#fff}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--line)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
+.btn--green{background:var(--green-bright)}
+.btn--ink{background:var(--ink);color:var(--cream)}
+.btn--sm{padding:7px 12px;box-shadow:3px 3px 0 var(--line);font-size:14px}
+
+.hero{padding:52px 0 32px;border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:40px;align-items:end}
+h1{font-size:clamp(50px,7.6vw,124px)}
+h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
+.hero p.lede{font-size:19px;max-width:48ch;margin:20px 0 0;color:var(--ink-soft);text-wrap:pretty}
+.stats{display:grid;gap:14px}
+.stat{background:var(--paper);padding:12px 14px;border-bottom:3px solid var(--line)}
+.stat b{font-family:"Londrina Solid",cursive;font-size:40px;display:block;line-height:1}
+.stat.red b{color:var(--red)} .stat.green b{color:var(--green-text)}
+
+.searchbar{margin-top:36px;border:3px solid var(--line);background:var(--paper);box-shadow:8px 8px 0 var(--line)}
+.searchrow{display:flex;flex-wrap:wrap;align-items:stretch;border-bottom:3px solid var(--line)}
+.searchrow .field{flex:1 1 320px;display:flex;align-items:center;gap:12px;padding:0 18px;min-height:70px}
+.searchrow input{border:0;outline:0;background:transparent;width:100%;font-size:22px;font-family:"Londrina Solid",cursive;text-transform:uppercase}
+.searchrow input::placeholder{color:#A9A392}
+.searchrow .sep{width:3px;background:var(--line)}
+.searchrow select{border:0;outline:0;background:transparent;font-weight:700;padding:0 18px;min-height:70px;appearance:none;cursor:pointer;text-transform:uppercase;letter-spacing:.06em;font-size:13px}
+.searchrow .go{border:0;border-left:3px solid var(--line);background:var(--green-bright);padding:0 26px;font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:26px}
+.searchrow .go:hover{background:var(--red);color:var(--cream)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;padding:14px 18px;align-items:center}
+.chip{border:2px solid var(--line);background:transparent;padding:6px 12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.chip i{font-family:"Space Mono",monospace;font-style:normal;font-size:10px;opacity:.6;margin-left:3px}
+.chip--vazio{opacity:.42;border-style:dashed}
+.seg{display:flex;border:3px solid var(--line);margin-left:auto}
+.seg button{border:0;background:transparent;padding:8px 14px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;border-right:3px solid var(--line);border-top:3px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg{flex-wrap:wrap}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.seg button[data-est="urgente"][aria-pressed="true"]{background:var(--red);color:var(--cream)}
+.seg button[data-est="consulta"][aria-pressed="true"]{background:var(--green-bright);color:var(--ink)}
+.seg button[data-est="vitoria"][aria-pressed="true"]{background:var(--green);color:var(--cream)}
+.seg button.sb[aria-pressed="true"]{background:var(--green);color:var(--cream)}
+
+.board{display:grid;grid-template-columns:minmax(0,1fr) 440px;border-bottom:3px solid var(--line)}
+#mapcol{border-right:3px solid var(--line)}
+#map{height:660px;background:#dfe3d6;z-index:1}
+.maptools{position:absolute;top:14px;left:14px;z-index:500;display:flex;flex-wrap:wrap;gap:7px;max-width:calc(100% - 28px)}
+.jump{border:3px solid var(--line);background:var(--paper);padding:6px 11px;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;box-shadow:3px 3px 0 var(--line)}
+.jump:hover,.jump[aria-pressed="true"]{background:var(--green-bright)}
+.legend{position:absolute;left:14px;bottom:22px;z-index:500;background:var(--paper);border:3px solid var(--line);box-shadow:4px 4px 0 var(--line);padding:11px 13px;display:grid;gap:6px}
+.legend div{display:flex;align-items:center;gap:8px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.legend i{width:17px;height:17px;border:3px solid var(--line);border-radius:50%;background:var(--red);flex:none}
+.legend i.sb{background:var(--paper);border-style:dashed}
+.leaflet-container{font-family:"Space Grotesk",sans-serif}
+.leaflet-tile-pane{filter:grayscale(.72) contrast(1.02) sepia(.16) brightness(1.04)}
+.leaflet-control-attribution{font-size:10px;background:rgba(255,253,247,.9)}
+.pin{display:grid;place-items:center;width:34px;height:34px;border:3px solid var(--line);border-radius:50%;box-shadow:3px 3px 0 var(--line);transition:transform .18s;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.pin.urgente{background:var(--red);color:#fff}
+.pin.situacao{background:var(--paper);border-color:var(--red);color:var(--red-dark)}
+.pin.consulta{background:var(--green-bright);color:var(--ink)}
+.pin.tribunal{background:var(--ink);color:#fff}
+.pin.vitoria{background:var(--green);color:#fff}
+.pin.ativa{background:var(--red);color:#fff}
+.pin.acompanhamento{background:var(--paper);border-style:dashed;color:var(--ink)}
+.pin.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--green-bright)}
+.pin.on{transform:scale(1.3);z-index:600}
+.side{display:flex;flex-direction:column;background:var(--paper);max-height:660px}
+.side-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:3px solid var(--line)}
+.side-head .disp{font-size:24px}
+.list{overflow:auto;flex:1;-webkit-overflow-scrolling:touch}
+.panel-body{-webkit-overflow-scrolling:touch}
+.card{display:grid;grid-template-columns:132px 1fr;gap:14px;width:100%;text-align:left;border:0;border-bottom:2px solid rgba(23,26,18,.18);background:transparent;padding:16px 18px}
+.card:hover{background:#F4EFE0}
+.card.sel{background:var(--cream);box-shadow:inset 6px 0 0 var(--red)}
+.card .thumb{width:132px;height:132px;border:3px solid var(--line);object-fit:cover;background:#e6e2d5}
+.card .row{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.tag{border:2px solid var(--line);padding:2px 7px;font-family:"Space Mono",monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+.tag.urgente{background:var(--red);color:var(--cream)}
+.tag.situacao{background:transparent;border-color:var(--red);color:var(--red-dark)}
+.tag.consulta{background:var(--green-bright)}
+.tag.tribunal{background:var(--ink);color:var(--cream)}
+.tag.vitoria{background:var(--green);color:var(--cream)}
+.tag.ativa{background:var(--red);color:var(--cream)}
+.tag.acompanhamento{background:transparent}
+.tag.prazo{background:var(--green-bright)}
+.card h3{font-size:23px;margin:0 0 5px;text-transform:none;letter-spacing:0}
+.card .loc{font-size:13px;color:var(--ink-soft);font-weight:500}
+.card .who-min{font-size:12px;color:var(--ink-soft);margin-top:6px}
+.empty{padding:40px 18px;color:var(--ink-soft)}
+
+.panel{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--paper);border-left:3px solid var(--line);z-index:1400;transform:translateX(102%);transition:transform .28s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+.panel.open{transform:none}
+.panel-top{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:3px solid var(--line);background:var(--cream)}
+.panel-top .x{margin-left:auto;border:3px solid var(--line);background:var(--paper);width:38px;height:38px;font-weight:700;font-size:18px;line-height:1}
+.panel-body{overflow:auto;padding:0 0 40px}
+.panel-hero{width:100%;height:300px;object-fit:cover;border-bottom:3px solid var(--line);background:#e6e2d5}
+.pad{padding:22px 24px 0}
+.panel-body h2{font-size:38px;margin:10px 0 8px;text-transform:none;line-height:1}
+.panel-body .loc{font-weight:700;color:var(--ink-soft)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 6px}
+.section-lbl{border-top:3px solid var(--line);padding-top:12px;margin-top:26px}
+.who{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.who span{border:2px solid var(--line);border-radius:99px;padding:4px 10px;font-size:13px;font-weight:700;background:var(--cream)}
+.note{background:var(--cream);border:3px solid var(--line);padding:14px 16px;margin-top:18px;font-size:15px}
+.scrim{position:fixed;inset:0;background:rgba(23,26,18,.45);z-index:1300;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.on{opacity:1;pointer-events:auto}
+
+.how{padding:62px 0;border-bottom:3px solid var(--line)}
+.how h2,.propose h2{font-size:clamp(38px,5vw,74px)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+.step{border:3px solid var(--line);background:var(--paper);padding:20px;box-shadow:7px 7px 0 var(--line)}
+.step .n{font-family:"Londrina Solid",cursive;font-size:64px;line-height:.8;color:var(--red)}
+.step:nth-child(2) .n{color:var(--green-text)}
+.step:nth-child(3) .n{color:var(--ink)}
+.step h3{font-size:28px;margin:10px 0 8px}
+.step p{margin:0;color:var(--ink-soft)}
+.propose{padding:62px 0;background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line)}
+.propose .disp{color:var(--cream)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:start}
+.form{display:grid;gap:14px}
+.form label{display:grid;gap:6px}
+.form input,.form select,.form textarea{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:12px 14px;outline:0}
+.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--green-bright-text)}
+.form textarea{min-height:96px;resize:vertical}
+.thanks{border:3px solid var(--green-bright);padding:22px;background:rgba(24,192,112,.12)}
+.quote{padding:56px 0;border-bottom:3px solid var(--line)}
+.quote p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(26px,3.4vw,46px);line-height:1.02;max-width:24ch;margin:0}
+footer{padding:44px 0 60px;font-size:14px}
+.foot{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-end}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,200%);background:var(--green-bright);border:3px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:14px 20px;font-weight:700;z-index:1600;transition:transform .3s}
+.toast.on{transform:translate(-50%,0)}
+.alerta{background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line)}
+.alerta .wrap{display:flex;flex-wrap:wrap;gap:26px;align-items:center;padding:12px 24px}
+.alerta .dot{width:12px;height:12px;border-radius:50%;background:var(--red);animation:pulse 1.4s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.35)}}
+.alerta b{color:#fff}
+.alerta a{color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)}
+.national{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:3px solid var(--line);border-bottom:3px solid var(--line);background:var(--paper)}
+.national div{padding:22px 24px;border-right:3px solid var(--line)}
+.national div:last-child{border-right:0}
+.national b{font-family:"Londrina Solid",cursive;font-size:clamp(38px,4.4vw,64px);display:block;line-height:.9}
+.national div:nth-child(odd) b{color:var(--red)}
+.national div:nth-child(even) b{color:var(--green-text)}
+.top100{padding:62px 0;border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+.progress100{height:26px;border:3px solid var(--line);background:var(--paper);margin:22px 0 8px;position:relative;box-shadow:5px 5px 0 var(--line)}
+.progress100 i{display:block;height:100%;background:var(--green-bright)}
+.topgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:34px}
+.rank{display:grid;grid-template-columns:64px 1fr;gap:14px;text-align:left;border:3px solid var(--line);background:var(--paper);padding:16px;box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.rank:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.rank .n{font-family:"Londrina Solid",cursive;font-size:46px;line-height:.8;color:var(--red)}
+.rank h4{font-size:17px;margin:0 0 4px;line-height:1.2}
+.rank .m{font-size:12px;color:var(--ink-soft);font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:30px}
+.method div{border-left:3px solid var(--line);padding:0 0 0 16px}
+.method h4{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:24px;margin:0 0 6px}
+.method p{margin:0;color:var(--ink-soft);font-size:15px}
+@media(max-width:1240px){
+  .board{grid-template-columns:minmax(0,1fr) 380px}
+  .card{grid-template-columns:104px 1fr}
+  .card .thumb{width:104px;height:104px}
+}
+@media(max-width:1024px){
+  .hero-grid,.pgrid,.board{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  #mapcol{border-right:0;border-bottom:3px solid var(--line)}
+  #map{height:56vh;min-height:380px}
+  .side{max-height:none}
+  .list{overflow:visible}
+  .searchrow .field{flex:1 1 100%;border-bottom:3px solid var(--line)}
+  .searchrow select{flex:1 1 50%;border-bottom:3px solid var(--line)}
+  .searchrow .sep{display:none}
+  .searchrow .go{flex:1 1 100%;border-left:0;min-height:64px}
+  .seg{margin-left:0;width:100%}
+  .seg button{flex:1;min-height:46px}
+  .chip{min-height:40px;display:flex;align-items:center}
+  .panel{width:min(560px,100%)}
+  .top nav{gap:14px}
+}
+@media(max-width:700px){
+  .wrap{padding:0 16px}
+  h1{font-size:clamp(40px,11vw,64px)}
+  .hero{padding:34px 0 26px}
+  .stat b{font-size:34px}
+  .searchbar{box-shadow:5px 5px 0 var(--line)}
+  .searchrow input{font-size:19px}
+  .card{grid-template-columns:84px 1fr;gap:12px;padding:14px 16px}
+  .card .thumb{width:84px;height:84px}
+  .card h3{font-size:19px}
+  #map{height:52vh;min-height:320px}
+  .maptools{gap:6px;top:10px;left:10px}
+  .jump{padding:8px 10px;font-size:10px}
+  .panel{width:100%;border-left:0}
+  .panel-hero{height:210px}
+  .panel-body h2{font-size:29px}
+  .pad{padding:18px 18px 0}
+  .btn{padding:12px 16px}
+  .rank{grid-template-columns:50px 1fr}
+  .national b{font-size:34px}
+  .alerta .wrap{gap:10px;padding:10px 16px}
+  .top .wrap{height:56px}
+  .brand .disp{font-size:24px}
+}
+@media(max-width:1000px){
+  .national div{border-right:0;border-bottom:3px solid var(--line)}
+  .hero-grid,.pgrid,.board{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  #mapcol{border-right:0;border-bottom:3px solid var(--line)}
+  #map{height:440px}
+  .legend{display:none}
+  .side{max-height:none}
+  .top nav a{display:none}
+}
+
+header.top nav a{white-space:nowrap}
+.brand .disp{white-space:nowrap}
+@media(max-width:1200px){header.top nav{gap:14px}header.top nav a{font-size:14px}}
+@media(max-width:1080px){header.top nav a.hide-md{display:none}}
+@media(max-width:940px){header.top nav a.hide-sm{display:none}}
+
+footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid var(--line);background:var(--paper);font-size:15px}
+.footgrid{display:grid;grid-template-columns:minmax(260px,1.5fr) repeat(3,minmax(150px,1fr));gap:clamp(20px,3vw,44px)}
+.footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
+.footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
+.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
+.footgrid .about{margin:0;color:var(--ink-soft);max-width:36ch}
+.saramago{margin:clamp(28px,4vw,52px) 0 0;padding:22px 0 0;border-top:3px solid var(--line)}
+.saramago p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(19px,2vw,30px);line-height:1.05;margin:0;max-width:46ch}
+.saramago cite{display:block;margin-top:10px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-style:normal}
+.copy{margin:26px 0 0;color:var(--ink-soft)}
+.copy a{color:var(--ink-soft)}
+.social{display:flex;gap:10px;align-items:center}
+.social a{color:var(--cream);border:2px solid rgba(251,246,234,.6);border-radius:99px;width:34px;height:34px;display:grid;place-items:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.social a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+@media(max-width:900px){.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.footgrid{grid-template-columns:1fr}}
+
+header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
+
+.lang{display:flex;gap:6px;align-items:center;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em}
+.lang a{color:var(--cream);border:2px solid rgba(251,246,234,.5);padding:3px 7px;border-radius:99px}
+.lang a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.lang a.on{background:var(--cream);color:var(--red);border-color:var(--cream)}
+::-webkit-scrollbar{width:14px;height:14px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--red);border:3px solid var(--cream);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:var(--red-dark)}
+html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
+</style>
+  <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="disp">Causas<span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span></a>
+    <nav>
+      <a href="index.html#mapa">Mapa</a>
+      <a href="index.html">Com ação aberta</a>
+      <a href="alertar.html">A quem denunciar</a>
+      <a class="hide-sm" href="livro.html">O livro</a>
+      <span class="social">
+        <a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M15.4 8.1h-1.5c-1 0-1.6.6-1.6 1.6v1.7h3l-.4 2.9h-2.6v4.6"></path><path d="M9.6 11.4h2.7"></path></svg></a>
+      </span>
+      <span class="lang">
+        <a href="diretorio.html" class="on">PT</a>
+        <a href="diretorio-en.html">EN</a>
+      </span>
+      <a class="btn btn--sm" href="index.html#mapa" style="background:var(--cream);border-bottom:3px solid var(--line)">Ver o mapa</a>
+    </nav>
+  </div>
+</header>
+
+<div class="alerta">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span class="mono" style="white-space:nowrap">Alerta a fechar</span>
+    <span id="alerta-prazo" style="flex:1 1 260px"></span>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="mono" style="margin:0 0 16px;font-size:20px">Plataforma cidadã · Portugal Continental, Madeira e Açores · 2026</p>
+        <h1><span class="em">Diretório</span> dos casos <span class="em2">documentados</span></h1>
+        <p class="lede">A lista completa do que documentamos, região a região, sem mapa. Feita para consultar, imprimir e citar. Para ver no mapa, usa a <a href="index.html#mapa">página inicial</a>.</p>
+      </div>
+      <div class="stats">
+        <div class="stat red"><b id="s-urg">0</b><span class="mono">petições abertas para assinar</span></div>
+        <div class="stat"><b id="s-sb">0</b><span class="mono">sem ação aberta neste momento</span></div>
+        <div class="stat green"><b id="s-tot">0</b><span class="mono">casos documentados</span></div>
+      </div>
+    </div>
+
+    <div class="searchbar" id="busca">
+      <div class="searchrow">
+        <div class="field">
+          <span class="mono" style="white-space:nowrap">Procurar</span>
+          <input id="q" placeholder="mina, solar, praia, pedreira, a minha terra…" autocomplete="off">
+        </div>
+        <div class="sep"></div>
+        <select id="reg" aria-label="Região"><option value="">Todo o país</option></select>
+        <div class="sep"></div>
+        <select id="ord" aria-label="Ordenar">
+          <option value="prazo">Ordenar: prazo mais próximo</option>
+          <option value="verif">Ordenar: atualização mais recente</option>
+          <option value="az">Ordenar: A,Z</option>
+        </select>
+        <button class="go" id="go">Ver a lista</button>
+      </div>
+      <div class="filters" id="chips">
+        <span class="mono" style="margin-right:4px">Temas</span>
+        <!-- categorias inseridas aqui -->
+        <div class="seg" id="estado"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="national">
+  <div><b id="n-tot">0</b><span class="mono">casos documentados</span></div>
+  <div><b>4.592</b><span class="mono">incêndios em julho de 2026</span></div>
+  <div><b>34</b><span class="mono">organizações e movimentos envolvidos</span></div>
+  <div><b>8</b><span class="mono">regiões cobertas, ilhas incluídas</span></div>
+</div>
+
+<section class="propose" id="prazos">
+  <div class="wrap pgrid">
+    <div>
+      <p class="mono" style="color:var(--green-bright-text)">O que fecha primeiro</p>
+      <h2 class="disp">Prazos a contar</h2>
+      <ul id="deadlines" style="list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px"></ul>
+      <p class="mono" style="opacity:.6;margin-top:22px">Sabes de um caso que não está aqui, ou de um erro? <a href="mailto:geral@causasderaiz.org" style="color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)">geral@causasderaiz.org</a></p>
+    </div>
+    <div>
+      <p class="mono" style="color:var(--green-bright-text)">Está a acontecer à tua porta</p>
+      <h2 class="disp">A quem denunciar</h2>
+      <p style="max-width:44ch;opacity:.85">Quatro perguntas e sabes qual a entidade com poder para atuar: SEPNA, ICNF, IGAMAOT, APA, câmara ou Polícia Marítima.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+        <a class="btn btn--green" href="alertar.html" style="border-bottom:3px solid var(--line)">Descobrir a entidade certa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="indice-sec" style="background:var(--cream)">
+  <div class="wrap">
+    <p class="mono" id="dcount">,</p>
+    <h2>Região a região</h2>
+    <div id="indice" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px;margin-top:32px"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <span class="disp" style="font-size:34px;display:block"><span style="color:var(--red)">Causas</span><span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span>
+        <p class="claim">Pela terra, pela água, pelas florestas, por nós!</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html#mapa">Casos</a></li>
+          <li><a href="index.html#mapa">Mapa</a></li>
+          <li><a href="alertar.html">Alertar</a></li>
+          <li><a href="index.html#como">Agir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">O projeto</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="arquivo.html">Arquivo</a></li>
+          <li><a href="mailto:geral@causasderaiz.org">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Emergência</h4>
+        <ul>
+          <li><a href="tel:808200520">SOS Ambiente: 808 200 520</a></li>
+          <li><a href="mailto:geral@apambiente.pt">APA</a></li>
+        </ul>
+      </div>
+    </div>
+    <blockquote class="saramago">
+      <p>“Quando Joana Carda riscou o chão com a vara de negrilho, todos os cães de Cerbère começaram a ladrar…”</p>
+      <cite>José Saramago, <em>A Jangada de Pedra</em></cite>
+    </blockquote>
+    <p class="copy mono">© 2026 Causas de Raiz · 2026 Ulmeiro · 2026 <a href="https://www.instagram.com/movementagainsthate/" target="_blank" rel="noopener">Movement Against Hate</a> · Cartografia © OpenStreetMap contributors</p>
+  </div>
+</footer>
+
+
+
+<script>document.write('<script src="dados.js?v='+Date.now()+'"><\/script>')</script>
+<script>
+const CATLBL=Object.fromEntries(CATEGORIAS);
+const st={q:"",reg:"",est:"todas",cats:new Set(),ord:"urg"};
+const $=s=>document.querySelector(s);
+const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};
+const PESO={urgente:0,consulta:1,tribunal:2,acompanhamento:3,vitoria:4};
+
+$("#reg").insertAdjacentHTML("beforeend",REGIOES.map(r=>'<option>'+r+'</option>').join(""));
+$("#estado").innerHTML='<button data-est="todas" aria-pressed="true">Todas</button>'+
+  [["peticao","⚡ Petição ativa"],["consulta","🗳 Consulta pública"],["tribunal","⚖ Em tribunal"],["vitoria","✓ Vitória"],["acompanhamento","◐ Acompanhamento"]].map(([k,l])=>'<button data-est="'+k+'" aria-pressed="false">'+l+'</button>').join("");
+$("#estado").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+  st.est=b.dataset.est;
+  $("#estado").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render();
+});
+$("#estado").insertAdjacentHTML("beforebegin",CATEGORIAS.map(([k,l])=>{
+  const n=CAUSAS.filter(c=>c.cat===k||c.cat2===k).length;
+  return '<button class="chip'+(n?"":" chip--vazio")+'" data-cat="'+k+'" aria-pressed="false">'+l+' <i>'+n+'</i></button>';
+}).join(""));
+$("#chips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+  const k=b.dataset.cat;
+  st.cats.has(k)?st.cats.delete(k):st.cats.add(k);
+  b.setAttribute("aria-pressed",st.cats.has(k));render();
+});
+$("#q").oninput=ev=>{st.q=ev.target.value.toLowerCase();render()};
+$("#reg").onchange=ev=>{st.reg=ev.target.value;render()};
+$("#ord").onchange=ev=>{st.ord=ev.target.value;render()};
+$("#go").onclick=()=>window.scrollTo({top:$("#indice-sec").offsetTop-64,behavior:"smooth"});
+
+function match(c){
+  if(st.est!=="todas"){
+    const t=acaoTipo(c);
+    if(st.est==="peticao"&&t!=="peticao")return false;
+    if(st.est==="consulta"&&t!=="consulta")return false;
+    if(st.est==="tribunal"&&c.est!=="tribunal")return false;
+    if(st.est==="vitoria"&&c.est!=="vitoria")return false;
+    if(st.est==="acompanhamento"&&!(c.est==="acompanhamento"||(c.est==="urgente"&&!c.pet)))return false;
+  }
+  if(st.reg&&c.reg!==st.reg)return false;
+  if(st.cats.size&&!st.cats.has(c.cat)&&!(c.cat2&&st.cats.has(c.cat2)))return false;
+  if(st.q){
+    const hay=(c.t+" "+c.loc+" "+c.catLabel+" "+c.cat+" "+c.res+" "+c.reg+" "+c.quem.join(" ")+" "+c.status+" "+(c.kw||[]).join(" ")).toLowerCase();
+    if(!hay.includes(st.q))return false;
+  }
+  return true;
+}
+function sorted(list){
+  const s=[...list];
+  if(st.ord==="pop")s.sort((a,b)=>a.t.localeCompare(b.t,"pt"));
+  else if(st.ord==="novo")s.sort((a,b)=>b.verif.localeCompare(a.verif));
+  else s.sort((a,b)=>(b.prazo?1:0)-(a.prazo?1:0)||PESO[a.est]-PESO[b.est]||a.t.localeCompare(b.t,"pt"));
+  return s;
+}
+function render(){
+  const vis=sorted(CAUSAS.filter(match));
+  $("#dcount").textContent=vis.length+" de "+CAUSAS.length+" casos · índice por região";
+  const byReg={};
+  vis.forEach(c=>{(byReg[c.reg]=byReg[c.reg]||[]).push(c)});
+  const html=REGIOES.filter(r=>byReg[r]).map(r=>
+    '<div><h3 style="font-size:28px;margin-bottom:4px">'+r+'</h3>'+
+    '<p class="mono" style="color:var(--ink-soft);margin:0 0 14px">'+byReg[r].length+(byReg[r].length===1?' caso':' casos')+'</p>'+
+    '<ul style="list-style:none;padding:0;margin:0;display:grid;gap:14px">'+
+    byReg[r].map(c=>{
+      const b=estadoBadge(c);
+      return '<li style="border-top:2px solid rgba(23,26,18,.18);padding-top:12px">'+
+      '<a href="caso.html?id='+c.id+'" style="font-weight:700;font-size:17px;line-height:1.25;display:inline-block">'+c.t+'</a>'+
+      '<div class="mono" style="color:var(--ink-soft);margin-top:6px">'+c.loc+'</div>'+
+      '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center">'+
+      '<span class="tag '+b.k+'">'+b.i+' '+b.l+'</span>'+
+      '<span class="mono" style="color:var(--ink-soft)">'+c.catLabel+'</span>'+
+      (c.pet?' <a class="mono" href="'+c.pet+'" target="_blank" rel="noopener" style="color:var(--red-dark)">agir →</a>':'')+
+      '</div></li>';
+    }).join("")+'</ul></div>').join("");
+  $("#indice").innerHTML=html||'<div><p class="disp" style="font-size:30px">Nada com estes filtros.</p><p>Limpa a procura ou escolhe outro tema. Se sabes de um caso que não está aqui, <a href="mailto:geral@causasderaiz.org">avisa-nos</a>.</p></div>';
+  $("#s-urg").textContent=CAUSAS.filter(c=>acaoTipo(c)==="peticao").length;
+  $("#s-sb").textContent=CAUSAS.filter(c=>!c.pet).length;
+  $("#s-tot").textContent=CAUSAS.length;
+  $("#n-tot").textContent=CAUSAS.length;
+}
+$("#deadlines").innerHTML=CAUSAS.filter(c=>c.prazo).map(c=>
+  '<li style="border:3px solid var(--cream);padding:14px 16px"><span class="mono" style="color:var(--green-bright-text)">'+c.status+'</span><br><b>'+c.t+'</b><br><span style="opacity:.7">'+c.loc+'</span></li>').join("")
+ + CAUSAS.filter(c=>acaoTipo(c)==="peticao"&&!c.prazo).slice(0,5).map(c=>
+  '<li style="border-bottom:2px dotted rgba(251,246,234,.35);padding:10px 0"><span class="mono" style="opacity:.6">petição aberta</span><br><b>'+c.t+'</b></li>').join("");
+(function(){
+  const ld=document.createElement("script");
+  ld.type="application/ld+json";
+  ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"ItemList",name:"Conflitos ambientais em Portugal Continental, Madeira e Açores",numberOfItems:CAUSAS.length,
+    itemListElement:CAUSAS.map((c,i)=>({"@type":"ListItem",position:i+1,item:{"@type":"Article",headline:c.t,about:c.catLabel,abstract:c.res,
+      url:location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso.html?id="+c.id,dateModified:c.verif,
+      contentLocation:{"@type":"Place",name:c.loc,geo:c.ll?{"@type":"GeoCoordinates",latitude:c.ll[0],longitude:c.ll[1]}:undefined},
+      publisher:{"@type":"Organization",name:"Causas de Raiz"}}}))});
+  document.head.appendChild(ld);
+})();
+render();
+</script>
+</body>
+</html>

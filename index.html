@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores</title>
+<meta name="description" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores: petições abertas, consultas públicas, processos em tribunal, localização, quem está envolvido e como agir.">
+
+<meta property="og:title" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores">
+<meta property="og:description" content="Podes assinar petições, participar em consultas públicas e apoiar quem luta em tribunal — tudo num só mapa. Cada ponto é um lugar concreto e uma forma de agir.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
+<meta property="og:url" content="https://causasderaiz.org/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<style>
+:root{
+  --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
+  --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
+  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+h1,h2,h3,.disp{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-weight:400;line-height:.92;margin:0}
+.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 24px}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+button{cursor:pointer}
+img{display:block;max-width:100%}
+
+header.top{position:sticky;top:0;z-index:1200;background:var(--red);border-bottom:3px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);border:0;text-decoration:none}
+.brand img{height:36px;width:auto;display:block}
+.brand .vbar{width:3px;height:26px;background:rgba(251,246,234,.55);flex:none}
+.brand .mark{width:20px;height:20px;background:var(--cream);border:3px solid var(--line);border-radius:50%}
+.brand .disp{font-size:30px;color:var(--cream)}
+.top nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.top nav a{color:var(--cream);border-bottom:2px solid transparent;font-weight:500}
+.top nav a:hover{border-bottom-color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:3px solid var(--line);background:var(--paper);padding:10px 16px;font-weight:700;box-shadow:4px 4px 0 var(--line);transition:transform .12s,box-shadow .12s}
+a.btn{color:var(--ink)}
+a.btn.btn--ink,a.btn.btn--ink:hover{color:var(--cream);border-bottom-color:var(--line)}
+.btn--ink:hover{background:#000;color:#fff}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--line)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
+.btn--green{background:var(--green-bright)}
+.btn--ink{background:var(--ink);color:var(--cream)}
+.btn--sm{padding:7px 12px;box-shadow:3px 3px 0 var(--line);font-size:14px}
+
+.hero{padding:52px 0 32px;border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:40px;align-items:end}
+h1{font-size:clamp(50px,7.6vw,124px)}
+h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
+.hero p.lede{font-size:19px;max-width:48ch;margin:20px 0 0;color:var(--ink-soft);text-wrap:pretty}
+.stats{display:grid;gap:14px;background:var(--raiz-pale);border:3px solid var(--line);padding:14px;box-shadow:6px 6px 0 var(--line)}
+.stat{background:var(--paper);padding:12px 14px;border:2px solid var(--line)}
+.stat b{font-family:"Londrina Solid",cursive;font-size:40px;display:block;line-height:1}
+.stat.red b{color:var(--red)} .stat.green b{color:var(--green-text)}
+
+.searchbar{margin-top:36px;border:3px solid var(--line);background:var(--paper);box-shadow:8px 8px 0 var(--line)}
+.searchrow{display:flex;flex-wrap:wrap;align-items:stretch;border-bottom:3px solid var(--line)}
+.searchrow .field{flex:1 1 320px;display:flex;align-items:center;gap:12px;padding:0 18px;min-height:70px}
+.searchrow input{border:0;outline:0;background:transparent;width:100%;font-size:22px;font-family:"Londrina Solid",cursive;text-transform:uppercase}
+.searchrow input::placeholder{color:#A9A392}
+.searchrow .sep{width:3px;background:var(--line)}
+.searchrow select{border:0;outline:0;background:transparent;font-weight:700;padding:0 18px;min-height:70px;appearance:none;cursor:pointer;text-transform:uppercase;letter-spacing:.06em;font-size:13px}
+.searchrow .go{border:0;border-left:3px solid var(--line);background:var(--green-bright);padding:0 26px;font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:26px}
+.searchrow .go:hover{background:var(--red);color:var(--cream)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;padding:14px 18px;align-items:center}
+.chip{border:2px solid var(--line);background:transparent;padding:6px 12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.chip i{font-family:"Space Mono",monospace;font-style:normal;font-size:10px;opacity:.6;margin-left:3px}
+.chip--vazio{opacity:.42;border-style:dashed}
+.seg{display:flex;border:3px solid var(--line);margin-left:auto}
+.seg button{border:0;background:transparent;padding:8px 14px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;border-right:3px solid var(--line);border-top:3px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg{flex-wrap:wrap}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.seg button[data-est="urgente"][aria-pressed="true"]{background:var(--red);color:var(--cream)}
+.seg button[data-est="consulta"][aria-pressed="true"]{background:var(--green-bright);color:var(--ink)}
+.seg button[data-est="vitoria"][aria-pressed="true"]{background:var(--green);color:var(--cream)}
+.seg button.sb[aria-pressed="true"]{background:var(--green);color:var(--cream)}
+
+.board{display:grid;grid-template-columns:minmax(0,1fr) 440px;border-bottom:3px solid var(--line)}
+#mapcol{border-right:3px solid var(--line)}
+#map{height:660px;background:#dfe3d6;z-index:1}
+.maptools{position:absolute;top:14px;left:14px;z-index:500;display:flex;flex-wrap:wrap;gap:7px;max-width:calc(100% - 28px)}
+.jump{border:3px solid var(--line);background:var(--paper);padding:6px 11px;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;box-shadow:3px 3px 0 var(--line)}
+.jump:hover,.jump[aria-pressed="true"]{background:var(--green-bright)}
+.camadas{display:inline-flex;border:3px solid var(--line);box-shadow:3px 3px 0 var(--line);background:var(--paper)}
+.camadas button{border:0;background:transparent;padding:6px 11px;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.camadas button:first-child{border-right:3px solid var(--line)}
+.camadas button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.legend{position:absolute;left:14px;bottom:22px;z-index:500;background:var(--paper);border:3px solid var(--line);box-shadow:4px 4px 0 var(--line);padding:11px 13px;display:grid;gap:6px}
+.legend div{display:flex;align-items:center;gap:8px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.legend i{width:17px;height:17px;border:3px solid var(--line);border-radius:50%;background:var(--red);flex:none}
+.legend i.sb{background:var(--paper);border-style:dashed}
+.leaflet-container{font-family:"Space Grotesk",sans-serif}
+#map.tema-classico .leaflet-tile-pane{filter:grayscale(.72) contrast(1.02) sepia(.16) brightness(1.04)}
+/* Em modo Satélite (ausência de .tema-classico), os botões fixos ficam translúcidos para não tapar a imagem por baixo */
+#map:not(.tema-classico) ~ .maptools .jump:not([aria-pressed="true"]):not(:hover){background:rgba(251,246,234,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+#map:not(.tema-classico) ~ .legend{background:rgba(251,246,234,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.leaflet-control-attribution{font-size:10px;background:rgba(255,253,247,.9)}
+.pin{display:grid;place-items:center;width:34px;height:34px;border:3px solid var(--line);border-radius:50%;box-shadow:3px 3px 0 var(--line);transition:transform .18s;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.pin.urgente{background:var(--red);color:#fff}
+.pin.situacao{background:var(--paper);border-color:var(--red);color:var(--red-dark)}
+.pin.consulta{background:var(--green-bright);color:var(--ink)}
+.pin.tribunal{background:var(--ink);color:#fff}
+.pin.vitoria{background:var(--green);color:#fff}
+.pin.ativa{background:var(--red);color:#fff}
+.pin.acompanhamento{background:var(--paper);border-style:dashed;color:var(--ink)}
+.pin.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--green-bright)}
+.pin.on{transform:scale(1.3);z-index:600}
+.side{display:flex;flex-direction:column;background:var(--paper);max-height:660px}
+.side-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:3px solid var(--line)}
+.side-head .disp{font-size:24px}
+.list{overflow:auto;flex:1;-webkit-overflow-scrolling:touch}
+.panel-body{-webkit-overflow-scrolling:touch}
+.card{display:grid;grid-template-columns:132px 1fr;gap:14px;width:100%;text-align:left;border:0;border-bottom:2px solid rgba(23,26,18,.18);background:transparent;padding:16px 18px}
+.card:hover{background:#F4EFE0}
+.card.sel{background:var(--cream);box-shadow:inset 6px 0 0 var(--red)}
+.card .thumb{width:132px;height:132px;border:3px solid var(--line);object-fit:cover;background:#e6e2d5}
+.card .row{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.tag{border:2px solid var(--line);padding:2px 7px;font-family:"Space Mono",monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+.tag.urgente{background:var(--red);color:var(--cream)}
+.tag.situacao{background:transparent;border-color:var(--red);color:var(--red-dark)}
+.tag.consulta{background:var(--green-bright)}
+.tag.tribunal{background:var(--ink);color:var(--cream)}
+.tag.vitoria{background:var(--green);color:var(--cream)}
+.tag.ativa{background:var(--red);color:var(--cream)}
+.tag.acompanhamento{background:transparent}
+.tag.prazo{background:var(--green-bright)}
+.card h3{font-size:23px;margin:0 0 5px;text-transform:none;letter-spacing:0}
+.card .loc{font-size:13px;color:var(--ink-soft);font-weight:500}
+.card .who-min{font-size:12px;color:var(--ink-soft);margin-top:6px}
+.empty{padding:40px 18px;color:var(--ink-soft)}
+
+.panel{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--paper);border-left:3px solid var(--line);z-index:1400;transform:translateX(102%);transition:transform .28s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+.panel.open{transform:none}
+.panel-top{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:3px solid var(--line);background:var(--cream)}
+.panel-top .x{margin-left:auto;border:3px solid var(--line);background:var(--paper);width:38px;height:38px;font-weight:700;font-size:18px;line-height:1}
+.panel-body{overflow:auto;padding:0 0 40px}
+.panel-hero{width:100%;height:300px;object-fit:cover;border-bottom:3px solid var(--line);background:#e6e2d5}
+.pad{padding:22px 24px 0}
+.panel-body h2{font-size:38px;margin:10px 0 8px;text-transform:none;line-height:1}
+.panel-body .loc{font-weight:700;color:var(--ink-soft)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 6px}
+.corpo p{font-size:16.5px;line-height:1.62;margin:0 0 14px}
+.corpo p:last-child{margin-bottom:0}
+.fontes{margin:12px 0 22px;padding-left:20px;display:grid;gap:8px;font-size:15px}
+.fontes a{word-break:break-word}
+.section-lbl{border-top:3px solid var(--line);padding-top:12px;margin-top:26px}
+.who{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.who span{border:2px solid var(--line);border-radius:99px;padding:4px 10px;font-size:13px;font-weight:700;background:var(--cream)}
+.note{background:var(--cream);border:3px solid var(--line);padding:14px 16px;margin-top:18px;font-size:15px}
+.scrim{position:fixed;inset:0;background:rgba(23,26,18,.45);z-index:1300;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.on{opacity:1;pointer-events:auto}
+
+.how{padding:62px 0;border-bottom:3px solid var(--line)}
+.how h2,.propose h2{font-size:clamp(38px,5vw,74px)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+.step{border:3px solid var(--line);background:var(--paper);padding:20px;box-shadow:7px 7px 0 var(--line)}
+.step .n{font-family:"Londrina Solid",cursive;font-size:64px;line-height:.8;color:var(--red)}
+.step:nth-child(2) .n{color:var(--green-text)}
+.step:nth-child(3) .n{color:var(--ink)}
+.step h3{font-size:28px;margin:10px 0 8px}
+.step p{margin:0;color:var(--ink-soft)}
+.propose{padding:62px 0;background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line)}
+.propose .disp{color:var(--cream)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:start}
+.form{display:grid;gap:14px}
+.form label{display:grid;gap:6px}
+.form input,.form select,.form textarea{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:12px 14px;outline:0}
+.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--green-bright-text)}
+.form textarea{min-height:96px;resize:vertical}
+.thanks{border:3px solid var(--green-bright);padding:22px;background:rgba(167,198,184,.22)}
+.quote{padding:56px 0;border-bottom:3px solid var(--line)}
+.quote p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(26px,3.4vw,46px);line-height:1.02;max-width:24ch;margin:0}
+footer{padding:44px 0 60px;font-size:14px}
+.foot{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-end}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,200%);background:var(--green-bright);border:3px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:14px 20px;font-weight:700;z-index:1600;transition:transform .3s}
+.toast.on{transform:translate(-50%,0)}
+.alerta{background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line)}
+.alerta .wrap{display:flex;flex-wrap:wrap;gap:26px;align-items:center;padding:12px 24px}
+.alerta .dot{width:12px;height:12px;border-radius:50%;background:var(--red);animation:pulse 1.4s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.35)}}
+.alerta b{color:#fff}
+.alerta a{color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)}
+.national{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:3px solid var(--line);border-bottom:3px solid var(--line);background:var(--paper)}
+.national div{padding:22px 24px;border-right:3px solid var(--line)}
+.national div:last-child{border-right:0}
+.national b{font-family:"Londrina Solid",cursive;font-size:clamp(38px,4.4vw,64px);display:block;line-height:.9}
+.newsletter{position:relative;padding:clamp(48px,7vw,96px) 0;border-bottom:3px solid var(--line);background:var(--cartao);background-image:linear-gradient(rgba(23,26,18,.55),rgba(23,26,18,.55)),url('img/boletim-foto.jpg');background-size:cover;background-position:center}
+.newsletter-grid{display:flex;gap:clamp(24px,4vw,60px);align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
+.newsletter-copy h2{color:var(--paper);font-size:clamp(32px,4.6vw,58px);margin-top:10px}
+.newsletter-copy h2 .accent{color:var(--green-bright-text)}
+.newsletter-form{display:flex;flex-direction:column;gap:10px;background:var(--paper);border:3px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:24px;min-width:280px;width:340px;max-width:100%}
+.newsletter-form input{border:2px solid var(--line);padding:11px 12px;font-family:inherit;font-size:15px;background:var(--cream);color:var(--ink)}
+.newsletter-form input::placeholder{color:var(--ink-soft)}
+.newsletter-form button{border:3px solid var(--line);background:var(--green-bright);padding:12px;font-weight:700;box-shadow:4px 4px 0 var(--line);cursor:pointer;font-family:inherit;font-size:15px;color:var(--ink);transition:transform .12s,box-shadow .12s}
+.newsletter-form button:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--line)}
+.newsletter-thanks{display:none;background:var(--paper);border:3px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:22px;font-weight:700;width:340px;max-width:100%}
+@media(max-width:640px){.newsletter-grid{flex-direction:column;align-items:stretch}.newsletter-form,.newsletter-thanks{width:100%}}
+
+.editions{margin-top:clamp(40px,6vw,64px);padding-top:clamp(28px,4vw,40px);border-top:1px solid rgba(251,246,234,.18)}
+.editions-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.editions-head h3{color:var(--paper);font-size:clamp(26px,3vw,34px)}
+.editions-head .mono{color:rgba(251,246,234,.6)}
+.editions-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.edition-card{display:block;border:3px solid var(--line);background:var(--paper);box-shadow:5px 5px 0 rgba(0,0,0,.25);transition:transform .12s,box-shadow .12s}
+.edition-card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 rgba(0,0,0,.3)}
+.edition-card .photo{position:relative;aspect-ratio:4/3;overflow:hidden;background:#dfe3d6;background-image:repeating-linear-gradient(158deg,#dfe6d9 0 9px,#eaeee2 9px 18px)}
+.edition-card .photo img{width:100%;height:100%;object-fit:cover;display:block}
+.edition-card .photo .n{position:absolute;left:10px;bottom:8px;font-family:"Londrina Solid",cursive;font-size:44px;line-height:1;color:var(--paper);text-shadow:2px 2px 0 rgba(0,0,0,.35)}
+.edition-card .photo .badge{position:absolute;top:10px;right:10px;background:var(--red);color:#fff;font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;font-weight:700}
+.edition-card .info{padding:14px 16px}
+.edition-card .m{display:block;font-size:15px;font-weight:700;color:var(--ink)}
+.edition-card .y{display:block;margin-top:2px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.edition-card .lede{display:block;margin-top:8px;font-size:12.5px;line-height:1.4;color:var(--ink-soft);font-weight:300}
+.edition-card.future{pointer-events:none;background:transparent;border-style:dashed;border-color:rgba(251,246,234,.3);box-shadow:none}
+.edition-card.future .photo{background:transparent;display:flex;align-items:center;justify-content:center}
+.edition-card.future .photo .n{position:static;color:rgba(251,246,234,.35);text-shadow:none}
+.edition-card.future .info .m{color:rgba(251,246,234,.55)}
+.edition-card.future .info .y{color:rgba(251,246,234,.35)}
+.edition-card.next{pointer-events:none;background:transparent;border-style:dashed;border-color:var(--red);box-shadow:none;position:relative}
+.edition-card.next .photo{background:transparent;display:flex;align-items:center;justify-content:center}
+.edition-card.next .photo .n{position:static;color:var(--red);text-shadow:none;opacity:.85}
+.edition-card.next .info .m{color:var(--paper)}
+.edition-card.next .info .y{color:rgba(251,246,234,.55)}
+.edition-card.next .dot{position:absolute;top:12px;right:12px;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 1.4s infinite}
+.edition-card.next .tag{display:block;margin-top:6px;font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.national div:nth-child(odd) b{color:var(--red)}
+.national div:nth-child(even) b{color:var(--green-text)}
+.top100{padding:62px 0;border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
+.progress100{height:26px;border:3px solid var(--line);background:var(--paper);margin:22px 0 8px;position:relative;box-shadow:5px 5px 0 var(--line)}
+.progress100 i{display:block;height:100%;background:var(--green-bright)}
+.topgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:34px}
+.rank{display:grid;grid-template-columns:64px 1fr;gap:14px;text-align:left;border:3px solid var(--line);background:var(--paper);padding:16px;box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.rank:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.rank .n{font-family:"Londrina Solid",cursive;font-size:46px;line-height:.8;color:var(--red)}
+.rank h4{font-size:17px;margin:0 0 4px;line-height:1.2}
+.rank .m{font-size:12px;color:var(--ink-soft);font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:30px}
+.method div{border-left:3px solid var(--line);padding:0 0 0 16px}
+.method h4{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:24px;margin:0 0 6px}
+.method p{margin:0;color:var(--ink-soft);font-size:15px}
+@media(max-width:1240px){
+  .board{grid-template-columns:minmax(0,1fr) 380px}
+  .card{grid-template-columns:104px 1fr}
+  .card .thumb{width:104px;height:104px}
+}
+@media(max-width:1024px){
+  .hero-grid,.pgrid,.board{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  #mapcol{border-right:0;border-bottom:3px solid var(--line)}
+  #map{height:56vh;min-height:380px}
+  .side{max-height:none}
+  .list{overflow:visible}
+  .searchrow .field{flex:1 1 100%;border-bottom:3px solid var(--line)}
+  .searchrow select{flex:1 1 50%;border-bottom:3px solid var(--line)}
+  .searchrow .sep{display:none}
+  .searchrow .go{flex:1 1 100%;border-left:0;min-height:64px}
+  .seg{margin-left:0;width:100%}
+  .seg button{flex:1;min-height:46px}
+  .chip{min-height:40px;display:flex;align-items:center}
+  .panel{width:min(560px,100%)}
+  .top nav{gap:14px}
+}
+@media(max-width:700px){
+  .wrap{padding:0 16px}
+  h1{font-size:clamp(40px,11vw,64px)}
+  .hero{padding:34px 0 26px}
+  .stat b{font-size:34px}
+  .searchbar{box-shadow:5px 5px 0 var(--line)}
+  .searchrow input{font-size:19px}
+  .card{grid-template-columns:84px 1fr;gap:12px;padding:14px 16px}
+  .card .thumb{width:84px;height:84px}
+  .card h3{font-size:19px}
+  #map{height:52vh;min-height:320px}
+  .maptools{gap:6px;top:10px;left:10px}
+  .jump{padding:8px 10px;font-size:10px}
+  .panel{width:100%;border-left:0}
+  .panel-hero{height:210px}
+  .panel-body h2{font-size:29px}
+  .pad{padding:18px 18px 0}
+  .btn{padding:12px 16px}
+  .rank{grid-template-columns:50px 1fr}
+  .national b{font-size:34px}
+  .alerta .wrap{gap:10px;padding:10px 16px}
+  .top .wrap{height:56px}
+  .brand .disp{font-size:24px}
+}
+@media(max-width:1000px){
+  .national div{border-right:0;border-bottom:3px solid var(--line)}
+  .hero-grid,.pgrid,.board{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  #mapcol{border-right:0;border-bottom:3px solid var(--line)}
+  #map{height:440px}
+  .legend{display:none}
+  .side{max-height:none}
+  .top nav a{display:none}
+}
+
+header.top nav a{white-space:nowrap}
+.brand .disp{white-space:nowrap}
+@media(max-width:1200px){header.top nav{gap:14px}header.top nav a{font-size:14px}}
+@media(max-width:1080px){header.top nav a.hide-md{display:none}}
+@media(max-width:940px){header.top nav a.hide-sm{display:none}}
+
+footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid var(--line);background:var(--paper);font-size:15px}
+.footgrid{display:grid;grid-template-columns:minmax(260px,1.5fr) repeat(3,minmax(150px,1fr));gap:clamp(20px,3vw,44px)}
+.footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
+.footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
+.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
+.footgrid .about{margin:0;color:var(--ink-soft);max-width:36ch}
+.saramago{margin:clamp(28px,4vw,52px) 0 0;padding:22px 0 0;border-top:3px solid var(--line)}
+.saramago p{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(19px,2vw,30px);line-height:1.05;margin:0;max-width:46ch}
+.saramago cite{display:block;margin-top:10px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-style:normal}
+.copy{margin:26px 0 0;color:var(--ink-soft)}
+.copy a{color:var(--ink-soft)}
+.social{display:flex;gap:10px;align-items:center}
+.social a{color:var(--cream);border:2px solid rgba(251,246,234,.6);border-radius:99px;width:34px;height:34px;display:grid;place-items:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.social a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+@media(max-width:900px){.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.footgrid{grid-template-columns:1fr}}
+
+header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
+
+.livro{background:var(--ink);color:var(--cream);border-top:3px solid var(--line);border-bottom:3px solid var(--line);padding:clamp(44px,6vw,96px) 0;--acido:#B9F227}
+.livrogrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:clamp(26px,4vw,64px);align-items:center}
+.livro h2{color:var(--cream);font-size:clamp(46px,7vw,112px);line-height:.86}
+.livro .sub{font-size:clamp(18px,1.7vw,23px);max-width:40ch;margin:16px 0 0}
+.livrolist{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:11px;max-width:52ch}
+.livrolist li{display:grid;grid-template-columns:22px 1fr;gap:12px;opacity:.88;font-size:16px}
+.livrolist li::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--acido);margin-top:7px}
+.btn--acido{background:var(--acido);border-color:var(--cream)}
+.btn--fantasma{background:transparent;color:var(--cream);border-color:var(--cream);box-shadow:5px 5px 0 rgba(251,246,234,.35)}
+a.btn--fantasma:hover{background:var(--cream);color:var(--ink)}
+.livrocapa{display:flex;justify-content:center}
+.capa{width:min(320px,100%);aspect-ratio:3/4;border:3px solid var(--cream);overflow:hidden;box-shadow:12px 12px 0 rgba(185,242,39,.85);transform:rotate(-2deg)}
+.capa img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:900px){.livrogrid{grid-template-columns:1fr}.capa{transform:none;margin-top:8px}}
+
+.selo{display:inline-flex;align-items:baseline;gap:9px;margin-top:18px;border:0;border-bottom:2px solid rgba(23,26,18,.25);color:var(--ink-soft);padding:0 0 3px;font-size:14px;font-weight:500;background:none;box-shadow:none}
+.selo b{color:var(--green-text);font-size:15px}
+.selo:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+.selo .mono{opacity:.55;font-size:10px}
+.sobrecurto{padding:clamp(38px,5vw,76px) 0;border-bottom:3px solid var(--line);background:var(--paper)}
+.sobregrid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.sobrecurto h2{font-size:clamp(30px,4vw,58px)}
+.sobrecurto .frase{font-size:19px;max-width:56ch;color:var(--ink-soft);margin:16px 0 0}
+.indep{border:3px solid var(--line);background:var(--cream);padding:18px 20px;box-shadow:6px 6px 0 var(--line)}
+.indep .mono{color:var(--red-dark);margin:0 0 10px}
+.indep p{margin:0;font-size:15px;color:var(--ink-soft)}
+@media(max-width:900px){.sobregrid{grid-template-columns:1fr}}
+
+.lang{display:flex;gap:6px;align-items:center;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em}
+.lang a{color:var(--cream);border:2px solid rgba(251,246,234,.5);padding:3px 7px;border-radius:99px}
+.lang a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.lang a.on{background:var(--cream);color:var(--red);border-color:var(--cream)}
+::-webkit-scrollbar{width:14px;height:14px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--red);border:3px solid var(--cream);border-radius:0}
+::-webkit-scrollbar-thumb:hover{background:var(--red-dark)}
+html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
+</style>
+  <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="disp">Causas<span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span></a>
+    <nav>
+      <a href="index.html#mapa">Mapa</a>
+      <a href="diretorio.html">Diretório</a>
+      <a href="alertar.html">A quem denunciar</a>
+      <a class="hide-sm" href="livro.html">O livro</a>
+      <span class="social">
+        <a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M15.4 8.1h-1.5c-1 0-1.6.6-1.6 1.6v1.7h3l-.4 2.9h-2.6v4.6"></path><path d="M9.6 11.4h2.7"></path></svg></a>
+      </span>
+      <span class="lang">
+        <a href="index.html" class="on">PT</a>
+        <a href="index-en.html">EN</a>
+      </span>
+      <a class="btn btn--sm" href="index.html#mapa" style="background:var(--cream);border-bottom:3px solid var(--line)">Ver o mapa</a>
+    </nav>
+  </div>
+</header>
+
+<div class="alerta">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span class="mono" style="white-space:nowrap">Alerta a fechar</span>
+    <span id="alerta-prazo" style="flex:1 1 260px"></span>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="mono" style="margin:0 0 16px;font-size:20px">Portugal Continental, Madeira e Açores</p>
+      <h1>Mapa dos <span class="em">conflitos</span> ambientais em <span class="em2">Portugal</span></h1>
+      <p class="lede">Os casos que documentamos, num só mapa. Filtra por petição aberta, consulta pública, tribunal ou tema. Cada ponto é um lugar concreto e uma forma de agir.</p>
+      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ Última verificação: 9 de setembro de 2026</p>
+    </div>
+
+    <div class="searchbar" id="busca">
+      <div class="searchrow">
+        <div class="field">
+          <span class="mono" style="white-space:nowrap">Procurar</span>
+          <input id="q" placeholder="mina, solar, praia, pedreira, a minha terra…" autocomplete="off">
+        </div>
+        <div class="sep"></div>
+        <select id="reg" aria-label="Região"><option value="">Todo o país</option></select>
+        <div class="sep"></div>
+        <select id="ord" aria-label="Ordenar">
+          <option value="prazo">Ordenar: prazo mais próximo</option>
+          <option value="verif">Ordenar: atualização mais recente</option>
+          <option value="az">Ordenar: A,Z</option>
+        </select>
+        <button class="go" id="go">Ver no mapa</button>
+      </div>
+      <div class="filters" id="chips">
+        <span class="mono" style="margin-right:4px">Temas</span>
+        <!-- categorias inseridas aqui -->
+        <div class="seg" id="estado"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="board" id="mapa">
+  <div id="mapcol" style="position:relative">
+    <div id="map"></div>
+    <div class="maptools" id="jumps"></div>
+    <div class="legend">
+      <div><i></i>Petição para assinar</div>
+      <div><i style="background:var(--green-bright)"></i>Consulta pública aberta</div>
+      <div><i class="sb"></i>Sem ação aberta</div>
+      <div style="color:var(--ink-soft)">O número é o mesmo da lista</div>
+    </div>
+  </div>
+  <aside class="side">
+    <div class="side-head">
+      <span class="disp">Casos</span>
+      <span class="mono" id="count">,</span>
+      <button class="btn btn--sm" id="reset" style="margin-left:auto">Limpar filtros</button>
+    </div>
+    <div class="list" id="list"></div>
+  </aside>
+</section>
+
+<section class="how" id="como">
+  <div class="wrap">
+    <p class="mono">O que podes fazer hoje</p>
+    <h2>Como agir</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Assina</h3><p>Há petições abertas agora. Cada assinatura conta como pressão formal sobre a Assembleia da República ou a autarquia.</p></div>
+      <div class="step"><div class="n">02</div><h3>Participa</h3><p>Quando há consulta pública aberta, a tua participação entra formalmente no processo de decisão sobre o território.</p></div>
+      <div class="step"><div class="n">03</div><h3>Apoia quem está no terreno</h3><p>São <b>34</b> associações, movimentos e comissões de moradores. Cada caso no mapa mostra quem está a lutar e como ajudar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="propose" id="prazos">
+  <div class="wrap pgrid">
+    <div>
+      <p class="mono" style="color:var(--green-bright-text)">O que fecha primeiro</p>
+      <h2 class="disp">Prazos a contar</h2>
+      <ul id="deadlines" style="list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px"></ul>
+      <p class="mono" style="opacity:.6;margin-top:22px">Sabes de um caso que não está aqui, ou de um erro? <a href="mailto:geral@causasderaiz.org" style="color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)">geral@causasderaiz.org</a></p>
+    </div>
+    <div>
+      <p class="mono" style="color:var(--green-bright-text)">Está a acontecer à tua porta</p>
+      <h2 class="disp">A quem denunciar</h2>
+      <p style="max-width:44ch;opacity:.85">Quatro perguntas e sabes qual a entidade com poder para atuar: SEPNA, ICNF, IGAMAOT, APA, câmara ou Polícia Marítima.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+        <a class="btn btn--green" href="alertar.html" style="border-bottom:3px solid var(--line)">Descobrir a entidade certa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="todas" style="background:var(--paper)">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-end">
+    <div>
+      <p class="mono">Preferes uma lista</p>
+      <h2>Diretório</h2>
+      <p style="max-width:50ch;color:var(--ink-soft);font-size:18px">Os mesmos casos em lista, região a região, sem mapa. Útil para consultar, imprimir ou citar.</p>
+    </div>
+    <a class="btn btn--green" href="diretorio.html" style="border-bottom:3px solid var(--line)">Abrir o diretório</a>
+  </div>
+</section>
+
+<section class="livro">
+  <div class="wrap livrogrid">
+    <div>
+      <p class="mono" style="color:var(--acido)">Livro aberto · edição 2026</p>
+      <h2>Causas de Raiz</h2>
+      <p class="sub">Ninguém respira sozinho, e ninguém age sozinho. O retrato da crise que vivemos, e um caminho concreto para agir a partir do lugar onde estás.</p>
+      <ul class="livrolist">
+        <li>Os números de 2025 e 2026, com fonte.</li>
+        <li>Uma chave da emergência: duas opções por passo até ao caminho que serve para o teu caso.</li>
+      </ul>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+        <a class="btn btn--acido" href="livro.html">Ler o livro</a>
+        <a class="btn btn--fantasma" href="livro.html#chave">Ir direto à chave da emergência</a>
+      </div>
+    </div>
+    <div class="livrocapa">
+      <div class="capa">
+        <img src="img/livro-capa.jpg" alt="Capa do livro Causas de Raiz">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobrecurto">
+  <div class="wrap sobregrid">
+    <div>
+      <p class="mono" style="color:var(--ink-soft)">Sobre</p>
+      <h2>Plataforma cidadã independente</h2>
+      <p class="frase">Somos uma iniciativa cidadã sem fins lucrativos, feita em trabalho voluntário e com fundos próprios.</p>
+      <p class="frase">Reunimos os conflitos ambientais de Portugal Continental, Madeira e Açores, mostramos onde acontecem, quem está envolvido e como participar.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+        <a class="btn btn--sm" href="sobre.html">Sobre</a>
+        <a class="btn btn--sm" href="metodologia.html">Metodologia</a>
+        <a class="btn btn--sm" href="mailto:geral@causasderaiz.org">Contacto</a>
+      </div>
+    </div>
+    <aside class="indep">
+      <p class="mono">Independente</p>
+      <p><b>Sem filiação partidária.</b></p>
+      <p style="margin-top:8px"><b>Sem financiamento de empresas com interesses nas casos documentados.</b></p>
+      <p style="margin-top:12px">Sem publicidade e sem rastreadores. <a href="metodologia.html">Metodologia</a>.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="national">
+  <div><b id="n-tot">0</b><span class="mono">casos documentados</span></div>
+  <div><b id="s-urg">0</b><span class="mono">petições abertas para assinar</span></div>
+  <div><b id="s-sb">0</b><span class="mono">consultas públicas abertas</span></div>
+  <div><b>4.592</b><span class="mono">incêndios em julho de 2026</span></div>
+  <div><b>34</b><span class="mono">organizações e movimentos envolvidos</span></div>
+  <div><b>8</b><span class="mono">regiões cobertas, ilhas incluídas</span></div>
+</div>
+
+<section class="newsletter">
+  <div class="wrap newsletter-grid">
+    <div class="newsletter-copy">
+      <p class="mono" style="color:rgba(251,246,234,.75)">Novo</p>
+      <h2>Subscreve o nosso<br>boletim mensal<br><span class="accent">A Raiz</span></h2>
+      <p style="color:var(--paper);font-size:16px;font-weight:300;max-width:38ch;margin:14px 0 0">Pela terra, pela água, pelas florestas, por nós.</p>
+    </div>
+    <div>
+      <form id="boletim-form" class="newsletter-form" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfsRyJMdZKYTfdxpjSyQjn_sPojwy9DxjVPfjn2Pi407BuoOQ/formResponse" method="POST" onsubmit="window.boletimSubmitted=true;(function(f){
+        var nome=(f.querySelector('[name=\'entry.78862279\']').value||'').trim();
+        var d=new Date();var desde=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
+        var link='cartao.html?nome='+encodeURIComponent(nome)+'&desde='+desde;
+        var el=document.getElementById('boletim-thanks');
+        el.innerHTML='Obrigada'+(nome?', '+nome.split(' ')[0]:'')+'! Já estás na lista — chega-te o próximo boletim por email.<br><br>Já podes ver o teu <a href=\''+link+'\' style=\'color:var(--red-dark);border-bottom-color:var(--red)\'>cartão colecionável A Raiz →</a>';
+      })(this);setTimeout(function(){document.getElementById('boletim-form').style.display='none';document.getElementById('boletim-thanks').style.display='block';},400);">
+        <input type="text" name="entry.78862279" placeholder="O teu nome" required>
+        <input type="email" name="entry.2068041067" placeholder="O teu email" required>
+        <input type="text" name="entry.964112802" placeholder="A tua localidade (opcional)">
+        <button type="submit">Subscrever</button>
+      </form>
+      <p id="boletim-thanks" class="newsletter-thanks">Obrigada! Já estás na lista — chega-te o próximo boletim por email.</p>
+    </div>
+  </div>
+
+  <div class="wrap editions" id="boletim">
+    <div class="editions-head">
+      <h3>Edições anteriores</h3>
+      <span class="mono">1 publicada</span>
+    </div>
+    <div class="editions-grid">
+      <div class="edition-card" style="pointer-events:none">
+        <div class="photo" style="aspect-ratio:4/5">
+          <img src="img/boletim-01-sementes.png" alt="Sementes de árvore da época" loading="lazy">
+          <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,26,18,0) 45%,rgba(23,26,18,.8) 100%)"></span>
+          <span style="position:absolute;left:10px;top:10px;font-family:'Londrina Solid',cursive;font-weight:400;font-size:22px;letter-spacing:.02em;text-transform:uppercase;color:var(--paper);text-shadow:2px 2px 0 rgba(0,0,0,.35)">Raiz</span>
+          <span class="n">01</span>
+          <span style="position:absolute;left:10px;bottom:44px;font-size:15px;font-weight:700;color:var(--paper)">Setembro</span>
+        </div>
+      </div>
+      <div class="edition-card next">
+        <span class="dot"></span>
+        <div class="photo"><span class="n">02</span></div>
+        <div class="info">
+          <span class="m">Outubro</span>
+          <span class="y">2026</span>
+          <span class="tag">a sair</span>
+        </div>
+      </div>
+      <div class="edition-card future">
+        <div class="photo"><span class="n">03</span></div>
+        <div class="info">
+          <span class="m">Novembro</span>
+          <span class="y">2026</span>
+        </div>
+      </div>
+      <div class="edition-card future">
+        <div class="photo"><span class="n">04</span></div>
+        <div class="info">
+          <span class="m">Dezembro</span>
+          <span class="y">2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none" title="envio do formulário"></iframe>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <span class="disp" style="font-size:34px;display:block"><span style="color:var(--red)">Causas</span><span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span>
+        <p class="claim">Pela terra, pela água, pelas florestas, por nós!</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html#mapa">Casos</a></li>
+          <li><a href="index.html#mapa">Mapa</a></li>
+          <li><a href="alertar.html">Alertar</a></li>
+          <li><a href="index.html#como">Agir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">O projeto</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="arquivo.html">Arquivo</a></li>
+          <li><a href="mailto:geral@causasderaiz.org">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61593008168392" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Emergência</h4>
+        <ul>
+          <li><a href="tel:808200520">SOS Ambiente: 808 200 520</a></li>
+          <li><a href="mailto:geral@apambiente.pt">APA</a></li>
+        </ul>
+      </div>
+    </div>
+    <blockquote class="saramago">
+      <p>“Quando Joana Carda riscou o chão com a vara de negrilho, todos os cães de Cerbère começaram a ladrar…”</p>
+      <cite>José Saramago, <em>A Jangada de Pedra</em></cite>
+    </blockquote>
+    <p class="copy mono">© 2026 Causas de Raiz · 2026 Ulmeiro · 2026 <a href="https://www.instagram.com/movementagainsthate/" target="_blank" rel="noopener">Movement Against Hate</a> · Cartografia © OpenStreetMap contributors</p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="panel" aria-hidden="true">
+  <div class="panel-top"><span class="mono">Ficha do caso</span><button class="x" id="close">✕</button></div>
+  <div class="panel-body" id="pbody"></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script>document.write('<script src="dados.js?v='+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="fichas.js?v='+Date.now()+'"><\/script>')</script>
+<script>
+const LUTAS=CAUSAS;
+const ESTLBL=Object.fromEntries(ESTADOS);
+const ESTICON={urgente:"⚡",consulta:"🗳",tribunal:"⚖",vitoria:"✓",acompanhamento:"◐"};
+const CATLBL=Object.fromEntries(CATEGORIAS);
+const st={q:"",reg:"",est:"todas",cats:new Set(),ord:"urg",sel:null};
+const seguidas=new Set();
+const $=s=>document.querySelector(s);
+const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};
+const IMG=c=>"img/"+c.id+".jpg";
+const FB=c=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+c.img+"'";
+
+$("#reg").insertAdjacentHTML("beforeend",REGIOES.map(r=>'<option>'+r+'</option>').join(""));
+$("#estado").innerHTML='<button data-est="todas" aria-pressed="true">Todas</button>'+
+  [["peticao","⚡ Petição ativa"],["consulta","🗳 Consulta pública"],["tribunal","⚖ Em tribunal"],["vitoria","✓ Vitória"],["acompanhamento","◐ Acompanhamento"]].map(([k,l])=>'<button data-est="'+k+'" aria-pressed="false">'+l+'</button>').join("");
+$("#estado").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+  st.est=b.dataset.est;
+  $("#estado").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render();
+});
+$("#estado").insertAdjacentHTML("beforebegin",CATEGORIAS.map(([k,l])=>{
+  const n=CAUSAS.filter(c=>c.cat===k||c.cat2===k).length;
+  return '<button class="chip'+(n?"":" chip--vazio")+'" data-cat="'+k+'" aria-pressed="false">'+l+' <i>'+n+'</i></button>';
+}).join(""));
+$("#chips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+  const k=b.dataset.cat;
+  st.cats.has(k)?st.cats.delete(k):st.cats.add(k);
+  b.setAttribute("aria-pressed",st.cats.has(k));render();
+});
+$("#q").oninput=ev=>{st.q=ev.target.value.toLowerCase();render()};
+$("#reg").onchange=ev=>{st.reg=ev.target.value;render()};
+$("#ord").onchange=ev=>{st.ord=ev.target.value;render()};
+$("#go").onclick=()=>window.scrollTo({top:$("#mapa").offsetTop-64,behavior:"smooth"});
+$("#reset").onclick=()=>{
+  st.q="";st.reg="";st.est="todas";st.cats.clear();st.ord="urg";
+  $("#q").value="";$("#reg").value="";$("#ord").value="urg";
+  $("#chips").querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed","false"));
+  $("#estado").querySelectorAll("button").forEach((b,i)=>b.setAttribute("aria-pressed",i===0));
+  render();
+};
+
+const map=L.map("map",{scrollWheelZoom:true,zoomControl:false}).setView([39.5,-8.2],6);
+document.getElementById("map").classList.add("tema-classico");
+L.control.zoom({position:"topright"}).addTo(map);
+const osm=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);
+/* Link direto para o Google Earth Web, centrado nas coordenadas do caso.
+   Distância/tilt/heading escolhidos para uma vista de topo à escala de uma instalação. */
+const googleEarthUrl=c=>c.ll?"https://earth.google.com/web/@"+c.ll[0]+","+c.ll[1]+",0a,900d,0y,0h,0t,0r":"";
+/* Link para a área do mapa que se está a ver de momento (centro + altura visível convertida em distância) */
+function googleEarthAreaUrl(){
+  const ct=map.getCenter(),z=map.getZoom();
+  const groundRes=156543.03392*Math.cos(ct.lat*Math.PI/180)/Math.pow(2,z);
+  const dist=Math.max(300,Math.round(groundRes*map.getSize().y));
+  return "https://earth.google.com/web/@"+ct.lat.toFixed(6)+","+ct.lng.toFixed(6)+",0a,"+dist+"d,0y,0h,0t,0r";
+}
+const markers={};
+const icone=(c,i)=>L.divIcon({className:"",iconSize:[34,34],iconAnchor:[17,17],
+  html:'<span class="pin '+estadoBadge(c).k+(c.prazo?" prazo":"")+'">'+String(i+1).padStart(2,"0")+'</span>'});
+const VISTAS={"Todo o país":[[36.9,-9.6],[42.2,-6.1]],"Norte":[[40.8,-8.9],[42.2,-6.6]],"Centro":[[39.3,-9.1],[41.0,-6.9]],
+ "Lisboa e Vale do Tejo":[[38.3,-9.6],[39.7,-8.3]],"Alentejo":[[37.4,-9.0],[38.8,-7.0]],"Algarve":[[36.9,-9.0],[37.6,-7.4]],
+ "Madeira":[[32.6,-17.3],[32.9,-16.6]],"Açores":[[36.9,-31.3],[39.8,-25.0]]};
+LUTAS.forEach((c,i)=>{
+  if(!c.ll)return;
+  const m=L.marker(c.ll,{icon:icone(c,i),title:c.t,riseOnHover:true}).addTo(map);
+  m.bindTooltip('<b>'+c.t+'</b><br>'+c.loc+'<br><i>'+c.status+'</i>',{direction:"top",offset:[0,-18]});
+  m.on("click",()=>openCausa(c.id));
+  markers[c.id]=m;
+});
+/* Camada de satélite via Copernicus Data Space Ecosystem (Sentinel Hub OGC WMS). Cobre o mundo todo
+   (inclui Madeira e Açores), gratuito, sem chave paga — resolução 10m/pixel. */
+const SATELITE_MIN_ZOOM=7; /* abaixo deste zoom a resolução pedida excede o limite do Sentinel Hub (1500 m/pixel) */
+const satelite=L.tileLayer.wms("https://sh.dataspace.copernicus.eu/ogc/wms/974de996-4005-491e-b9c9-ff02058a8b06",{
+  tileSize:512,minZoom:SATELITE_MIN_ZOOM,maxZoom:18,layers:"TRUE_COLOR",maxcc:20,
+  attribution:'© <a href="https://dataspace.copernicus.eu/" target="_blank">Copernicus Data Space Ecosystem</a>'
+});
+$("#jumps").innerHTML=Object.keys(VISTAS).map(k=>'<button class="jump" data-k="'+k+'">'+k+'</button>').join("")+
+  '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="true">Mapa</button><button type="button" data-camada="satelite" aria-pressed="false">Satélite</button></span>'+
+  '<button class="jump" id="geoBtn" type="button" title="Ver esta área no Google Earth">🌍 Google Earth</button>';
+$("#jumps").querySelectorAll(".jump[data-k]").forEach(b=>b.onclick=()=>{
+  $("#jumps").querySelectorAll(".jump[data-k]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  map.flyToBounds(VISTAS[b.dataset.k],{padding:[36,36],duration:.8});
+});
+$("#geoBtn").onclick=()=>window.open(googleEarthAreaUrl(),"_blank","noopener");
+$("#camadas").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-camada]");
+  if(!b)return;
+  const querSatelite=b.dataset.camada==="satelite";
+  $("#camadas").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));
+  if(querSatelite){
+    if(map.getZoom()<SATELITE_MIN_ZOOM)map.setZoom(SATELITE_MIN_ZOOM);
+    map.setMinZoom(SATELITE_MIN_ZOOM);
+    if(map.hasLayer(osm))map.removeLayer(osm);
+    if(!map.hasLayer(satelite))satelite.addTo(map);
+  }else{
+    map.setMinZoom(0);
+    if(map.hasLayer(satelite))map.removeLayer(satelite);
+    if(!map.hasLayer(osm))osm.addTo(map);
+  }
+  document.getElementById("map").classList.toggle("tema-classico",!querSatelite);
+});
+map.fitBounds(VISTAS["Todo o país"],{padding:[28,28]});
+
+const PESO={urgente:0,consulta:1,tribunal:2,acompanhamento:3,vitoria:4};
+function match(c){
+  if(st.est!=="todas"){
+    const t=acaoTipo(c);
+    if(st.est==="peticao"&&t!=="peticao")return false;
+    if(st.est==="consulta"&&t!=="consulta")return false;
+    if(st.est==="tribunal"&&c.est!=="tribunal")return false;
+    if(st.est==="vitoria"&&c.est!=="vitoria")return false;
+    if(st.est==="acompanhamento"&&!(c.est==="acompanhamento"||(c.est==="urgente"&&!c.pet)))return false;
+  }
+  if(st.reg&&c.reg!==st.reg)return false;
+  if(st.cats.size&&!st.cats.has(c.cat)&&!(c.cat2&&st.cats.has(c.cat2)))return false;
+  if(st.q){
+    const hay=(c.t+" "+c.loc+" "+c.catLabel+" "+c.cat+" "+c.res+" "+c.reg+" "+c.quem.join(" ")+" "+c.status+" "+(c.kw||[]).join(" ")).toLowerCase();
+    if(!hay.includes(st.q))return false;
+  }
+  return true;
+}
+function sorted(list){
+  const s=[...list];
+  if(st.ord==="pop")s.sort((a,b)=>a.t.localeCompare(b.t,"pt"));
+  else if(st.ord==="novo")s.sort((a,b)=>b.verif.localeCompare(a.verif));
+  else s.sort((a,b)=>(b.prazo?1:0)-(a.prazo?1:0)||PESO[a.est]-PESO[b.est]||a.t.localeCompare(b.t,"pt"));
+  return s;
+}
+function render(){
+  const vis=sorted(LUTAS.filter(match));
+  $("#count").textContent=vis.length+" de "+LUTAS.length;
+  $("#list").innerHTML=vis.length?vis.map((c,i)=>`
+    <button class="card ${st.sel===c.id?"sel":""}" data-id="${c.id}">
+      <img class="thumb" src="${IMG(c)}" onerror="${FB(c)}" alt="${c.loc}" loading="lazy">
+      <div>
+        <div class="row">
+          <span class="mono" style="color:var(--ink-soft)">${String(i+1).padStart(2,"0")}</span>
+          <span class="tag ${estadoBadge(c).k}">${estadoBadge(c).i} ${estadoBadge(c).l}</span>
+          <span class="mono" style="color:var(--ink-soft)">${c.catLabel}</span>
+        </div>
+        <h3>${c.t}</h3>
+        <div class="loc">${c.loc}</div>
+        <div class="who-min">${c.quem.join(" · ")}</div>
+      </div>
+    </button>`).join(""):'<div class="empty"><p class="disp" style="font-size:28px">Nada por aqui.</p><p>Nada corresponde a esta procura. Limpa os filtros ou procura por outro termo.</p></div>';
+  $("#list").querySelectorAll(".card").forEach(b=>{
+    b.onclick=()=>openCausa(b.dataset.id);
+    b.onmouseenter=()=>hi(b.dataset.id,true);
+    b.onmouseleave=()=>hi(b.dataset.id,false);
+  });
+  const ids=new Set(vis.map(c=>c.id));
+  vis.forEach((c,i)=>{if(markers[c.id])markers[c.id].setIcon(icone(c,i))});
+  LUTAS.forEach(c=>{
+    const m=markers[c.id];if(!m)return;
+    const has=map.hasLayer(m);
+    if(ids.has(c.id)&&!has)m.addTo(map);
+    if(!ids.has(c.id)&&has)map.removeLayer(m);
+  });
+  $("#s-urg").textContent=CAUSAS.filter(c=>acaoTipo(c)==="peticao").length;
+  $("#s-sb").textContent=CAUSAS.filter(c=>acaoTipo(c)==="consulta").length;
+  $("#n-tot").textContent=CAUSAS.length;
+}
+function hi(id,on){
+  const m=markers[id];if(!m)return;
+  const el=m.getElement();if(el)el.querySelector(".pin").classList.toggle("on",on);
+}
+function openCausa(id){
+  const c=LUTAS.find(x=>x.id===id);st.sel=id;
+  if(c.ll)map.flyTo(c.ll,c.reg==="Madeira"||c.reg==="Açores"?9:10,{duration:.9});
+  const segue=seguidas.has(id);
+  const F=(typeof FICHAS!=="undefined"&&FICHAS[c.id])||{corpo:"",fontes:[],stat:"",link:"",linkL:""};
+  const acao=c.pet?`<a class="btn btn--ink" href="${c.pet}" target="_blank" rel="noopener">${(c.petLabel||"Agir agora").replace(/^[^A-Za-zÀ-ú]+/,"").replace(/\s*→\s*$/,"")}</a>`:"";
+  $("#pbody").innerHTML=`
+    <img class="panel-hero" src="${IMG(c)}" onerror="${FB(c)}" alt="${c.loc}">
+    <div class="pad">
+      <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <span class="tag ${estadoBadge(c).k}">${estadoBadge(c).i} ${estadoBadge(c).l}</span>
+        <span class="mono">${c.catLabel}</span>
+      </div>
+      <h2>${c.t}</h2>
+      <div class="loc">${c.loc} · ${c.reg}</div>
+      <p class="mono" style="color:var(--red-dark);margin-top:12px">${c.status}</p>
+      ${F.stat?`<p class="mono" style="color:var(--ink-soft);margin-top:6px">${F.stat}</p>`:""}
+      <p style="font-size:17px"><b>${c.res}</b></p>
+      <div class="actions">
+        ${acao}
+        <button class="btn ${segue?"btn--green":""}" id="follow">${segue?"A seguir ✓":"Seguir"}</button>
+        ${c.ll?`<a class="btn btn--sm" href="${googleEarthUrl(c)}" target="_blank" rel="noopener" title="Ver este local no Google Earth">🌍 Ver no Google Earth ↗</a>`:""}
+        <button class="btn btn--sm" id="sharelink" title="Copiar link direto deste caso">🔗 Copiar link</button>
+      </div>
+      ${!c.pet?'<div class="note">Não há ação imediata disponível. Continuamos a acompanhar e o caso reabre quando houver consulta pública, prazo ou decisão.</div>':""}
+      <div class="section-lbl"><span class="mono">O que está a acontecer</span></div>
+      <div class="corpo">${F.corpo}</div>
+      <div class="section-lbl"><span class="mono">Quem está envolvido</span></div>
+      <div class="who">${c.quem.map(q=>'<span>'+q+'</span>').join("")}</div>
+      <div class="section-lbl"><span class="mono">Fontes</span></div>
+      <ol class="fontes">${F.fontes.map(f=>'<li><a href="'+f[1]+'" target="_blank" rel="noopener">'+f[0]+'</a></li>').join("")}${F.link?'<li><a href="'+F.link+'" target="_blank" rel="noopener">'+(F.linkL||"Saber mais")+'</a></li>':""}</ol>
+    </div>`;
+  $("#follow").onclick=()=>{
+    seguidas.has(id)?seguidas.delete(id):seguidas.add(id);
+    toast(seguidas.has(id)?"Vais receber o que acontecer neste caso.":"Deixaste de seguir.");
+    openCausa(id);
+  };
+  $("#sharelink").onclick=()=>{
+    const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso.html?id="+id;
+    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copiado — pronto a partilhar.")).catch(()=>{
+      window.prompt("Copia este link:",url);
+    });
+  };
+  $("#panel").classList.add("open");$("#panel").setAttribute("aria-hidden","false");
+  $("#scrim").classList.add("on");
+  render();
+}
+function closePanel(){
+  $("#panel").classList.remove("open");$("#panel").setAttribute("aria-hidden","true");
+  $("#scrim").classList.remove("on");st.sel=null;render();
+}
+$("#close").onclick=closePanel;$("#scrim").onclick=closePanel;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closePanel()});
+let tt;
+function toast(msg){const el=$("#toast");el.textContent=msg;el.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>el.classList.remove("on"),2600)}
+
+// alerta do topo: primeira luta com prazo
+(function(){
+  const c=LUTAS.find(x=>x.prazo&&acaoTipo(x)==="peticao")||LUTAS[0];
+  if(!c)return;
+  $("#alerta-prazo").innerHTML='<b>'+c.t.split(":")[0]+'</b>, '+c.loc.split(",")[0]+'. '+c.status.replace(/^[^ ]+ /,"")+'. '+
+    (c.pet?'<a href="'+c.pet+'" target="_blank" rel="noopener">'+(c.petLabel||"Agir")+'</a>':'<a href="caso.html?id='+c.id+'">Ver o caso</a>');
+})();
+
+// prazos a contar
+$("#deadlines").innerHTML=LUTAS.filter(c=>c.prazo).map(c=>
+  '<li style="border:3px solid var(--cream);padding:14px 16px"><span class="mono" style="color:var(--green-bright-text)">'+c.status+'</span><br><b>'+c.t+'</b><br><span style="opacity:.7">'+c.loc+'</span></li>').join("")
+ + LUTAS.filter(c=>acaoTipo(c)==="peticao"&&!c.prazo).slice(0,5).map(c=>
+  '<li style="border-bottom:2px dotted rgba(251,246,234,.35);padding:10px 0"><span class="mono" style="opacity:.6">petição aberta</span><br><b>'+c.t+'</b></li>').join("");
+
+// dados estruturados
+(function(){
+  const ld=document.createElement("script");
+  ld.type="application/ld+json";
+  ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"ItemList",name:"Conflitos ambientais em Portugal Continental, Madeira e Açores",numberOfItems:LUTAS.length,
+    itemListElement:LUTAS.map((c,i)=>({"@type":"ListItem",position:i+1,item:{"@type":"Article",headline:c.t,about:c.catLabel,abstract:c.res,
+      url:location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso.html?id="+c.id,dateModified:c.verif,
+      contentLocation:{"@type":"Place",name:c.loc,geo:c.ll?{"@type":"GeoCoordinates",latitude:c.ll[0],longitude:c.ll[1]}:undefined},
+      publisher:{"@type":"Organization",name:"Causas de Raiz"}}}))});
+  document.head.appendChild(ld);
+})();
+
+render();
+</script>
+</body>
+</html>
