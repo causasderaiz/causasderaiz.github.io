@@ -88,6 +88,8 @@ footer{padding:40px 0 60px;font-size:14px}
   .brand .disp{font-size:22px}
   .brand img{height:29px}
   .cards{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+  .facts div{grid-template-columns:100px 1fr}
 }
 .big{border:3px solid var(--line);background:var(--paper);box-shadow:7px 7px 0 var(--line);margin-top:26px}
 .big img{width:100%;height:clamp(220px,34vw,420px);object-fit:cover;border-bottom:3px solid var(--line)}
@@ -252,9 +254,9 @@ const img=x=>"img/"+x.id+".jpg";
 const fb=x=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+x.img+"'";
 const acaoL=c.pet?(c.petLabel||"Agir agora").replace(/^[^A-Za-zÀ-ú]+/,"").replace(/\s*→\s*$/,""):"";
 document.getElementById("t").textContent=c.t+", "+c.loc;
-document.getElementById("d").setAttribute("content",c.res);
-document.getElementById("og-title").setAttribute("content",c.t+" — "+c.loc);
-document.getElementById("og-desc").setAttribute("content",c.res);
+document.getElementById("d").setAttribute("content",c.t);
+document.getElementById("og-title").setAttribute("content",c.t+", "+c.loc);
+document.getElementById("og-desc").setAttribute("content",c.t);
 document.getElementById("og-url").setAttribute("content",location.href);
 const rel=CAUSAS.filter(x=>x.id!==c.id&&(x.reg===c.reg||x.cat===c.cat)).slice(0,3);
 document.getElementById("caso").innerHTML=
