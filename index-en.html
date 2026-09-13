@@ -697,6 +697,17 @@ const $=s=>document.querySelector(s);
 const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};
 const IMG=c=>"img/"+c.id+".jpg";
 const FB=c=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+c.img+"'";
+function acaoTipo(c){
+  if(!c.pet)return"";
+  const l=(c.petLabel||"").toLowerCase();
+  if(l.includes("participa")||l.includes("consult"))return"consulta";
+  if(l.includes("member")||l.includes("support"))return"apoio";
+  return"peticao";
+}
+function estadoBadge(c){
+  if(c.est==="urgente")return c.pet?{k:"urgente",i:"⚡",l:"Petition open"}:{k:"situacao",i:"⚡",l:"Active situation"};
+  return{k:c.est,i:ESTICON[c.est]||"",l:ESTLBL[c.est]||c.est};
+}
 
 $("#reg").insertAdjacentHTML("beforeend",REGIOES.map(r=>'<option>'+r+'</option>').join(""));
 $("#estado").innerHTML='<button data-est="todas" aria-pressed="true">All</button>'+

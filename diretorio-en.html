@@ -458,6 +458,19 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
 <script>document.write('<script src="dados-en.js?v='+Date.now()+'"><\/script>')</script>
 <script>
 const CATLBL=Object.fromEntries(CATEGORIAS);
+const ESTLBL=Object.fromEntries(ESTADOS);
+const ESTICON={urgente:"⚡",consulta:"🗳",tribunal:"⚖",vitoria:"✓",acompanhamento:"◐"};
+function acaoTipo(c){
+  if(!c.pet)return"";
+  const l=(c.petLabel||"").toLowerCase();
+  if(l.includes("participa")||l.includes("consult"))return"consulta";
+  if(l.includes("member")||l.includes("support"))return"apoio";
+  return"peticao";
+}
+function estadoBadge(c){
+  if(c.est==="urgente")return c.pet?{k:"urgente",i:"⚡",l:"Petition open"}:{k:"situacao",i:"⚡",l:"Active situation"};
+  return{k:c.est,i:ESTICON[c.est]||"",l:ESTLBL[c.est]||c.est};
+}
 const st={q:"",reg:"",est:"todas",cats:new Set(),ord:"urg"};
 const $=s=>document.querySelector(s);
 const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};

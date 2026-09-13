@@ -15,7 +15,7 @@
 <meta property="og:title" content="Ficha verificada de uma luta ambiental em Portugal, Madeira ou Açores" id="og-title">
 <meta property="og:description" content="Localização, quem está envolvido, fontes de imprensa que documentam o caso, e como agir." id="og-desc">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
+<meta property="og:image" content="https://causasderaiz.org/img/og-image.png" id="og-image">
 <meta property="og:url" content="https://causasderaiz.org/caso.html" id="og-url">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -244,6 +244,18 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
 <script>document.write('<script src="fichas.js?v='+Date.now()+'"><\/script>')</script>
 <script>
 const ESTLBL=Object.fromEntries(ESTADOS);
+const ESTICON={urgente:"⚡",consulta:"🗳",tribunal:"⚖",vitoria:"✓",acompanhamento:"◐"};
+function acaoTipo(c){
+  if(!c.pet)return"";
+  const l=(c.petLabel||"").toLowerCase();
+  if(l.includes("participa")||l.includes("consulta"))return"consulta";
+  if(l.includes("member")||l.includes("socio")||l.includes("sócio")||l.includes("support"))return"apoio";
+  return"peticao";
+}
+function estadoBadge(c){
+  if(c.est==="urgente")return c.pet?{k:"urgente",i:"⚡",l:"Petição ativa"}:{k:"situacao",i:"⚡",l:"Situação ativa"};
+  return{k:c.est,i:ESTICON[c.est]||"",l:ESTLBL[c.est]||c.est};
+}
 const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};
 const id=new URLSearchParams(location.search).get("id")||CAUSAS[0].id;
 const c=CAUSAS.find(x=>x.id===id)||CAUSAS[0];
@@ -257,6 +269,7 @@ document.getElementById("t").textContent=c.t+", "+c.loc;
 document.getElementById("d").setAttribute("content",c.t);
 document.getElementById("og-title").setAttribute("content",c.t+", "+c.loc);
 document.getElementById("og-desc").setAttribute("content",c.t);
+document.getElementById("og-image").setAttribute("content",c.img||"https://causasderaiz.org/img/og-image.png");
 document.getElementById("og-url").setAttribute("content",location.href);
 const rel=CAUSAS.filter(x=>x.id!==c.id&&(x.reg===c.reg||x.cat===c.cat)).slice(0,3);
 document.getElementById("caso").innerHTML=
