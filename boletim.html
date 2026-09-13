@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Boletim — Causas de Raiz</title>
+<meta name="description" content="O boletim mensal da Causas de Raiz: casos verificados, uma investigação de fundo e um aliado em destaque.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
+  --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
+  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background-color:var(--cream);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cpath d='M0 170 C40 150 65 190 105 160 C145 130 165 175 220 145' stroke='%230e3f26' stroke-width='1' fill='none' opacity='0.10'/%3E%3Cpath d='M0 55 C40 35 65 78 108 52 C148 28 168 68 220 42' stroke='%230e3f26' stroke-width='1' fill='none' opacity='0.07'/%3E%3C/svg%3E");background-repeat:repeat;color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+h1,h2,h3,h4,.disp{font-family:"Londrina Solid",cursive;font-weight:400;text-transform:uppercase;line-height:.9;margin:0}
+.mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(16px,3vw,44px)}
+.col{max-width:74ch}
+p{text-wrap:pretty}
+header.top{position:sticky;top:0;z-index:900;background:var(--red);border-bottom:3px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:64px;max-width:1560px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);border:0;text-decoration:none}
+.brand .disp{font-size:30px;color:var(--cream)}
+header.top nav{margin-left:auto;display:flex;gap:20px;align-items:center}
+header.top nav a{color:var(--cream);border-bottom:2px solid transparent;font-weight:500;font-size:15px;white-space:nowrap}
+header.top nav a:hover{border-bottom-color:var(--cream)}
+header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:3px solid var(--line);background:var(--paper);padding:12px 18px;font-weight:700;box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s;color:var(--ink)}
+a.btn{border-bottom:3px solid var(--line)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.btn--sm{padding:8px 13px;box-shadow:3px 3px 0 var(--line);font-size:14px}
+.btn--green{background:var(--green-bright)}
+.btn--ink{background:var(--ink);color:var(--cream)}
+a.btn.btn--ink,a.btn.btn--ink:hover{color:var(--cream);border-bottom-color:var(--line)}
+.hero{padding:clamp(34px,4.4vw,64px) 0 clamp(22px,3vw,38px);border-bottom:3px solid var(--line);background:transparent;position:relative;overflow:hidden}
+.hero .roots{position:absolute;left:0;bottom:0;width:100%;height:60%;opacity:.55;pointer-events:none}
+.hero .wrap{position:relative}
+h1{font-size:clamp(46px,8vw,120px)}
+h1 span{color:var(--green-text)}
+.hero p.lede{font-size:clamp(17px,1.4vw,20px);max-width:60ch;color:var(--ink-soft)}
+section.band{padding:clamp(38px,5vw,80px) 0;border-bottom:3px solid var(--line)}
+section.band:nth-of-type(even){background:rgba(255,253,247,.72)}
+h2{font-size:clamp(28px,4vw,56px)}
+h3{font-size:clamp(20px,2.1vw,28px);margin:0 0 10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:24px}
+.card{border:3px solid var(--line);background:var(--paper);padding:20px;box-shadow:6px 6px 0 var(--line);display:flex;flex-direction:column;gap:10px}
+section.band:nth-of-type(even) .card{background:var(--cream)}
+.card p{margin:0;font-size:14px;color:var(--ink-soft)}
+.tag{align-self:flex-start;border:2px solid var(--line);padding:3px 8px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;background:var(--cream)}
+.tag.red{background:var(--red);color:var(--cream)}
+.tag.green{background:var(--green-bright)}
+.nb{border:3px dashed var(--ink-soft);background:transparent;padding:16px 18px;margin:10px 0 0;color:var(--ink-soft);font-size:13px}
+.photos{display:grid;grid-template-columns:1.4fr 1fr;gap:10px;margin-top:24px}
+.photos .col2{display:grid;grid-template-rows:1fr 1fr;gap:10px}
+.ph{border:3px dashed var(--ink-soft);display:flex;align-items:center;justify-content:center;min-height:120px;color:var(--ink-soft);font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;text-align:center;padding:10px}
+.photos .big{min-height:280px}
+.video-slot{border:3px solid var(--line);background:var(--ink);color:var(--cream);padding:26px 28px;display:flex;align-items:center;gap:20px;margin-top:24px}
+.video-slot .dot{width:46px;height:46px;border-radius:50%;background:var(--ink-soft);flex:none;display:flex;align-items:center;justify-content:center}
+footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid var(--line);background:var(--paper);font-size:15px}
+.footgrid{display:grid;grid-template-columns:minmax(260px,1.5fr) repeat(3,minmax(150px,1fr));gap:clamp(20px,3vw,44px)}
+.footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
+.footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
+.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
+.copy{margin:26px 0 0;color:var(--ink-soft)}
+.copy a{color:var(--ink-soft)}
+.social{display:flex;gap:10px;align-items:center}
+.social a{color:var(--cream);border:2px solid rgba(251,246,234,.6);border-radius:99px;width:34px;height:34px;display:grid;place-items:center;font-family:"Space Mono",monospace;font-size:12px;font-weight:700}
+.social a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.lang{display:flex;gap:6px;align-items:center;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em}
+.lang a{color:var(--cream);border:2px solid rgba(251,246,234,.5);padding:3px 7px;border-radius:99px}
+.lang a:hover{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.lang a.on{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.subscribe{background:var(--green);color:var(--paper);padding:clamp(24px,3vw,34px) 0}
+.subscribe .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.subscribe p{margin:0;font-size:15px}
+@media(max-width:900px){.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+  header.top nav a{display:none}
+  header.top nav a.btn{display:inline-flex}
+  header.top .wrap{height:58px}
+  .brand .disp{font-size:22px}
+  .cards{grid-template-columns:1fr}
+  .photos{grid-template-columns:1fr}
+}
+@media(max-width:560px){.footgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="disp">Causas<span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span></a>
+    <nav>
+      <a href="index.html#mapa">Mapa</a>
+      <a href="alertar.html">A quem denunciar</a>
+      <a href="livro.html">O livro</a>
+      <a href="metodologia.html">Metodologia</a>
+      <span class="social">
+        <a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"></circle></svg></a>
+      </span>
+      <span class="lang">
+        <a href="boletim.html" class="on">PT</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="roots" viewBox="0 0 900 260" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 230 C 90 200, 140 245, 210 195 C 270 155, 300 220, 375 185 C 450 150, 480 210, 570 175 C 645 145, 680 200, 780 165 C 830 148, 860 190, 900 160" stroke="#0e3f26" stroke-width="2" fill="none"/>
+    <path d="M210 195 C 218 218, 212 236, 224 250" stroke="#0e3f26" stroke-width="1.4" fill="none"/>
+    <path d="M375 185 C 384 208, 378 228, 390 244" stroke="#0e3f26" stroke-width="1.4" fill="none"/>
+    <path d="M570 175 C 579 200, 572 222, 585 240" stroke="#0e3f26" stroke-width="1.4" fill="none"/>
+  </svg>
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 14px">Publicação mensal · rascunho interno, ainda não publicado</p>
+    <h1>Boletim</h1>
+    <p class="lede">Uma edição por mês: os casos verificados, uma investigação de fundo e um aliado em destaque. Esta página ainda não está ligada ao menu do site nem partilhada — é só para nós, enquanto afinamos o conteúdo e o visual.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 10px">Ensaio fotográfico</p>
+    <div class="photos">
+      <div class="ph big">FOTO PRINCIPAL DA EDIÇÃO<br>(substituir por imagem real)</div>
+      <div class="col2">
+        <div class="ph">FOTO 2</div>
+        <div class="ph">FOTO 3</div>
+      </div>
+    </div>
+    <p class="nb">Espaço pronto para as tuas fotografias do terreno. Basta substituir estes blocos por &lt;img&gt; quando tiveres as imagens da edição escolhidas.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 10px">Casos verificados este mês · exemplo, substituir pelos casos reais</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag red">Mineração</span>
+        <h4 style="text-transform:none;font-size:20px">Trás-os-Montes</h4>
+        <p>Pedido de prospeção junto a zona protegida aguarda avaliação de impacte ambiental.</p>
+        <a href="#" class="btn btn--sm">Ver caso no dossiê</a>
+      </div>
+      <div class="card">
+        <span class="tag red">Eólica</span>
+        <h4 style="text-transform:none;font-size:20px">Alentejo</h4>
+        <p>Câmara municipal aprova instalação sem consulta pública prévia.</p>
+        <a href="#" class="btn btn--sm">Ver caso no dossiê</a>
+      </div>
+      <div class="card">
+        <span class="tag green">Água</span>
+        <h4 style="text-transform:none;font-size:20px">Tejo</h4>
+        <p>Denúncia de poluição hídrica em segmento navegável do rio.</p>
+        <a href="#" class="btn btn--sm">Ver caso no dossiê</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap col">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 10px">Aprofundamento do mês · exemplo</p>
+    <h2 style="font-size:clamp(24px,3.2vw,40px);margin-bottom:14px">Como identificar um projeto antes de chegar ao terreno</h2>
+    <p>Atas de câmara municipal, pedidos de informação prévia e o registo público da DGEG costumam mostrar sinais meses antes do primeiro anúncio. Este mês explicamos a ordem certa para vigiar as quatro fontes que mais cedo revelam um projeto em preparação.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 10px">Vídeo</p>
+    <div class="video-slot">
+      <div class="dot">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      </div>
+      <div>
+        <p class="mono" style="color:rgba(251,246,234,.6);margin:0 0 4px">Canal a caminho</p>
+        <p style="margin:0">A primeira edição em vídeo chega quando o canal do YouTube estiver no ar. O espaço fica pronto no layout até lá.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="border-bottom:3px solid var(--line)">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 10px">Aliado em destaque</p>
+    <div class="card" style="background:var(--red);border-color:var(--line);max-width:520px">
+      <span class="tag" style="background:var(--cream)">Rede</span>
+      <h4 style="text-transform:uppercase;font-size:24px;color:var(--paper);font-family:'Londrina Solid',cursive">Brava — Rede de Resistência Rural</h4>
+      <p style="color:rgba(255,253,247,.85)">Apoio a comunidades rurais ameaçadas por projetos extrativos. Lançada em novembro de 2025.</p>
+      <a href="https://rederesistenciarural.org" target="_blank" rel="noopener" class="btn btn--sm" style="align-self:flex-start">Ver como apoiar</a>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="background:rgba(255,253,247,.72)">
+  <div class="wrap">
+    <p class="mono" style="color:var(--ink-soft);margin:0 0 10px">Edições anteriores</p>
+    <p style="color:var(--ink-soft);max-width:60ch">Esta é a primeira edição — o arquivo aparece aqui a partir do segundo mês.</p>
+  </div>
+</section>
+
+<div class="subscribe">
+  <div class="wrap">
+    <p>Recebe o boletim por email, uma vez por mês.</p>
+    <a href="mailto:causasderaiz@gmail.com?subject=Quero%20subscrever%20o%20boletim" class="btn btn--ink btn--sm">Pedir para entrar na lista</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <span class="disp" style="font-size:34px;display:block"><span style="color:var(--red)">Causas</span><span style="color:var(--ink)">de</span><span style="color:var(--green-text)">raiz</span></span>
+        <p class="claim">Pela terra, pela água, pelas florestas, por nós!</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="index.html#mapa">Casos</a></li>
+          <li><a href="index.html#mapa">Mapa</a></li>
+          <li><a href="alertar.html">Alertar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">O projeto</a></li>
+          <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="mailto:geral@causasderaiz.org">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/terraaguafloresta" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy mono">© 2026 Causas de Raiz · página interna, ainda não publicada</p>
+  </div>
+</footer>
+</body>
+</html>
