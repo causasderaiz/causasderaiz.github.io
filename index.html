@@ -13,7 +13,7 @@
 <meta name="description" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores: petições abertas, consultas públicas, processos em tribunal, localização, quem está envolvido e como agir.">
 
 <meta property="og:title" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores">
-<meta property="og:description" content="Podes assinar petições, participar em consultas públicas e apoiar quem luta em tribunal — tudo num só mapa. Cada ponto é um lugar concreto e uma forma de agir.">
+<meta property="og:description" content="Podes assinar petições, participar em consultas públicas e apoiar quem luta em tribunal, tudo num só mapa. Cada ponto é um lugar concreto e uma forma de agir.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
 <meta property="og:url" content="https://causasderaiz.org/index.html">
@@ -578,14 +578,14 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
         var d=new Date();var desde=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
         var link='cartao.html?nome='+encodeURIComponent(nome)+'&desde='+desde;
         var el=document.getElementById('boletim-thanks');
-        el.innerHTML='Obrigada'+(nome?', '+nome.split(' ')[0]:'')+'! Já estás na lista — chega-te o próximo boletim por email.<br><br>Já podes ver o teu <a href=\''+link+'\' style=\'color:var(--red-dark);border-bottom-color:var(--red)\'>cartão colecionável A Raiz →</a>';
+        el.innerHTML='Obrigada'+(nome?', '+nome.split(' ')[0]:'')+'! Já estás na lista; chega-te o próximo boletim por email.<br><br>Já podes ver o teu <a href=\''+link+'\' style=\'color:var(--red-dark);border-bottom-color:var(--red)\'>cartão colecionável A Raiz →</a>';
       })(this);setTimeout(function(){document.getElementById('boletim-form').style.display='none';document.getElementById('boletim-thanks').style.display='block';},400);">
         <input type="text" name="entry.78862279" placeholder="O teu nome" required>
         <input type="email" name="entry.2068041067" placeholder="O teu email" required>
         <input type="text" name="entry.964112802" placeholder="A tua localidade (opcional)">
         <button type="submit">Subscrever</button>
       </form>
-      <p id="boletim-thanks" class="newsletter-thanks">Obrigada! Já estás na lista — chega-te o próximo boletim por email.</p>
+      <p id="boletim-thanks" class="newsletter-thanks">Obrigada! Já estás na lista; chega-te o próximo boletim por email.</p>
     </div>
   </div>
 
@@ -755,7 +755,7 @@ LUTAS.forEach((c,i)=>{
   markers[c.id]=m;
 });
 /* Camada de satélite via Copernicus Data Space Ecosystem (Sentinel Hub OGC WMS). Cobre o mundo todo
-   (inclui Madeira e Açores), gratuito, sem chave paga — resolução 10m/pixel. */
+   (inclui Madeira e Açores), gratuito, sem chave paga, resolução 10m/pixel. */
 const SATELITE_MIN_ZOOM=7; /* abaixo deste zoom a resolução pedida excede o limite do Sentinel Hub (1500 m/pixel) */
 const satelite=L.tileLayer.wms("https://sh.dataspace.copernicus.eu/ogc/wms/974de996-4005-491e-b9c9-ff02058a8b06",{
   tileSize:512,minZoom:SATELITE_MIN_ZOOM,maxZoom:18,layers:"TRUE_COLOR",maxcc:20,
@@ -890,7 +890,7 @@ function openCausa(id){
   };
   $("#sharelink").onclick=()=>{
     const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso.html?id="+id;
-    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copiado — pronto a partilhar.")).catch(()=>{
+    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copiado, pronto a partilhar.")).catch(()=>{
       window.prompt("Copia este link:",url);
     });
   };

@@ -12,7 +12,7 @@
 <title>Map of environmental struggles in Portugal, Madeira and the Azores</title>
 <meta name="description" content="Map of environmental struggles in Portugal, Madeira and the Azores: verified information, location, who is involved and how to act. Source: causasderaiz.org.">
 <meta property="og:title" content="Map of environmental struggles in Portugal, Madeira and the Azores">
-<meta property="og:description" content="You can sign petitions, join public consultations and support those fighting in court — all on one map. Every point is a real place and a way to act.">
+<meta property="og:description" content="You can sign petitions, join public consultations and support those fighting in court, all on one map. Every point is a real place and a way to act.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
 <meta property="og:url" content="https://causasderaiz.org/index-en.html">
@@ -506,7 +506,7 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
       <h2>More struggles</h2>
       <p style="max-width:50ch;color:var(--ink-soft);font-size:18px">This page shows only struggles with an open petition or consultation. The rest, in court, monitored or already won, are on the all struggles page.</p>
     </div>
-    <a class="btn btn--green" href="diretorio-en.html" style="border-bottom:3px solid var(--line)">See all 85 struggles</a>
+    <a class="btn btn--green" href="diretorio-en.html" style="border-bottom:3px solid var(--line)">See all 86 struggles</a>
   </div>
 </section>
 
@@ -577,14 +577,14 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
         var d=new Date();var desde=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
         var link='cartao.html?nome='+encodeURIComponent(nome)+'&desde='+desde;
         var el=document.getElementById('boletim-thanks');
-        el.innerHTML='Thank you'+(nome?', '+nome.split(' ')[0]:'')+'! You\'re on the list — the next newsletter will land in your inbox.<br><br>You can already see your <a href=\''+link+'\' style=\'color:var(--red-dark);border-bottom-color:var(--red)\'>A Raiz collectible card →</a>';
+        el.innerHTML='Thank you'+(nome?', '+nome.split(' ')[0]:'')+'! You\'re on the list; the next newsletter will land in your inbox.<br><br>You can already see your <a href=\''+link+'\' style=\'color:var(--red-dark);border-bottom-color:var(--red)\'>A Raiz collectible card →</a>';
       })(this);setTimeout(function(){document.getElementById('boletim-form').style.display='none';document.getElementById('boletim-thanks').style.display='block';},400);">
         <input type="text" name="entry.78862279" placeholder="Your name" required>
         <input type="email" name="entry.2068041067" placeholder="Your email" required>
         <input type="text" name="entry.964112802" placeholder="Your location (optional)">
         <button type="submit">Subscribe</button>
       </form>
-      <p id="boletim-thanks" class="newsletter-thanks">Thank you! You're on the list — the next newsletter will land in your inbox.</p>
+      <p id="boletim-thanks" class="newsletter-thanks">Thank you! You're on the list; the next newsletter will land in your inbox.</p>
     </div>
   </div>
 
@@ -731,7 +731,7 @@ document.getElementById("map").classList.add("tema-classico");
 L.control.zoom({position:"topright"}).addTo(map);
 const osm=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);
 /* Satellite layer via Copernicus Data Space Ecosystem (Sentinel Hub OGC WMS). Covers the whole world
-   (including Madeira and the Azores), free, no paid key — 10m/pixel resolution. */
+   (including Madeira and the Azores), free, no paid key, 10m/pixel resolution. */
 const SATELITE_MIN_ZOOM=7; /* below this zoom the requested resolution exceeds Sentinel Hub's limit (1500 m/pixel) */
 const satelite=L.tileLayer.wms("https://sh.dataspace.copernicus.eu/ogc/wms/974de996-4005-491e-b9c9-ff02058a8b06",{
   tileSize:512,minZoom:SATELITE_MIN_ZOOM,maxZoom:18,layers:"TRUE_COLOR",maxcc:20,
@@ -888,7 +888,7 @@ function openCausa(id){
   };
   $("#sharelink").onclick=()=>{
     const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso-en.html?id="+id;
-    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copied — ready to share.")).catch(()=>{
+    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copied, ready to share.")).catch(()=>{
       window.prompt("Copy this link:",url);
     });
   };
