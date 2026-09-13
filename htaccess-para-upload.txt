@@ -1,0 +1,39 @@
+# Força HTTPS: qualquer pedido em http:// é redirecionado para https://
+# antes de mais nada acontecer.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Esconde a listagem de ficheiros de qualquer pasta (ex.: causasderaiz.org/img/)
+# que não tenha um index.html próprio. Impede que se veja a lista completa
+# de ficheiros só por visitar a pasta no browser.
+Options -Indexes
+
+# Comprime o texto antes de o enviar (HTML, JS, JSON, CSS), para reduzir o
+# tamanho transferido — importante aqui porque dados.js e fichas.js são
+# recarregados por inteiro em cada visita (ver regras de no-cache abaixo).
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Impede que o browser (e qualquer cache intermédia) guarde versões antigas
+# das páginas e dos ficheiros de dados. As tags <meta http-equiv="Cache-Control">
+# no HTML não são suficientes — os browsers só respeitam de forma fiável
+# cabeçalhos HTTP reais, como estes.
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|json)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  <FilesMatch "\.(html|js|json)$">
+    ExpiresDefault "access"
+  </FilesMatch>
+</IfModule>

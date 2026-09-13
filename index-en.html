@@ -898,7 +898,7 @@ function openCausa(id){
     openCausa(id);
   };
   $("#sharelink").onclick=()=>{
-    const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso-en.html?id="+id;
+    const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+id+"-en.html";
     (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copied, ready to share.")).catch(()=>{
       window.prompt("Copy this link:",url);
     });
@@ -921,7 +921,7 @@ function toast(msg){const el=$("#toast");el.textContent=msg;el.classList.add("on
   const c=LUTAS.find(x=>x.prazo&&acaoTipo(x)==="peticao")||LUTAS[0];
   if(!c)return;
   $("#alerta-prazo").innerHTML='<b>'+c.t.split(":")[0]+'</b>, '+c.loc.split(",")[0]+'. '+c.status.replace(/^[^ ]+ /,"")+'. '+
-    (c.pet?'<a href="'+c.pet+'" target="_blank" rel="noopener">'+(c.petLabel||"Agir")+'</a>':'<a href="caso-en.html?id='+c.id+'">Ver a luta</a>');
+    (c.pet?'<a href="'+c.pet+'" target="_blank" rel="noopener">'+(c.petLabel||"Agir")+'</a>':'<a href="'+c.id+'-en.html">Ver a luta</a>');
 })();
 
 // prazos a contar
@@ -936,7 +936,7 @@ $("#deadlines").innerHTML=LUTAS.filter(c=>c.prazo).map(c=>
   ld.type="application/ld+json";
   ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"ItemList",name:"Lutas ambientais em Portugal Continental, Madeira e Açores",numberOfItems:LUTAS.length,
     itemListElement:LUTAS.map((c,i)=>({"@type":"ListItem",position:i+1,item:{"@type":"Article",headline:c.t,about:c.catLabel,abstract:c.res,
-      url:location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso-en.html?id="+c.id,dateModified:c.verif,
+      url:location.origin+location.pathname.replace(/[^\/]*$/,"")+c.id+"-en.html",dateModified:c.verif,
       contentLocation:{"@type":"Place",name:c.loc,geo:c.ll?{"@type":"GeoCoordinates",latitude:c.ll[0],longitude:c.ll[1]}:undefined},
       publisher:{"@type":"Organization",name:"Causas de Raiz"}}}))});
   document.head.appendChild(ld);

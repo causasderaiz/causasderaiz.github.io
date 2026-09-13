@@ -1,49 +1,71 @@
-FOTOGRAFIAS
-===========
-Coloca aqui as tuas fotografias com estes nomes exactos (JPG):
+MAPA DAS CAUSAS - instalacao no cPanel
+=====================================
 
-cultiva.jpg
-sintra-cascais.jpg
-costa-terra-melides.jpg
-sophia-beira.jpg
-girabolhos.jpg
-marao.jpg
-lagoa-salgada.jpg
-eolico-mira-odemira.jpg
-biometano-torres-novas.jpg
-mina-adagoi.jpg
-sao-luis-odemira.jpg
-pellets-cercal-alentejo.jpg
-pedreira-lajedo-santo-tirso.jpg
-aranha-cavernicola-arrabida.jpg
-trilhos-madeira.jpg
-descontaminacao-ilha-terceira.jpg
-jardins-se-porto.jpg
-incendios.jpg
-apa-icnf.jpg
+1. No cPanel abre o Gestor de Ficheiros (File Manager).
+2. Entra em public_html (ou na pasta do subdominio que queres usar).
+3. Carrega o ficheiro index.html e a pasta img (com as tuas fotografias).
+   Estrutura final:
+      public_html/index.html
+      public_html/img/cultiva.jpg
+      public_html/img/... (ver img/LEIA-ME.txt)
+4. Abre o dominio no browser. Nao ha nada a instalar: e uma pagina estatica.
 
-Enquanto um ficheiro nao existir, a pagina usa automaticamente a imagem
-correspondente do ulmeiro.org.
+O que precisa de internet
+-------------------------
+- Tipos de letra (Google Fonts)
+- Biblioteca do mapa (Leaflet) e os mosaicos do OpenStreetMap
 
-Formato recomendado: 1600 x 1200 px (4:3) ou maior, JPG com qualidade 80,
-menos de 400 KB por foto. As fotos aparecem cortadas ao centro, tanto no
-quadrado da lista como na faixa larga da ficha - deixa o motivo principal
-ao centro.
+Substituir fotografias
+----------------------
+Basta subir um JPG com o nome indicado em img/LEIA-ME.txt. Se o ficheiro nao
+existir, a pagina mostra a imagem do ulmeiro.org.
 
-LIVRO "O MESMO AR" (livro.html)
-===============================
-Fotografias de abertura de capitulo. Enquanto nao existirem, aparece um
-espaco listado com o nome do ficheiro em falta - nada fica quebrado.
+Editar textos e datas
+---------------------
+Abre dados.js num editor de texto. Cada caso tem:
+  t     titulo
+  loc   local
+  reg   regiao (usada no filtro e nos saltos do mapa)
+  tema  tema (usado nos filtros)
+  est   "ativa" ou "acompanhamento"
+  prazo texto do prazo (opcional) e prazoISO no formato ANO-MES-DIA
+  verif data da ultima verificacao (ANO-MES-DIA)
+  quem  lista de quem defende
+  res   resumo
+  pet   link da peticao (opcional)
+  ll    coordenadas [latitude, longitude]
 
-livro-01-planeta.jpg        calor, seca ou fogo no territorio
-livro-02-extrativismo.jpg   mina, pedreira, corte, vedacao
-livro-03-teia.jpg           floresta, dunas, rio, montado
-livro-04-regeneracao.jpg    horta comunitaria, cooperativa, reparacao
-livro-05-infraestrutura.jpg linha de alta tensao, central, data center
-livro-06-manifestacao.jpg   manifestacao, vigilia, caminhada
-livro-07-assembleia.jpg     assembleia, reuniao, entrega de peticao
+Recomendado
+-----------
+- Certificado SSL (AutoSSL no cPanel) para o site abrir em https.
+- Se puderes, activa compressao (gzip) nas Optimize Website do cPanel.
 
-Formato recomendado: 2400 x 1400 px (horizontal), JPG qualidade 80,
-menos de 600 KB. Aparecem em faixa larga, cortadas ao centro.
-Para creditar a autoria, abre livro.html e substitui "Fotografia: a creditar"
-pelo nome que quiseres.
+
+FICHEIROS (agosto 2026)
+=======================
+index.html          mapa com todos os casos + lista lateral
+diretorio.html      lista completa por regiao, sem mapa
+caso.html           pagina de cada caso (caso.html?id=barroso)
+alertar.html        a quem denunciar
+metodologia.html    como escolhemos e verificamos
+arquivo.html        casos de contexto
+sobre.html          o projeto
+livro.html          o livro "E dás por ti a viver numa era de extinção em massa"
+dados.js            dados de cada caso: local, estado, tema, acao
+fichas.js           texto completo e fontes de cada caso
+Versoes: -en.html (ingles). dados-en.js, fichas-en.js.
+
+DOIS LINKS A CONFIRMAR
+======================
+Estas duas peticoes nao respondem no endereco que estava no site antigo:
+  peticaopublica.com/?pi=SalvarCultiva      (caso "cultiva")
+  peticaopublica.com/?pi=protecao-territorio (caso "mina-adagoi")
+Enquanto nao houver endereco certo, o botao aponta para a noticia que
+explica como assinar. Quando souberes o endereco correto, abre dados.js,
+procura o id do caso e substitui o valor de pet:"...".
+
+IMAGENS
+=======
+Cada caso procura img/<id>.jpg. Se nao existir, usa a foto do site antigo
+(ulmeiro.org). Assim que puseres as tuas fotos em img/, o site deixa de
+depender do site antigo.

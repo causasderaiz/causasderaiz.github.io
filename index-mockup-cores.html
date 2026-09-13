@@ -13,7 +13,7 @@
 <meta name="description" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores: petições abertas, consultas públicas, processos em tribunal, localização, quem está envolvido e como agir.">
 
 <meta property="og:title" content="Mapa dos conflitos ambientais em Portugal Continental, Madeira e Açores">
-<meta property="og:description" content="Podes assinar petições, participar em consultas públicas e apoiar quem luta em tribunal, tudo num só mapa. Cada ponto é um lugar concreto e uma forma de agir.">
+<meta property="og:description" content="Podes assinar petições, participar em consultas públicas e apoiar quem luta em tribunal — tudo num só mapa. Cada ponto é um lugar concreto e uma forma de agir.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://causasderaiz.org/img/og-image.png">
 <meta property="og:url" content="https://causasderaiz.org/index.html">
@@ -28,13 +28,13 @@
 :root{
   --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
   --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
-  --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+  --sage-pale:#e4ede8; --raiz-pale:#dde6e1; --green-text:#1f6b43;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{background:var(--cream);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
 a{color:var(--red-dark);text-decoration:none;border-bottom:2px solid var(--red)}
-a:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+a:hover{color:var(--ink);border-bottom-color:var(--green-bright)}
 h1,h2,h3,.disp{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-weight:400;line-height:.92;margin:0}
 .mono{font-family:"Space Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
 .wrap{max-width:1360px;margin:0 auto;padding:0 24px}
@@ -186,7 +186,7 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .form{display:grid;gap:14px}
 .form label{display:grid;gap:6px}
 .form input,.form select,.form textarea{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:12px 14px;outline:0}
-.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--green-bright-text)}
+.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--green-bright)}
 .form textarea{min-height:96px;resize:vertical}
 .thanks{border:3px solid var(--green-bright);padding:22px;background:rgba(167,198,184,.22)}
 .quote{padding:56px 0;border-bottom:3px solid var(--line)}
@@ -200,7 +200,7 @@ footer{padding:44px 0 60px;font-size:14px}
 .alerta .dot{width:12px;height:12px;border-radius:50%;background:var(--red);animation:pulse 1.4s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.35)}}
 .alerta b{color:#fff}
-.alerta a{color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)}
+.alerta a{color:var(--green-bright);border-bottom-color:var(--green-bright)}
 .national{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:3px solid var(--line);border-bottom:3px solid var(--line);background:var(--paper)}
 .national div{padding:22px 24px;border-right:3px solid var(--line)}
 .national div:last-child{border-right:0}
@@ -208,7 +208,7 @@ footer{padding:44px 0 60px;font-size:14px}
 .newsletter{position:relative;padding:clamp(48px,7vw,96px) 0;border-bottom:3px solid var(--line);background:var(--cartao);background-image:linear-gradient(rgba(23,26,18,.55),rgba(23,26,18,.55)),url('img/boletim-foto.jpg');background-size:cover;background-position:center}
 .newsletter-grid{display:flex;gap:clamp(24px,4vw,60px);align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
 .newsletter-copy h2{color:var(--paper);font-size:clamp(32px,4.6vw,58px);margin-top:10px}
-.newsletter-copy h2 .accent{color:var(--green-bright-text)}
+.newsletter-copy h2 .accent{color:var(--green-bright)}
 .newsletter-form{display:flex;flex-direction:column;gap:10px;background:var(--paper);border:3px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:24px;min-width:280px;width:340px;max-width:100%}
 .newsletter-form input{border:2px solid var(--line);padding:11px 12px;font-family:inherit;font-size:15px;background:var(--cream);color:var(--ink)}
 .newsletter-form input::placeholder{color:var(--ink-soft)}
@@ -216,34 +216,6 @@ footer{padding:44px 0 60px;font-size:14px}
 .newsletter-form button:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--line)}
 .newsletter-thanks{display:none;background:var(--paper);border:3px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:22px;font-weight:700;width:340px;max-width:100%}
 @media(max-width:640px){.newsletter-grid{flex-direction:column;align-items:stretch}.newsletter-form,.newsletter-thanks{width:100%}}
-
-.editions{margin-top:clamp(40px,6vw,64px);padding-top:clamp(28px,4vw,40px);border-top:1px solid rgba(251,246,234,.18)}
-.editions-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:22px}
-.editions-head h3{color:var(--paper);font-size:clamp(26px,3vw,34px)}
-.editions-head .mono{color:rgba(251,246,234,.6)}
-.editions-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
-.edition-card{display:block;border:3px solid var(--line);background:var(--paper);box-shadow:5px 5px 0 rgba(0,0,0,.25);transition:transform .12s,box-shadow .12s}
-.edition-card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 rgba(0,0,0,.3)}
-.edition-card .photo{position:relative;aspect-ratio:4/3;overflow:hidden;background:#dfe3d6;background-image:repeating-linear-gradient(158deg,#dfe6d9 0 9px,#eaeee2 9px 18px)}
-.edition-card .photo img{width:100%;height:100%;object-fit:cover;display:block}
-.edition-card .photo .n{position:absolute;left:10px;bottom:8px;font-family:"Londrina Solid",cursive;font-size:44px;line-height:1;color:var(--paper);text-shadow:2px 2px 0 rgba(0,0,0,.35)}
-.edition-card .photo .badge{position:absolute;top:10px;right:10px;background:var(--red);color:#fff;font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;font-weight:700}
-.edition-card .info{padding:14px 16px}
-.edition-card .m{display:block;font-size:15px;font-weight:700;color:var(--ink)}
-.edition-card .y{display:block;margin-top:2px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
-.edition-card .lede{display:block;margin-top:8px;font-size:12.5px;line-height:1.4;color:var(--ink-soft);font-weight:300}
-.edition-card.future{pointer-events:none;background:transparent;border-style:dashed;border-color:rgba(251,246,234,.3);box-shadow:none}
-.edition-card.future .photo{background:transparent;display:flex;align-items:center;justify-content:center}
-.edition-card.future .photo .n{position:static;color:rgba(251,246,234,.35);text-shadow:none}
-.edition-card.future .info .m{color:rgba(251,246,234,.55)}
-.edition-card.future .info .y{color:rgba(251,246,234,.35)}
-.edition-card.next{pointer-events:none;background:transparent;border-style:dashed;border-color:var(--red);box-shadow:none;position:relative}
-.edition-card.next .photo{background:transparent;display:flex;align-items:center;justify-content:center}
-.edition-card.next .photo .n{position:static;color:var(--red);text-shadow:none;opacity:.85}
-.edition-card.next .info .m{color:var(--paper)}
-.edition-card.next .info .y{color:rgba(251,246,234,.55)}
-.edition-card.next .dot{position:absolute;top:12px;right:12px;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 1.4s infinite}
-.edition-card.next .tag{display:block;margin-top:6px;font-family:"Space Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
 .national div:nth-child(odd) b{color:var(--red)}
 .national div:nth-child(even) b{color:var(--green-text)}
 .top100{padding:62px 0;border-bottom:3px solid var(--line);background:repeating-linear-gradient(135deg,rgba(23,26,18,.045) 0 2px,transparent 2px 9px),var(--cream)}
@@ -327,7 +299,7 @@ footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid 
 .footgrid h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-dark);margin:0 0 12px;font-weight:700}
 .footgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
 .footgrid a{color:var(--ink);border-bottom:2px solid rgba(230,58,37,.45);font-weight:500}
-.footgrid a:hover{border-bottom-color:var(--green-bright-text)}
+.footgrid a:hover{border-bottom-color:var(--green-bright)}
 .footgrid .claim{font-family:"Londrina Solid",cursive;text-transform:uppercase;font-size:clamp(22px,2.2vw,30px);line-height:1;margin:14px 0 10px}
 .footgrid .about{margin:0;color:var(--ink-soft);max-width:36ch}
 .saramago{margin:clamp(28px,4vw,52px) 0 0;padding:22px 0 0;border-top:3px solid var(--line)}
@@ -360,7 +332,7 @@ a.btn--fantasma:hover{background:var(--cream);color:var(--ink)}
 
 .selo{display:inline-flex;align-items:baseline;gap:9px;margin-top:18px;border:0;border-bottom:2px solid rgba(23,26,18,.25);color:var(--ink-soft);padding:0 0 3px;font-size:14px;font-weight:500;background:none;box-shadow:none}
 .selo b{color:var(--green-text);font-size:15px}
-.selo:hover{color:var(--ink);border-bottom-color:var(--green-bright-text)}
+.selo:hover{color:var(--ink);border-bottom-color:var(--green-bright)}
 .selo .mono{opacity:.55;font-size:10px}
 .sobrecurto{padding:clamp(38px,5vw,76px) 0;border-bottom:3px solid var(--line);background:var(--paper)}
 .sobregrid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:clamp(24px,4vw,56px);align-items:start}
@@ -420,7 +392,7 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
       <p class="mono" style="margin:0 0 16px;font-size:20px">Portugal Continental, Madeira e Açores</p>
       <h1>Mapa dos <span class="em">conflitos</span> ambientais em <span class="em2">Portugal</span></h1>
       <p class="lede">Os casos que documentamos, num só mapa. Filtra por petição aberta, consulta pública, tribunal ou tema. Cada ponto é um lugar concreto e uma forma de agir.</p>
-      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ Última verificação: 13 de setembro de 2026</p>
+      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-text)">✓ Última verificação: 9 de setembro de 2026</p>
     </div>
 
     <div class="searchbar" id="busca">
@@ -484,13 +456,13 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
 <section class="propose" id="prazos">
   <div class="wrap pgrid">
     <div>
-      <p class="mono" style="color:var(--green-bright-text)">O que fecha primeiro</p>
+      <p class="mono" style="color:var(--green-bright)">O que fecha primeiro</p>
       <h2 class="disp">Prazos a contar</h2>
       <ul id="deadlines" style="list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px"></ul>
-      <p class="mono" style="opacity:.6;margin-top:22px">Sabes de um caso que não está aqui, ou de um erro? <a href="mailto:geral@causasderaiz.org" style="color:var(--green-bright-text);border-bottom-color:var(--green-bright-text)">geral@causasderaiz.org</a></p>
+      <p class="mono" style="opacity:.6;margin-top:22px">Sabes de um caso que não está aqui, ou de um erro? <a href="mailto:geral@causasderaiz.org" style="color:var(--green-bright);border-bottom-color:var(--green-bright)">geral@causasderaiz.org</a></p>
     </div>
     <div>
-      <p class="mono" style="color:var(--green-bright-text)">Está a acontecer à tua porta</p>
+      <p class="mono" style="color:var(--green-bright)">Está a acontecer à tua porta</p>
       <h2 class="disp">A quem denunciar</h2>
       <p style="max-width:44ch;opacity:.85">Quatro perguntas e sabes qual a entidade com poder para atuar: SEPNA, ICNF, IGAMAOT, APA, câmara ou Polícia Marítima.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
@@ -570,63 +542,15 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
     <div class="newsletter-copy">
       <p class="mono" style="color:rgba(251,246,234,.75)">Novo</p>
       <h2>Subscreve o nosso<br>boletim mensal<br><span class="accent">A Raiz</span></h2>
-      <p style="color:var(--paper);font-size:16px;font-weight:300;max-width:38ch;margin:14px 0 0">Pela terra, pela água, pelas florestas, por nós.</p>
     </div>
     <div>
-      <form id="boletim-form" class="newsletter-form" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfsRyJMdZKYTfdxpjSyQjn_sPojwy9DxjVPfjn2Pi407BuoOQ/formResponse" method="POST" onsubmit="window.boletimSubmitted=true;(function(f){
-        var nome=(f.querySelector('[name=\'entry.78862279\']').value||'').trim();
-        var d=new Date();var desde=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');
-        var link='cartao.html?nome='+encodeURIComponent(nome)+'&desde='+desde;
-        var el=document.getElementById('boletim-thanks');
-        el.innerHTML='Obrigada'+(nome?', '+nome.split(' ')[0]:'')+'! Já estás na lista; chega-te o próximo boletim por email.<br><br>Já podes ver o teu <a href=\''+link+'\' style=\'color:var(--red-dark);border-bottom-color:var(--red)\'>cartão colecionável A Raiz →</a>';
-      })(this);setTimeout(function(){document.getElementById('boletim-form').style.display='none';document.getElementById('boletim-thanks').style.display='block';},400);">
+      <form id="boletim-form" class="newsletter-form" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfsRyJMdZKYTfdxpjSyQjn_sPojwy9DxjVPfjn2Pi407BuoOQ/formResponse" method="POST" onsubmit="window.boletimSubmitted=true;setTimeout(function(){document.getElementById('boletim-form').style.display='none';document.getElementById('boletim-thanks').style.display='block';},400);">
         <input type="text" name="entry.78862279" placeholder="O teu nome" required>
         <input type="email" name="entry.2068041067" placeholder="O teu email" required>
         <input type="text" name="entry.964112802" placeholder="A tua localidade (opcional)">
         <button type="submit">Subscrever</button>
       </form>
-      <p id="boletim-thanks" class="newsletter-thanks">Obrigada! Já estás na lista; chega-te o próximo boletim por email.</p>
-    </div>
-  </div>
-
-  <div class="wrap editions" id="boletim">
-    <div class="editions-head">
-      <h3>Edições anteriores</h3>
-      <span class="mono">1 publicada</span>
-    </div>
-    <div class="editions-grid">
-      <div class="edition-card" style="pointer-events:none">
-        <div class="photo" style="aspect-ratio:4/5">
-          <img src="img/boletim-01-sementes.png" alt="Sementes de árvore da época" loading="lazy">
-          <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,26,18,0) 45%,rgba(23,26,18,.8) 100%)"></span>
-          <span style="position:absolute;left:10px;top:10px;font-family:'Londrina Solid',cursive;font-weight:400;font-size:22px;letter-spacing:.02em;text-transform:uppercase;color:var(--paper);text-shadow:2px 2px 0 rgba(0,0,0,.35)">Raiz</span>
-          <span class="n">01</span>
-          <span style="position:absolute;left:10px;bottom:44px;font-size:15px;font-weight:700;color:var(--paper)">Setembro</span>
-        </div>
-      </div>
-      <div class="edition-card next">
-        <span class="dot"></span>
-        <div class="photo"><span class="n">02</span></div>
-        <div class="info">
-          <span class="m">Outubro</span>
-          <span class="y">2026</span>
-          <span class="tag">a sair</span>
-        </div>
-      </div>
-      <div class="edition-card future">
-        <div class="photo"><span class="n">03</span></div>
-        <div class="info">
-          <span class="m">Novembro</span>
-          <span class="y">2026</span>
-        </div>
-      </div>
-      <div class="edition-card future">
-        <div class="photo"><span class="n">04</span></div>
-        <div class="info">
-          <span class="m">Dezembro</span>
-          <span class="y">2026</span>
-        </div>
-      </div>
+      <p id="boletim-thanks" class="newsletter-thanks">Obrigada! Já estás na lista — chega-te o próximo boletim por email.</p>
     </div>
   </div>
 </section>
@@ -698,17 +622,6 @@ const $=s=>document.querySelector(s);
 const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};
 const IMG=c=>"img/"+c.id+".jpg";
 const FB=c=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+c.img+"'";
-function acaoTipo(c){
-  if(!c.pet)return"";
-  const l=(c.petLabel||"").toLowerCase();
-  if(l.includes("participa")||l.includes("consulta"))return"consulta";
-  if(l.includes("member")||l.includes("socio")||l.includes("sócio")||l.includes("support"))return"apoio";
-  return"peticao";
-}
-function estadoBadge(c){
-  if(c.est==="urgente")return c.pet?{k:"urgente",i:"⚡",l:"Petição ativa"}:{k:"situacao",i:"⚡",l:"Situação ativa"};
-  return{k:c.est,i:ESTICON[c.est]||"",l:ESTLBL[c.est]||c.est};
-}
 
 $("#reg").insertAdjacentHTML("beforeend",REGIOES.map(r=>'<option>'+r+'</option>').join(""));
 $("#estado").innerHTML='<button data-est="todas" aria-pressed="true">Todas</button>'+
@@ -766,7 +679,7 @@ LUTAS.forEach((c,i)=>{
   markers[c.id]=m;
 });
 /* Camada de satélite via Copernicus Data Space Ecosystem (Sentinel Hub OGC WMS). Cobre o mundo todo
-   (inclui Madeira e Açores), gratuito, sem chave paga, resolução 10m/pixel. */
+   (inclui Madeira e Açores), gratuito, sem chave paga — resolução 10m/pixel. */
 const SATELITE_MIN_ZOOM=7; /* abaixo deste zoom a resolução pedida excede o limite do Sentinel Hub (1500 m/pixel) */
 const satelite=L.tileLayer.wms("https://sh.dataspace.copernicus.eu/ogc/wms/974de996-4005-491e-b9c9-ff02058a8b06",{
   tileSize:512,minZoom:SATELITE_MIN_ZOOM,maxZoom:18,layers:"TRUE_COLOR",maxcc:20,
@@ -900,8 +813,8 @@ function openCausa(id){
     openCausa(id);
   };
   $("#sharelink").onclick=()=>{
-    const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+id+".html";
-    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copiado, pronto a partilhar.")).catch(()=>{
+    const url=location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso.html?id="+id;
+    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>toast("Link copiado — pronto a partilhar.")).catch(()=>{
       window.prompt("Copia este link:",url);
     });
   };
@@ -923,12 +836,12 @@ function toast(msg){const el=$("#toast");el.textContent=msg;el.classList.add("on
   const c=LUTAS.find(x=>x.prazo&&acaoTipo(x)==="peticao")||LUTAS[0];
   if(!c)return;
   $("#alerta-prazo").innerHTML='<b>'+c.t.split(":")[0]+'</b>, '+c.loc.split(",")[0]+'. '+c.status.replace(/^[^ ]+ /,"")+'. '+
-    (c.pet?'<a href="'+c.pet+'" target="_blank" rel="noopener">'+(c.petLabel||"Agir")+'</a>':'<a href="'+c.id+'.html">Ver o caso</a>');
+    (c.pet?'<a href="'+c.pet+'" target="_blank" rel="noopener">'+(c.petLabel||"Agir")+'</a>':'<a href="caso.html?id='+c.id+'">Ver o caso</a>');
 })();
 
 // prazos a contar
 $("#deadlines").innerHTML=LUTAS.filter(c=>c.prazo).map(c=>
-  '<li style="border:3px solid var(--cream);padding:14px 16px"><span class="mono" style="color:var(--green-bright-text)">'+c.status+'</span><br><b>'+c.t+'</b><br><span style="opacity:.7">'+c.loc+'</span></li>').join("")
+  '<li style="border:3px solid var(--cream);padding:14px 16px"><span class="mono" style="color:var(--green-bright)">'+c.status+'</span><br><b>'+c.t+'</b><br><span style="opacity:.7">'+c.loc+'</span></li>').join("")
  + LUTAS.filter(c=>acaoTipo(c)==="peticao"&&!c.prazo).slice(0,5).map(c=>
   '<li style="border-bottom:2px dotted rgba(251,246,234,.35);padding:10px 0"><span class="mono" style="opacity:.6">petição aberta</span><br><b>'+c.t+'</b></li>').join("");
 
@@ -938,7 +851,7 @@ $("#deadlines").innerHTML=LUTAS.filter(c=>c.prazo).map(c=>
   ld.type="application/ld+json";
   ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"ItemList",name:"Conflitos ambientais em Portugal Continental, Madeira e Açores",numberOfItems:LUTAS.length,
     itemListElement:LUTAS.map((c,i)=>({"@type":"ListItem",position:i+1,item:{"@type":"Article",headline:c.t,about:c.catLabel,abstract:c.res,
-      url:location.origin+location.pathname.replace(/[^\/]*$/,"")+c.id+".html",dateModified:c.verif,
+      url:location.origin+location.pathname.replace(/[^\/]*$/,"")+"caso.html?id="+c.id,dateModified:c.verif,
       contentLocation:{"@type":"Place",name:c.loc,geo:c.ll?{"@type":"GeoCoordinates",latitude:c.ll[0],longitude:c.ll[1]}:undefined},
       publisher:{"@type":"Organization",name:"Causas de Raiz"}}}))});
   document.head.appendChild(ld);
