@@ -33,7 +33,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (92)
+## Todos os casos / All cases (91)
 
 - Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso): https://causasderaiz.org/barroso.html
   EN: Lithium mine in Covas do Barroso: https://causasderaiz.org/barroso-en.html
@@ -115,8 +115,6 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: For the protection of the Frade cave spider and its habitat: https://causasderaiz.org/aranha-cavernicola-arrabida-en.html
 - Não à privatização dos trilhos naturais da Madeira (Ordenamento do território, Região Autónoma da Madeira): https://causasderaiz.org/trilhos-madeira.html
   EN: No to the privatisation of Madeira's natural trails: https://causasderaiz.org/trilhos-madeira-en.html
-- CPADA pede contratação urgente de 800 Vigilantes da Natureza para o ICNF (Sistémico, Nacional): https://causasderaiz.org/vigilantes-natureza.html
-  EN: CPADA calls for urgent hiring of 800 Nature Wardens for ICNF: https://causasderaiz.org/vigilantes-natureza-en.html
 - Hyperion II: segundo data center avança junto à Central do Pego sem estudo de impacto ambiental completo (Data center, Abrantes, junto à Central do Pego, distrito de Santarém): https://causasderaiz.org/hyperion-abrantes.html
   EN: Hyperion II: second data center advances next to the Pego power plant without a complete environmental impact study: https://causasderaiz.org/hyperion-abrantes-en.html
 - Data center da Neoen em Alcoentre: Câmara de Azambuja trava pedido de estatuto PIN (Data center, Alcoentre, Azambuja, distrito de Lisboa): https://causasderaiz.org/azambuja-dc.html
