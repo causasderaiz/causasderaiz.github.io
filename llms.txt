@@ -33,7 +33,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (86)
+## Todos os casos / All cases (89)
 
 - Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso): https://causasderaiz.org/barroso.html
   EN: Lithium mine in Covas do Barroso: https://causasderaiz.org/barroso-en.html
@@ -207,6 +207,12 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Gavião mine in Aljustrel: ZERO calls for the Almina project to be rejected: https://causasderaiz.org/mina-gaviao-aljustrel-en.html
 - Transvase de água do Tejo para o Guadiana: CCDR Alentejo estuda ligação entre bacias (Transferência entre bacias hidrográficas, Bacia do Guadiana, Alentejo): https://causasderaiz.org/transvase-tejo-guadiana.html
   EN: Tagus–Guadiana water transfer: CCDR Alentejo studies inter-basin link: https://causasderaiz.org/transvase-tejo-guadiana-en.html
+- Fanal: pastoreio e turismo em excesso ameaçam a floresta centenária (Sobrecarga turística em área protegida, Fanal, Parque Natural da Madeira, Porto Moniz): https://causasderaiz.org/fanal-madeira.html
+  EN: Fanal: grazing and overtourism threaten centuries-old forest: https://causasderaiz.org/fanal-madeira-en.html
+- Porto Santo: praia perde areia por causa do Porto de Abrigo (Erosão costeira, Vila Baleira, Ilha do Porto Santo, Madeira): https://causasderaiz.org/porto-santo-areia.html
+  EN: Porto Santo: beach loses sand because of the Shelter Port: https://causasderaiz.org/porto-santo-areia-en.html
+- Moratória à mineração em mar profundo nas águas dos Açores (Mineração em mar profundo, Águas sob gestão da Região Autónoma dos Açores): https://causasderaiz.org/mineracao-mar-profundo-acores.html
+  EN: Moratorium on deep-sea mining in Azorean waters: https://causasderaiz.org/mineracao-mar-profundo-acores-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
