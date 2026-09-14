@@ -33,7 +33,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (89)
+## Todos os casos / All cases (92)
 
 - Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso): https://causasderaiz.org/barroso.html
   EN: Lithium mine in Covas do Barroso: https://causasderaiz.org/barroso-en.html
@@ -213,6 +213,14 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Porto Santo: beach loses sand because of the Shelter Port: https://causasderaiz.org/porto-santo-areia-en.html
 - Moratória à mineração em mar profundo nas águas dos Açores (Mineração em mar profundo, Águas sob gestão da Região Autónoma dos Açores): https://causasderaiz.org/mineracao-mar-profundo-acores.html
   EN: Moratorium on deep-sea mining in Azorean waters: https://causasderaiz.org/mineracao-mar-profundo-acores-en.html
+
+- Valongo 2: prospeção mineira ameaça a Serra da Nogueira e o Parque de Montesinho (Prospeção mineira, Serra da Nogueira, concelhos de Bragança e Vinhais, distrito de Bragança): https://causasderaiz.org/prospecao-valongo-2.html
+  EN: Valongo 2: mining prospecting threatens the Serra da Nogueira and Montesinho Natural Park: https://causasderaiz.org/prospecao-valongo-2-en.html
+- Revelhe: pedido de prospeção mineira no Parque Natural de Montesinho (Prospeção mineira, Santalha, Tuizelo e outras freguesias de Vinhais, distrito de Bragança): https://causasderaiz.org/prospecao-revelhe.html
+  EN: Revelhe: mining prospecting request in Montesinho Natural Park: https://causasderaiz.org/prospecao-revelhe-en.html
+
+- UP12: resort de 1.030 camas ameaça a última costa selvagem de Albandeira (Urbanização turística em zona costeira, Praia de Albandeira, Caramujeira, Porches, concelho de Lagoa, Algarve): https://causasderaiz.org/up12-albandeira.html
+  EN: UP12: a 1,030-bed resort threatens Albandeira's last wild coastline: https://causasderaiz.org/up12-albandeira-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
