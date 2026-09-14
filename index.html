@@ -137,6 +137,7 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .card .thumb{width:132px;height:132px;border:3px solid var(--line);object-fit:cover;background:#e6e2d5}
 .card .row{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
 .tag{border:2px solid var(--line);padding:2px 7px;font-family:"Space Mono",monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+.numcaso{display:inline-flex;align-items:center;border:3px solid var(--line);background:var(--ink);color:var(--cream);font-family:"Londrina Solid",cursive;font-size:22px;line-height:1;padding:5px 12px 3px;box-shadow:3px 3px 0 var(--line)}
 .tag.urgente{background:var(--red);color:var(--cream)}
 .tag.situacao{background:transparent;border-color:var(--red);color:var(--red-dark)}
 .tag.consulta{background:var(--green-bright)}
@@ -872,6 +873,7 @@ function openCausa(id){
     <img class="panel-hero" src="${IMG(c)}" onerror="${FB(c)}" alt="${c.loc}">
     <div class="pad">
       <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <span class="numcaso">Nº ${String(c.num||"").padStart(2,"0")}</span>
         <span class="tag ${estadoBadge(c).k}">${estadoBadge(c).i} ${estadoBadge(c).l}</span>
         <span class="mono">${c.catLabel}</span>
       </div>
