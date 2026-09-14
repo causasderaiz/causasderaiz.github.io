@@ -263,7 +263,9 @@ const c=CAUSAS.find(x=>x.id===id)||CAUSAS[0];
 const F=(typeof FICHAS!=="undefined"&&FICHAS[c.id])||{corpo:"",fontes:[],stat:"",link:"",linkL:""};
 const i=CAUSAS.indexOf(c);
 const prev=CAUSAS[(i-1+CAUSAS.length)%CAUSAS.length], next=CAUSAS[(i+1)%CAUSAS.length];
-const img=x=>"img/"+x.id+".jpg";
+const IMGMAP={"borba":"pedreiras-borba","montijo-alcochete":"montijo","monte-rei":"monterei","sophia-beira":"sophia","nordeste-vivo-mogadouro":"nordeste-vivo"};
+const IMGROOT={"movimento-meco-livre":1,"parque-natural-arrabida":1};
+const img=x=>IMGROOT[x.id]?x.id+".jpg":"img/"+(IMGMAP[x.id]||x.id)+".jpg";
 const fb=x=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+x.img+"'";
 const acaoL=c.pet?(c.petLabel||"Agir agora").replace(/^[^A-Za-zÀ-ú]+/,"").replace(/\s*→\s*$/,""):"";
 document.getElementById("t").textContent=c.t+", "+c.loc;
@@ -275,7 +277,7 @@ document.getElementById("og-url").setAttribute("content",location.href);
 const rel=CAUSAS.filter(x=>x.id!==c.id&&(x.reg===c.reg||x.cat===c.cat)).slice(0,3);
 document.getElementById("caso").innerHTML=
 '<div class="casohero"><img src="'+img(c)+'" onerror="'+fb(c)+'" alt="'+c.loc+'"></div>'+
-'<div class="wrap"><p class="crumb"><a href="index-en.html#mapa">Map</a> · '+c.reg+' · '+c.catLabel+'</p></div>'+
+'<div class="wrap"><p class="crumb"><a href="index-en.html#mapa">Map</a> · No. '+String(c.num||"").padStart(2,"0")+' · '+c.reg+' · '+c.catLabel+'</p></div>'+
 '<div class="wrap casotop"><div class="grid2"><div>'+
   '<div class="badges"><span class="tag '+estadoBadge(c).k+'">'+estadoBadge(c).i+' '+estadoBadge(c).l+'</span>'+
   '<span class="mono" style="color:var(--ink-soft)">'+c.catLabel+'</span></div>'+
