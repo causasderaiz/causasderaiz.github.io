@@ -885,6 +885,7 @@ function openCausa(id){
         <button class="btn ${segue?"btn--green":""}" id="follow">${segue?"✓":"+"}</button>
         ${c.ll?`<a class="btn btn--sm" href="${googleEarthUrl(c)}" target="_blank" rel="noopener" title="View this location in Google Earth">🌍 View in Google Earth ↗</a>`:""}
         <button class="btn btn--sm" id="sharelink" title="Copy a direct link to this case">🔗 Copy link</button>
+        <a class="btn btn--sm btn--green" href="${c.id}-en.html" target="_blank" rel="noopener">📄 View full case ↗</a>
       </div>
       ${!c.pet?'<div class="note">No immediate action available. We keep following it and the case reopens when there is a consultation, a deadline or a decision.</div>':""}
       <div class="section-lbl"><span class="mono">What is happening</span></div>

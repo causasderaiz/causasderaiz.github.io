@@ -887,6 +887,7 @@ function openCausa(id){
         <button class="btn ${segue?"btn--green":""}" id="follow">${segue?"A seguir ✓":"Seguir"}</button>
         ${c.ll?`<a class="btn btn--sm" href="${googleEarthUrl(c)}" target="_blank" rel="noopener" title="Ver este local no Google Earth">🌍 Ver no Google Earth ↗</a>`:""}
         <button class="btn btn--sm" id="sharelink" title="Copiar link direto deste caso">🔗 Copiar link</button>
+        <a class="btn btn--sm btn--green" href="${c.id}.html" target="_blank" rel="noopener">📄 Ver ficha completa ↗</a>
       </div>
       ${!c.pet?'<div class="note">Não há ação imediata disponível. Continuamos a acompanhar e o caso reabre quando houver consulta pública, prazo ou decisão.</div>':""}
       <div class="section-lbl"><span class="mono">O que está a acontecer</span></div>
