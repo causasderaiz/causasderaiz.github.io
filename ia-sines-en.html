@@ -129,6 +129,7 @@ footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid 
 .casotop{padding:clamp(22px,3vw,44px) 0 clamp(26px,3vw,46px)}
 .casotop h1{font-size:clamp(30px,4.6vw,68px);text-transform:none;letter-spacing:0;line-height:.98;max-width:26ch}
 .badges{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.numcaso{display:inline-flex;align-items:center;border:3px solid var(--line);background:var(--ink);color:var(--cream);font-family:"Londrina Solid",cursive;font-size:24px;line-height:1;padding:6px 14px 4px;box-shadow:4px 4px 0 var(--line)}
 .grid2{display:grid;grid-template-columns:1fr;gap:clamp(24px,4vw,60px);align-items:start}
 @media(min-width:761px){.grid2{grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr)}}
 .facts{border:3px solid var(--line);background:var(--paper);box-shadow:6px 6px 0 var(--line)}
@@ -263,7 +264,9 @@ const c=CAUSAS.find(x=>x.id===id)||CAUSAS[0];
 const F=(typeof FICHAS!=="undefined"&&FICHAS[c.id])||{corpo:"",fontes:[],stat:"",link:"",linkL:""};
 const i=CAUSAS.indexOf(c);
 const prev=CAUSAS[(i-1+CAUSAS.length)%CAUSAS.length], next=CAUSAS[(i+1)%CAUSAS.length];
-const img=x=>"img/"+x.id+".jpg";
+const IMGMAP={"borba":"pedreiras-borba","montijo-alcochete":"montijo","monte-rei":"monterei","sophia-beira":"sophia","nordeste-vivo-mogadouro":"nordeste-vivo"};
+const IMGROOT={"movimento-meco-livre":1,"parque-natural-arrabida":1};
+const img=x=>IMGROOT[x.id]?x.id+".jpg":"img/"+(IMGMAP[x.id]||x.id)+".jpg";
 const fb=x=>"this.onerror=function(){this.style.visibility='hidden'};this.src='"+x.img+"'";
 const acaoL=c.pet?(c.petLabel||"Agir agora").replace(/^[^A-Za-zÀ-ú]+/,"").replace(/\s*→\s*$/,""):"";
 document.getElementById("t").textContent=c.t+", "+c.loc;
@@ -277,7 +280,7 @@ document.getElementById("caso").innerHTML=
 '<div class="casohero"><img src="'+img(c)+'" onerror="'+fb(c)+'" alt="'+c.loc+'"></div>'+
 '<div class="wrap"><p class="crumb"><a href="index-en.html#mapa">Map</a> · '+c.reg+' · '+c.catLabel+'</p></div>'+
 '<div class="wrap casotop"><div class="grid2"><div>'+
-  '<div class="badges"><span class="tag '+estadoBadge(c).k+'">'+estadoBadge(c).i+' '+estadoBadge(c).l+'</span>'+
+  '<div class="badges"><span class="numcaso">No. '+String(c.num||"").padStart(2,"0")+'</span><span class="tag '+estadoBadge(c).k+'">'+estadoBadge(c).i+' '+estadoBadge(c).l+'</span>'+
   '<span class="mono" style="color:var(--ink-soft)">'+c.catLabel+'</span></div>'+
   '<h1>'+c.t+'</h1>'+
   '<p class="mono" style="color:var(--ink-soft);margin-top:14px">'+c.loc+'</p>'+
