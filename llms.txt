@@ -33,7 +33,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (91)
+## Todos os casos / All cases (93)
 
 - Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso): https://causasderaiz.org/barroso.html
   EN: Lithium mine in Covas do Barroso: https://causasderaiz.org/barroso-en.html
@@ -219,6 +219,11 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 
 - UP12: resort de 1.030 camas ameaça a última costa selvagem de Albandeira (Urbanização turística em zona costeira, Praia de Albandeira, Caramujeira, Porches, concelho de Lagoa, Algarve): https://causasderaiz.org/up12-albandeira.html
   EN: UP12: a 1,030-bed resort threatens Albandeira's last wild coastline: https://causasderaiz.org/up12-albandeira-en.html
+
+- MUDA: contra o abate de árvores e a má gestão do arvoredo urbano (Arvoredo urbano, Grande Lisboa, com ação a nível nacional): https://causasderaiz.org/muda-defesa-arvores.html
+  EN: MUDA: against tree felling and poor management of urban tree cover: https://causasderaiz.org/muda-defesa-arvores-en.html
+- Sintra sem Herbicidas: contra o uso de glifosato em espaços públicos (Poluição, Concelho de Sintra): https://causasderaiz.org/sintra-sem-herbicidas.html
+  EN: Sintra sem Herbicidas: against glyphosate use in public spaces: https://causasderaiz.org/sintra-sem-herbicidas-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
