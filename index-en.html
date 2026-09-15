@@ -561,8 +561,8 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
   <div><b id="s-urg">0</b><span class="mono">open petitions to sign</span></div>
   <div><b id="s-sb">0</b><span class="mono">public consultations open</span></div>
   <div><b>4.592</b><span class="mono">wildfires in July 2026</span></div>
-  <div><b>34</b><span class="mono">organisations and movements involved</span></div>
-  <div><b>8</b><span class="mono">regions covered, islands included</span></div>
+  <div><b id="n-org">0</b><span class="mono">organisations and movements involved</span></div>
+  <div><b id="n-reg">0</b><span class="mono">regions covered, islands included</span></div>
 </div>
 
 <section class="newsletter">
@@ -857,6 +857,8 @@ function render(){
   $("#s-urg").textContent=CAUSAS.filter(c=>acaoTipo(c)==="peticao").length;
   $("#s-sb").textContent=CAUSAS.filter(c=>acaoTipo(c)==="consulta").length;
   $("#n-tot").textContent=CAUSAS.length;
+  $("#n-org").textContent=new Set(CAUSAS.flatMap(c=>c.quem||[]).map(q=>q.trim()).filter(Boolean)).size;
+  $("#n-reg").textContent=new Set(CAUSAS.map(c=>c.reg)).size;
 }
 function hi(id,on){
   const m=markers[id];if(!m)return;

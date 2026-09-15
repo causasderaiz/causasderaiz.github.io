@@ -377,8 +377,8 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
 <div class="national">
   <div><b id="n-tot">0</b><span class="mono">casos documentados</span></div>
   <div><b>4.592</b><span class="mono">incêndios em julho de 2026</span></div>
-  <div><b>34</b><span class="mono">organizações e movimentos envolvidos</span></div>
-  <div><b>8</b><span class="mono">regiões cobertas, ilhas incluídas</span></div>
+  <div><b id="n-org">0</b><span class="mono">organizações e movimentos envolvidos</span></div>
+  <div><b id="n-reg">0</b><span class="mono">regiões cobertas, ilhas incluídas</span></div>
 </div>
 
 <section class="propose" id="prazos">
@@ -547,6 +547,8 @@ function render(){
   $("#s-sb").textContent=CAUSAS.filter(c=>!c.pet).length;
   $("#s-tot").textContent=CAUSAS.length;
   $("#n-tot").textContent=CAUSAS.length;
+  $("#n-org").textContent=new Set(CAUSAS.flatMap(c=>c.quem||[]).map(q=>q.trim()).filter(Boolean)).size;
+  $("#n-reg").textContent=new Set(CAUSAS.map(c=>c.reg)).size;
 }
 $("#deadlines").innerHTML=CAUSAS.filter(c=>c.prazo).map(c=>
   '<li style="border:3px solid var(--cream);padding:14px 16px"><span class="mono" style="color:var(--green-bright-text)">'+c.status+'</span><br><b>'+c.t+'</b><br><span style="opacity:.7">'+c.loc+'</span></li>').join("")
