@@ -277,7 +277,7 @@ document.getElementById("og-image").setAttribute("content",c.img||"https://causa
 document.getElementById("og-url").setAttribute("content",location.href);
 const rel=CAUSAS.filter(x=>x.id!==c.id&&(x.reg===c.reg||x.cat===c.cat)).slice(0,3);
 document.getElementById("caso").innerHTML=
-'<div class="casohero"><img src="'+img(c)+'" onerror="'+fb(c)+'" alt="'+c.loc+'"></div>'+
+'<div class="casohero"><img src="'+(c.img||img(c))+'" onerror="'+fb(c)+'" alt="'+c.loc+'"></div>'+
 '<div class="wrap"><p class="crumb"><a href="index.html#mapa">Mapa</a> · '+c.reg+' · '+c.catLabel+'</p></div>'+
 '<div class="wrap casotop"><div class="grid2"><div>'+
   '<div class="badges"><span class="numcaso">Nº '+String(c.num||"").padStart(2,"0")+'</span><span class="tag '+estadoBadge(c).k+'">'+estadoBadge(c).i+' '+estadoBadge(c).l+'</span>'+
