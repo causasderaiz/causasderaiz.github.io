@@ -128,8 +128,8 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Lithium mine in Covas do Barroso: https://causasderaiz.org/barroso-en.html
 - &quot;Transição Justa&quot; da Central do Pego: Gavião rejeita por unanimidade projeto de renováveis com estatuto PIN (Solar + eólica + armazenamento, Central do Pego, entre Abrantes e Gavião, Centro/Alentejo): https://causasderaiz.org/pego-transicao-justa.html
   EN: &quot;Just Transition&quot; at the Pego power plant: Gavião unanimously rejects PIN-status renewables project: https://causasderaiz.org/pego-transicao-justa-en.html
-- A gigafábrica de IA em Sines: a energia, a água e as florestas que ninguém assume (Data center, Sines e Santiago do Cacém, litoral alentejano): https://causasderaiz.org/ia-sines.html
-  EN: The Sines AI gigafactory: the energy, water and forests no one accounts for: https://causasderaiz.org/ia-sines-en.html
+- A gigafábrica de IA em Sines: litígio pela água do mar, nova central solar e abate de floresta (Data center, Sines e Santiago do Cacém, litoral alentejano): https://causasderaiz.org/ia-sines.html
+  EN: The Sines AI gigafactory: the seawater dispute, a new solar plant and forest felling: https://causasderaiz.org/ia-sines-en.html
 - Aeroporto do Montijo foi travado, mas Alcochete avança com riscos maiores (Infraestrutura, Alcochete: Campo de Tiro, sobre o aquífero Tejo-Sado): https://causasderaiz.org/montijo-alcochete.html
   EN: Montijo airport was stopped, but Alcochete advances with greater risks: https://causasderaiz.org/montijo-alcochete-en.html
 - Amara Village em Castelo de Bode (Imobiliário, Tomar, margens da albufeira de Castelo de Bode): https://causasderaiz.org/castelo-bode.html
