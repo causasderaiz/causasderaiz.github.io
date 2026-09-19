@@ -252,7 +252,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "urgente",
-        "verificado_em": "2026-08-21",
+        "verificado_em": "2026-09-19",
         "url_pt": "https://causasderaiz.org/costa-terra-melides.html",
         "url_en": "https://causasderaiz.org/costa-terra-melides-en.html"
       }
@@ -321,7 +321,7 @@
         "categoria_secundaria": "poluicao",
         "regiao": "centro",
         "estado": "urgente",
-        "verificado_em": "2026-09-06",
+        "verificado_em": "2026-09-19",
         "url_pt": "https://causasderaiz.org/hyperion-abrantes.html",
         "url_en": "https://causasderaiz.org/hyperion-abrantes-en.html"
       }
@@ -849,8 +849,8 @@
         "categoria": "infraestrutura",
         "categoria_secundaria": "poluicao",
         "regiao": "lisboa-e-vale-do-tejo",
-        "estado": "consulta",
-        "verificado_em": "2026-09-03",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-19",
         "url_pt": "https://causasderaiz.org/biometano-abrigada-alenquer.html",
         "url_en": "https://causasderaiz.org/biometano-abrigada-alenquer-en.html"
       }
@@ -919,7 +919,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "tribunal",
-        "verificado_em": "2026-08-24",
+        "verificado_em": "2026-09-19",
         "url_pt": "https://causasderaiz.org/barragem-pisao.html",
         "url_en": "https://causasderaiz.org/barragem-pisao-en.html"
       }
@@ -1632,7 +1632,7 @@
         "categoria_secundaria": null,
         "regiao": "algarve",
         "estado": "acompanhamento",
-        "verificado_em": "2026-08-21",
+        "verificado_em": "2026-09-19",
         "url_pt": "https://causasderaiz.org/lagoa-salgados-silves.html",
         "url_en": "https://causasderaiz.org/lagoa-salgados-silves-en.html"
       }
