@@ -329,7 +329,8 @@ footer{padding:44px 0 60px;font-size:14px}
 .national div{padding:22px 24px;border-right:3px solid var(--line)}
 .national div:last-child{border-right:0}
 .national b{font-family:"Londrina Solid",cursive;font-size:clamp(38px,4.4vw,64px);display:block;line-height:.9}
-.newsletter{position:relative;padding:clamp(48px,7vw,96px) 0;border-bottom:3px solid var(--line);background:var(--cartao);background-image:linear-gradient(rgba(23,26,18,.55),rgba(23,26,18,.55)),url('img/boletim-foto.jpg');background-size:cover;background-position:center}
+/* sem foto de fundo por agora (a adicionar quando o boletim sair); só a cor sólida */
+.newsletter{position:relative;padding:clamp(48px,7vw,96px) 0;border-bottom:3px solid var(--line);background:var(--cartao)}
 .newsletter-grid{display:flex;gap:clamp(24px,4vw,60px);align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
 .newsletter-copy h2{color:var(--paper);font-size:clamp(32px,4.6vw,58px);margin-top:10px}
 .newsletter-copy h2 .accent{color:var(--green-bright-text)}

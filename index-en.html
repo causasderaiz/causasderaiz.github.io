@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=fc88e190ca">
+<link rel="stylesheet" href="/css/site.css?v=3122536c0b">
 
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
 <script src="/vendor/leaflet/leaflet.js"></script>
@@ -185,6 +185,30 @@
   <div><b id="n-org">0</b><span class="mono">organizations and movements involved</span></div>
   <div><b id="n-reg">0</b><span class="mono">regions covered, islands included</span></div>
 </div>
+
+<section class="newsletter">
+  <div class="wrap newsletter-grid">
+    <div class="newsletter-copy">
+      <p class="mono" style="color:rgba(251,246,234,.75)">New</p>
+      <h2>Subscribe to our<br>monthly newsletter<br><span class="accent">A Raiz</span></h2>
+      <p style="color:var(--paper);font-size:16px;font-weight:300;max-width:38ch;margin:14px 0 0">For the land, the water, the forests, for us.</p>
+    </div>
+    <div>
+      <form id="boletim-form" class="newsletter-form" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfsRyJMdZKYTfdxpjSyQjn_sPojwy9DxjVPfjn2Pi407BuoOQ/formResponse" method="POST" onsubmit="window.boletimSubmitted=true;(function(f){
+        var nome=(f.querySelector('[name=\'entry.78862279\']').value||'').trim();
+        var el=document.getElementById('boletim-thanks');
+        el.textContent='Thank you'+(nome?', '+nome.split(' ')[0]:'')+'! You\'re on the list; the next newsletter will land in your inbox.';
+      })(this);setTimeout(function(){document.getElementById('boletim-form').style.display='none';document.getElementById('boletim-thanks').style.display='block';},400);">
+        <input type="text" name="entry.78862279" placeholder="Your name" required>
+        <input type="email" name="entry.2068041067" placeholder="Your email" required>
+        <input type="text" name="entry.964112802" placeholder="Your location (optional)">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="boletim-thanks" class="newsletter-thanks">Thank you! You're on the list; the next newsletter will land in your inbox.</p>
+    </div>
+  </div>
+</section>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none" title="form submission"></iframe>
 
 </main>
 
