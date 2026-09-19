@@ -2,7 +2,7 @@
   "gerado_em": "2026-09-19",
   "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
   "fonte": "https://causasderaiz.org",
-  "total": 96,
+  "total": 97,
   "casos": [
     {
       "id": "pellets-cercal-alentejo",
@@ -1729,6 +1729,31 @@
       "verificado_em": "2026-08-21",
       "url_pt": "https://causasderaiz.org/poco-velho-aveiros-albufeira.html",
       "url_en": "https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html"
+    },
+    {
+      "id": "quinta-dos-ingleses",
+      "num": 73,
+      "titulo_pt": "Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos",
+      "titulo_en": "Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest",
+      "local_pt": "Carcavelos, Cascais, distrito de Lisboa",
+      "local_en": "Carcavelos, Cascais, Lisbon district",
+      "categoria": "imobiliario",
+      "categoria_secundaria": "arvoredo",
+      "regiao": "lisboa-e-vale-do-tejo",
+      "estado": "tribunal",
+      "coordenadas": [
+        38.687,
+        -9.328
+      ],
+      "envolvidos": [
+        "SOS Quinta dos Ingleses",
+        "66 Pela Quinta"
+      ],
+      "resumo_pt": "A Câmara de Cascais aprovou um plano de pormenor que viabiliza cerca de 850 apartamentos, um hotel e um centro comercial num pinhal centenário de cerca de 52 hectares junto à praia de Carcavelos. Desde outubro de 2025, uma ação popular do movimento 66 Pela Quinta mantém as obras suspensas por providência cautelar; o Tribunal Administrativo e Fiscal de Sintra está a realizar audiências de julgamento em setembro de 2026.",
+      "resumo_en": "Cascais Municipal Council approved a detailed plan enabling around 850 apartments, a hotel and a shopping centre on a centuries-old, roughly 52-hectare pine forest next to Carcavelos beach. Since October 2025, a popular legal action by the 66 Pela Quinta movement has kept the works suspended under an injunction; the Sintra Administrative and Fiscal Court is holding trial hearings in September 2026.",
+      "verificado_em": "2026-09-19",
+      "url_pt": "https://causasderaiz.org/quinta-dos-ingleses.html",
+      "url_en": "https://causasderaiz.org/quinta-dos-ingleses-en.html"
     },
     {
       "id": "revive-forte-outao",

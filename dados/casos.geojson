@@ -1573,6 +1573,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -9.328,
+          38.687
+        ]
+      },
+      "properties": {
+        "id": "quinta-dos-ingleses",
+        "num": 73,
+        "titulo_pt": "Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos",
+        "titulo_en": "Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest",
+        "categoria": "imobiliario",
+        "categoria_secundaria": "arvoredo",
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "tribunal",
+        "verificado_em": "2026-09-19",
+        "url_pt": "https://causasderaiz.org/quinta-dos-ingleses.html",
+        "url_en": "https://causasderaiz.org/quinta-dos-ingleses-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -8.976,
           38.481
         ]

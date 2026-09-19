@@ -30,7 +30,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (96)
+## Todos os casos / All cases (97)
 
 - &quot;Não conseguimos respirar&quot;: fábrica de pellets no Cercal do Alentejo (Infraestrutura industrial, Cercal do Alentejo, Santiago do Cacém): https://causasderaiz.org/pellets-cercal-alentejo.html
   EN: &quot;We can&#39;t breathe&quot;: pellet factory in Cercal do Alentejo: https://causasderaiz.org/pellets-cercal-alentejo-en.html
@@ -174,6 +174,8 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: National Nature Restoration Plan: submitted to Brussels on 1 September: https://causasderaiz.org/restauro-natureza-en.html
 - Poço Velho e Aveiros: duas praias com acesso bloqueado em Albufeira (Acesso às praias, Poço Velho e Aveiros, Albufeira, Algarve): https://causasderaiz.org/poco-velho-aveiros-albufeira.html
   EN: Poço Velho and Aveiros: two blocked-access beaches in Albufeira: https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html
+- Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos (Ordenamento do território, Carcavelos, Cascais, distrito de Lisboa): https://causasderaiz.org/quinta-dos-ingleses.html
+  EN: Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest: https://causasderaiz.org/quinta-dos-ingleses-en.html
 - Revive: Forte Velho do Outão vira concessão turística de 50 anos dentro do Parque Natural (Turismo em área protegida, Forte Velho do Outão / 7.ª Bataria do Outão, Setúbal, Serra da Arrábida): https://causasderaiz.org/revive-forte-outao.html
   EN: Revive: Forte Velho do Outão becomes a 50-year tourism concession inside the Natural Park: https://causasderaiz.org/revive-forte-outao-en.html
 - Sertã: mais de 25% do concelho marcado para zonas de aceleração solar (Zona de aceleração solar, Sertã, Castelo Branco, Beira Baixa): https://causasderaiz.org/serta.html
