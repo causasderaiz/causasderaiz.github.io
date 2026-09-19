@@ -1,0 +1,2055 @@
+{
+  "type": "FeatureCollection",
+  "gerado_em": "2026-09-19",
+  "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
+  "fonte": "https://causasderaiz.org",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6811,
+          37.8114
+        ]
+      },
+      "properties": {
+        "id": "pellets-cercal-alentejo",
+        "num": 1,
+        "titulo_pt": "\"Não conseguimos respirar\": fábrica de pellets no Cercal do Alentejo",
+        "titulo_en": "\"We can't breathe\": pellet factory in Cercal do Alentejo",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": "poluicao",
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/pellets-cercal-alentejo.html",
+        "url_en": "https://causasderaiz.org/pellets-cercal-alentejo-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6111,
+          41.1435
+        ]
+      },
+      "properties": {
+        "id": "jardins-se-porto",
+        "num": 2,
+        "titulo_pt": "\"Nem a Sé se salva?\": petição pela preservação dos jardins da Diocese no morro da Sé do Porto",
+        "titulo_en": "\"Not even the Cathedral is safe?\": petition to preserve the Diocese gardens on Porto's Sé hill",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-09-07",
+        "url_pt": "https://causasderaiz.org/jardins-se-porto.html",
+        "url_en": "https://causasderaiz.org/jardins-se-porto-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.446,
+          40.5754
+        ]
+      },
+      "properties": {
+        "id": "agueda-eucaliptos",
+        "num": 3,
+        "titulo_pt": "Águeda: Quercus denuncia novas plantações de eucalipto em áreas ardidas e pede revogação de licenças",
+        "titulo_en": "Águeda: Quercus reports new eucalyptus plantations in burned areas and calls for permits to be revoked",
+        "categoria": "incendios",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/agueda-eucaliptos.html",
+        "url_en": "https://causasderaiz.org/agueda-eucaliptos-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.207,
+          38.463
+        ]
+      },
+      "properties": {
+        "id": "meco-sesimbra-agua-turismo",
+        "num": 4,
+        "titulo_pt": "Aldeia do Meco: escassez de água agrava oposição a grandes projetos turísticos em Sesimbra",
+        "titulo_en": "Aldeia do Meco: water scarcity sharpens opposition to large tourism projects in Sesimbra",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-13",
+        "url_pt": "https://causasderaiz.org/meco-sesimbra-agua-turismo.html",
+        "url_en": "https://causasderaiz.org/meco-sesimbra-agua-turismo-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.165,
+          38.735
+        ]
+      },
+      "properties": {
+        "id": "artilharia-um-campolide",
+        "num": 5,
+        "titulo_pt": "Artilharia Um: moradores de Campolide contestam projeto de 683 fogos isento de avaliação ambiental",
+        "titulo_en": "Artilharia Um: Campolide residents contest 683-home project exempted from environmental review",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/artilharia-um-campolide.html",
+        "url_en": "https://causasderaiz.org/artilharia-um-campolide-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19,
+          38.65
+        ]
+      },
+      "properties": {
+        "id": "penajoia-almada",
+        "num": 6,
+        "titulo_pt": "Bairro da Penajóia: famílias cabo-verdianas, angolanas e guineenses despejadas sem realojamento em Almada",
+        "titulo_en": "Bairro da Penajóia: Cape Verdean, Angolan and Guinean families evicted without rehousing in Almada",
+        "categoria": "racismo-ambiental",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/penajoia-almada.html",
+        "url_en": "https://causasderaiz.org/penajoia-almada-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.86,
+          38.02
+        ]
+      },
+      "properties": {
+        "id": "pedreiras-beja",
+        "num": 7,
+        "titulo_pt": "Bairro das Pedreiras: comunidade cigana vive sem água nem saneamento há duas décadas em Beja",
+        "titulo_en": "Bairro das Pedreiras: Roma community has lived without water or sanitation for two decades in Beja",
+        "categoria": "racismo-ambiental",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/pedreiras-beja.html",
+        "url_en": "https://causasderaiz.org/pedreiras-beja-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7028,
+          40.4189
+        ]
+      },
+      "properties": {
+        "id": "girabolhos",
+        "num": 8,
+        "titulo_pt": "Barragem de Girabolhos",
+        "titulo_en": "Girabolhos Dam",
+        "categoria": "agua",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/girabolhos.html",
+        "url_en": "https://causasderaiz.org/girabolhos-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5378,
+          39.4772
+        ]
+      },
+      "properties": {
+        "id": "biometano-torres-novas",
+        "num": 9,
+        "titulo_pt": "Central de biometano da Gasdaterra junto a Árgea, Torres Novas",
+        "titulo_en": "Gasdaterra biomethane plant next to Árgea, Torres Novas",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": "poluicao",
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/biometano-torres-novas.html",
+        "url_en": "https://causasderaiz.org/biometano-torres-novas-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.3817,
+          38.8029
+        ]
+      },
+      "properties": {
+        "id": "sintra-cascais",
+        "num": 10,
+        "titulo_pt": "Contra a Urbanização do Parque Natural de Sintra-Cascais",
+        "titulo_en": "Against the Urbanization of Sintra-Cascais Natural Park",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-13",
+        "url_pt": "https://causasderaiz.org/sintra-cascais.html",
+        "url_en": "https://causasderaiz.org/sintra-cascais-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.75,
+          38.155
+        ]
+      },
+      "properties": {
+        "id": "costa-terra-melides",
+        "num": 11,
+        "titulo_pt": "Costa Terra: resort de luxo fecha praias públicas em Melides",
+        "titulo_en": "Costa Terra: luxury resort closes off public beaches in Melides",
+        "categoria": "praias",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/costa-terra-melides.html",
+        "url_en": "https://causasderaiz.org/costa-terra-melides-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -27.0833,
+          38.7333
+        ]
+      },
+      "properties": {
+        "id": "descontaminacao-ilha-terceira",
+        "num": 12,
+        "titulo_pt": "Descontaminação dos solos e aquíferos da Ilha Terceira: quase sete décadas de contaminação pela Base das Lajes",
+        "titulo_en": "Decontamination of soils and aquifers on Terceira Island: nearly seven decades of contamination from Lajes Base",
+        "categoria": "agua",
+        "categoria_secundaria": "poluicao",
+        "regiao": "acores",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/descontaminacao-ilha-terceira.html",
+        "url_en": "https://causasderaiz.org/descontaminacao-ilha-terceira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0797,
+          41.2688
+        ]
+      },
+      "properties": {
+        "id": "marao",
+        "num": 14,
+        "titulo_pt": "Hibridização fotovoltaica no Parque Eólico de Penedo Ruivo, Serra do Marão",
+        "titulo_en": "Photovoltaic hybridization at Penedo Ruivo Wind Farm, Serra do Marão",
+        "categoria": "energia",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/marao.html",
+        "url_en": "https://causasderaiz.org/marao-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.017,
+          39.42
+        ]
+      },
+      "properties": {
+        "id": "hyperion-abrantes",
+        "num": 15,
+        "titulo_pt": "Hyperion II: segundo data center avança junto à Central do Pego sem estudo de impacto ambiental completo",
+        "titulo_en": "Hyperion II: second data center advances next to the Pego power plant without a complete environmental impact study",
+        "categoria": "datacenter",
+        "categoria_secundaria": "poluicao",
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-06",
+        "url_pt": "https://causasderaiz.org/hyperion-abrantes.html",
+        "url_en": "https://causasderaiz.org/hyperion-abrantes-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.7042,
+          41.1857
+        ]
+      },
+      "properties": {
+        "id": "matosinhos-ribeira-leca",
+        "num": 17,
+        "titulo_pt": "Matosinhos: descargas poluentes e mau cheiro ameaçam o rio Leça e as praias balneares",
+        "titulo_en": "Matosinhos: polluting discharges and foul smells threaten the Leça river and bathing beaches",
+        "categoria": "poluicao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-09-06",
+        "url_pt": "https://causasderaiz.org/matosinhos-ribeira-leca.html",
+        "url_en": "https://causasderaiz.org/matosinhos-ribeira-leca-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.646,
+          37.118
+        ]
+      },
+      "properties": {
+        "id": "meia-praia-lagos",
+        "num": 18,
+        "titulo_pt": "Meia Praia: protesto cidadão contra construção de dois hotéis em Lagos",
+        "titulo_en": "Meia Praia: citizens protest against two-hotel development in Lagos",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "urgente",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/meia-praia-lagos.html",
+        "url_en": "https://causasderaiz.org/meia-praia-lagos-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.569,
+          38.173
+        ]
+      },
+      "properties": {
+        "id": "lagoa-salgada",
+        "num": 19,
+        "titulo_pt": "Mina da Lagoa Salgada: petição pede o cancelamento do projeto",
+        "titulo_en": "Lagoa Salgada Mine: petition seeks project cancellation",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/lagoa-salgada.html",
+        "url_en": "https://causasderaiz.org/lagoa-salgada-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6486,
+          41.4964
+        ]
+      },
+      "properties": {
+        "id": "mina-adagoi",
+        "num": 20,
+        "titulo_pt": "Mina de lítio e feldspato no Projeto C-192 Adagoi",
+        "titulo_en": "Lithium and feldspar mine at Project C-192 Adagoi",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/mina-adagoi.html",
+        "url_en": "https://causasderaiz.org/mina-adagoi-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.116,
+          42.058
+        ]
+      },
+      "properties": {
+        "id": "mina-gudina",
+        "num": 21,
+        "titulo_pt": "Mina de volfrâmio na Gudiña ameaça o rio Rabaçal e o Parque Natural de Montesinho",
+        "titulo_en": "Tungsten mine in A Gudiña threatens the Rabaçal river and Montesinho Natural Park",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/mina-gudina.html",
+        "url_en": "https://causasderaiz.org/mina-gudina-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7756,
+          40.1717
+        ]
+      },
+      "properties": {
+        "id": "mina-panasqueira",
+        "num": 22,
+        "titulo_pt": "Minas da Panasqueira: risco de contaminação tóxica ameaça o Rio Zêzere",
+        "titulo_en": "Panasqueira Mines: risk of toxic contamination threatens the Zêzere River",
+        "categoria": "mineracao",
+        "categoria_secundaria": "poluicao",
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/mina-panasqueira.html",
+        "url_en": "https://causasderaiz.org/mina-panasqueira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.744,
+          41.301
+        ]
+      },
+      "properties": {
+        "id": "rio-corgo-vila-real",
+        "num": 23,
+        "titulo_pt": "Mortandade de peixes no rio Corgo, em Vila Real, após provável descarga anómala de águas residuais",
+        "titulo_en": "Fish kill in the Corgo River, Vila Real, after a probable abnormal wastewater discharge",
+        "categoria": "agua",
+        "categoria_secundaria": "poluicao",
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/rio-corgo-vila-real.html",
+        "url_en": "https://causasderaiz.org/rio-corgo-vila-real-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.95,
+          32.69
+        ]
+      },
+      "properties": {
+        "id": "trilhos-madeira",
+        "num": 24,
+        "titulo_pt": "Não à privatização dos trilhos naturais da Madeira",
+        "titulo_en": "No to the privatisation of Madeira's natural trails",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "madeira",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/trilhos-madeira.html",
+        "url_en": "https://causasderaiz.org/trilhos-madeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.222,
+          38.643
+        ]
+      },
+      "properties": {
+        "id": "costa-caparica-arvores",
+        "num": 25,
+        "titulo_pt": "Parem o abate de árvores na Costa da Caparica",
+        "titulo_en": "Stop the tree felling in Costa da Caparica",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-06",
+        "url_pt": "https://causasderaiz.org/costa-caparica-arvores.html",
+        "url_en": "https://causasderaiz.org/costa-caparica-arvores-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.7667,
+          38.1667
+        ]
+      },
+      "properties": {
+        "id": "campismo-gale",
+        "num": 26,
+        "titulo_pt": "Parque de Campismo da Galé continua fechado desde 2021, sem data de reabertura",
+        "titulo_en": "Galé Campsite has been closed since 2021, with no reopening in sight",
+        "categoria": "comunidade",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-01",
+        "url_pt": "https://causasderaiz.org/campismo-gale.html",
+        "url_en": "https://causasderaiz.org/campismo-gale-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1006,
+          38.4444
+        ]
+      },
+      "properties": {
+        "id": "aranha-cavernicola-arrabida",
+        "num": 27,
+        "titulo_pt": "Pela proteção da aranha-cavernícola-do-Frade e do seu habitat",
+        "titulo_en": "For the protection of the Frade cave spider and its habitat",
+        "categoria": "sistemico",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/aranha-cavernicola-arrabida.html",
+        "url_en": "https://causasderaiz.org/aranha-cavernicola-arrabida-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.141,
+          38.014
+        ]
+      },
+      "properties": {
+        "id": "fortes-ferreira-alentejo",
+        "num": 28,
+        "titulo_pt": "Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo",
+        "titulo_en": "The right to breathe clean air in Fortes, Ferreira do Alentejo",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": "poluicao",
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/fortes-ferreira-alentejo.html",
+        "url_en": "https://causasderaiz.org/fortes-ferreira-alentejo-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4772,
+          41.3428
+        ]
+      },
+      "properties": {
+        "id": "pedreira-lajedo-santo-tirso",
+        "num": 29,
+        "titulo_pt": "Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova",
+        "titulo_en": "For the permanent closure of the Lajedo quarry, Monte Córdova",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/pedreira-lajedo-santo-tirso.html",
+        "url_en": "https://causasderaiz.org/pedreira-lajedo-santo-tirso-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.9241,
+          32.6669
+        ]
+      },
+      "properties": {
+        "id": "predios-madeira",
+        "num": 30,
+        "titulo_pt": "Petição contra construção em altura na Madeira admitida na Assembleia Legislativa",
+        "titulo_en": "Petition against high-rise construction in Madeira admitted to Regional Assembly",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "madeira",
+        "estado": "urgente",
+        "verificado_em": "2026-09-07",
+        "url_pt": "https://causasderaiz.org/predios-madeira.html",
+        "url_en": "https://causasderaiz.org/predios-madeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.7136,
+          41.3406
+        ]
+      },
+      "properties": {
+        "id": "nordeste-vivo-mogadouro",
+        "num": 31,
+        "titulo_pt": "Planalto Mirandês: já mais de 1.500 hectares de painéis solares",
+        "titulo_en": "Planalto Mirandês: already over 1,500 hectares of solar panels",
+        "categoria": "megasolares",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-09-06",
+        "url_pt": "https://causasderaiz.org/nordeste-vivo-mogadouro.html",
+        "url_en": "https://causasderaiz.org/nordeste-vivo-mogadouro-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.63,
+          37.7194
+        ]
+      },
+      "properties": {
+        "id": "sao-luis-odemira",
+        "num": 32,
+        "titulo_pt": "Por um futuro sustentável para São Luís, Odemira",
+        "titulo_en": "For a sustainable future for São Luís, Odemira",
+        "categoria": "energia",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/sao-luis-odemira.html",
+        "url_en": "https://causasderaiz.org/sao-luis-odemira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29,
+          40.15
+        ]
+      },
+      "properties": {
+        "id": "eolico-penamacor-2",
+        "num": 33,
+        "titulo_pt": "Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas",
+        "titulo_en": "Penamacor 2 wind farm revamp authorises felling of 755 protected trees",
+        "categoria": "eolicas",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-07",
+        "url_pt": "https://causasderaiz.org/eolico-penamacor-2.html",
+        "url_en": "https://causasderaiz.org/eolico-penamacor-2-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5006,
+          40.1372
+        ]
+      },
+      "properties": {
+        "id": "sophia-beira",
+        "num": 34,
+        "titulo_pt": "Sophia e Beira: petição pede suspensão das duas megacentrais solares",
+        "titulo_en": "Sophia and Beira: petition seeks suspension of both mega solar plants",
+        "categoria": "megasolares",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/sophia-beira.html",
+        "url_en": "https://causasderaiz.org/sophia-beira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6,
+          38.3
+        ]
+      },
+      "properties": {
+        "id": "citrinos-alcacer-do-sal",
+        "num": 35,
+        "titulo_pt": "Tangerinas em Alcácer do Sal: Quercus apresenta queixa à Comissão Europeia",
+        "titulo_en": "Tangerines in Alcácer do Sal: Quercus files complaint with the European Commission",
+        "categoria": "agua",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/citrinos-alcacer-do-sal.html",
+        "url_en": "https://causasderaiz.org/citrinos-alcacer-do-sal-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6383,
+          37.5975
+        ]
+      },
+      "properties": {
+        "id": "eolico-mira-odemira",
+        "num": 36,
+        "titulo_pt": "Travar o Projeto Eólico do Mira, da Galp, em Odemira",
+        "titulo_en": "Stop Galp's Mira Wind Project in Odemira",
+        "categoria": "eolicas",
+        "categoria_secundaria": "poluicao",
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-06",
+        "url_pt": "https://causasderaiz.org/eolico-mira-odemira.html",
+        "url_en": "https://causasderaiz.org/eolico-mira-odemira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.12,
+          40.75
+        ]
+      },
+      "properties": {
+        "id": "incendios",
+        "num": 37,
+        "titulo_pt": "Vaga de incêndios de 2026: Vouzela torna-se o maior fogo da Europa do ano",
+        "titulo_en": "2026 wildfire wave: Vouzela becomes Europe's largest fire of the year",
+        "categoria": "incendios",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/incendios.html",
+        "url_en": "https://causasderaiz.org/incendios-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.62,
+          37.35
+        ]
+      },
+      "properties": {
+        "id": "barragem-foupana",
+        "num": 38,
+        "titulo_pt": "Barragem da Foupana: nova barragem ameaça a última ribeira livre do Algarve",
+        "titulo_en": "Foupana Dam: new reservoir threatens the Algarve's last free-flowing stream",
+        "categoria": "agua",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "consulta",
+        "verificado_em": "2026-09-09",
+        "url_pt": "https://causasderaiz.org/barragem-foupana.html",
+        "url_en": "https://causasderaiz.org/barragem-foupana-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.0017,
+          39.0719
+        ]
+      },
+      "properties": {
+        "id": "biometano-abrigada-alenquer",
+        "num": 39,
+        "titulo_pt": "Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)",
+        "titulo_en": "Gás da Terra biomethane plant in Marés, Abrigada (Alenquer)",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": "poluicao",
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "consulta",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/biometano-abrigada-alenquer.html",
+        "url_en": "https://causasderaiz.org/biometano-abrigada-alenquer-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6969,
+          39.8083
+        ]
+      },
+      "properties": {
+        "id": "almaraz",
+        "num": 40,
+        "titulo_pt": "Almaraz: associações vão a tribunal contra o prolongamento da central nuclear espanhola",
+        "titulo_en": "Almaraz: associations go to court against extending the Spanish nuclear plant",
+        "categoria": "energia",
+        "categoria_secundaria": null,
+        "regiao": "nacional",
+        "estado": "tribunal",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/almaraz.html",
+        "url_en": "https://causasderaiz.org/almaraz-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.17,
+          38.83
+        ]
+      },
+      "properties": {
+        "id": "talude-militar-loures",
+        "num": 41,
+        "titulo_pt": "Bairro do Talude Militar: 40 anos de comunidade cabo-verdiana e são-tomense demolidos sem alternativa em Loures",
+        "titulo_en": "Bairro do Talude Militar: a 40-year-old Cape Verdean and São Tomean community demolished without alternative in Loures",
+        "categoria": "racismo-ambiental",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "tribunal",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/talude-militar-loures.html",
+        "url_en": "https://causasderaiz.org/talude-militar-loures-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6644,
+          39.2897
+        ]
+      },
+      "properties": {
+        "id": "barragem-pisao",
+        "num": 42,
+        "titulo_pt": "Barragem do Pisão: obras suspensas pela terceira vez por decisão judicial",
+        "titulo_en": "Pisão Dam: works suspended for the third time by court order",
+        "categoria": "agua",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "tribunal",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/barragem-pisao.html",
+        "url_en": "https://causasderaiz.org/barragem-pisao-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.75,
+          37.93
+        ]
+      },
+      "properties": {
+        "id": "fernando-pessoa",
+        "num": 43,
+        "titulo_pt": "Central Solar Fernando Pessoa: a maior central da Europa continua parada na Justiça",
+        "titulo_en": "Fernando Pessoa Solar Plant: Europe's largest keeps stalling in court",
+        "categoria": "megasolares",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "tribunal",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/fernando-pessoa.html",
+        "url_en": "https://causasderaiz.org/fernando-pessoa-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8882,
+          38.5244
+        ]
+      },
+      "properties": {
+        "id": "praias-arrabida",
+        "num": 44,
+        "titulo_pt": "Deslarrrguem a Arrábida: privatização de cinco praias",
+        "titulo_en": "Hands Off Arrábida: privatization of five beaches",
+        "categoria": "praias",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "tribunal",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/praias-arrabida.html",
+        "url_en": "https://causasderaiz.org/praias-arrabida-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.169,
+          37.114
+        ]
+      },
+      "properties": {
+        "id": "dessalinizadora-albufeira",
+        "num": 45,
+        "titulo_pt": "Dessalinizadora do Algarve: obras avançam em Albufeira sob nova contestação judicial",
+        "titulo_en": "Algarve desalination plant: works proceed in Albufeira amid new legal challenge",
+        "categoria": "agua",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "tribunal",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/dessalinizadora-albufeira.html",
+        "url_en": "https://causasderaiz.org/dessalinizadora-albufeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.977,
+          41.752
+        ]
+      },
+      "properties": {
+        "id": "mina-borralha",
+        "num": 46,
+        "titulo_pt": "Cávado Sem Minas: Mina da Borralha ameaça a água potável do rio",
+        "titulo_en": "Cávado Sem Minas: Borralha Mine threatens the river's drinking water",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "urgente",
+        "verificado_em": "2026-09-17",
+        "url_pt": "https://causasderaiz.org/mina-borralha.html",
+        "url_en": "https://causasderaiz.org/mina-borralha-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6772,
+          41.6897
+        ]
+      },
+      "properties": {
+        "id": "barroso",
+        "num": 47,
+        "titulo_pt": "Mina de lítio em Covas do Barroso",
+        "titulo_en": "Lithium mine in Covas do Barroso",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "tribunal",
+        "verificado_em": "2026-09-19",
+        "url_pt": "https://causasderaiz.org/barroso.html",
+        "url_en": "https://causasderaiz.org/barroso-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.015,
+          39.418
+        ]
+      },
+      "properties": {
+        "id": "pego-transicao-justa",
+        "num": 48,
+        "titulo_pt": "\"Transição Justa\" da Central do Pego: Gavião rejeita por unanimidade projeto de renováveis com estatuto PIN",
+        "titulo_en": "\"Just Transition\" at the Pego power plant: Gavião unanimously rejects PIN-status renewables project",
+        "categoria": "energia",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-19",
+        "url_pt": "https://causasderaiz.org/pego-transicao-justa.html",
+        "url_en": "https://causasderaiz.org/pego-transicao-justa-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8647,
+          37.9564
+        ]
+      },
+      "properties": {
+        "id": "ia-sines",
+        "num": 49,
+        "titulo_pt": "A gigafábrica de IA em Sines: a energia, a água e as florestas que ninguém assume",
+        "titulo_en": "The Sines AI gigafactory: the energy, water and forests no one accounts for",
+        "categoria": "datacenter",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/ia-sines.html",
+        "url_en": "https://causasderaiz.org/ia-sines-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9581,
+          38.755
+        ]
+      },
+      "properties": {
+        "id": "montijo-alcochete",
+        "num": 50,
+        "titulo_pt": "Aeroporto do Montijo foi travado, mas Alcochete avança com riscos maiores",
+        "titulo_en": "Montijo airport was stopped, but Alcochete advances with greater risks",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/montijo-alcochete.html",
+        "url_en": "https://causasderaiz.org/montijo-alcochete-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4106,
+          39.6033
+        ]
+      },
+      "properties": {
+        "id": "castelo-bode",
+        "num": 51,
+        "titulo_pt": "Amara Village em Castelo de Bode",
+        "titulo_en": "Amara Village at Castelo de Bode",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/castelo-bode.html",
+        "url_en": "https://causasderaiz.org/castelo-bode-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2205,
+          38.6486
+        ]
+      },
+      "properties": {
+        "id": "rio-almansor",
+        "num": 52,
+        "titulo_pt": "AMORA: moradores de Montemor-o-Novo organizam-se para regenerar o Rio Almansor",
+        "titulo_en": "AMORA: residents of Montemor-o-Novo organize to regenerate the Almansor River",
+        "categoria": "agua",
+        "categoria_secundaria": "poluicao",
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/rio-almansor.html",
+        "url_en": "https://causasderaiz.org/rio-almansor-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.353,
+          41.277
+        ]
+      },
+      "properties": {
+        "id": "rio-eiriz-meixomil",
+        "num": 53,
+        "titulo_pt": "Avaria em coletor de saneamento causa mortandade de peixes no rio Eiriz, em Meixomil",
+        "titulo_en": "Sewage collector failure causes fish kill in the Eiriz River, Meixomil",
+        "categoria": "agua",
+        "categoria_secundaria": "poluicao",
+        "regiao": "norte",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/rio-eiriz-meixomil.html",
+        "url_en": "https://causasderaiz.org/rio-eiriz-meixomil-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.535,
+          40.255
+        ]
+      },
+      "properties": {
+        "id": "sobreiros-tortosendo",
+        "num": 54,
+        "titulo_pt": "Câmara da Covilhã quer abater 1.400 sobreiros para expandir o Parque Industrial do Tortosendo",
+        "titulo_en": "Covilhã City Council wants to fell 1,400 cork oaks to expand the Tortosendo Industrial Park",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-07",
+        "url_pt": "https://causasderaiz.org/sobreiros-tortosendo.html",
+        "url_en": "https://causasderaiz.org/sobreiros-tortosendo-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.45,
+          41.6
+        ]
+      },
+      "properties": {
+        "id": "central-eolica-fronteira",
+        "num": 55,
+        "titulo_pt": "Central Eólica da Fronteira: 35 aerogeradores junto ao Parque Natural do Douro Internacional",
+        "titulo_en": "Fronteira Wind Farm: 35 turbines next to the Douro Internacional Natural Park",
+        "categoria": "eolicas",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/central-eolica-fronteira.html",
+        "url_en": "https://causasderaiz.org/central-eolica-fronteira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7975,
+          38.2039
+        ]
+      },
+      "properties": {
+        "id": "sobreira",
+        "num": 56,
+        "titulo_pt": "Central Fotovoltaica de Sobreira de Baixo (EDP)",
+        "titulo_en": "Sobreira de Baixo Photovoltaic Plant (EDP)",
+        "categoria": "megasolares",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/sobreira.html",
+        "url_en": "https://causasderaiz.org/sobreira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8647,
+          37.9564
+        ]
+      },
+      "properties": {
+        "id": "hidrogenio-sines",
+        "num": 57,
+        "titulo_pt": "Cluster de hidrogénio e combustíveis verdes em Sines: cinco projetos com estatuto PIN",
+        "titulo_en": "Green hydrogen and fuels cluster in Sines: five projects with PIN status",
+        "categoria": "energia",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/hidrogenio-sines.html",
+        "url_en": "https://causasderaiz.org/hidrogenio-sines-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.95,
+          39.183
+        ]
+      },
+      "properties": {
+        "id": "azambuja-dc",
+        "num": 59,
+        "titulo_pt": "Data center da Neoen em Alcoentre: Câmara de Azambuja trava pedido de estatuto PIN",
+        "titulo_en": "Neoen data center in Alcoentre: Azambuja Council blocks PIN status request",
+        "categoria": "datacenter",
+        "categoria_secundaria": "poluicao",
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-03",
+        "url_pt": "https://causasderaiz.org/azambuja-dc.html",
+        "url_en": "https://causasderaiz.org/azambuja-dc-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.3167,
+          37.7667
+        ]
+      },
+      "properties": {
+        "id": "lagoas-acores",
+        "num": 60,
+        "titulo_pt": "Eutrofização das lagoas dos Açores pela pecuária intensiva",
+        "titulo_en": "Eutrophication of Azores lakes by intensive dairy farming",
+        "categoria": "agua",
+        "categoria_secundaria": "poluicao",
+        "regiao": "acores",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/lagoas-acores.html",
+        "url_en": "https://causasderaiz.org/lagoas-acores-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.546,
+          37.169
+        ]
+      },
+      "properties": {
+        "id": "monte-rei",
+        "num": 61,
+        "titulo_pt": "Expansão do campo de golfe de Monte Rei, em plena emergência hídrica",
+        "titulo_en": "Expansion of the Monte Rei golf course amid a water emergency",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/monte-rei.html",
+        "url_en": "https://causasderaiz.org/monte-rei-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.05,
+          39.4
+        ]
+      },
+      "properties": {
+        "id": "linha-atalaia-cruzeiro-concavada",
+        "num": 62,
+        "titulo_pt": "Linha elétrica Atalaia-Torre das Vargens e ramal Cruzeiro-Concavada: consulta pública no Cluster do Pego",
+        "titulo_en": "Atalaia-Torre das Vargens power line and Cruzeiro-Concavada branch: public consultation in the Pego Cluster",
+        "categoria": "energia",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/linha-atalaia-cruzeiro-concavada.html",
+        "url_en": "https://causasderaiz.org/linha-atalaia-cruzeiro-concavada-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.204,
+          38.478
+        ]
+      },
+      "properties": {
+        "id": "movimento-meco-livre",
+        "num": 63,
+        "titulo_pt": "Meco Livre",
+        "titulo_en": "Meco Livre",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-13",
+        "url_pt": "https://causasderaiz.org/movimento-meco-livre.html",
+        "url_en": "https://causasderaiz.org/movimento-meco-livre-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.27,
+          39.331
+        ]
+      },
+      "properties": {
+        "id": "royal-china-clay-serra-del-rei",
+        "num": 64,
+        "titulo_pt": "Mina de caulino Royal China Clay em Serra d'El-Rei",
+        "titulo_en": "Royal China Clay kaolin mine in Serra d'El-Rei",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-10",
+        "url_pt": "https://causasderaiz.org/royal-china-clay-serra-del-rei.html",
+        "url_en": "https://causasderaiz.org/royal-china-clay-serra-del-rei-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.1633,
+          37.8814
+        ]
+      },
+      "properties": {
+        "id": "mina-gaviao-aljustrel",
+        "num": 65,
+        "titulo_pt": "Mina do Gavião em Aljustrel: ZERO defende chumbo ao projeto da Almina",
+        "titulo_en": "Gavião mine in Aljustrel: ZERO calls for the Almina project to be rejected",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-10",
+        "url_pt": "https://causasderaiz.org/mina-gaviao-aljustrel.html",
+        "url_en": "https://causasderaiz.org/mina-gaviao-aljustrel-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8683,
+          37.95
+        ]
+      },
+      "properties": {
+        "id": "cais-carga-sines",
+        "num": 66,
+        "titulo_pt": "Novo Cais de Carga Geral do Porto de Sines: uso militar sem debate público",
+        "titulo_en": "New General Cargo Dock at the Port of Sines: military use without public debate",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-10",
+        "url_pt": "https://causasderaiz.org/cais-carga-sines.html",
+        "url_en": "https://causasderaiz.org/cais-carga-sines-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6975,
+          38.0128
+        ]
+      },
+      "properties": {
+        "id": "eolico-sudoeste-sines",
+        "num": 67,
+        "titulo_pt": "Parque Eólico do Sudoeste em Santiago do Cacém: Quercus alerta para impactos subavaliados",
+        "titulo_en": "Southwest Wind Farm in Santiago do Cacém: Quercus warns of underassessed impacts",
+        "categoria": "eolicas",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/eolico-sudoeste-sines.html",
+        "url_en": "https://causasderaiz.org/eolico-sudoeste-sines-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.95,
+          38.48
+        ]
+      },
+      "properties": {
+        "id": "parque-natural-arrabida",
+        "num": 68,
+        "titulo_pt": "Parque Natural da Arrábida: pedreiras, betão e turismo cercam o território mais protegido junto a Lisboa",
+        "titulo_en": "Arrábida Natural Park: quarries, concrete and tourism close in on the most protected land near Lisbon",
+        "categoria": "imobiliario",
+        "categoria_secundaria": "mineracao",
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-13",
+        "url_pt": "https://causasderaiz.org/parque-natural-arrabida.html",
+        "url_en": "https://causasderaiz.org/parque-natural-arrabida-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.977,
+          38.483
+        ]
+      },
+      "properties": {
+        "id": "arrabida",
+        "num": 69,
+        "titulo_pt": "Pedreiras da Secil no Parque Natural da Arrábida",
+        "titulo_en": "Secil quarries in Arrábida Natural Park",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/arrabida.html",
+        "url_en": "https://causasderaiz.org/arrabida-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4548,
+          38.7994
+        ]
+      },
+      "properties": {
+        "id": "borba",
+        "num": 70,
+        "titulo_pt": "Pedreiras sem controlo ambiental: Borba e Vila Viçosa",
+        "titulo_en": "Quarries with no environmental oversight: Borba and Vila Viçosa",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/borba.html",
+        "url_en": "https://causasderaiz.org/borba-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.283,
+          37.083
+        ]
+      },
+      "properties": {
+        "id": "poco-velho-aveiros-albufeira",
+        "num": 72,
+        "titulo_pt": "Poço Velho e Aveiros: duas praias com acesso bloqueado em Albufeira",
+        "titulo_en": "Poço Velho and Aveiros: two blocked-access beaches in Albufeira",
+        "categoria": "praias",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/poco-velho-aveiros-albufeira.html",
+        "url_en": "https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.976,
+          38.481
+        ]
+      },
+      "properties": {
+        "id": "revive-forte-outao",
+        "num": 75,
+        "titulo_pt": "Revive: Forte Velho do Outão vira concessão turística de 50 anos dentro do Parque Natural",
+        "titulo_en": "Revive: Forte Velho do Outão becomes a 50-year tourism concession inside the Natural Park",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-31",
+        "url_pt": "https://causasderaiz.org/revive-forte-outao.html",
+        "url_en": "https://causasderaiz.org/revive-forte-outao-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0967,
+          39.8
+        ]
+      },
+      "properties": {
+        "id": "serta",
+        "num": 76,
+        "titulo_pt": "Sertã: mais de 25% do concelho marcado para zonas de aceleração solar",
+        "titulo_en": "Sertã: over 25% of the municipality earmarked for solar acceleration zones",
+        "categoria": "megasolares",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/serta.html",
+        "url_en": "https://causasderaiz.org/serta-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.366,
+          37.098
+        ]
+      },
+      "properties": {
+        "id": "lagoa-salgados-silves",
+        "num": 77,
+        "titulo_pt": "Silves não abdica da Reserva Natural da Lagoa dos Salgados",
+        "titulo_en": "Silves won't give up on the Lagoa dos Salgados Natural Reserve",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/lagoa-salgados-silves.html",
+        "url_en": "https://causasderaiz.org/lagoa-salgados-silves-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.9667,
+          32.7333
+        ]
+      },
+      "properties": {
+        "id": "curral-freiras",
+        "num": 78,
+        "titulo_pt": "Teleférico e Parque de Aventura do Curral das Freiras",
+        "titulo_en": "Cable Car and Adventure Park at Curral das Freiras",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": null,
+        "regiao": "madeira",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/curral-freiras.html",
+        "url_en": "https://causasderaiz.org/curral-freiras-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.475,
+          37.207
+        ]
+      },
+      "properties": {
+        "id": "verdelago-castro-marim",
+        "num": 80,
+        "titulo_pt": "Verdelago: acesso a praia feito pelo interior de um resort em Castro Marim",
+        "titulo_en": "Verdelago: beach access routed through a resort in Castro Marim",
+        "categoria": "praias",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/verdelago-castro-marim.html",
+        "url_en": "https://causasderaiz.org/verdelago-castro-marim-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9731,
+          38.9575
+        ]
+      },
+      "properties": {
+        "id": "castanheira-ribatejo",
+        "num": 81,
+        "titulo_pt": "Vila Franca de Xira quer triplicar a Plataforma Logística de Lisboa-Norte",
+        "titulo_en": "Vila Franca de Xira wants to triple the Lisbon-North Logistics Platform",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-07",
+        "url_pt": "https://causasderaiz.org/castanheira-ribatejo.html",
+        "url_en": "https://causasderaiz.org/castanheira-ribatejo-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.146,
+          41.746
+        ]
+      },
+      "properties": {
+        "id": "mata-albergaria-volta",
+        "num": 82,
+        "titulo_pt": "Volta a Portugal na Mata da Albergaria: Quercus alerta para \"grave precedente\" no Gerês",
+        "titulo_en": "Tour of Portugal through Mata da Albergaria: Quercus warns of \"serious precedent\" in Gerês",
+        "categoria": "infraestrutura",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-08-24",
+        "url_pt": "https://causasderaiz.org/mata-albergaria-volta.html",
+        "url_en": "https://causasderaiz.org/mata-albergaria-volta-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.49,
+          38.2
+        ]
+      },
+      "properties": {
+        "id": "alqueva-solar-flutuante",
+        "num": 84,
+        "titulo_pt": "EDP desiste da mega-central solar flutuante \"Grande Lago\" no Alqueva",
+        "titulo_en": "EDP drops the \"Grande Lago\" floating solar mega-plant on the Alqueva reservoir",
+        "categoria": "megasolares",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "vitoria",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/alqueva-solar-flutuante.html",
+        "url_en": "https://causasderaiz.org/alqueva-solar-flutuante-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.75,
+          41.97
+        ]
+      },
+      "properties": {
+        "id": "valtreixal",
+        "num": 85,
+        "titulo_pt": "Mina de Valtreixal (Calabor): licença ambiental recusada",
+        "titulo_en": "Valtreixal Mine (Calabor): environmental permit refused",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "vitoria",
+        "verificado_em": "2026-08-21",
+        "url_pt": "https://causasderaiz.org/valtreixal.html",
+        "url_en": "https://causasderaiz.org/valtreixal-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.629,
+          37.107
+        ]
+      },
+      "properties": {
+        "id": "pedreira-cerro-meio-tavira",
+        "num": 86,
+        "titulo_pt": "Pedreira Cerro do Meio: tribunal manda encerrar exploração em Tavira por ruído e poeiras",
+        "titulo_en": "Cerro do Meio quarry: court orders closure in Tavira over noise and dust",
+        "categoria": "mineracao",
+        "categoria_secundaria": "poluicao",
+        "regiao": "algarve",
+        "estado": "vitoria",
+        "verificado_em": "2026-09-07",
+        "url_pt": "https://causasderaiz.org/pedreira-cerro-meio-tavira.html",
+        "url_en": "https://causasderaiz.org/pedreira-cerro-meio-tavira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.113,
+          32.7847
+        ]
+      },
+      "properties": {
+        "id": "fanal-madeira",
+        "num": 87,
+        "titulo_pt": "Fanal: pastoreio e turismo em excesso ameaçam a floresta centenária",
+        "titulo_en": "Fanal: grazing and overtourism threaten centuries-old forest",
+        "categoria": "sistemico",
+        "categoria_secundaria": null,
+        "regiao": "madeira",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/fanal-madeira.html",
+        "url_en": "https://causasderaiz.org/fanal-madeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.3399,
+          33.0642
+        ]
+      },
+      "properties": {
+        "id": "porto-santo-areia",
+        "num": 88,
+        "titulo_pt": "Porto Santo: praia perde areia por causa do Porto de Abrigo",
+        "titulo_en": "Porto Santo: beach loses sand because of the Shelter Port",
+        "categoria": "praias",
+        "categoria_secundaria": null,
+        "regiao": "madeira",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/porto-santo-areia.html",
+        "url_en": "https://causasderaiz.org/porto-santo-areia-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.6756,
+          37.7412
+        ]
+      },
+      "properties": {
+        "id": "mineracao-mar-profundo-acores",
+        "num": 89,
+        "titulo_pt": "Moratória à mineração em mar profundo nas águas dos Açores",
+        "titulo_en": "Moratorium on deep-sea mining in Azorean waters",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "acores",
+        "estado": "vitoria",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/mineracao-mar-profundo-acores.html",
+        "url_en": "https://causasderaiz.org/mineracao-mar-profundo-acores-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.82,
+          41.75
+        ]
+      },
+      "properties": {
+        "id": "prospecao-valongo-2",
+        "num": 90,
+        "titulo_pt": "Valongo 2: prospeção mineira ameaça a Serra da Nogueira e o Parque de Montesinho",
+        "titulo_en": "Valongo 2: mining prospecting threatens the Serra da Nogueira and Montesinho Natural Park",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/prospecao-valongo-2.html",
+        "url_en": "https://causasderaiz.org/prospecao-valongo-2-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.03,
+          41.72
+        ]
+      },
+      "properties": {
+        "id": "prospecao-revelhe",
+        "num": 91,
+        "titulo_pt": "Revelhe: pedido de prospeção mineira no Parque Natural de Montesinho",
+        "titulo_en": "Revelhe: mining prospecting request in Montesinho Natural Park",
+        "categoria": "mineracao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/prospecao-revelhe.html",
+        "url_en": "https://causasderaiz.org/prospecao-revelhe-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.428,
+          37.0958
+        ]
+      },
+      "properties": {
+        "id": "up12-albandeira",
+        "num": 92,
+        "titulo_pt": "UP12: resort de 1.030 camas ameaça a última costa selvagem de Albandeira",
+        "titulo_en": "UP12: a 1,030-bed resort threatens Albandeira's last wild coastline",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-14",
+        "url_pt": "https://causasderaiz.org/up12-albandeira.html",
+        "url_en": "https://causasderaiz.org/up12-albandeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.383,
+          38.79
+        ]
+      },
+      "properties": {
+        "id": "muda-defesa-arvores",
+        "num": 93,
+        "titulo_pt": "MUDA: contra o abate de árvores e a má gestão do arvoredo urbano",
+        "titulo_en": "MUDA: against tree felling and poor management of urban tree cover",
+        "categoria": "arvoredo",
+        "categoria_secundaria": null,
+        "regiao": "nacional",
+        "estado": "urgente",
+        "verificado_em": "2026-09-15",
+        "url_pt": "https://causasderaiz.org/muda-defesa-arvores.html",
+        "url_en": "https://causasderaiz.org/muda-defesa-arvores-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.3904,
+          38.7979
+        ]
+      },
+      "properties": {
+        "id": "sintra-sem-herbicidas",
+        "num": 94,
+        "titulo_pt": "Sintra sem Herbicidas: contra o uso de glifosato em espaços públicos",
+        "titulo_en": "Sintra sem Herbicidas: against glyphosate use in public spaces",
+        "categoria": "poluicao",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-15",
+        "url_pt": "https://causasderaiz.org/sintra-sem-herbicidas.html",
+        "url_en": "https://causasderaiz.org/sintra-sem-herbicidas-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5453,
+          37.2107
+        ]
+      },
+      "properties": {
+        "id": "aterro-barlavento",
+        "num": 95,
+        "titulo_pt": "Aterro Sanitário do Barlavento: moradores protestam contra cheiro, moscas e ampliação",
+        "titulo_en": "Barlavento Landfill: residents protest against smell, flies and expansion",
+        "categoria": "poluicao",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "urgente",
+        "verificado_em": "2026-09-16",
+        "url_pt": "https://causasderaiz.org/aterro-barlavento.html",
+        "url_en": "https://causasderaiz.org/aterro-barlavento-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.093,
+          38.615
+        ]
+      },
+      "properties": {
+        "id": "pinhal-freiras-seixal",
+        "num": 96,
+        "titulo_pt": "Pinhal das Freiras: urbanização ameaça a Zona Especial de Conservação Fernão Ferro/Lagoa de Albufeira",
+        "titulo_en": "Pinhal das Freiras: urban development plan threatens the Fernão Ferro/Lagoa de Albufeira conservation area",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-16",
+        "url_pt": "https://causasderaiz.org/pinhal-freiras-seixal.html",
+        "url_en": "https://causasderaiz.org/pinhal-freiras-seixal-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.533,
+          38.733
+        ]
+      },
+      "properties": {
+        "id": "eolicas-serra-ossa",
+        "num": 97,
+        "titulo_pt": "Não às Eólicas na Serra d'Ossa: petição contra parque eólico no Alentejo Central",
+        "titulo_en": "No to Wind Turbines on Serra d'Ossa: petition against wind farm in Central Alentejo",
+        "categoria": "eolicas",
+        "categoria_secundaria": null,
+        "regiao": "alentejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-16",
+        "url_pt": "https://causasderaiz.org/eolicas-serra-ossa.html",
+        "url_en": "https://causasderaiz.org/eolicas-serra-ossa-en.html"
+      }
+    }
+  ]
+}
