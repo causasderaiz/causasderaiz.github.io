@@ -570,7 +570,7 @@
         "num": 27,
         "titulo_pt": "Pela proteção da aranha-cavernícola-do-Frade e do seu habitat",
         "titulo_en": "For the protection of the Frade cave spider and its habitat",
-        "categoria": "sistemico",
+        "categoria": "mineracao",
         "categoria_secundaria": null,
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "urgente",
@@ -1698,10 +1698,10 @@
         "titulo_pt": "Vila Franca de Xira quer triplicar a Plataforma Logística de Lisboa-Norte",
         "titulo_en": "Vila Franca de Xira wants to triple the Lisbon-North Logistics Platform",
         "categoria": "imobiliario",
-        "categoria_secundaria": null,
+        "categoria_secundaria": "datacenter",
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-07",
+        "verificado_em": "2026-09-19",
         "url_pt": "https://causasderaiz.org/castanheira-ribatejo.html",
         "url_en": "https://causasderaiz.org/castanheira-ribatejo-en.html"
       }
@@ -1812,7 +1812,7 @@
         "num": 87,
         "titulo_pt": "Fanal: pastoreio e turismo em excesso ameaçam a floresta centenária",
         "titulo_en": "Fanal: grazing and overtourism threaten centuries-old forest",
-        "categoria": "sistemico",
+        "categoria": "imobiliario",
         "categoria_secundaria": null,
         "regiao": "madeira",
         "estado": "acompanhamento",
@@ -2049,6 +2049,52 @@
         "verificado_em": "2026-09-16",
         "url_pt": "https://causasderaiz.org/eolicas-serra-ossa.html",
         "url_en": "https://causasderaiz.org/eolicas-serra-ossa-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.03,
+          39.415
+        ]
+      },
+      "properties": {
+        "id": "edc-one-abrantes",
+        "num": 98,
+        "titulo_pt": "EDC One: os 7 mil milhões de euros do primeiro data center do Pego avançam sem avaliar o impacto na gestão do Tejo",
+        "titulo_en": "EDC One: the €7 billion first Pego data center advances without assessing the impact on the Tagus",
+        "categoria": "datacenter",
+        "categoria_secundaria": "agua",
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-19",
+        "url_pt": "https://causasderaiz.org/edc-one-abrantes.html",
+        "url_en": "https://causasderaiz.org/edc-one-abrantes-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4708,
+          40.2649
+        ]
+      },
+      "properties": {
+        "id": "covilha-asterion",
+        "num": 99,
+        "titulo_pt": "Covilhã: fundo de infraestruturas compra o maior data center português e planeia expandi-lo até 25 vezes",
+        "titulo_en": "Covilhã: infrastructure fund buys Portugal's largest data center and plans to expand it up to 25-fold",
+        "categoria": "datacenter",
+        "categoria_secundaria": "energia",
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-19",
+        "url_pt": "https://causasderaiz.org/covilha-asterion.html",
+        "url_en": "https://causasderaiz.org/covilha-asterion-en.html"
       }
     }
   ]

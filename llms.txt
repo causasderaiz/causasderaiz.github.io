@@ -30,7 +30,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (94)
+## Todos os casos / All cases (96)
 
 - &quot;Não conseguimos respirar&quot;: fábrica de pellets no Cercal do Alentejo (Infraestrutura industrial, Cercal do Alentejo, Santiago do Cacém): https://causasderaiz.org/pellets-cercal-alentejo.html
   EN: &quot;We can&#39;t breathe&quot;: pellet factory in Cercal do Alentejo: https://causasderaiz.org/pellets-cercal-alentejo-en.html
@@ -220,6 +220,10 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Pinhal das Freiras: urban development plan threatens the Fernão Ferro/Lagoa de Albufeira conservation area: https://causasderaiz.org/pinhal-freiras-seixal-en.html
 - Não às Eólicas na Serra d&#39;Ossa: petição contra parque eólico no Alentejo Central (Parque eólico, Serra d&#39;Ossa, Alentejo Central (Estremoz, Redondo, Borba, Vila Viçosa e Alandroal)): https://causasderaiz.org/eolicas-serra-ossa.html
   EN: No to Wind Turbines on Serra d&#39;Ossa: petition against wind farm in Central Alentejo: https://causasderaiz.org/eolicas-serra-ossa-en.html
+- EDC One: os 7 mil milhões de euros do primeiro data center do Pego avançam sem avaliar o impacto na gestão do Tejo (Data center, Zona Industrial do Pego, antigos terrenos da RPP Solar, Abrantes, distrito de Santarém): https://causasderaiz.org/edc-one-abrantes.html
+  EN: EDC One: the €7 billion first Pego data center advances without assessing the impact on the Tagus: https://causasderaiz.org/edc-one-abrantes-en.html
+- Covilhã: fundo de infraestruturas compra o maior data center português e planeia expandi-lo até 25 vezes (Data center, Covilhã, distrito de Castelo Branco): https://causasderaiz.org/covilha-asterion.html
+  EN: Covilhã: infrastructure fund buys Portugal&#39;s largest data center and plans to expand it up to 25-fold: https://causasderaiz.org/covilha-asterion-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.

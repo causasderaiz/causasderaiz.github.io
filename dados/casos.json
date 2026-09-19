@@ -2,7 +2,7 @@
   "gerado_em": "2026-09-19",
   "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
   "fonte": "https://causasderaiz.org",
-  "total": 94,
+  "total": 96,
   "casos": [
     {
       "id": "pellets-cercal-alentejo",
@@ -302,7 +302,7 @@
       "titulo_en": "Greenpeace warns a quarter of Portugal's coast is retreating and calls for a building moratorium",
       "local_pt": "Litoral continental, com destaque para Sesimbra e Grândola",
       "local_en": "Continental coastline, especially Sesimbra and Grândola",
-      "categoria": "sistemico",
+      "categoria": "imobiliario",
       "categoria_secundaria": null,
       "regiao": "nacional",
       "estado": "urgente",
@@ -637,7 +637,7 @@
       "titulo_en": "For the protection of the Frade cave spider and its habitat",
       "local_pt": "Gruta do Frade, Sesimbra, Parque Natural da Arrábida",
       "local_en": "Frade Cave, Sesimbra, Arrábida Natural Park",
-      "categoria": "sistemico",
+      "categoria": "mineracao",
       "categoria_secundaria": null,
       "regiao": "lisboa-e-vale-do-tejo",
       "estado": "urgente",
@@ -1690,7 +1690,7 @@
       "titulo_en": "National Nature Restoration Plan: submitted to Brussels on 1 September",
       "local_pt": "Nacional: consulta pública via Portal Participa",
       "local_en": "National: public consultation via the Participa Portal",
-      "categoria": "sistemico",
+      "categoria": "agua",
       "categoria_secundaria": null,
       "regiao": "nacional",
       "estado": "acompanhamento",
@@ -1878,7 +1878,7 @@
       "local_pt": "Castanheira do Ribatejo, Vila Franca de Xira",
       "local_en": "Castanheira do Ribatejo, Vila Franca de Xira",
       "categoria": "imobiliario",
-      "categoria_secundaria": null,
+      "categoria_secundaria": "datacenter",
       "regiao": "lisboa-e-vale-do-tejo",
       "estado": "acompanhamento",
       "coordenadas": [
@@ -1888,9 +1888,9 @@
       "envolvidos": [
         "CDU (Vila Franca de Xira)"
       ],
-      "resumo_pt": "A Câmara de Vila Franca de Xira aprovou por maioria um plano de pormenor que amplia em cerca de 340 hectares a Plataforma Logística de Lisboa-Norte, dos quais cerca de 300 para logística, tecnologia e centros de dados. A CDU critica a conversão de cerca de 295 hectares de solo agrícola e ecológico, estimando mais-valias de 491 milhões de euros para proprietários e promotores; PSD, IL e Chega levantaram dúvidas sobre a rede elétrica e a resposta dos bombeiros. A consulta pública encerrou a 4 de setembro sem resultado divulgado até à data; a autarquia promete avaliação ambiental estratégica antes de avançar.",
+      "resumo_pt": "A Câmara de Vila Franca de Xira aprovou por maioria um plano de pormenor que amplia em cerca de 340 hectares a Plataforma Logística de Lisboa-Norte, dos quais cerca de 300 para logística, tecnologia e centros de dados. É já aqui, em Castanheira do Ribatejo, que a Merlin Properties e a Edged Energy constroem desde outubro de 2024 um campus de cinco data centers de 180 MW (a caminho de 300 MW), com a primeira instalação prevista para 2027. A CDU critica a conversão de cerca de 295 hectares de solo agrícola e ecológico, estimando mais-valias de 491 milhões de euros para proprietários e promotores; PSD, IL e Chega levantaram dúvidas sobre a rede elétrica e a resposta dos bombeiros. A consulta pública encerrou a 4 de setembro sem resultado divulgado até à data; a autarquia promete avaliação ambiental estratégica antes de avançar.",
       "resumo_en": "Vila Franca de Xira City Council approved by majority a detailed plan expanding the Lisbon-North Logistics Platform by around 340 hectares, roughly 300 of them for logistics, technology and data centres. The CDU (Communist coalition) criticised converting about 295 hectares of farmland and ecologically valuable land, estimating €491 million in land-value gains for owners and developers; PSD, IL and Chega raised concerns about the power grid and firefighting capacity. The public consultation closed on 4 September with no outcome announced yet; the council promises a strategic environmental assessment before proceeding.",
-      "verificado_em": "2026-09-07",
+      "verificado_em": "2026-09-19",
       "url_pt": "https://causasderaiz.org/castanheira-ribatejo.html",
       "url_en": "https://causasderaiz.org/castanheira-ribatejo-en.html"
     },
@@ -2019,7 +2019,7 @@
       "titulo_en": "Fanal: grazing and overtourism threaten centuries-old forest",
       "local_pt": "Fanal, Parque Natural da Madeira, Porto Moniz",
       "local_en": "Fanal, Madeira Natural Park, Porto Moniz",
-      "categoria": "sistemico",
+      "categoria": "imobiliario",
       "categoria_secundaria": null,
       "regiao": "madeira",
       "estado": "acompanhamento",
@@ -2281,6 +2281,56 @@
       "verificado_em": "2026-09-16",
       "url_pt": "https://causasderaiz.org/eolicas-serra-ossa.html",
       "url_en": "https://causasderaiz.org/eolicas-serra-ossa-en.html"
+    },
+    {
+      "id": "edc-one-abrantes",
+      "num": 98,
+      "titulo_pt": "EDC One: os 7 mil milhões de euros do primeiro data center do Pego avançam sem avaliar o impacto na gestão do Tejo",
+      "titulo_en": "EDC One: the €7 billion first Pego data center advances without assessing the impact on the Tagus",
+      "local_pt": "Zona Industrial do Pego, antigos terrenos da RPP Solar, Abrantes, distrito de Santarém",
+      "local_en": "Pego Industrial Zone, former RPP Solar site, Abrantes, Santarém district",
+      "categoria": "datacenter",
+      "categoria_secundaria": "agua",
+      "regiao": "centro",
+      "estado": "acompanhamento",
+      "coordenadas": [
+        39.415,
+        -8.03
+      ],
+      "envolvidos": [
+        "Câmara Municipal de Abrantes",
+        "Quercus"
+      ],
+      "resumo_pt": "Uma sociedade veículo criada há pouco mais de um ano, com capital social de cerca de 4.400 euros e sem trabalhadores registados, é a promotora de um investimento anunciado de 7 mil milhões de euros nos antigos terrenos da fábrica solar RPP, junto à central termoelétrica do Pego, desativada em 2021. A Câmara de Abrantes já aprovou 16,2 milhões de euros em isenções fiscais; o Governo admite decidir ainda em 2026 o pedido de mais capacidade de ligação à rede elétrica, tendo em conta critérios de água e impacto ambiental. É o primeiro dos dois data centers de grande escala previstos para o mesmo concelho junto ao Tejo.",
+      "resumo_en": "A holding company set up just over a year ago, with roughly €4,400 in share capital and no registered employees, is the promoter of an announced €7 billion investment on the former RPP Solar factory site, next to the Pego coal plant, shut down in 2021. Abrantes Council has already approved €16.2 million in tax exemptions; the Government may decide by the end of 2026 on the request for more electricity grid capacity, weighing water and environmental impact criteria. It is the first of two large-scale data centers planned for the same municipality on the Tagus.",
+      "verificado_em": "2026-09-19",
+      "url_pt": "https://causasderaiz.org/edc-one-abrantes.html",
+      "url_en": "https://causasderaiz.org/edc-one-abrantes-en.html"
+    },
+    {
+      "id": "covilha-asterion",
+      "num": 99,
+      "titulo_pt": "Covilhã: fundo de infraestruturas compra o maior data center português e planeia expandi-lo até 25 vezes",
+      "titulo_en": "Covilhã: infrastructure fund buys Portugal's largest data center and plans to expand it up to 25-fold",
+      "local_pt": "Covilhã, distrito de Castelo Branco",
+      "local_en": "Covilhã, Castelo Branco district",
+      "categoria": "datacenter",
+      "categoria_secundaria": "energia",
+      "regiao": "centro",
+      "estado": "acompanhamento",
+      "coordenadas": [
+        40.2649,
+        -7.4708
+      ],
+      "envolvidos": [
+        "Asterion Industrial Partners",
+        "Altice Portugal"
+      ],
+      "resumo_pt": "A Altice Portugal vendeu o centro de dados da Covilhã, construído pela PT em 2013, ao fundo de infraestruturas espanhol Asterion Industrial Partners, por 120 milhões de euros. O campus tem hoje 6,8 MW instalados; a compradora já sinaliza um plano de expansão até 75 MW no terreno atual e até 175 MW num terreno adjacente com potência já reservada: um salto de até 25 vezes na capacidade, sem que exista ainda qualquer estudo público sobre o consumo de água e energia dessa expansão.",
+      "resumo_en": "Altice Portugal sold the Covilhã data center, built by PT in 2013, to Spanish infrastructure fund Asterion Industrial Partners for €120 million. The campus currently has 6.8MW installed; the buyer is already signalling an expansion plan reaching up to 75MW on the existing site and up to 175MW on an adjacent plot with capacity already secured: a jump of up to 25-fold in capacity, with no public study yet on the water and energy consumption of that expansion.",
+      "verificado_em": "2026-09-19",
+      "url_pt": "https://causasderaiz.org/covilha-asterion.html",
+      "url_en": "https://causasderaiz.org/covilha-asterion-en.html"
     }
   ]
 }

@@ -121,7 +121,7 @@
     var isDatacenter = c.cat === "datacenter" || c.cat2 === "datacenter";
     return L.divIcon({
       className: "", iconSize: [34, 34], iconAnchor: [17, 17],
-      html: '<span class="pin ' + estadoBadge(c).k + (c.prazo ? " prazo" : "") + (isDatacenter ? " datacenter" : "") + '">' + String(c.num || i + 1).padStart(2, "0") + "</span>",
+      html: '<span class="pin ' + estadoBadge(c).k + (c.prazo ? " prazo" : "") + (isDatacenter ? " datacenter" : "") + (isDatacenter && c.planeado ? " planeado" : "") + '">' + String(c.num || i + 1).padStart(2, "0") + "</span>",
     });
   };
   var VISTAS = {};

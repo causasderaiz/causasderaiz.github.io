@@ -252,6 +252,8 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 /* data center: anel amarelo/preto (sinal de "risco de recursos": água e energia), somado ao estado */
 .pin.datacenter{box-shadow:3px 3px 0 var(--line),0 0 0 4px #f5c518,0 0 0 6px var(--line)}
 .pin.datacenter.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px #f5c518,0 0 0 6px var(--line),0 0 0 10px var(--green-bright)}
+/* data center ainda planeado/em construção: mesmo sinal, amarelo mais claro e anel tracejado */
+.pin.datacenter.planeado{border-style:dashed;box-shadow:3px 3px 0 var(--line),0 0 0 4px #fde68a,0 0 0 6px var(--line)}
 .pin.on{transform:scale(1.3);z-index:600}
 .side{display:flex;flex-direction:column;background:var(--paper);max-height:660px}
 .side-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:3px solid var(--line)}
@@ -608,6 +610,8 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 /* data center: anel amarelo/preto (sinal de "risco de recursos": água e energia), somado ao estado */
 .pin.datacenter{box-shadow:3px 3px 0 var(--line),0 0 0 4px #f5c518,0 0 0 6px var(--line)}
 .pin.datacenter.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px #f5c518,0 0 0 6px var(--line),0 0 0 10px var(--green-bright)}
+/* data center ainda planeado/em construção: mesmo sinal, amarelo mais claro e anel tracejado */
+.pin.datacenter.planeado{border-style:dashed;box-shadow:3px 3px 0 var(--line),0 0 0 4px #fde68a,0 0 0 6px var(--line)}
 .pin.on{transform:scale(1.3);z-index:600}
 .side{display:flex;flex-direction:column;background:var(--paper);max-height:660px}
 .side-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:3px solid var(--line)}
