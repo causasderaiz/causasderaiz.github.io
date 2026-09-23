@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "gerado_em": "2026-09-19",
+  "gerado_em": "2026-09-23",
   "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
   "fonte": "https://causasderaiz.org",
   "features": [
@@ -252,7 +252,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "urgente",
-        "verificado_em": "2026-09-19",
+        "verificado_em": "2026-08-21",
         "url_pt": "https://causasderaiz.org/costa-terra-melides.html",
         "url_en": "https://causasderaiz.org/costa-terra-melides-en.html"
       }
@@ -321,7 +321,7 @@
         "categoria_secundaria": "poluicao",
         "regiao": "centro",
         "estado": "urgente",
-        "verificado_em": "2026-09-19",
+        "verificado_em": "2026-09-22",
         "url_pt": "https://causasderaiz.org/hyperion-abrantes.html",
         "url_en": "https://causasderaiz.org/hyperion-abrantes-en.html"
       }
@@ -570,7 +570,7 @@
         "num": 27,
         "titulo_pt": "Pela proteção da aranha-cavernícola-do-Frade e do seu habitat",
         "titulo_en": "For the protection of the Frade cave spider and its habitat",
-        "categoria": "mineracao",
+        "categoria": "sistemico",
         "categoria_secundaria": null,
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "urgente",
@@ -735,7 +735,7 @@
         "categoria_secundaria": null,
         "regiao": "centro",
         "estado": "urgente",
-        "verificado_em": "2026-09-14",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/sophia-beira.html",
         "url_en": "https://causasderaiz.org/sophia-beira-en.html"
       }
@@ -849,8 +849,8 @@
         "categoria": "infraestrutura",
         "categoria_secundaria": "poluicao",
         "regiao": "lisboa-e-vale-do-tejo",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-09-19",
+        "estado": "consulta",
+        "verificado_em": "2026-09-03",
         "url_pt": "https://causasderaiz.org/biometano-abrigada-alenquer.html",
         "url_en": "https://causasderaiz.org/biometano-abrigada-alenquer-en.html"
       }
@@ -919,7 +919,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "tribunal",
-        "verificado_em": "2026-09-19",
+        "verificado_em": "2026-08-24",
         "url_pt": "https://causasderaiz.org/barragem-pisao.html",
         "url_en": "https://causasderaiz.org/barragem-pisao-en.html"
       }
@@ -1005,8 +1005,8 @@
       "properties": {
         "id": "mina-borralha",
         "num": 46,
-        "titulo_pt": "Cávado Sem Minas: Mina da Borralha ameaça a água potável do rio",
-        "titulo_en": "Cávado Sem Minas: Borralha Mine threatens the river's drinking water",
+        "titulo_pt": "Mina da Borralha: reativação de volfrâmio ameaça a qualidade da água do Cávado",
+        "titulo_en": "Borralha Mine: reactivated tungsten mining threatens Cávado water quality",
         "categoria": "mineracao",
         "categoria_secundaria": null,
         "regiao": "norte",
@@ -1074,8 +1074,8 @@
       "properties": {
         "id": "ia-sines",
         "num": 49,
-        "titulo_pt": "A gigafábrica de IA em Sines: litígio pela água do mar, nova central solar e abate de floresta",
-        "titulo_en": "The Sines AI gigafactory: the seawater dispute, a new solar plant and forest felling",
+        "titulo_pt": "A gigafábrica de IA em Sines: a energia, a água e as florestas que ninguém assume",
+        "titulo_en": "The Sines AI gigafactory: the energy, water and forests no one accounts for",
         "categoria": "datacenter",
         "categoria_secundaria": null,
         "regiao": "alentejo",
@@ -1402,7 +1402,7 @@
         "categoria_secundaria": null,
         "regiao": "centro",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-10",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/royal-china-clay-serra-del-rei.html",
         "url_en": "https://causasderaiz.org/royal-china-clay-serra-del-rei-en.html"
       }
@@ -1573,29 +1573,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -9.328,
-          38.687
-        ]
-      },
-      "properties": {
-        "id": "quinta-dos-ingleses",
-        "num": 73,
-        "titulo_pt": "Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos",
-        "titulo_en": "Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest",
-        "categoria": "imobiliario",
-        "categoria_secundaria": "arvoredo",
-        "regiao": "lisboa-e-vale-do-tejo",
-        "estado": "tribunal",
-        "verificado_em": "2026-09-19",
-        "url_pt": "https://causasderaiz.org/quinta-dos-ingleses.html",
-        "url_en": "https://causasderaiz.org/quinta-dos-ingleses-en.html"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -8.976,
           38.481
         ]
@@ -1655,7 +1632,7 @@
         "categoria_secundaria": null,
         "regiao": "algarve",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-19",
+        "verificado_em": "2026-08-21",
         "url_pt": "https://causasderaiz.org/lagoa-salgados-silves.html",
         "url_en": "https://causasderaiz.org/lagoa-salgados-silves-en.html"
       }
@@ -1721,10 +1698,10 @@
         "titulo_pt": "Vila Franca de Xira quer triplicar a Plataforma Logística de Lisboa-Norte",
         "titulo_en": "Vila Franca de Xira wants to triple the Lisbon-North Logistics Platform",
         "categoria": "imobiliario",
-        "categoria_secundaria": "datacenter",
+        "categoria_secundaria": null,
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-19",
+        "verificado_em": "2026-09-07",
         "url_pt": "https://causasderaiz.org/castanheira-ribatejo.html",
         "url_en": "https://causasderaiz.org/castanheira-ribatejo-en.html"
       }
@@ -1835,7 +1812,7 @@
         "num": 87,
         "titulo_pt": "Fanal: pastoreio e turismo em excesso ameaçam a floresta centenária",
         "titulo_en": "Fanal: grazing and overtourism threaten centuries-old forest",
-        "categoria": "imobiliario",
+        "categoria": "sistemico",
         "categoria_secundaria": null,
         "regiao": "madeira",
         "estado": "acompanhamento",
@@ -2079,22 +2056,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -8.03,
-          39.415
+          -9.1329,
+          38.6386
         ]
       },
       "properties": {
-        "id": "edc-one-abrantes",
+        "id": "amianto-vale-milhacos-seixal",
         "num": 98,
-        "titulo_pt": "EDC One: os 7 mil milhões de euros do primeiro data center do Pego avançam sem avaliar o impacto na gestão do Tejo",
-        "titulo_en": "EDC One: the €7 billion first Pego data center advances without assessing the impact on the Tagus",
-        "categoria": "datacenter",
-        "categoria_secundaria": "agua",
-        "regiao": "centro",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-09-19",
-        "url_pt": "https://causasderaiz.org/edc-one-abrantes.html",
-        "url_en": "https://causasderaiz.org/edc-one-abrantes-en.html"
+        "titulo_pt": "Amianto na Escola Básica de Vale de Milhaços, no Seixal",
+        "titulo_en": "Asbestos at the Vale de Milhaços primary school, Seixal",
+        "categoria": "comunidade",
+        "categoria_secundaria": "poluicao",
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "urgente",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/amianto-vale-milhacos-seixal.html",
+        "url_en": "https://causasderaiz.org/amianto-vale-milhacos-seixal-en.html"
       }
     },
     {
@@ -2102,22 +2079,114 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -7.4708,
-          40.2649
+          -8.9407,
+          39.8281
         ]
       },
       "properties": {
-        "id": "covilha-asterion",
+        "id": "rio-lis-poluicao",
         "num": 99,
-        "titulo_pt": "Covilhã: fundo de infraestruturas compra o maior data center português e planeia expandi-lo até 25 vezes",
-        "titulo_en": "Covilhã: infrastructure fund buys Portugal's largest data center and plans to expand it up to 25-fold",
-        "categoria": "datacenter",
-        "categoria_secundaria": "energia",
+        "titulo_pt": "Poluição da bacia do rio Lis: descargas de esgoto não tratado, sem solução definitiva à vista",
+        "titulo_en": "Pollution of the Lis river basin: untreated sewage discharges, no lasting solution in sight",
+        "categoria": "agua",
+        "categoria_secundaria": "poluicao",
         "regiao": "centro",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-09-19",
-        "url_pt": "https://causasderaiz.org/covilha-asterion.html",
-        "url_en": "https://causasderaiz.org/covilha-asterion-en.html"
+        "estado": "urgente",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/rio-lis-poluicao.html",
+        "url_en": "https://causasderaiz.org/rio-lis-poluicao-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.56,
+          39.803
+        ]
+      },
+      "properties": {
+        "id": "aterro-castelo-branco-biosmart",
+        "num": 101,
+        "titulo_pt": "Ampliação do aterro de resíduos industriais da BioSmart, em Castelo Branco",
+        "titulo_en": "Expansion of the BioSmart industrial waste landfill, Castelo Branco",
+        "categoria": "poluicao",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/aterro-castelo-branco-biosmart.html",
+        "url_en": "https://causasderaiz.org/aterro-castelo-branco-biosmart-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2934,
+          41.2814
+        ]
+      },
+      "properties": {
+        "id": "aterro-lustosa-lousada",
+        "num": 102,
+        "titulo_pt": "Aterro de Lustosa, em Lousada: reconfiguração em consulta pública",
+        "titulo_en": "Lustosa landfill, Lousada: reconfiguration in public consultation",
+        "categoria": "poluicao",
+        "categoria_secundaria": null,
+        "regiao": "norte",
+        "estado": "consulta",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/aterro-lustosa-lousada.html",
+        "url_en": "https://causasderaiz.org/aterro-lustosa-lousada-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3547,
+          37.1027
+        ]
+      },
+      "properties": {
+        "id": "hotel-vale-olival-armacao-pera",
+        "num": 103,
+        "titulo_pt": "Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra",
+        "titulo_en": "50-million-euro hotel in Vale do Olival, Armação de Pêra",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "algarve",
+        "estado": "urgente",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/hotel-vale-olival-armacao-pera.html",
+        "url_en": "https://causasderaiz.org/hotel-vale-olival-armacao-pera-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6667,
+          39.6494
+        ]
+      },
+      "properties": {
+        "id": "poluicao-rio-tejo-protejo",
+        "num": 104,
+        "titulo_pt": "proTEJO denuncia novo ressurgimento de poluição no rio Tejo",
+        "titulo_en": "proTEJO reports new resurgence of pollution in the Tagus river",
+        "categoria": "poluicao",
+        "categoria_secundaria": "agua",
+        "regiao": "centro",
+        "estado": "urgente",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/poluicao-rio-tejo-protejo.html",
+        "url_en": "https://causasderaiz.org/poluicao-rio-tejo-protejo-en.html"
       }
     }
   ]

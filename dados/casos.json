@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-09-19",
+  "gerado_em": "2026-09-23",
   "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
   "fonte": "https://causasderaiz.org",
-  "total": 97,
+  "total": 100,
   "casos": [
     {
       "id": "pellets-cercal-alentejo",
@@ -266,7 +266,7 @@
       ],
       "resumo_pt": "O resort de luxo Costa Terra mantém seguranças privados e vedações a condicionar o acesso a praias públicas. Uma inspeção oficial encontrou sete praias com acesso condicionado em Grândola; um ano depois, a Quercus acusa o Governo de esconder que as barreiras continuam.",
       "resumo_en": "The luxury resort Costa Terra keeps private security and fencing restricting access to public beaches. An official inspection found seven beaches with conditioned access in Grândola; a year on, Quercus accuses the Government of hiding the fact that the barriers remain.",
-      "verificado_em": "2026-09-19",
+      "verificado_em": "2026-08-21",
       "url_pt": "https://causasderaiz.org/costa-terra-melides.html",
       "url_en": "https://causasderaiz.org/costa-terra-melides-en.html"
     },
@@ -302,7 +302,7 @@
       "titulo_en": "Greenpeace warns a quarter of Portugal's coast is retreating and calls for a building moratorium",
       "local_pt": "Litoral continental, com destaque para Sesimbra e Grândola",
       "local_en": "Continental coastline, especially Sesimbra and Grândola",
-      "categoria": "imobiliario",
+      "categoria": "sistemico",
       "categoria_secundaria": null,
       "regiao": "nacional",
       "estado": "urgente",
@@ -357,11 +357,12 @@
       ],
       "envolvidos": [
         "Câmara Municipal de Abrantes",
-        "Quercus"
+        "Quercus",
+        "proTEJO"
       ],
-      "resumo_pt": "Segundo data center de grande escala junto à Central do Pego, promovido pelo grupo Hyperion, com mais de 151 mil m² de área de implantação: a câmara aprovou por unanimidade o Pedido de Informação Prévia antes de existir um estudo de impacto ambiental completo. A Quercus alerta que, somado ao data center já aprovado da EDC ONE no mesmo concelho, o consumo conjunto pode atingir cerca de 841 GWh/ano num cenário conservador de 30% de utilização (5,7 vezes o consumo elétrico anual de Abrantes em 2024) ou cerca de 2,8 TWh/ano à potência máxima anunciada (quase 19 vezes), numa bacia do Tejo já com índice de escassez hídrica de 40% previsto para 2028-2033; a associação exige um EIA cumulativo que avalie também a poluição sonora e o efeito de ilha de calor.",
-      "resumo_en": "Second large-scale data center next to the Pego power plant, promoted by the Hyperion group, with over 151,000 m² of footprint: the council unanimously approved the preliminary information request before a complete environmental impact study existed. Quercus warns that, added to the already-approved EDC ONE data center in the same municipality, combined consumption could reach about 841 GWh/year in a conservative 30%-utilization scenario (5.7 times Abrantes' 2024 annual electricity use), or about 2.8 TWh/year at the maximum announced capacity (nearly 19 times), in a Tagus basin already facing a projected 40% water scarcity index for 2028-2033; the association demands a cumulative EIA that also assesses noise pollution and the heat-island effect.",
-      "verificado_em": "2026-09-19",
+      "resumo_pt": "Segundo data center de grande escala junto à Central do Pego, promovido pelo grupo Hyperion, com 200 MVA de potência e mais de 151 mil m² de área de implantação: a câmara aprovou por unanimidade o Pedido de Informação Prévia antes de existir um estudo de impacto ambiental completo. A Quercus alerta que, somado ao data center já aprovado da EDC ONE no mesmo concelho, o consumo conjunto pode atingir cerca de 1.314 GWh/ano num cenário conservador (quase 9 vezes o consumo elétrico anual de Abrantes) ou até 29 vezes à potência máxima, numa bacia do Tejo já com índice de escassez hídrica de 40% previsto para 2028-2033; a associação exige um EIA cumulativo que avalie também a poluição sonora e o efeito de ilha de calor.",
+      "resumo_en": "Second large-scale data center next to the Pego power plant, promoted by the Hyperion group, with 200 MVA of connection capacity and over 151,000 m² of footprint: the council unanimously approved the preliminary information request before a complete environmental impact study existed. Quercus warns that, added to the already-approved EDC ONE data center in the same municipality, combined consumption could reach about 1,314 GWh/year in a conservative scenario (nearly 9 times Abrantes' annual electricity use), or up to 29 times at maximum capacity, in a Tagus basin already facing a projected 40% water scarcity index for 2028-2033; the association demands a cumulative EIA that also assesses noise pollution and the heat-island effect.",
+      "verificado_em": "2026-09-22",
       "url_pt": "https://causasderaiz.org/hyperion-abrantes.html",
       "url_en": "https://causasderaiz.org/hyperion-abrantes-en.html"
     },
@@ -637,7 +638,7 @@
       "titulo_en": "For the protection of the Frade cave spider and its habitat",
       "local_pt": "Gruta do Frade, Sesimbra, Parque Natural da Arrábida",
       "local_en": "Frade Cave, Sesimbra, Arrábida Natural Park",
-      "categoria": "mineracao",
+      "categoria": "sistemico",
       "categoria_secundaria": null,
       "regiao": "lisboa-e-vale-do-tejo",
       "estado": "urgente",
@@ -819,7 +820,7 @@
       ],
       "resumo_pt": "Duas megacentrais solares ameaçam 231 espécies de vertebrados e mais de 1.158 hectares de montado na Beira Baixa. Depois de uma consulta pública recorde com 12.693 participações, a promotora Lightsource bp reduziu o projeto Sophia em 34% (de 867 para 573 MWp) e retirou-o da zona com maior potencial de regadio; a versão reformulada será submetida a nova consulta pública em outubro de 2026 e a central só deverá entrar em funcionamento em 2031.",
       "resumo_en": "Two mega solar plants threaten 231 vertebrate species and over 1,158 hectares of montado in Beira Baixa. After a record public consultation with 12,693 submissions, developer Lightsource bp cut the Sophia project by 34% (from 867 to 573 MWp) and removed it from the area with the greatest irrigation potential; the redesigned project will go to a new public consultation in October 2026 and the plant is not expected to start operating before 2031.",
-      "verificado_em": "2026-09-14",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/sophia-beira.html",
       "url_en": "https://causasderaiz.org/sophia-beira-en.html"
     },
@@ -930,18 +931,17 @@
       "categoria": "infraestrutura",
       "categoria_secundaria": "poluicao",
       "regiao": "lisboa-e-vale-do-tejo",
-      "estado": "acompanhamento",
+      "estado": "consulta",
       "coordenadas": [
         39.0719,
         -9.0017
       ],
       "envolvidos": [
-        "Moradores de Abrigada e Cabanas de Torres",
-        "Quercus"
+        "Moradores de Abrigada e Cabanas de Torres"
       ],
-      "resumo_pt": "A empresa Gás da Terra quer instalar uma unidade de biometano de 20,5 milhões de euros a cerca de 500 metros de habitações nas Marés, para tratar cerca de 84 mil toneladas anuais de resíduos agropecuários. Numa reunião pública de quase três horas, os moradores rejeitaram o projeto por receio de maus cheiros e do aumento do trânsito de pesados; a Câmara Municipal de Alenquer emitiu parecer desfavorável a 26 de agosto. A consulta pública encerrou a 15 de setembro, com a Quercus a juntar-se ao parecer desfavorável por risco para a água e os solos; ainda sem decisão final de licenciamento.",
-      "resumo_en": "Gás da Terra wants to build a €20.5 million biomethane plant about 500 metres from homes in Marés, to process around 84,000 tonnes of agricultural and livestock waste a year. At a public meeting lasting almost three hours, residents rejected the project over fears of bad odours and heavier truck traffic; Alenquer municipal council issued an unfavourable opinion on 26 August. The public consultation closed on 15 September, with Quercus joining the unfavourable opinion over risks to water and soil; still no final licensing decision.",
-      "verificado_em": "2026-09-19",
+      "resumo_pt": "A empresa Gás da Terra quer instalar uma unidade de biometano de 20,5 milhões de euros a cerca de 500 metros de habitações nas Marés, para tratar cerca de 84 mil toneladas anuais de resíduos agropecuários. Numa reunião pública de quase três horas, os moradores rejeitaram o projeto por receio de maus cheiros e do aumento do trânsito de pesados; a Câmara Municipal de Alenquer emitiu parecer desfavorável a 26 de agosto. A consulta pública decorre em participa.pt até 15 de setembro.",
+      "resumo_en": "Gás da Terra wants to build a €20.5 million biomethane plant about 500 metres from homes in Marés, to process around 84,000 tonnes of agricultural and livestock waste a year. At a public meeting lasting almost three hours, residents rejected the project over fears of bad odours and heavier truck traffic; Alenquer municipal council issued an unfavourable opinion on 26 August. The public consultation runs on participa.pt until 15 September.",
+      "verificado_em": "2026-09-03",
       "url_pt": "https://causasderaiz.org/biometano-abrigada-alenquer.html",
       "url_en": "https://causasderaiz.org/biometano-abrigada-alenquer-en.html"
     },
@@ -1019,7 +1019,7 @@
       ],
       "resumo_pt": "Barragem de mais de 220 milhões de euros que submergiria a aldeia do Pisão. Quatro associações ambientalistas contestam em tribunal desde 2022 o interesse público da obra, cujo abastecimento público representaria pouco mais de 1% do volume anual da albufeira, contra 65% para uso agrícola. As obras arrancaram em setembro de 2025 e já foram suspensas e retomadas várias vezes; o Tribunal Central Administrativo Sul confirmou nova suspensão em maio de 2026.",
       "resumo_en": "A dam costing over €220 million that would submerge the village of Pisão. Four environmental associations have contested the project's public interest in court since 2022; public water supply would account for just over 1% of the reservoir's annual volume, against 65% for agricultural use. Works began in September 2025 and have been suspended and resumed several times; the Southern Central Administrative Court confirmed a new suspension in May 2026.",
-      "verificado_em": "2026-09-19",
+      "verificado_em": "2026-08-24",
       "url_pt": "https://causasderaiz.org/barragem-pisao.html",
       "url_en": "https://causasderaiz.org/barragem-pisao-en.html"
     },
@@ -1100,8 +1100,8 @@
     {
       "id": "mina-borralha",
       "num": 46,
-      "titulo_pt": "Cávado Sem Minas: Mina da Borralha ameaça a água potável do rio",
-      "titulo_en": "Cávado Sem Minas: Borralha Mine threatens the river's drinking water",
+      "titulo_pt": "Mina da Borralha: reativação de volfrâmio ameaça a qualidade da água do Cávado",
+      "titulo_en": "Borralha Mine: reactivated tungsten mining threatens Cávado water quality",
       "local_pt": "Montalegre, distrito de Vila Real",
       "local_en": "Montalegre, Vila Real district",
       "categoria": "mineracao",
@@ -1173,8 +1173,8 @@
     {
       "id": "ia-sines",
       "num": 49,
-      "titulo_pt": "A gigafábrica de IA em Sines: litígio pela água do mar, nova central solar e abate de floresta",
-      "titulo_en": "The Sines AI gigafactory: the seawater dispute, a new solar plant and forest felling",
+      "titulo_pt": "A gigafábrica de IA em Sines: a energia, a água e as florestas que ninguém assume",
+      "titulo_en": "The Sines AI gigafactory: the energy, water and forests no one accounts for",
       "local_pt": "Sines e Santiago do Cacém, litoral alentejano",
       "local_en": "Sines and Santiago do Cacém, Alentejo coast",
       "categoria": "datacenter",
@@ -1529,7 +1529,7 @@
       ],
       "resumo_pt": "A concessão mineira C-185 «Royal China Clay», da Motamineral – Minerais Industriais, quer explorar 51,4 hectares de areias cauliníticas em três núcleos junto a Serra d'El-Rei (Peniche), com uma unidade industrial de lavagem no local. A consulta pública encerrou a 1 de setembro com 7.368 participações; as Câmaras de Óbidos e de Peniche deram parecer desfavorável ao projeto e a Quercus juntou-se ao pedido de chumbo, alertando para os impactos cumulativos na região.",
       "resumo_en": "The C-185 “Royal China Clay” mining concession, held by Motamineral – Minerais Industriais, would exploit 51.4 hectares of kaolinitic sands across three cores near Serra d'El-Rei (Peniche), with an on-site industrial washing plant. The public consultation closed on 1 September with 7,368 submissions; the councils of Óbidos and Peniche gave an unfavourable opinion on the project, and Quercus joined the call to reject it, warning of cumulative impacts on the region.",
-      "verificado_em": "2026-09-10",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/royal-china-clay-serra-del-rei.html",
       "url_en": "https://causasderaiz.org/royal-china-clay-serra-del-rei-en.html"
     },
@@ -1691,7 +1691,7 @@
       "titulo_en": "National Nature Restoration Plan: submitted to Brussels on 1 September",
       "local_pt": "Nacional: consulta pública via Portal Participa",
       "local_en": "National: public consultation via the Participa Portal",
-      "categoria": "agua",
+      "categoria": "sistemico",
       "categoria_secundaria": null,
       "regiao": "nacional",
       "estado": "acompanhamento",
@@ -1729,31 +1729,6 @@
       "verificado_em": "2026-08-21",
       "url_pt": "https://causasderaiz.org/poco-velho-aveiros-albufeira.html",
       "url_en": "https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html"
-    },
-    {
-      "id": "quinta-dos-ingleses",
-      "num": 73,
-      "titulo_pt": "Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos",
-      "titulo_en": "Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest",
-      "local_pt": "Carcavelos, Cascais, distrito de Lisboa",
-      "local_en": "Carcavelos, Cascais, Lisbon district",
-      "categoria": "imobiliario",
-      "categoria_secundaria": "arvoredo",
-      "regiao": "lisboa-e-vale-do-tejo",
-      "estado": "tribunal",
-      "coordenadas": [
-        38.687,
-        -9.328
-      ],
-      "envolvidos": [
-        "SOS Quinta dos Ingleses",
-        "66 Pela Quinta"
-      ],
-      "resumo_pt": "A Câmara de Cascais aprovou um plano de pormenor que viabiliza cerca de 850 apartamentos, um hotel e um centro comercial num pinhal centenário de cerca de 52 hectares junto à praia de Carcavelos. Desde outubro de 2025, uma ação popular do movimento 66 Pela Quinta mantém as obras suspensas por providência cautelar; o Tribunal Administrativo e Fiscal de Sintra está a realizar audiências de julgamento em setembro de 2026.",
-      "resumo_en": "Cascais Municipal Council approved a detailed plan enabling around 850 apartments, a hotel and a shopping centre on a centuries-old, roughly 52-hectare pine forest next to Carcavelos beach. Since October 2025, a popular legal action by the 66 Pela Quinta movement has kept the works suspended under an injunction; the Sintra Administrative and Fiscal Court is holding trial hearings in September 2026.",
-      "verificado_em": "2026-09-19",
-      "url_pt": "https://causasderaiz.org/quinta-dos-ingleses.html",
-      "url_en": "https://causasderaiz.org/quinta-dos-ingleses-en.html"
     },
     {
       "id": "revive-forte-outao",
@@ -1821,9 +1796,9 @@
       "envolvidos": [
         "Movimento Participativo Lagoa dos Salgados (9 organizações)"
       ],
-      "resumo_pt": "Depois de mais de 20 anos de luta, o ICNF propôs uma Reserva Natural de 400 hectares, mas o projeto turístico Praia Grande Eco-Resort continua a ameaçar a zona húmida. Em 8-9 de setembro de 2026, dez organizações ambientalistas pediram a classificação urgente da reserva depois de nova mortandade de peixes, caranguejos e aves (incluindo espécies protegidas) na Ribeira de Alcantarilha, associada a baixos níveis de oxigénio e possível botulismo.",
-      "resumo_en": "After more than 20 years of campaigning, ICNF has proposed a 400-hectare Natural Reserve, but the Praia Grande Eco-Resort tourism project still threatens the wetland. On 8-9 September 2026, ten environmental organisations demanded urgent classification of the reserve after a new die-off of fish, crabs and birds (including protected species) in the Alcantarilha stream, linked to low oxygen levels and possible botulism.",
-      "verificado_em": "2026-09-19",
+      "resumo_pt": "Depois de mais de 20 anos de luta, o ICNF propôs uma Reserva Natural de 400 hectares, mas o projeto turístico Praia Grande Eco-Resort continua a ameaçar a zona húmida.",
+      "resumo_en": "After more than 20 years of campaigning, ICNF has proposed a 400-hectare Natural Reserve, but the Praia Grande Eco-Resort tourism project still threatens the wetland.",
+      "verificado_em": "2026-08-21",
       "url_pt": "https://causasderaiz.org/lagoa-salgados-silves.html",
       "url_en": "https://causasderaiz.org/lagoa-salgados-silves-en.html"
     },
@@ -1904,7 +1879,7 @@
       "local_pt": "Castanheira do Ribatejo, Vila Franca de Xira",
       "local_en": "Castanheira do Ribatejo, Vila Franca de Xira",
       "categoria": "imobiliario",
-      "categoria_secundaria": "datacenter",
+      "categoria_secundaria": null,
       "regiao": "lisboa-e-vale-do-tejo",
       "estado": "acompanhamento",
       "coordenadas": [
@@ -1914,9 +1889,9 @@
       "envolvidos": [
         "CDU (Vila Franca de Xira)"
       ],
-      "resumo_pt": "A Câmara de Vila Franca de Xira aprovou por maioria um plano de pormenor que amplia em cerca de 340 hectares a Plataforma Logística de Lisboa-Norte, dos quais cerca de 300 para logística, tecnologia e centros de dados. É já aqui, em Castanheira do Ribatejo, que a Merlin Properties e a Edged Energy constroem desde outubro de 2024 um campus de cinco data centers de 180 MW (a caminho de 300 MW), com a primeira instalação prevista para 2027. A CDU critica a conversão de cerca de 295 hectares de solo agrícola e ecológico, estimando mais-valias de 491 milhões de euros para proprietários e promotores; PSD, IL e Chega levantaram dúvidas sobre a rede elétrica e a resposta dos bombeiros. A consulta pública encerrou a 4 de setembro sem resultado divulgado até à data; a autarquia promete avaliação ambiental estratégica antes de avançar.",
+      "resumo_pt": "A Câmara de Vila Franca de Xira aprovou por maioria um plano de pormenor que amplia em cerca de 340 hectares a Plataforma Logística de Lisboa-Norte, dos quais cerca de 300 para logística, tecnologia e centros de dados. A CDU critica a conversão de cerca de 295 hectares de solo agrícola e ecológico, estimando mais-valias de 491 milhões de euros para proprietários e promotores; PSD, IL e Chega levantaram dúvidas sobre a rede elétrica e a resposta dos bombeiros. A consulta pública encerrou a 4 de setembro sem resultado divulgado até à data; a autarquia promete avaliação ambiental estratégica antes de avançar.",
       "resumo_en": "Vila Franca de Xira City Council approved by majority a detailed plan expanding the Lisbon-North Logistics Platform by around 340 hectares, roughly 300 of them for logistics, technology and data centres. The CDU (Communist coalition) criticised converting about 295 hectares of farmland and ecologically valuable land, estimating €491 million in land-value gains for owners and developers; PSD, IL and Chega raised concerns about the power grid and firefighting capacity. The public consultation closed on 4 September with no outcome announced yet; the council promises a strategic environmental assessment before proceeding.",
-      "verificado_em": "2026-09-19",
+      "verificado_em": "2026-09-07",
       "url_pt": "https://causasderaiz.org/castanheira-ribatejo.html",
       "url_en": "https://causasderaiz.org/castanheira-ribatejo-en.html"
     },
@@ -2045,7 +2020,7 @@
       "titulo_en": "Fanal: grazing and overtourism threaten centuries-old forest",
       "local_pt": "Fanal, Parque Natural da Madeira, Porto Moniz",
       "local_en": "Fanal, Madeira Natural Park, Porto Moniz",
-      "categoria": "imobiliario",
+      "categoria": "sistemico",
       "categoria_secundaria": null,
       "regiao": "madeira",
       "estado": "acompanhamento",
@@ -2309,54 +2284,156 @@
       "url_en": "https://causasderaiz.org/eolicas-serra-ossa-en.html"
     },
     {
-      "id": "edc-one-abrantes",
+      "id": "amianto-vale-milhacos-seixal",
       "num": 98,
-      "titulo_pt": "EDC One: os 7 mil milhões de euros do primeiro data center do Pego avançam sem avaliar o impacto na gestão do Tejo",
-      "titulo_en": "EDC One: the €7 billion first Pego data center advances without assessing the impact on the Tagus",
-      "local_pt": "Zona Industrial do Pego, antigos terrenos da RPP Solar, Abrantes, distrito de Santarém",
-      "local_en": "Pego Industrial Zone, former RPP Solar site, Abrantes, Santarém district",
-      "categoria": "datacenter",
-      "categoria_secundaria": "agua",
-      "regiao": "centro",
-      "estado": "acompanhamento",
+      "titulo_pt": "Amianto na Escola Básica de Vale de Milhaços, no Seixal",
+      "titulo_en": "Asbestos at the Vale de Milhaços primary school, Seixal",
+      "local_pt": "Vale de Milhaços, freguesia de Corroios, concelho do Seixal",
+      "local_en": "Vale de Milhaços, Corroios parish, Seixal municipality",
+      "categoria": "comunidade",
+      "categoria_secundaria": "poluicao",
+      "regiao": "lisboa-e-vale-do-tejo",
+      "estado": "urgente",
       "coordenadas": [
-        39.415,
-        -8.03
+        38.6386,
+        -9.1329
       ],
       "envolvidos": [
-        "Câmara Municipal de Abrantes",
-        "Quercus"
+        "S.TO.P., Sindicato de Todos os Profissionais da Educação"
       ],
-      "resumo_pt": "Uma sociedade veículo criada há pouco mais de um ano, com capital social de cerca de 4.400 euros e sem trabalhadores registados, é a promotora de um investimento anunciado de 7 mil milhões de euros nos antigos terrenos da fábrica solar RPP, junto à central termoelétrica do Pego, desativada em 2021. A Câmara de Abrantes já aprovou 16,2 milhões de euros em isenções fiscais; o Governo admite decidir ainda em 2026 o pedido de mais capacidade de ligação à rede elétrica, tendo em conta critérios de água e impacto ambiental. É o primeiro dos dois data centers de grande escala previstos para o mesmo concelho junto ao Tejo.",
-      "resumo_en": "A holding company set up just over a year ago, with roughly €4,400 in share capital and no registered employees, is the promoter of an announced €7 billion investment on the former RPP Solar factory site, next to the Pego coal plant, shut down in 2021. Abrantes Council has already approved €16.2 million in tax exemptions; the Government may decide by the end of 2026 on the request for more electricity grid capacity, weighing water and environmental impact criteria. It is the first of two large-scale data centers planned for the same municipality on the Tagus.",
-      "verificado_em": "2026-09-19",
-      "url_pt": "https://causasderaiz.org/edc-one-abrantes.html",
-      "url_en": "https://causasderaiz.org/edc-one-abrantes-en.html"
+      "resumo_pt": "Mais de cem profissionais de educação do Agrupamento de Escolas de Vale de Milhaços, no Seixal, protestaram em março de 2026 e fecharam mais de metade das 10 escolas do agrupamento, exigindo a remoção das placas de amianto ainda presentes na escola sede e o reforço de pessoal.",
+      "resumo_en": "Over a hundred education professionals from the Vale de Milhaços school group in Seixal protested in March 2026, closing more than half of the group's 10 schools, demanding removal of the asbestos plates still present at the main school and more support staff.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/amianto-vale-milhacos-seixal.html",
+      "url_en": "https://causasderaiz.org/amianto-vale-milhacos-seixal-en.html"
     },
     {
-      "id": "covilha-asterion",
+      "id": "rio-lis-poluicao",
       "num": 99,
-      "titulo_pt": "Covilhã: fundo de infraestruturas compra o maior data center português e planeia expandi-lo até 25 vezes",
-      "titulo_en": "Covilhã: infrastructure fund buys Portugal's largest data center and plans to expand it up to 25-fold",
-      "local_pt": "Covilhã, distrito de Castelo Branco",
-      "local_en": "Covilhã, Castelo Branco district",
-      "categoria": "datacenter",
-      "categoria_secundaria": "energia",
+      "titulo_pt": "Poluição da bacia do rio Lis: descargas de esgoto não tratado, sem solução definitiva à vista",
+      "titulo_en": "Pollution of the Lis river basin: untreated sewage discharges, no lasting solution in sight",
+      "local_pt": "Bacia hidrográfica do rio Lis, concelhos de Leiria e Marinha Grande",
+      "local_en": "Lis river basin, Leiria and Marinha Grande municipalities",
+      "categoria": "agua",
+      "categoria_secundaria": "poluicao",
       "regiao": "centro",
-      "estado": "acompanhamento",
+      "estado": "urgente",
       "coordenadas": [
-        40.2649,
-        -7.4708
+        39.8281,
+        -8.9407
       ],
       "envolvidos": [
-        "Asterion Industrial Partners",
-        "Altice Portugal"
+        "Águas do Centro Litoral",
+        "Oikos, Associação de Defesa do Ambiente e do Património da Região de Leiria",
+        "Câmara Municipal da Marinha Grande",
+        "Agência Portuguesa do Ambiente"
       ],
-      "resumo_pt": "A Altice Portugal vendeu o centro de dados da Covilhã, construído pela PT em 2013, ao fundo de infraestruturas espanhol Asterion Industrial Partners, por 120 milhões de euros. O campus tem hoje 6,8 MW instalados; a compradora já sinaliza um plano de expansão até 75 MW no terreno atual e até 175 MW num terreno adjacente com potência já reservada: um salto de até 25 vezes na capacidade, sem que exista ainda qualquer estudo público sobre o consumo de água e energia dessa expansão.",
-      "resumo_en": "Altice Portugal sold the Covilhã data center, built by PT in 2013, to Spanish infrastructure fund Asterion Industrial Partners for €120 million. The campus currently has 6.8MW installed; the buyer is already signalling an expansion plan reaching up to 75MW on the existing site and up to 175MW on an adjacent plot with capacity already secured: a jump of up to 25-fold in capacity, with no public study yet on the water and energy consumption of that expansion.",
-      "verificado_em": "2026-09-19",
-      "url_pt": "https://causasderaiz.org/covilha-asterion.html",
-      "url_en": "https://causasderaiz.org/covilha-asterion-en.html"
+      "resumo_pt": "Em agosto de 2025, uma avaria na estação elevatória de Monte Real, gerida pela Águas do Centro Litoral, obrigou à descarga de entre 20 mil e 25 mil m³ de esgoto bruto no rio Lis, com banhos interditados na Praia da Vieira; em agosto de 2026, 12 lesados reclamam 256 mil euros de indemnização, e a associação Oikos confirma, em análises de setembro de 2026, um foco de contaminação no rio Lena, afluente do Lis, na zona urbana de Leiria.",
+      "resumo_en": "In August 2025, a breakdown at the Monte Real pumping station, run by Águas do Centro Litoral, forced a discharge of between 20,000 and 25,000 m³ of raw sewage into the Lis river, with swimming banned at Vieira Beach; in August 2026, 12 claimants are seeking €256,000 in damages, and the Oikos association confirmed, in September 2026 tests, a pollution hotspot on the Lena river, a Lis tributary, in urban Leiria.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/rio-lis-poluicao.html",
+      "url_en": "https://causasderaiz.org/rio-lis-poluicao-en.html"
+    },
+    {
+      "id": "aterro-castelo-branco-biosmart",
+      "num": 101,
+      "titulo_pt": "Ampliação do aterro de resíduos industriais da BioSmart, em Castelo Branco",
+      "titulo_en": "Expansion of the BioSmart industrial waste landfill, Castelo Branco",
+      "local_pt": "Vedulho de Baixo, concelho de Castelo Branco",
+      "local_en": "Vedulho de Baixo, Castelo Branco municipality",
+      "categoria": "poluicao",
+      "categoria_secundaria": null,
+      "regiao": "centro",
+      "estado": "urgente",
+      "coordenadas": [
+        39.803,
+        -7.56
+      ],
+      "envolvidos": [
+        "ZERO",
+        "Agência Portuguesa do Ambiente",
+        "CCDR Centro"
+      ],
+      "resumo_pt": "A BioSmart, Soluções Ambientais, S.A. quer ampliar o Aterro de Resíduos Industriais Banais de Castelo Branco com uma terceira célula, aumentando a capacidade total de 488.750 para 639.250 toneladas. A associação ZERO deu parecer negativo, alegando que o estudo de impacte ambiental prevê a possibilidade de receber resíduos orgânicos, cuja deposição em aterro está proibida por lei desde 2026, e pede à CCDR Centro que não licencie a nova célula.",
+      "resumo_en": "BioSmart, Soluções Ambientais, S.A. wants to expand the Castelo Branco non-hazardous industrial waste landfill with a third cell, raising total capacity from 488,750 to 639,250 tonnes. The ZERO association issued a negative opinion, arguing the environmental impact study allowed for the possibility of receiving organic waste, whose landfill deposition has been banned by law since 2026, and is asking CCDR Centro not to license the new cell.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/aterro-castelo-branco-biosmart.html",
+      "url_en": "https://causasderaiz.org/aterro-castelo-branco-biosmart-en.html"
+    },
+    {
+      "id": "aterro-lustosa-lousada",
+      "num": 102,
+      "titulo_pt": "Aterro de Lustosa, em Lousada: reconfiguração em consulta pública",
+      "titulo_en": "Lustosa landfill, Lousada: reconfiguration in public consultation",
+      "local_pt": "União das Freguesias de Lustosa e Barrosas, concelho de Lousada",
+      "local_en": "Union of the Lustosa and Barrosas parishes, Lousada municipality",
+      "categoria": "poluicao",
+      "categoria_secundaria": null,
+      "regiao": "norte",
+      "estado": "consulta",
+      "coordenadas": [
+        41.2814,
+        -8.2934
+      ],
+      "envolvidos": [
+        "Câmara Municipal de Lousada",
+        "RIMA",
+        "Bloco de Esquerda"
+      ],
+      "resumo_pt": "O aterro de resíduos industriais não perigosos de Lustosa, gerido pela RIMA (sociedade entre a Mota-Engil Ambiente, a SUMA, o Município de Lousada e a IDAMBI), está em consulta pública promovida pela CCDR Norte até 30 de setembro de 2026 para um projeto de reconfiguração de células, incluindo uma nova célula 2. A Câmara Municipal de Lousada contesta as alterações; o aterro já foi alvo de polémica em anos anteriores por receber resíduos industriais importados de Itália.",
+      "resumo_en": "The Lustosa non-hazardous industrial waste landfill, run by RIMA (a company jointly held by Mota-Engil Ambiente, SUMA, Lousada Municipality and IDAMBI), is in a CCDR Norte public consultation until 30 September 2026 over a cell reconfiguration project, including a new cell 2. Lousada Municipal Council opposes the changes; the landfill has previously drawn controversy for receiving industrial waste imported from Italy.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/aterro-lustosa-lousada.html",
+      "url_en": "https://causasderaiz.org/aterro-lustosa-lousada-en.html"
+    },
+    {
+      "id": "hotel-vale-olival-armacao-pera",
+      "num": 103,
+      "titulo_pt": "Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra",
+      "titulo_en": "50-million-euro hotel in Vale do Olival, Armação de Pêra",
+      "local_pt": "Vale do Olival, Armação de Pêra, concelho de Silves, Algarve",
+      "local_en": "Vale do Olival, Armação de Pêra, Silves municipality, Algarve",
+      "categoria": "imobiliario",
+      "categoria_secundaria": null,
+      "regiao": "algarve",
+      "estado": "urgente",
+      "coordenadas": [
+        37.1027,
+        -8.3547
+      ],
+      "envolvidos": [
+        "Moradores de Armação de Pêra",
+        "Petição Pública"
+      ],
+      "resumo_pt": "A Câmara Municipal de Silves emitiu, em 3 de dezembro de 2025, o licenciamento de um hotel de quatro estrelas com 250 unidades de alojamento e capacidade para 500 utentes, num investimento de 50 milhões de euros, num dos últimos terrenos livres junto ao mar em Armação de Pêra. O facto de o terreno se situar sobre uma arriba instável gerou forte contestação nas redes sociais e uma petição pública; a Câmara promoveu uma sessão de esclarecimento em dezembro, mas as obras avançam.",
+      "resumo_en": "Silves Municipal Council issued, on 3 December 2025, the building permit for a four-star hotel with 250 rooms and capacity for 500 guests, a 50-million-euro investment, on one of the last vacant beachfront plots in Armação de Pêra. The land sitting on an unstable cliff sparked strong backlash on social media and a public petition; the council held an information session in December, but construction has continued.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/hotel-vale-olival-armacao-pera.html",
+      "url_en": "https://causasderaiz.org/hotel-vale-olival-armacao-pera-en.html"
+    },
+    {
+      "id": "poluicao-rio-tejo-protejo",
+      "num": 104,
+      "titulo_pt": "proTEJO denuncia novo ressurgimento de poluição no rio Tejo",
+      "titulo_en": "proTEJO reports new resurgence of pollution in the Tagus river",
+      "local_pt": "Do Alto Tejo (Vila Velha de Ródão) à Chamusca, na Lezíria do Tejo",
+      "local_en": "From the Upper Tagus (Vila Velha de Ródão) to Chamusca, in the Tagus Lezíria",
+      "categoria": "poluicao",
+      "categoria_secundaria": "agua",
+      "regiao": "centro",
+      "estado": "urgente",
+      "coordenadas": [
+        39.6494,
+        -7.6667
+      ],
+      "envolvidos": [
+        "proTEJO – Movimento pelo Tejo"
+      ],
+      "resumo_pt": "O movimento proTEJO denunciou, em junho de 2026, o ressurgimento de poluição no rio Tejo entre Vila Velha de Ródão e a Chamusca, com espuma abundante e águas escurecidas, um padrão que o movimento documenta há mais de uma década e atribui a descargas de efluentes industriais e urbanos ao longo do Alto Tejo. O proTEJO exige à Agência Portuguesa do Ambiente e à IGAMAOT análises completas à água, fiscalização noturna das descargas e a suspensão das licenças de rejeição de efluentes em caso de incumprimento.",
+      "resumo_en": "The proTEJO movement reported, in June 2026, a resurgence of pollution in the Tagus river between Vila Velha de Ródão and Chamusca, with abundant foam and darkened waters, a pattern the movement has documented for over a decade and attributes to industrial and urban effluent discharges along the Upper Tagus. proTEJO is demanding that the Portuguese Environment Agency and IGAMAOT carry out full water tests, conduct night-time inspections of discharges, and suspend effluent discharge licences in cases of non-compliance.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/poluicao-rio-tejo-protejo.html",
+      "url_en": "https://causasderaiz.org/poluicao-rio-tejo-protejo-en.html"
     }
   ]
 }
