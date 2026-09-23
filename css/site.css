@@ -316,9 +316,11 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .step:nth-child(3) .n{color:var(--ink)}
 .step h3{font-size:28px;margin:10px 0 8px}
 .step p{margin:0;color:var(--ink-soft)}
-.propose{padding:62px 0;background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line)}
-.propose .disp{color:var(--cream)}
-.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:start}
+.propose{padding:62px 0;background:var(--raiz-pale);color:var(--ink);border-bottom:3px solid var(--line)}
+.propose .disp{color:var(--ink)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:stretch}
+.pgrid>.cta-caso,.pgrid>.cta-denuncia{display:flex;flex-direction:column;height:100%}
+.pgrid>.cta-caso p.txt,.pgrid>.cta-denuncia p.txt{flex:1}
 .form{display:grid;gap:14px}
 .form label{display:grid;gap:6px}
 .form input,.form select,.form textarea{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:12px 14px;outline:0}
@@ -663,9 +665,11 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .step:nth-child(3) .n{color:var(--ink)}
 .step h3{font-size:28px;margin:10px 0 8px}
 .step p{margin:0;color:var(--ink-soft)}
-.propose{padding:62px 0;background:var(--ink);color:var(--cream);border-bottom:3px solid var(--line)}
-.propose .disp{color:var(--cream)}
-.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:start}
+.propose{padding:62px 0;background:var(--raiz-pale);color:var(--ink);border-bottom:3px solid var(--line)}
+.propose .disp{color:var(--ink)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:stretch}
+.pgrid>.cta-caso,.pgrid>.cta-denuncia{display:flex;flex-direction:column;height:100%}
+.pgrid>.cta-caso p.txt,.pgrid>.cta-denuncia p.txt{flex:1}
 .form{display:grid;gap:14px}
 .form label{display:grid;gap:6px}
 .form input,.form select,.form textarea{border:3px solid var(--cream);background:transparent;color:var(--cream);padding:12px 14px;outline:0}
