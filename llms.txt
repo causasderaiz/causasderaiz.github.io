@@ -30,7 +30,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (96)
+## Todos os casos / All cases (99)
 
 - &quot;Não conseguimos respirar&quot;: fábrica de pellets no Cercal do Alentejo (Infraestrutura industrial, Cercal do Alentejo, Santiago do Cacém): https://causasderaiz.org/pellets-cercal-alentejo.html
   EN: &quot;We can&#39;t breathe&quot;: pellet factory in Cercal do Alentejo: https://causasderaiz.org/pellets-cercal-alentejo-en.html
@@ -224,6 +224,12 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Asbestos at the Vale de Milhaços primary school, Seixal: https://causasderaiz.org/amianto-vale-milhacos-seixal-en.html
 - Poluição da bacia do rio Lis: descargas de esgoto não tratado, sem solução definitiva à vista (Água, Bacia hidrográfica do rio Lis, concelhos de Leiria e Marinha Grande): https://causasderaiz.org/rio-lis-poluicao.html
   EN: Pollution of the Lis river basin: untreated sewage discharges, no lasting solution in sight: https://causasderaiz.org/rio-lis-poluicao-en.html
+- Mina de caulino e argila em Serra d&#39;El-Rei, Peniche (Mineração, Serra d&#39;El-Rei, concelho de Peniche, distrito de Leiria): https://causasderaiz.org/mina-caulino-peniche.html
+  EN: Kaolin and clay mine in Serra d&#39;El-Rei, Peniche: https://causasderaiz.org/mina-caulino-peniche-en.html
+- Ampliação do aterro de resíduos industriais da BioSmart, em Castelo Branco (Poluição, Vedulho de Baixo, concelho de Castelo Branco): https://causasderaiz.org/aterro-castelo-branco-biosmart.html
+  EN: Expansion of the BioSmart industrial waste landfill, Castelo Branco: https://causasderaiz.org/aterro-castelo-branco-biosmart-en.html
+- Aterro de Lustosa, em Lousada: reconfiguração em consulta pública (Poluição, União das Freguesias de Lustosa e Barrosas, concelho de Lousada): https://causasderaiz.org/aterro-lustosa-lousada.html
+  EN: Lustosa landfill, Lousada: reconfiguration in public consultation: https://causasderaiz.org/aterro-lustosa-lousada-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
