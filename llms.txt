@@ -19,8 +19,6 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 ## Páginas principais / Main pages
 - [Mapa de todas as lutas ativas (PT)](https://causasderaiz.org/index.html#mapa)
 - [Map of all active struggles (EN)](https://causasderaiz.org/index-en.html#mapa)
-- [Diretório em lista, por região (PT)](https://causasderaiz.org/diretorio.html)
-- [Directory as a list, by region (EN)](https://causasderaiz.org/diretorio-en.html)
 - [A quem denunciar: SEPNA, ICNF, IGAMAOT, APA (PT)](https://causasderaiz.org/alertar.html)
 - [Who to report to: SEPNA, ICNF, IGAMAOT, APA (EN)](https://causasderaiz.org/alertar-en.html)
 
@@ -30,7 +28,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (99)
+## Todos os casos / All cases (101)
 
 - &quot;Não conseguimos respirar&quot;: fábrica de pellets no Cercal do Alentejo (Infraestrutura industrial, Cercal do Alentejo, Santiago do Cacém): https://causasderaiz.org/pellets-cercal-alentejo.html
   EN: &quot;We can&#39;t breathe&quot;: pellet factory in Cercal do Alentejo: https://causasderaiz.org/pellets-cercal-alentejo-en.html
@@ -38,8 +36,6 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: &quot;Not even the Cathedral is safe?&quot;: petition to preserve the Diocese gardens on Porto&#39;s Sé hill: https://causasderaiz.org/jardins-se-porto-en.html
 - Águeda: Quercus denuncia novas plantações de eucalipto em áreas ardidas e pede revogação de licenças (Incêndios, Concelho de Águeda, distrito de Aveiro): https://causasderaiz.org/agueda-eucaliptos.html
   EN: Águeda: Quercus reports new eucalyptus plantations in burned areas and calls for permits to be revoked: https://causasderaiz.org/agueda-eucaliptos-en.html
-- Aldeia do Meco: escassez de água agrava oposição a grandes projetos turísticos em Sesimbra (Turismo + escassez hídrica, Aldeia do Meco, Sesimbra, distrito de Setúbal): https://causasderaiz.org/meco-sesimbra-agua-turismo.html
-  EN: Aldeia do Meco: water scarcity sharpens opposition to large tourism projects in Sesimbra: https://causasderaiz.org/meco-sesimbra-agua-turismo-en.html
 - Artilharia Um: moradores de Campolide contestam projeto de 683 fogos isento de avaliação ambiental (Ordenamento do território, Rua de Artilharia Um, Campolide, Lisboa): https://causasderaiz.org/artilharia-um-campolide.html
   EN: Artilharia Um: Campolide residents contest 683-home project exempted from environmental review: https://causasderaiz.org/artilharia-um-campolide-en.html
 - Bairro da Penajóia: famílias cabo-verdianas, angolanas e guineenses despejadas sem realojamento em Almada (Racismo ambiental, Penajóia, Monte da Caparica, Almada): https://causasderaiz.org/penajoia-almada.html
@@ -142,7 +138,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Covilhã City Council wants to fell 1,400 cork oaks to expand the Tortosendo Industrial Park: https://causasderaiz.org/sobreiros-tortosendo-en.html
 - Central Eólica da Fronteira: 35 aerogeradores junto ao Parque Natural do Douro Internacional (Parque eólico de grande dimensão, Avelanoso e Vimioso, hibridização com a Central Hidroelétrica de Picote, distrito de Bragança): https://causasderaiz.org/central-eolica-fronteira.html
   EN: Fronteira Wind Farm: 35 turbines next to the Douro Internacional Natural Park: https://causasderaiz.org/central-eolica-fronteira-en.html
-- Central Fotovoltaica de Sobreira de Baixo (EDP) (Mega-central solar, Pedrógão, Vidigueira, distrito de Évora): https://causasderaiz.org/sobreira.html
+- Central Fotovoltaica de Sobreira de Baixo (EDP) (Mega-central solar, Pedrógão, Vidigueira, com afetação marginal a Portel, distrito de Évora): https://causasderaiz.org/sobreira.html
   EN: Sobreira de Baixo Photovoltaic Plant (EDP): https://causasderaiz.org/sobreira-en.html
 - Cluster de hidrogénio e combustíveis verdes em Sines: cinco projetos com estatuto PIN (Hidrogénio e combustíveis verdes, Sines, litoral alentejano): https://causasderaiz.org/hidrogenio-sines.html
   EN: Green hydrogen and fuels cluster in Sines: five projects with PIN status: https://causasderaiz.org/hidrogenio-sines-en.html
@@ -166,14 +162,14 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Southwest Wind Farm in Santiago do Cacém: Quercus warns of underassessed impacts: https://causasderaiz.org/eolico-sudoeste-sines-en.html
 - Parque Natural da Arrábida: pedreiras, betão e turismo cercam o território mais protegido junto a Lisboa (Ordenamento do território, Serra da Arrábida: Sesimbra, Setúbal e Palmela): https://causasderaiz.org/parque-natural-arrabida.html
   EN: Arrábida Natural Park: quarries, concrete and tourism close in on the most protected land near Lisbon: https://causasderaiz.org/parque-natural-arrabida-en.html
-- Pedreiras da Secil no Parque Natural da Arrábida (Pedreiras, Setúbal, Parque Natural da Arrábida): https://causasderaiz.org/arrabida.html
-  EN: Secil quarries in Arrábida Natural Park: https://causasderaiz.org/arrabida-en.html
 - Pedreiras sem controlo ambiental: Borba e Vila Viçosa (Pedreiras, Distrito de Évora): https://causasderaiz.org/borba.html
   EN: Quarries with no environmental oversight: Borba and Vila Viçosa: https://causasderaiz.org/borba-en.html
 - Plano Nacional de Restauro da Natureza: consulta pública encerrou a 19 de agosto (Restauro da natureza, Nacional: consulta pública via Portal Participa): https://causasderaiz.org/restauro-natureza.html
   EN: National Nature Restoration Plan: submitted to Brussels on 1 September: https://causasderaiz.org/restauro-natureza-en.html
 - Poço Velho e Aveiros: duas praias com acesso bloqueado em Albufeira (Acesso às praias, Poço Velho e Aveiros, Albufeira, Algarve): https://causasderaiz.org/poco-velho-aveiros-albufeira.html
   EN: Poço Velho and Aveiros: two blocked-access beaches in Albufeira: https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html
+- Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos (Ordenamento do território, Carcavelos, Cascais, distrito de Lisboa): https://causasderaiz.org/quinta-dos-ingleses.html
+  EN: Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest: https://causasderaiz.org/quinta-dos-ingleses-en.html
 - Revive: Forte Velho do Outão vira concessão turística de 50 anos dentro do Parque Natural (Turismo em área protegida, Forte Velho do Outão / 7.ª Bataria do Outão, Setúbal, Serra da Arrábida): https://causasderaiz.org/revive-forte-outao.html
   EN: Revive: Forte Velho do Outão becomes a 50-year tourism concession inside the Natural Park: https://causasderaiz.org/revive-forte-outao-en.html
 - Sertã: mais de 25% do concelho marcado para zonas de aceleração solar (Zona de aceleração solar, Sertã, Castelo Branco, Beira Baixa): https://causasderaiz.org/serta.html
@@ -224,12 +220,18 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Asbestos at the Vale de Milhaços primary school, Seixal: https://causasderaiz.org/amianto-vale-milhacos-seixal-en.html
 - Poluição da bacia do rio Lis: descargas de esgoto não tratado, sem solução definitiva à vista (Água, Bacia hidrográfica do rio Lis, concelhos de Leiria e Marinha Grande): https://causasderaiz.org/rio-lis-poluicao.html
   EN: Pollution of the Lis river basin: untreated sewage discharges, no lasting solution in sight: https://causasderaiz.org/rio-lis-poluicao-en.html
-- Mina de caulino e argila em Serra d&#39;El-Rei, Peniche (Mineração, Serra d&#39;El-Rei, concelho de Peniche, distrito de Leiria): https://causasderaiz.org/mina-caulino-peniche.html
-  EN: Kaolin and clay mine in Serra d&#39;El-Rei, Peniche: https://causasderaiz.org/mina-caulino-peniche-en.html
+- &quot;Cluster Alqueva&quot;: grupo chinês Chint quer licenciar 1.300 MW de solar, eólica e baterias em Portel e Vidigueira (Megasolar · eólica · baterias, Concelhos de Portel e Vidigueira, distrito de Évora): https://causasderaiz.org/cluster-alqueva-chint.html
+  EN: &quot;Alqueva Cluster&quot;: Chinese group Chint seeks to license 1,300 MW of solar, wind and batteries in Portel and Vidigueira: https://causasderaiz.org/cluster-alqueva-chint-en.html
 - Ampliação do aterro de resíduos industriais da BioSmart, em Castelo Branco (Poluição, Vedulho de Baixo, concelho de Castelo Branco): https://causasderaiz.org/aterro-castelo-branco-biosmart.html
   EN: Expansion of the BioSmart industrial waste landfill, Castelo Branco: https://causasderaiz.org/aterro-castelo-branco-biosmart-en.html
 - Aterro de Lustosa, em Lousada: reconfiguração em consulta pública (Poluição, União das Freguesias de Lustosa e Barrosas, concelho de Lousada): https://causasderaiz.org/aterro-lustosa-lousada.html
   EN: Lustosa landfill, Lousada: reconfiguration in public consultation: https://causasderaiz.org/aterro-lustosa-lousada-en.html
+- Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra (Turismo em zona costeira sensível, Vale do Olival, Armação de Pêra, concelho de Silves, Algarve): https://causasderaiz.org/hotel-vale-olival-armacao-pera.html
+  EN: 50-million-euro hotel in Vale do Olival, Armação de Pêra: https://causasderaiz.org/hotel-vale-olival-armacao-pera-en.html
+- proTEJO denuncia novo ressurgimento de poluição no rio Tejo (Poluição fluvial, Do Alto Tejo (Vila Velha de Ródão) à Chamusca, na Lezíria do Tejo): https://causasderaiz.org/poluicao-rio-tejo-protejo.html
+  EN: proTEJO reports new resurgence of pollution in the Tagus river: https://causasderaiz.org/poluicao-rio-tejo-protejo-en.html
+- Figueira da Foz aprova, com votos do Chega, posicionar o concelho como destino para data centers (Data center · planeamento municipal, Concelho da Figueira da Foz, distrito de Coimbra): https://causasderaiz.org/figueira-foz-data-centers.html
+  EN: Figueira da Foz approves, with Chega&#39;s votes, positioning the municipality as a data centre destination: https://causasderaiz.org/figueira-foz-data-centers-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
