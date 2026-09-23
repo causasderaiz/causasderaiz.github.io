@@ -30,7 +30,7 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
 - [Metodologia, critérios de inclusão e verificação (PT)](https://causasderaiz.org/metodologia.html)
 - [Methodology, inclusion and verification criteria (EN)](https://causasderaiz.org/metodologia-en.html)
 
-## Todos os casos / All cases (97)
+## Todos os casos / All cases (96)
 
 - &quot;Não conseguimos respirar&quot;: fábrica de pellets no Cercal do Alentejo (Infraestrutura industrial, Cercal do Alentejo, Santiago do Cacém): https://causasderaiz.org/pellets-cercal-alentejo.html
   EN: &quot;We can&#39;t breathe&quot;: pellet factory in Cercal do Alentejo: https://causasderaiz.org/pellets-cercal-alentejo-en.html
@@ -122,14 +122,14 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Hands Off Arrábida: privatization of five beaches: https://causasderaiz.org/praias-arrabida-en.html
 - Dessalinizadora do Algarve: obras avançam em Albufeira sob nova contestação judicial (Dessalinização, Praia da Rocha Baixinha / Olhos de Água, Albufeira): https://causasderaiz.org/dessalinizadora-albufeira.html
   EN: Algarve desalination plant: works proceed in Albufeira amid new legal challenge: https://causasderaiz.org/dessalinizadora-albufeira-en.html
-- Cávado Sem Minas: Mina da Borralha ameaça a água potável do rio (Mineração de volfrâmio, Montalegre, distrito de Vila Real): https://causasderaiz.org/mina-borralha.html
-  EN: Cávado Sem Minas: Borralha Mine threatens the river&#39;s drinking water: https://causasderaiz.org/mina-borralha-en.html
+- Mina da Borralha: reativação de volfrâmio ameaça a qualidade da água do Cávado (Mineração de volfrâmio, Montalegre, distrito de Vila Real): https://causasderaiz.org/mina-borralha.html
+  EN: Borralha Mine: reactivated tungsten mining threatens Cávado water quality: https://causasderaiz.org/mina-borralha-en.html
 - Mina de lítio em Covas do Barroso (Mineração de lítio, Boticas, Vila Real, região do Barroso): https://causasderaiz.org/barroso.html
   EN: Lithium mine in Covas do Barroso: https://causasderaiz.org/barroso-en.html
 - &quot;Transição Justa&quot; da Central do Pego: Gavião rejeita por unanimidade projeto de renováveis com estatuto PIN (Solar + eólica + armazenamento, Central do Pego, entre Abrantes e Gavião, Centro/Alentejo): https://causasderaiz.org/pego-transicao-justa.html
   EN: &quot;Just Transition&quot; at the Pego power plant: Gavião unanimously rejects PIN-status renewables project: https://causasderaiz.org/pego-transicao-justa-en.html
-- A gigafábrica de IA em Sines: litígio pela água do mar, nova central solar e abate de floresta (Data center, Sines e Santiago do Cacém, litoral alentejano): https://causasderaiz.org/ia-sines.html
-  EN: The Sines AI gigafactory: the seawater dispute, a new solar plant and forest felling: https://causasderaiz.org/ia-sines-en.html
+- A gigafábrica de IA em Sines: a energia, a água e as florestas que ninguém assume (Data center, Sines e Santiago do Cacém, litoral alentejano): https://causasderaiz.org/ia-sines.html
+  EN: The Sines AI gigafactory: the energy, water and forests no one accounts for: https://causasderaiz.org/ia-sines-en.html
 - Aeroporto do Montijo foi travado, mas Alcochete avança com riscos maiores (Infraestrutura, Alcochete: Campo de Tiro, sobre o aquífero Tejo-Sado): https://causasderaiz.org/montijo-alcochete.html
   EN: Montijo airport was stopped, but Alcochete advances with greater risks: https://causasderaiz.org/montijo-alcochete-en.html
 - Amara Village em Castelo de Bode (Imobiliário, Tomar, margens da albufeira de Castelo de Bode): https://causasderaiz.org/castelo-bode.html
@@ -174,8 +174,6 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: National Nature Restoration Plan: submitted to Brussels on 1 September: https://causasderaiz.org/restauro-natureza-en.html
 - Poço Velho e Aveiros: duas praias com acesso bloqueado em Albufeira (Acesso às praias, Poço Velho e Aveiros, Albufeira, Algarve): https://causasderaiz.org/poco-velho-aveiros-albufeira.html
   EN: Poço Velho and Aveiros: two blocked-access beaches in Albufeira: https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html
-- Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos (Ordenamento do território, Carcavelos, Cascais, distrito de Lisboa): https://causasderaiz.org/quinta-dos-ingleses.html
-  EN: Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest: https://causasderaiz.org/quinta-dos-ingleses-en.html
 - Revive: Forte Velho do Outão vira concessão turística de 50 anos dentro do Parque Natural (Turismo em área protegida, Forte Velho do Outão / 7.ª Bataria do Outão, Setúbal, Serra da Arrábida): https://causasderaiz.org/revive-forte-outao.html
   EN: Revive: Forte Velho do Outão becomes a 50-year tourism concession inside the Natural Park: https://causasderaiz.org/revive-forte-outao-en.html
 - Sertã: mais de 25% do concelho marcado para zonas de aceleração solar (Zona de aceleração solar, Sertã, Castelo Branco, Beira Baixa): https://causasderaiz.org/serta.html
@@ -222,10 +220,10 @@ Causas de Raiz is not an organization, a movement or an NGO. It is a directory: 
   EN: Pinhal das Freiras: urban development plan threatens the Fernão Ferro/Lagoa de Albufeira conservation area: https://causasderaiz.org/pinhal-freiras-seixal-en.html
 - Não às Eólicas na Serra d&#39;Ossa: petição contra parque eólico no Alentejo Central (Parque eólico, Serra d&#39;Ossa, Alentejo Central (Estremoz, Redondo, Borba, Vila Viçosa e Alandroal)): https://causasderaiz.org/eolicas-serra-ossa.html
   EN: No to Wind Turbines on Serra d&#39;Ossa: petition against wind farm in Central Alentejo: https://causasderaiz.org/eolicas-serra-ossa-en.html
-- EDC One: os 7 mil milhões de euros do primeiro data center do Pego avançam sem avaliar o impacto na gestão do Tejo (Data center, Zona Industrial do Pego, antigos terrenos da RPP Solar, Abrantes, distrito de Santarém): https://causasderaiz.org/edc-one-abrantes.html
-  EN: EDC One: the €7 billion first Pego data center advances without assessing the impact on the Tagus: https://causasderaiz.org/edc-one-abrantes-en.html
-- Covilhã: fundo de infraestruturas compra o maior data center português e planeia expandi-lo até 25 vezes (Data center, Covilhã, distrito de Castelo Branco): https://causasderaiz.org/covilha-asterion.html
-  EN: Covilhã: infrastructure fund buys Portugal&#39;s largest data center and plans to expand it up to 25-fold: https://causasderaiz.org/covilha-asterion-en.html
+- Amianto na Escola Básica de Vale de Milhaços, no Seixal (Comunidade, Vale de Milhaços, freguesia de Corroios, concelho do Seixal): https://causasderaiz.org/amianto-vale-milhacos-seixal.html
+  EN: Asbestos at the Vale de Milhaços primary school, Seixal: https://causasderaiz.org/amianto-vale-milhacos-seixal-en.html
+- Poluição da bacia do rio Lis: descargas de esgoto não tratado, sem solução definitiva à vista (Água, Bacia hidrográfica do rio Lis, concelhos de Leiria e Marinha Grande): https://causasderaiz.org/rio-lis-poluicao.html
+  EN: Pollution of the Lis river basin: untreated sewage discharges, no lasting solution in sight: https://causasderaiz.org/rio-lis-poluicao-en.html
 
 ## Dataset (JSON) / Dataset (JSON)
 Dados estruturados e legíveis por máquina de todos os casos ativos, atualizados sempre que o site é atualizado: categoria, estado, localização, organização envolvida, resumo e data de verificação.
