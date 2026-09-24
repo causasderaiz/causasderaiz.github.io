@@ -105,9 +105,8 @@
 
   // ---------- mapa Leaflet ----------
   var map = L.map("map", { scrollWheelZoom: true, zoomControl: false }).setView([39.5, -8.2], 6);
-  document.getElementById("map").classList.add("tema-classico");
   L.control.zoom({ position: "topright" }).addTo(map);
-  var osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap contributors" }).addTo(map);
+  var osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap contributors" });
 
   var googleEarthUrl = function (c) { return c.ll ? "https://earth.google.com/web/@" + c.ll[0] + "," + c.ll[1] + ",0a,900d,0y,0h,0t,0r" : ""; };
   function googleEarthAreaUrl() {
@@ -147,10 +146,11 @@
   var satelite = L.tileLayer("https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
     minZoom: SATELITE_MIN_ZOOM, maxZoom: 19,
     attribution: "© Esri, Maxar, Earthstar Geographics",
-  });
+  }).addTo(map);
+  map.setMinZoom(SATELITE_MIN_ZOOM);
   $("#jumps").innerHTML =
     Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") +
-    '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="true">Mapa</button><button type="button" data-camada="satelite" aria-pressed="false">Satélite</button></span>' +
+    '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
     '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>';
   $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (b) {
     b.onclick = function () {
