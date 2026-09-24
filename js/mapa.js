@@ -19,7 +19,6 @@
   var ESTLBL = TAX.estados[IDIOMA];
   var CATLBL = TAX.categorias[IDIOMA];
   var st = { q: "", reg: "", est: "todas", cats: new Set(), ord: "prazo", sel: null };
-  var seguidas = new Set();
   var $ = function (s) { return document.querySelector(s); };
 
   function dfmt(iso) {
@@ -261,7 +260,6 @@
     var c = LUTAS.find(function (x) { return x.id === id; });
     st.sel = id;
     if (c.ll) map.flyTo(c.ll, c.reg === "madeira" || c.reg === "acores" ? 9 : 10, { duration: 0.9 });
-    var segue = seguidas.has(id);
     var F = FICHAS[c.id] || { corpo: "", fontes: [], stat: "", link: "", linkL: "" };
     var img = imgTagAttrs(c);
     var acaoLabel = c.petLabel ? c.petLabel.replace(/^[^A-Za-zÀ-ú]+/, "").replace(/\s*→\s*$/, "") : "";
@@ -282,7 +280,6 @@
       '<p style="font-size:17px"><b>' + c.res + "</b></p>" +
       '<div class="actions">' +
       acao +
-      '<button class="btn ' + (segue ? "btn--green" : "") + '" id="follow">' + (segue ? UI.painel.aSeguir : UI.painel.seguir) + "</button>" +
       (c.ll ? '<a class="btn btn--sm" href="' + googleEarthUrl(c) + '" target="_blank" rel="noopener">' + UI.painel.googleEarth + "</a>" : "") +
       '<button class="btn btn--sm" id="sharelink">' + UI.painel.copiarLink + "</button>" +
       '<a class="btn btn--sm btn--green" href="/' + c.id + (IDIOMA === "en" ? "-en" : "") + '.html" target="_blank" rel="noopener">' + UI.painel.verFichaCompleta + "</a>" +
@@ -297,11 +294,6 @@
       F.fontes.map(function (f) { return '<li><a href="' + f[1] + '" target="_blank" rel="noopener">' + f[0] + "</a></li>"; }).join("") +
       (F.link ? '<li><a href="' + F.link + '" target="_blank" rel="noopener">' + (F.linkL || "Saber mais") + "</a></li>" : "") +
       "</ol></div>";
-    $("#follow").onclick = function () {
-      seguidas.has(id) ? seguidas.delete(id) : seguidas.add(id);
-      toast(seguidas.has(id) ? "OK" : "OK");
-      openCausa(id);
-    };
     $("#sharelink").onclick = function () {
       var url = location.origin + "/" + id + (IDIOMA === "en" ? "-en" : "") + ".html";
       (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { toast(UI.painel.linkCopiado); }).catch(function () { window.prompt("Link:", url); });
