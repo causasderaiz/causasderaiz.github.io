@@ -3,6 +3,7 @@
   --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
   --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
   --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+  --amarelo:#f2b705;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -172,6 +173,7 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
   --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
   --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
   --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+  --amarelo:#f2b705;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -268,6 +270,8 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .pin.ativa{background:var(--red);color:#fff}
 .pin.acompanhamento{background:var(--paper);border-style:dashed;color:var(--ink)}
 .pin.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--green-bright)}
+.pin.datacenter{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--amarelo)}
+.pin.datacenter.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--amarelo),0 0 0 8px var(--green-bright)}
 .pin.on{transform:scale(1.3);z-index:600}
 .side{display:flex;flex-direction:column;background:var(--paper);max-height:clamp(720px,88vh,940px)}
 .side-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:3px solid var(--line)}
@@ -533,6 +537,7 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
   --cream:#f3efe6; --paper:#fffefb; --ink:#171A12; --ink-soft:#4B5142;
   --red:#d8241b; --red-dark:#a91b13; --green:#0e3f26; --green-bright:#a7c6b8; --cartao:#12472c; --line:#171A12;
   --green-text:#1f6b43; --green-bright-text:#4a7561; --sage-pale:#e4ede8; --raiz-pale:#dde6e1;
+  --amarelo:#f2b705;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -622,6 +627,8 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .pin.ativa{background:var(--red);color:#fff}
 .pin.acompanhamento{background:var(--paper);border-style:dashed;color:var(--ink)}
 .pin.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--green-bright)}
+.pin.datacenter{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--amarelo)}
+.pin.datacenter.prazo{box-shadow:3px 3px 0 var(--line),0 0 0 4px var(--amarelo),0 0 0 8px var(--green-bright)}
 .pin.on{transform:scale(1.3);z-index:600}
 .side{display:flex;flex-direction:column;background:var(--paper);max-height:clamp(720px,88vh,940px)}
 .side-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:3px solid var(--line)}
