@@ -144,9 +144,9 @@
   });
 
   var SATELITE_MIN_ZOOM = 7;
-  var satelite = L.tileLayer.wms("https://sh.dataspace.copernicus.eu/ogc/wms/974de996-4005-491e-b9c9-ff02058a8b06", {
-    tileSize: 512, minZoom: SATELITE_MIN_ZOOM, maxZoom: 18, layers: "TRUE_COLOR", maxcc: 20,
-    attribution: '© <a href="https://dataspace.copernicus.eu/" target="_blank">Copernicus Data Space Ecosystem</a>',
+  var satelite = L.tileLayer("https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+    minZoom: SATELITE_MIN_ZOOM, maxZoom: 19,
+    attribution: "© Esri, Maxar, Earthstar Geographics",
   });
   $("#jumps").innerHTML =
     Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") +
