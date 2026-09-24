@@ -257,6 +257,7 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .legend i.sb{background:var(--paper);border-style:dashed}
 .leaflet-container{font-family:"Space Grotesk",sans-serif}
 #map.tema-classico .leaflet-tile-pane{filter:grayscale(.72) contrast(1.02) sepia(.16) brightness(1.04)}
+#map:not(.tema-classico) .leaflet-tile-pane{filter:brightness(1.35) contrast(1.05) saturate(1.35)}
 /* Em modo Satélite (ausência de .tema-classico), os botões fixos ficam translúcidos para não tapar a imagem por baixo */
 #map:not(.tema-classico) ~ .maptools .jump:not([aria-pressed="true"]):not(:hover){background:rgba(251,246,234,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
 #map:not(.tema-classico) ~ .legend{background:rgba(251,246,234,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
