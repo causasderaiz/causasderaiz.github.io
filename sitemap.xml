@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://causasderaiz.org/index.html</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://causasderaiz.org/index-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://causasderaiz.org/alertar.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://causasderaiz.org/alertar-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://causasderaiz.org/arquivo.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://causasderaiz.org/arquivo-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://causasderaiz.org/metodologia.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://causasderaiz.org/metodologia-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://causasderaiz.org/sobre.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://causasderaiz.org/sobre-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://causasderaiz.org/termos.html</loc><lastmod>2026-09-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://causasderaiz.org/termos-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://causasderaiz.org/index.html</loc><lastmod>2026-09-24</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://causasderaiz.org/index-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://causasderaiz.org/alertar.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://causasderaiz.org/alertar-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://causasderaiz.org/arquivo.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://causasderaiz.org/arquivo-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://causasderaiz.org/metodologia.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://causasderaiz.org/metodologia-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://causasderaiz.org/sobre.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://causasderaiz.org/sobre-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://causasderaiz.org/termos.html</loc><lastmod>2026-09-24</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://causasderaiz.org/termos-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://causasderaiz.org/pellets-cercal-alentejo.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/pellets-cercal-alentejo-en.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/jardins-se-porto.html</loc><lastmod>2026-09-07</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -30,8 +30,8 @@
   <url><loc>https://causasderaiz.org/biometano-torres-novas-en.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/sintra-cascais.html</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/sintra-cascais-en.html</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://causasderaiz.org/costa-terra-melides.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://causasderaiz.org/costa-terra-melides-en.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://causasderaiz.org/costa-terra-melides.html</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://causasderaiz.org/costa-terra-melides-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/descontaminacao-ilha-terceira.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/descontaminacao-ilha-terceira-en.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/litoral-greenpeace.html</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -86,8 +86,8 @@
   <url><loc>https://causasderaiz.org/incendios-en.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/barragem-foupana.html</loc><lastmod>2026-09-09</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/barragem-foupana-en.html</loc><lastmod>2026-09-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://causasderaiz.org/biometano-abrigada-alenquer.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://causasderaiz.org/biometano-abrigada-alenquer-en.html</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://causasderaiz.org/biometano-abrigada-alenquer.html</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://causasderaiz.org/biometano-abrigada-alenquer-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/almaraz.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/almaraz-en.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/talude-militar-loures.html</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -196,8 +196,8 @@
   <url><loc>https://causasderaiz.org/aterro-barlavento-en.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/pinhal-freiras-seixal.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/pinhal-freiras-seixal-en.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://causasderaiz.org/eolicas-serra-ossa.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://causasderaiz.org/eolicas-serra-ossa-en.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://causasderaiz.org/eolicas-serra-ossa.html</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://causasderaiz.org/eolicas-serra-ossa-en.html</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/amianto-vale-milhacos-seixal.html</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://causasderaiz.org/amianto-vale-milhacos-seixal-en.html</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://causasderaiz.org/rio-lis-poluicao.html</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
