@@ -18,6 +18,8 @@
   var ESTICON = { urgente: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐" };
   var ESTLBL = TAX.estados[IDIOMA];
   var CATLBL = TAX.categorias[IDIOMA];
+  // categoria principal ou uma das secundárias (cat2 é uma lista)
+  function temCat(c, k) { return c.cat === k || (c.cat2 || []).indexOf(k) !== -1; }
   var st = { q: "", reg: "", est: "todas", cats: new Set(), ord: "prazo", sel: null };
   var $ = function (s) { return document.querySelector(s); };
 
@@ -77,7 +79,7 @@
     "beforebegin",
     TAX.categorias.ordem
       .map(function (k) {
-        var n = LUTAS.filter(function (c) { return c.cat === k || c.cat2 === k; }).length;
+        var n = LUTAS.filter(function (c) { return temCat(c, k); }).length;
         return '<button class="chip' + (n ? "" : " chip--vazio") + '" data-cat="' + k + '" aria-pressed="false">' + CATLBL[k] + " <i>" + n + "</i></button>";
       })
       .join("")
@@ -116,7 +118,7 @@
   }
   var markers = {};
   var icone = function (c, i) {
-    var isDatacenter = c.cat === "datacenter" || c.cat2 === "datacenter";
+    var isDatacenter = temCat(c, "datacenter");
     return L.divIcon({
       className: "", iconSize: [34, 34], iconAnchor: [17, 17],
       html: '<span class="pin ' + estadoBadge(c).k + (c.prazo ? " prazo" : "") + (isDatacenter ? " datacenter" : "") + '">' + String(c.num || i + 1).padStart(2, "0") + "</span>",
@@ -188,7 +190,7 @@
       if (st.est === "acompanhamento" && !(c.est === "acompanhamento" || (c.est === "urgente" && !c.pet))) return false;
     }
     if (st.reg && c.reg !== st.reg) return false;
-    if (st.cats.size && !st.cats.has(c.cat) && !(c.cat2 && st.cats.has(c.cat2))) return false;
+    if (st.cats.size && !st.cats.has(c.cat) && !(c.cat2 || []).some(function (k) { return st.cats.has(k); })) return false;
     if (st.q) {
       var hay = (c.t + " " + c.loc + " " + c.catLabel + " " + c.cat + " " + c.res + " " + c.regLabel + " " + c.quem.join(" ") + " " + c.status + " " + (c.kw || []).join(" ")).toLowerCase();
       if (hay.indexOf(st.q) === -1) return false;
