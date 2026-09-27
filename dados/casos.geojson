@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "gerado_em": "2026-09-23",
+  "gerado_em": "2026-09-27",
   "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
   "fonte": "https://causasderaiz.org",
   "features": [
@@ -71,29 +71,6 @@
         "verificado_em": "2026-08-24",
         "url_pt": "https://causasderaiz.org/agueda-eucaliptos.html",
         "url_en": "https://causasderaiz.org/agueda-eucaliptos-en.html"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.207,
-          38.463
-        ]
-      },
-      "properties": {
-        "id": "meco-sesimbra-agua-turismo",
-        "num": 4,
-        "titulo_pt": "Aldeia do Meco: escassez de água agrava oposição a grandes projetos turísticos em Sesimbra",
-        "titulo_en": "Aldeia do Meco: water scarcity sharpens opposition to large tourism projects in Sesimbra",
-        "categoria": "imobiliario",
-        "categoria_secundaria": null,
-        "regiao": "lisboa-e-vale-do-tejo",
-        "estado": "urgente",
-        "verificado_em": "2026-09-13",
-        "url_pt": "https://causasderaiz.org/meco-sesimbra-agua-turismo.html",
-        "url_en": "https://causasderaiz.org/meco-sesimbra-agua-turismo-en.html"
       }
     },
     {
@@ -252,7 +229,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "urgente",
-        "verificado_em": "2026-08-21",
+        "verificado_em": "2026-09-24",
         "url_pt": "https://causasderaiz.org/costa-terra-melides.html",
         "url_en": "https://causasderaiz.org/costa-terra-melides-en.html"
       }
@@ -709,10 +686,10 @@
         "titulo_pt": "Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas",
         "titulo_en": "Penamacor 2 wind farm revamp authorises felling of 755 protected trees",
         "categoria": "eolicas",
-        "categoria_secundaria": null,
+        "categoria_secundaria": "arvoredo",
         "regiao": "centro",
         "estado": "urgente",
-        "verificado_em": "2026-09-07",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/eolico-penamacor-2.html",
         "url_en": "https://causasderaiz.org/eolico-penamacor-2-en.html"
       }
@@ -778,10 +755,10 @@
         "titulo_pt": "Travar o Projeto Eólico do Mira, da Galp, em Odemira",
         "titulo_en": "Stop Galp's Mira Wind Project in Odemira",
         "categoria": "eolicas",
-        "categoria_secundaria": "poluicao",
+        "categoria_secundaria": "megasolares",
         "regiao": "alentejo",
         "estado": "urgente",
-        "verificado_em": "2026-09-06",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/eolico-mira-odemira.html",
         "url_en": "https://causasderaiz.org/eolico-mira-odemira-en.html"
       }
@@ -850,7 +827,7 @@
         "categoria_secundaria": "poluicao",
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "consulta",
-        "verificado_em": "2026-09-03",
+        "verificado_em": "2026-09-24",
         "url_pt": "https://causasderaiz.org/biometano-abrigada-alenquer.html",
         "url_en": "https://causasderaiz.org/biometano-abrigada-alenquer-en.html"
       }
@@ -1240,8 +1217,8 @@
         "categoria": "megasolares",
         "categoria_secundaria": null,
         "regiao": "alentejo",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-08-21",
+        "estado": "consulta",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/sobreira.html",
         "url_en": "https://causasderaiz.org/sobreira-en.html"
       }
@@ -1378,8 +1355,8 @@
         "categoria": "imobiliario",
         "categoria_secundaria": null,
         "regiao": "lisboa-e-vale-do-tejo",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-09-13",
+        "estado": "urgente",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/movimento-meco-livre.html",
         "url_en": "https://causasderaiz.org/movimento-meco-livre-en.html"
       }
@@ -1425,7 +1402,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-10",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/mina-gaviao-aljustrel.html",
         "url_en": "https://causasderaiz.org/mina-gaviao-aljustrel-en.html"
       }
@@ -1494,32 +1471,9 @@
         "categoria_secundaria": "mineracao",
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-13",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/parque-natural-arrabida.html",
         "url_en": "https://causasderaiz.org/parque-natural-arrabida-en.html"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -8.977,
-          38.483
-        ]
-      },
-      "properties": {
-        "id": "arrabida",
-        "num": 69,
-        "titulo_pt": "Pedreiras da Secil no Parque Natural da Arrábida",
-        "titulo_en": "Secil quarries in Arrábida Natural Park",
-        "categoria": "mineracao",
-        "categoria_secundaria": null,
-        "regiao": "lisboa-e-vale-do-tejo",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-08-21",
-        "url_pt": "https://causasderaiz.org/arrabida.html",
-        "url_en": "https://causasderaiz.org/arrabida-en.html"
       }
     },
     {
@@ -1566,6 +1520,29 @@
         "verificado_em": "2026-08-21",
         "url_pt": "https://causasderaiz.org/poco-velho-aveiros-albufeira.html",
         "url_en": "https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.328,
+          38.687
+        ]
+      },
+      "properties": {
+        "id": "quinta-dos-ingleses",
+        "num": 73,
+        "titulo_pt": "Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos",
+        "titulo_en": "Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest",
+        "categoria": "imobiliario",
+        "categoria_secundaria": null,
+        "regiao": "lisboa-e-vale-do-tejo",
+        "estado": "tribunal",
+        "verificado_em": "2026-09-19",
+        "url_pt": "https://causasderaiz.org/quinta-dos-ingleses.html",
+        "url_en": "https://causasderaiz.org/quinta-dos-ingleses-en.html"
       }
     },
     {
@@ -1930,8 +1907,8 @@
         "categoria": "imobiliario",
         "categoria_secundaria": null,
         "regiao": "algarve",
-        "estado": "acompanhamento",
-        "verificado_em": "2026-09-14",
+        "estado": "tribunal",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/up12-albandeira.html",
         "url_en": "https://causasderaiz.org/up12-albandeira-en.html"
       }
@@ -1977,7 +1954,7 @@
         "categoria_secundaria": null,
         "regiao": "lisboa-e-vale-do-tejo",
         "estado": "acompanhamento",
-        "verificado_em": "2026-09-15",
+        "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/sintra-sem-herbicidas.html",
         "url_en": "https://causasderaiz.org/sintra-sem-herbicidas-en.html"
       }
@@ -2046,7 +2023,7 @@
         "categoria_secundaria": null,
         "regiao": "alentejo",
         "estado": "urgente",
-        "verificado_em": "2026-09-16",
+        "verificado_em": "2026-09-24",
         "url_pt": "https://causasderaiz.org/eolicas-serra-ossa.html",
         "url_en": "https://causasderaiz.org/eolicas-serra-ossa-en.html"
       }
@@ -2095,6 +2072,29 @@
         "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/rio-lis-poluicao.html",
         "url_en": "https://causasderaiz.org/rio-lis-poluicao-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.55,
+          38.25
+        ]
+      },
+      "properties": {
+        "id": "cluster-alqueva-chint",
+        "num": 100,
+        "titulo_pt": "\"Cluster Alqueva\": grupo chinês Chint quer licenciar 1.300 MW de solar, eólica e baterias em Portel e Vidigueira",
+        "titulo_en": "\"Alqueva Cluster\": Chinese group Chint seeks to license 1,300 MW of solar, wind and batteries in Portel and Vidigueira",
+        "categoria": "megasolares",
+        "categoria_secundaria": "eolicas",
+        "regiao": "alentejo",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/cluster-alqueva-chint.html",
+        "url_en": "https://causasderaiz.org/cluster-alqueva-chint-en.html"
       }
     },
     {
@@ -2187,6 +2187,29 @@
         "verificado_em": "2026-09-23",
         "url_pt": "https://causasderaiz.org/poluicao-rio-tejo-protejo.html",
         "url_en": "https://causasderaiz.org/poluicao-rio-tejo-protejo-en.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.86,
+          40.15
+        ]
+      },
+      "properties": {
+        "id": "figueira-foz-data-centers",
+        "num": 109,
+        "titulo_pt": "Figueira da Foz aprova, com votos do Chega, posicionar o concelho como destino para data centers",
+        "titulo_en": "Figueira da Foz approves, with Chega's votes, positioning the municipality as a data centre destination",
+        "categoria": "datacenter",
+        "categoria_secundaria": null,
+        "regiao": "centro",
+        "estado": "acompanhamento",
+        "verificado_em": "2026-09-23",
+        "url_pt": "https://causasderaiz.org/figueira-foz-data-centers.html",
+        "url_en": "https://causasderaiz.org/figueira-foz-data-centers-en.html"
       }
     }
   ]

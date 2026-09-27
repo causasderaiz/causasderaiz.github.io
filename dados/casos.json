@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-09-23",
+  "gerado_em": "2026-09-27",
   "licenca": "A DEFINIR — contactar Causas de Raiz (migrationagainsthate@gmail.com) antes de reutilizar estes dados. Estes ficheiros são uma pré-visualização técnica, não uma publicação de dados abertos.",
   "fonte": "https://causasderaiz.org",
-  "total": 100,
+  "total": 101,
   "casos": [
     {
       "id": "pellets-cercal-alentejo",
@@ -76,30 +76,6 @@
       "verificado_em": "2026-08-24",
       "url_pt": "https://causasderaiz.org/agueda-eucaliptos.html",
       "url_en": "https://causasderaiz.org/agueda-eucaliptos-en.html"
-    },
-    {
-      "id": "meco-sesimbra-agua-turismo",
-      "num": 4,
-      "titulo_pt": "Aldeia do Meco: escassez de água agrava oposição a grandes projetos turísticos em Sesimbra",
-      "titulo_en": "Aldeia do Meco: water scarcity sharpens opposition to large tourism projects in Sesimbra",
-      "local_pt": "Aldeia do Meco, Sesimbra, distrito de Setúbal",
-      "local_en": "Aldeia do Meco, Sesimbra, Setúbal district",
-      "categoria": "imobiliario",
-      "categoria_secundaria": null,
-      "regiao": "lisboa-e-vale-do-tejo",
-      "estado": "urgente",
-      "coordenadas": [
-        38.463,
-        -9.207
-      ],
-      "envolvidos": [
-        "Moradores da Aldeia do Meco"
-      ],
-      "resumo_pt": "Desde 2021 que a população da Aldeia do Meco se opõe a quatro grandes projetos turísticos (incluindo o aparthotel \"Pinhal do Atlântico\" da TURIMECO, com 411 unidades e 1.168 camas) que juntos preveem cerca de 600 fogos e mais de 1.800 camas para uma aldeia com pouco mais de 300 habitantes, numa área classificada como Sítio de Interesse Comunitário Arrábida/Espichel. Uma nova petição exige o embargo e a revogação das licenças destes empreendimentos por risco de salinização da sub-bacia hídrica: segundo dados da Agência Portuguesa do Ambiente citados na petição, o índice de exploração da água nas sub-bacias costeiras entre o Tejo e o Sado atinge 93% em setembro, com o nível piezométrico da bacia do Tejo/Margem Esquerda já abaixo do percentil 20.",
-      "resumo_en": "Since 2021, residents of Aldeia do Meco have opposed four large tourism projects, including TURIMECO's \"Pinhal do Atlântico\" aparthotel, with 411 units and 1,168 beds, which together plan around 600 dwellings and over 1,800 beds for a village with just over 300 inhabitants, in an area classified as a Site of Community Importance (Arrábida/Espichel). A new petition demands an embargo and revocation of these developments' licences over the risk of salinizing the aquifer: according to official environment agency data cited in the petition, the water exploitation index in the coastal sub-basins between the Tagus and Sado reaches 93% in September, with the piezometric level of the Tagus/Left Bank basin already below the 20th percentile.",
-      "verificado_em": "2026-09-13",
-      "url_pt": "https://causasderaiz.org/meco-sesimbra-agua-turismo.html",
-      "url_en": "https://causasderaiz.org/meco-sesimbra-agua-turismo-en.html"
     },
     {
       "id": "artilharia-um-campolide",
@@ -266,7 +242,7 @@
       ],
       "resumo_pt": "O resort de luxo Costa Terra mantém seguranças privados e vedações a condicionar o acesso a praias públicas. Uma inspeção oficial encontrou sete praias com acesso condicionado em Grândola; um ano depois, a Quercus acusa o Governo de esconder que as barreiras continuam.",
       "resumo_en": "The luxury resort Costa Terra keeps private security and fencing restricting access to public beaches. An official inspection found seven beaches with conditioned access in Grândola; a year on, Quercus accuses the Government of hiding the fact that the barriers remain.",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-09-24",
       "url_pt": "https://causasderaiz.org/costa-terra-melides.html",
       "url_en": "https://causasderaiz.org/costa-terra-melides-en.html"
     },
@@ -784,7 +760,7 @@
       "local_pt": "Serra de Santo André, freguesias de Meimoa e Penamacor, distrito de Castelo Branco",
       "local_en": "Serra de Santo André, Meimoa and Penamacor parishes, Castelo Branco district",
       "categoria": "eolicas",
-      "categoria_secundaria": null,
+      "categoria_secundaria": "arvoredo",
       "regiao": "centro",
       "estado": "urgente",
       "coordenadas": [
@@ -796,7 +772,7 @@
       ],
       "resumo_pt": "O Governo autorizou, pelo Despacho n.º 775/2026, o abate de 451 sobreiros e 304 azinheiras (755 árvores de espécies protegidas) na Serra de Santo André, para o projeto de reequipamento do Parque Eólico Penamacor 2: a Lestenergia vai substituir sete aerogeradores antigos por quatro mais potentes, elevando a produção anual de 23,48 para 88,44 GWh. A Agência Portuguesa do Ambiente dispensou o projeto de uma avaliação de impacte ambiental. Uma petição pública pede a revogação total da autorização de abate, a análise de alternativas de localização com menor impacto ecológico e o reforço do princípio de evitar, minimizar e só depois compensar os danos ambientais.",
       "resumo_en": "Through Order (Despacho) No. 775/2026, the Government authorised the felling of 451 cork oaks and 304 holm oaks (755 protected trees) on the Serra de Santo André, for the re-equipment of the Penamacor 2 wind farm: Lestenergia will replace seven old turbines with four more powerful ones, raising annual output from 23.48 to 88.44 GWh. The Portuguese Environment Agency waived the project from a full environmental impact assessment. A public petition demands the full revocation of the felling authorisation, an assessment of siting alternatives with less ecological impact, and stronger application of the mitigation hierarchy: avoid, minimise, and only then compensate for environmental damage.",
-      "verificado_em": "2026-09-07",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/eolico-penamacor-2.html",
       "url_en": "https://causasderaiz.org/eolico-penamacor-2-en.html"
     },
@@ -856,7 +832,7 @@
       "local_pt": "Odemira e Ourique, distrito de Beja",
       "local_en": "Odemira and Ourique, Beja district",
       "categoria": "eolicas",
-      "categoria_secundaria": "poluicao",
+      "categoria_secundaria": "megasolares",
       "regiao": "alentejo",
       "estado": "urgente",
       "coordenadas": [
@@ -868,7 +844,7 @@
       ],
       "resumo_pt": "A Galp avança com 22 aerogeradores (158 MW) e a hibridização de um parque solar entre Odemira e Ourique (18 deles em Odemira, afetando Relíquias, São Martinho das Amoreiras, Luzianes-Gare e Santa Clara-a-Velha) depois de o projeto anterior das Cachenas ter sido travado por forte oposição local. Moradores denunciam na petição o ruído aerodinâmico constante e o efeito estroboscópico das pás junto a habitações, além da desvalorização imobiliária e do risco acrescido de incêndio com a abertura de novos acessos e linhas de alta tensão; a petição continua ativa e a Câmara de Odemira exige discussões públicas nas freguesias afetadas antes de qualquer avanço.",
       "resumo_en": "Galp is moving forward with 22 wind turbines (158 MW) and the hybridisation of a solar plant between Odemira and Ourique (18 of them in Odemira, affecting Relíquias, São Martinho das Amoreiras, Luzianes-Gare and Santa Clara-a-Velha), after its earlier Cachenas project was stopped by strong local opposition. Residents' petition denounces constant aerodynamic noise and shadow flicker from the blades near homes, on top of falling property values and a heightened wildfire risk from new access roads and high-voltage lines; the petition remains active, and Odemira Municipal Council is demanding public discussions in the affected parishes before anything moves forward.",
-      "verificado_em": "2026-09-06",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/eolico-mira-odemira.html",
       "url_en": "https://causasderaiz.org/eolico-mira-odemira-en.html"
     },
@@ -937,11 +913,13 @@
         -9.0017
       ],
       "envolvidos": [
-        "Moradores de Abrigada e Cabanas de Torres"
+        "Moradores de Abrigada e Cabanas de Torres",
+        "Movimento de Cidadãos de Abrigada, Marés e Ota",
+        "Quercus"
       ],
-      "resumo_pt": "A empresa Gás da Terra quer instalar uma unidade de biometano de 20,5 milhões de euros a cerca de 500 metros de habitações nas Marés, para tratar cerca de 84 mil toneladas anuais de resíduos agropecuários. Numa reunião pública de quase três horas, os moradores rejeitaram o projeto por receio de maus cheiros e do aumento do trânsito de pesados; a Câmara Municipal de Alenquer emitiu parecer desfavorável a 26 de agosto. A consulta pública decorre em participa.pt até 15 de setembro.",
-      "resumo_en": "Gás da Terra wants to build a €20.5 million biomethane plant about 500 metres from homes in Marés, to process around 84,000 tonnes of agricultural and livestock waste a year. At a public meeting lasting almost three hours, residents rejected the project over fears of bad odours and heavier truck traffic; Alenquer municipal council issued an unfavourable opinion on 26 August. The public consultation runs on participa.pt until 15 September.",
-      "verificado_em": "2026-09-03",
+      "resumo_pt": "A empresa Gás da Terra quer instalar uma unidade de biometano de 20,5 milhões de euros a cerca de 500 metros de habitações nas Marés, para tratar cerca de 84 mil toneladas anuais de resíduos agropecuários. A Câmara de Alenquer, a União de Freguesias de Abrigada e Cabanas de Torres e a Quercus deram parecer desfavorável; cerca de uma centena de pessoas protestou nas Marés em setembro. A consulta pública da Avaliação de Impacte Ambiental decorre em participa.pt até 29 de setembro de 2026.",
+      "resumo_en": "The company Gás da Terra wants to build a €20.5 million biomethane plant about 500 metres from homes in Marés, to process around 84,000 tonnes of agricultural and livestock waste a year. Alenquer council, the Abrigada and Cabanas de Torres parish union and Quercus issued unfavourable opinions; around a hundred people protested in Marés in September. The Environmental Impact Assessment public consultation runs on participa.pt until 29 September 2026.",
+      "verificado_em": "2026-09-24",
       "url_pt": "https://causasderaiz.org/biometano-abrigada-alenquer.html",
       "url_en": "https://causasderaiz.org/biometano-abrigada-alenquer-en.html"
     },
@@ -1344,22 +1322,23 @@
       "num": 56,
       "titulo_pt": "Central Fotovoltaica de Sobreira de Baixo (EDP)",
       "titulo_en": "Sobreira de Baixo Photovoltaic Plant (EDP)",
-      "local_pt": "Pedrógão, Vidigueira, distrito de Évora",
-      "local_en": "Pedrógão, Vidigueira, Évora district",
+      "local_pt": "Pedrógão, Vidigueira, com afetação marginal a Portel, distrito de Évora",
+      "local_en": "Pedrógão, Vidigueira, with marginal effect on Portel, Évora district",
       "categoria": "megasolares",
       "categoria_secundaria": null,
       "regiao": "alentejo",
-      "estado": "acompanhamento",
+      "estado": "consulta",
       "coordenadas": [
         38.2039,
         -7.7975
       ],
       "envolvidos": [
-        "LPN"
+        "LPN",
+        "Agência Portuguesa do Ambiente"
       ],
-      "resumo_pt": "Maior central solar da EDP na Europa, com impactos \"muito significativos\" na águia de Bonelli e em morcegos protegidos.",
-      "resumo_en": "EDP's largest solar plant in Europe, with \"very significant\" impacts on Bonelli's eagle and protected bats.",
-      "verificado_em": "2026-08-21",
+      "resumo_pt": "Maior central solar da EDP na Europa, com impactos \"muito significativos\" na águia de Bonelli e em morcegos protegidos; o promotor reformulou o projeto, reduzindo a área de implantação, e voltou a submetê-lo a consulta pública.",
+      "resumo_en": "EDP's largest solar plant in Europe, with \"very significant\" impacts on Bonelli's eagle and protected bats; the developer reformulated the project, reducing its footprint, and resubmitted it for public consultation.",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/sobreira.html",
       "url_en": "https://causasderaiz.org/sobreira-en.html"
     },
@@ -1493,17 +1472,18 @@
       "categoria": "imobiliario",
       "categoria_secundaria": null,
       "regiao": "lisboa-e-vale-do-tejo",
-      "estado": "acompanhamento",
+      "estado": "urgente",
       "coordenadas": [
         38.478,
         -9.204
       ],
       "envolvidos": [
-        "Movimento Meco Livre"
+        "Movimento Meco Livre",
+        "Moradores da Aldeia do Meco"
       ],
-      "resumo_pt": "Movimento associativo contra a destruição das áreas protegidas de Sesimbra para construção de empreendimentos turísticos.",
-      "resumo_en": "Associative movement against the destruction of Sesimbra's protected areas for the construction of tourism developments.",
-      "verificado_em": "2026-09-13",
+      "resumo_pt": "Desde 2021 que o Movimento Meco Livre e a população da Aldeia do Meco se opõem a quatro grandes projetos turísticos (mais de 3.000 camas previstas, incluindo o aparthotel \"Pinhal do Atlântico\" da TURIMECO) numa área protegida de Sesimbra. Depois da petição SOS Meco (14.683 assinaturas, entregue na Assembleia da República) e da denúncia do abate de pinhal, uma nova petição exige agora a revogação das licenças por risco de salinização da água na região.",
+      "resumo_en": "Since 2021, the Meco Livre Movement and residents of Aldeia do Meco have opposed four large tourism projects (over 3,000 planned beds, including TURIMECO's \"Pinhal do Atlântico\" aparthotel) in a protected area of Sesimbra. After the SOS Meco petition (14,683 signatures, delivered to Parliament) and a denunciation of pine felling, a new petition now demands revocation of the licences over the risk of water salinization in the region.",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/movimento-meco-livre.html",
       "url_en": "https://causasderaiz.org/movimento-meco-livre-en.html"
     },
@@ -1553,7 +1533,7 @@
       ],
       "resumo_pt": "A concessão mineira C-14 «Gavião», da Almina – Minas do Alentejo, quer explorar um novo depósito de enxofre, ferro, cobre, chumbo, zinco, prata e ouro junto à mina já existente de Aljustrel, com laboração prevista até 2050. A consulta pública do estudo de impacte ambiental encerrou a 31 de agosto; a associação ZERO defende que o projeto não reúne condições para ser aprovado, por não avaliar uma alternativa ferroviária para o escoamento do minério (apesar de o minério de Aljustrel ser transportado de comboio há décadas) e por não apresentar destino para os milhões de toneladas de resíduos que serão produzidos depois de 2031.",
       "resumo_en": "The C-14 “Gavião” mining concession, held by Almina – Minas do Alentejo, would exploit a new deposit of sulphur, iron, copper, lead, zinc, silver and gold next to the existing Aljustrel mine, with operations planned until 2050. The public consultation on the environmental impact study closed on 31 August; the ZERO association argues the project does not meet the conditions for approval, since it fails to assess a rail alternative for transporting the ore (even though Aljustrel's ore has been carried by train for decades), and does not present a destination for the millions of tonnes of waste to be produced after 2031.",
-      "verificado_em": "2026-09-10",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/mina-gaviao-aljustrel.html",
       "url_en": "https://causasderaiz.org/mina-gaviao-aljustrel-en.html"
     },
@@ -1632,33 +1612,9 @@
       ],
       "resumo_pt": "Criado em 1976, o Parque Natural da Arrábida protege 12.328 hectares e integra a Zona Especial de Conservação (ZEC) Arrábida/Espichel, Rede Natura 2000, com 32 tipos de habitats protegidos. Mas nenhum instrumento avalia hoje a pressão cumulativa que o cerca: 11 pedreiras ocupam já 323 hectares dentro do parque (mais do dobro da área de 1976, das quais só duas em processo de recuperação), incluindo as da Secil, que opera ali uma das maiores cimenteiras do país; um litígio judicial disputa a propriedade pública de cinco praias em Setúbal (\"Deslarrrguem a Arrábida!\"); o Forte Velho do Outão foi concessionado por 50 anos a um grupo hoteleiro; e quatro megaprojetos turísticos em Meco e Azóia, com mais de 4.000 camas previstas, avançam sem uma Avaliação de Impacte Ambiental cumulativa, apesar de partilharem a mesma ZEC, motivo da petição \"SOS Meco\" do Movimento Meco Livre. A aranha-cavernícola-do-Frade, a mais pequena da Europa e criticamente em perigo, sobrevive numa única gruta da serra ameaçada por estas mesmas pedreiras. Segundo a associação Arrábida - Natureza e Comunidade, a área edificada dentro do parque cresceu cerca de 500% desde a década de 1960.",
       "resumo_en": "Created in 1976, Arrábida Natural Park protects 12,328 hectares and forms part of the Arrábida/Espichel Special Conservation Area (Natura 2000), with 32 protected habitat types. Yet no instrument today assesses the cumulative pressure surrounding it: 11 quarries already occupy 323 hectares inside the park (more than double the area in 1976, only two of which are being rehabilitated), including Secil's, which runs one of the country's largest cement plants there; a court case disputes public ownership of five beaches in Setúbal (\"Hands Off Arrábida!\"); the Forte Velho do Outão fort was granted as a 50-year concession to a hotel group; and four tourism megaprojects in Meco and Azóia, with over 4,000 planned beds, are moving forward without a cumulative Environmental Impact Assessment, despite sharing the same protected area, the reason behind the Meco Livre Movement's \"SOS Meco\" petition. The Frade cave spider, Europe's smallest and critically endangered, survives in a single cave in the range threatened by these same quarries. According to the association Arrábida - Natureza e Comunidade, the built-up area inside the park has grown by around 500% since the 1960s.",
-      "verificado_em": "2026-09-13",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/parque-natural-arrabida.html",
       "url_en": "https://causasderaiz.org/parque-natural-arrabida-en.html"
-    },
-    {
-      "id": "arrabida",
-      "num": 69,
-      "titulo_pt": "Pedreiras da Secil no Parque Natural da Arrábida",
-      "titulo_en": "Secil quarries in Arrábida Natural Park",
-      "local_pt": "Setúbal, Parque Natural da Arrábida",
-      "local_en": "Setúbal, Arrábida Natural Park",
-      "categoria": "mineracao",
-      "categoria_secundaria": null,
-      "regiao": "lisboa-e-vale-do-tejo",
-      "estado": "acompanhamento",
-      "coordenadas": [
-        38.483,
-        -8.977
-      ],
-      "envolvidos": [
-        "LPN, entre sete organizações"
-      ],
-      "resumo_pt": "Sete organizações exigem à Secil um plano de desativação das pedreiras numa área protegida.",
-      "resumo_en": "Seven organizations demand Secil present a plan to decommission its quarries in a protected area.",
-      "verificado_em": "2026-08-21",
-      "url_pt": "https://causasderaiz.org/arrabida.html",
-      "url_en": "https://causasderaiz.org/arrabida-en.html"
     },
     {
       "id": "borba",
@@ -1729,6 +1685,31 @@
       "verificado_em": "2026-08-21",
       "url_pt": "https://causasderaiz.org/poco-velho-aveiros-albufeira.html",
       "url_en": "https://causasderaiz.org/poco-velho-aveiros-albufeira-en.html"
+    },
+    {
+      "id": "quinta-dos-ingleses",
+      "num": 73,
+      "titulo_pt": "Quinta dos Ingleses: tribunal julga suspensão do loteamento de 850 apartamentos no pinhal de Carcavelos",
+      "titulo_en": "Quinta dos Ingleses: court rules on bid to halt 850-apartment development in the Carcavelos pine forest",
+      "local_pt": "Carcavelos, Cascais, distrito de Lisboa",
+      "local_en": "Carcavelos, Cascais, Lisbon district",
+      "categoria": "imobiliario",
+      "categoria_secundaria": null,
+      "regiao": "lisboa-e-vale-do-tejo",
+      "estado": "tribunal",
+      "coordenadas": [
+        38.687,
+        -9.328
+      ],
+      "envolvidos": [
+        "SOS Quinta dos Ingleses",
+        "66 Pela Quinta"
+      ],
+      "resumo_pt": "A Câmara de Cascais aprovou um plano de pormenor que viabiliza cerca de 850 apartamentos, um hotel e um centro comercial num pinhal centenário de cerca de 52 hectares junto à praia de Carcavelos. Desde outubro de 2025, uma ação popular do movimento 66 Pela Quinta mantém as obras suspensas por providência cautelar; o Tribunal Administrativo e Fiscal de Sintra está a realizar audiências de julgamento em setembro de 2026.",
+      "resumo_en": "Cascais Municipal Council approved a detailed plan enabling around 850 apartments, a hotel and a shopping centre on a centuries-old, roughly 52-hectare pine forest next to Carcavelos beach. Since October 2025, a popular legal action by the 66 Pela Quinta movement has kept the works suspended under an injunction; the Sintra Administrative and Fiscal Court is holding trial hearings in September 2026.",
+      "verificado_em": "2026-09-19",
+      "url_pt": "https://causasderaiz.org/quinta-dos-ingleses.html",
+      "url_en": "https://causasderaiz.org/quinta-dos-ingleses-en.html"
     },
     {
       "id": "revive-forte-outao",
@@ -2146,7 +2127,7 @@
       "categoria": "imobiliario",
       "categoria_secundaria": null,
       "regiao": "algarve",
-      "estado": "acompanhamento",
+      "estado": "tribunal",
       "coordenadas": [
         37.0958,
         -8.428
@@ -2156,7 +2137,7 @@
       ],
       "resumo_pt": "O grupo cívico STOP UP12 luta desde 2023 contra a urbanização turística UP12, que prevê 1.030 camas em hotéis, aparthotéis e moradias na última faixa costeira ainda selvagem entre a Praia da Marinha e Nossa Senhora da Rocha, em Lagoa. O plano de pormenor da ATE A1 foi chumbado pela APA, pelo ICNF, pela CCDR-Algarve e pela DGT por falhas graves na avaliação ambiental, mas a Câmara de Lagoa reabriu em outubro de 2025 um novo processo para o ressuscitar, apesar de o próprio presidente ter admitido que aprovar esta urbanização em 2008 \"foi um erro\".",
       "resumo_en": "The civic group STOP UP12 has fought since 2023 against the UP12 tourism development, which plans 1,030 beds in hotels, aparthotels and villas on the last stretch of wild coastline between Praia da Marinha and Nossa Senhora da Rocha, in Lagoa. The detailed plan for ATE A1 was rejected by the APA, ICNF, CCDR-Algarve and DGT over serious flaws in the environmental assessment, but Lagoa Council reopened a new process to revive it in October 2025, even though the mayor himself admitted that approving this development back in 2008 \"was a mistake\".",
-      "verificado_em": "2026-09-14",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/up12-albandeira.html",
       "url_en": "https://causasderaiz.org/up12-albandeira-en.html"
     },
@@ -2204,7 +2185,7 @@
       ],
       "resumo_pt": "O Sintra sem Herbicidas é um movimento de cidadãos ativo desde 2015 que luta pelo fim do uso de herbicidas, sobretudo glifosato, na deservagem de espaços públicos no concelho de Sintra. Apresentou uma petição à Assembleia da República pela proibição de herbicidas perigosos em espaços públicos urbanos, já com audição na Comissão de Agricultura e Pescas, e conseguiu a aprovação de uma moção na Assembleia de Freguesia de Colares, em abril de 2026, a exigir o fim do glifosato na deservagem. O movimento documentou e denunciou à Câmara Municipal de Sintra e à GNR-SEPNA aplicações de herbicida junto a linhas de água e escolas, mesmo depois de a autarquia se ter comprometido publicamente a acabar com a prática, e participou nas consultas públicas dos planos nacionais para os polinizadores e para o uso sustentável de produtos fitofarmacêuticos.",
       "resumo_en": "Sintra sem Herbicidas is a citizens' movement active since 2015 campaigning to end the use of herbicides, glyphosate in particular, for weed control in public spaces across Sintra municipality. It filed a petition to the Portuguese Parliament for a ban on dangerous herbicides in urban public spaces, which was heard by the Agriculture and Fisheries Committee, and secured a motion passed by the Colares parish assembly in April 2026 demanding an end to glyphosate use. The group has documented and reported to Sintra Council and to GNR-SEPNA cases of herbicide applied near watercourses and schools, even after the council publicly committed to stopping the practice, and took part in public consultations on the national action plans for pollinators and for the sustainable use of pesticides.",
-      "verificado_em": "2026-09-15",
+      "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/sintra-sem-herbicidas.html",
       "url_en": "https://causasderaiz.org/sintra-sem-herbicidas-en.html"
     },
@@ -2275,11 +2256,12 @@
         -7.533
       ],
       "envolvidos": [
+        "Moradores do concelho de Estremoz",
         "Subscritores da petição pública"
       ],
-      "resumo_pt": "Petição pública pede que seja travado um projeto de parque eólico na Serra d'Ossa, no Alentejo Central, e que a serra seja classificada como área protegida.",
-      "resumo_en": "A public petition calls for a wind farm project on Serra d'Ossa, in Central Alentejo, to be halted, and for the mountain range to be classified as a protected area.",
-      "verificado_em": "2026-09-16",
+      "resumo_pt": "Moradores de Estremoz e uma petição pública pedem que seja travado um projeto de parque eólico da Akuo na Serra d'Ossa, no Alentejo Central, que poderá ter 13 aerogeradores, e que a serra seja classificada como área protegida. A 25 de setembro de 2026, a Assembleia Municipal de Estremoz aprecia um pedido de declaração de interesse municipal para mastros anemométricos na freguesia da Glória.",
+      "resumo_en": "Estremoz residents and a public petition are calling for an Akuo wind farm project on Serra d'Ossa, in Central Alentejo, which could have 13 turbines, to be halted, and for the range to be classified as a protected area. On 25 September 2026, Estremoz Municipal Assembly considers a request for a declaration of municipal interest for wind-measurement masts in the parish of Glória.",
+      "verificado_em": "2026-09-24",
       "url_pt": "https://causasderaiz.org/eolicas-serra-ossa.html",
       "url_en": "https://causasderaiz.org/eolicas-serra-ossa-en.html"
     },
@@ -2333,6 +2315,30 @@
       "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/rio-lis-poluicao.html",
       "url_en": "https://causasderaiz.org/rio-lis-poluicao-en.html"
+    },
+    {
+      "id": "cluster-alqueva-chint",
+      "num": 100,
+      "titulo_pt": "\"Cluster Alqueva\": grupo chinês Chint quer licenciar 1.300 MW de solar, eólica e baterias em Portel e Vidigueira",
+      "titulo_en": "\"Alqueva Cluster\": Chinese group Chint seeks to license 1,300 MW of solar, wind and batteries in Portel and Vidigueira",
+      "local_pt": "Concelhos de Portel e Vidigueira, distrito de Évora",
+      "local_en": "Portel and Vidigueira municipalities, Évora district",
+      "categoria": "megasolares",
+      "categoria_secundaria": "eolicas",
+      "regiao": "alentejo",
+      "estado": "acompanhamento",
+      "coordenadas": [
+        38.25,
+        -7.55
+      ],
+      "envolvidos": [
+        "Chint Solar (promotor)"
+      ],
+      "resumo_pt": "O grupo chinês Chint iniciou o processo de avaliação ambiental para o \"Cluster Alqueva\", que junta três centrais solares com baterias (São Gião, Tapada Branca e Monte Santos) e duas centrais eólicas nos concelhos de Portel e Vidigueira, totalizando cerca de 1.300 MW de potência instalada e cerca de 2,17 milhões de painéis fotovoltaicos.",
+      "resumo_en": "The Chinese group Chint began the environmental assessment process for the \"Alqueva Cluster\", combining three battery-backed solar plants (São Gião, Tapada Branca and Monte Santos) and two wind plants in Portel and Vidigueira municipalities, totalling around 1,300 MW of installed capacity and about 2.17 million photovoltaic panels.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/cluster-alqueva-chint.html",
+      "url_en": "https://causasderaiz.org/cluster-alqueva-chint-en.html"
     },
     {
       "id": "aterro-castelo-branco-biosmart",
@@ -2434,6 +2440,31 @@
       "verificado_em": "2026-09-23",
       "url_pt": "https://causasderaiz.org/poluicao-rio-tejo-protejo.html",
       "url_en": "https://causasderaiz.org/poluicao-rio-tejo-protejo-en.html"
+    },
+    {
+      "id": "figueira-foz-data-centers",
+      "num": 109,
+      "titulo_pt": "Figueira da Foz aprova, com votos do Chega, posicionar o concelho como destino para data centers",
+      "titulo_en": "Figueira da Foz approves, with Chega's votes, positioning the municipality as a data centre destination",
+      "local_pt": "Concelho da Figueira da Foz, distrito de Coimbra",
+      "local_en": "Figueira da Foz municipality, Coimbra district",
+      "categoria": "datacenter",
+      "categoria_secundaria": null,
+      "regiao": "centro",
+      "estado": "acompanhamento",
+      "coordenadas": [
+        40.15,
+        -8.86
+      ],
+      "envolvidos": [
+        "Câmara Municipal da Figueira da Foz",
+        "Chega"
+      ],
+      "resumo_pt": "A Câmara Municipal da Figueira da Foz aprovou, em reunião de 14 de maio de 2026, uma proposta do Chega para posicionar o concelho como destino de investimentos em centros de dados, com sete votos a favor e duas abstenções do PS. O presidente da câmara reconheceu dificuldades em assegurar áreas de energia renovável suficientes para sustentar este tipo de infraestrutura.",
+      "resumo_en": "Figueira da Foz Municipal Council approved, at a meeting on 14 May 2026, a Chega proposal to position the municipality as a destination for data centre investment, with seven votes in favour and two abstentions from the Socialist Party. The mayor acknowledged difficulties in securing enough renewable energy areas to support this type of infrastructure.",
+      "verificado_em": "2026-09-23",
+      "url_pt": "https://causasderaiz.org/figueira-foz-data-centers.html",
+      "url_en": "https://causasderaiz.org/figueira-foz-data-centers-en.html"
     }
   ]
 }
