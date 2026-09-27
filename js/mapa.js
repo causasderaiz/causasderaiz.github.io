@@ -21,6 +21,15 @@
   // categoria principal ou uma das secundárias (cat2 é uma lista)
   function temCat(c, k) { return c.cat === k || (c.cat2 || []).indexOf(k) !== -1; }
   var st = { q: "", reg: "", est: "todas", cats: new Set(), ord: "prazo", sel: null };
+  // pesquisa (#q): ver pesquisa-mapa.js e src/_data/sinonimos.json
+  var PESQ = window.PesquisaMapa ? window.PesquisaMapa.criarIndice(LUTAS, FICHAS, window.SINONIMOS || []) : null;
+  var resPesq = null;
+  function escHtml(s) { return String(s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
+  function pesquisar(q) {
+    st.q = q;
+    resPesq = PESQ && q.trim() ? PESQ.procurar(q) : null;
+    render();
+  }
   var $ = function (s) { return document.querySelector(s); };
 
   function dfmt(iso) {
@@ -92,12 +101,12 @@
       render();
     };
   });
-  $("#q").oninput = function (ev) { st.q = ev.target.value.toLowerCase(); render(); };
+  $("#q").oninput = function (ev) { pesquisar(ev.target.value); };
   $("#reg").onchange = function (ev) { st.reg = ev.target.value; render(); };
   $("#ord").onchange = function (ev) { st.ord = ev.target.value; render(); };
   $("#go").onclick = function () { window.scrollTo({ top: $("#mapa").offsetTop - 64, behavior: "smooth" }); };
   $("#reset").onclick = function () {
-    st.q = ""; st.reg = ""; st.est = "todas"; st.cats.clear(); st.ord = "prazo";
+    st.q = ""; resPesq = null; st.reg = ""; st.est = "todas"; st.cats.clear(); st.ord = "prazo";
     $("#q").value = ""; $("#reg").value = ""; $("#ord").value = "prazo";
     $("#chips").querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
     $("#estado").querySelectorAll("button").forEach(function (b, i) { b.setAttribute("aria-pressed", i === 0); });
@@ -191,9 +200,10 @@
     }
     if (st.reg && c.reg !== st.reg) return false;
     if (st.cats.size && !st.cats.has(c.cat) && !(c.cat2 || []).some(function (k) { return st.cats.has(k); })) return false;
-    if (st.q) {
+    if (resPesq && resPesq.ids) return !!resPesq.ids[c.id];
+    if (st.q && !PESQ) {
       var hay = (c.t + " " + c.loc + " " + c.catLabel + " " + c.cat + " " + c.res + " " + c.regLabel + " " + c.quem.join(" ") + " " + c.status + " " + (c.kw || []).join(" ")).toLowerCase();
-      if (hay.indexOf(st.q) === -1) return false;
+      if (hay.indexOf(st.q.toLowerCase()) === -1) return false;
     }
     return true;
   }
@@ -202,6 +212,13 @@
     if (st.ord === "az") s.sort(function (a, b) { return a.t.localeCompare(b.t, IDIOMA); });
     else if (st.ord === "verif") s.sort(function (a, b) { return b.verif.localeCompare(a.verif); });
     else s.sort(function (a, b) { return (b.prazo ? 1 : 0) - (a.prazo ? 1 : 0) || PESO[a.est] - PESO[b.est] || a.t.localeCompare(b.t, IDIOMA); });
+    // com pesquisa ativa: primeiro os casos com as próprias palavras, depois os encontrados por sinónimo,
+    // mantendo dentro de cada grupo a ordenação escolhida
+    if (resPesq && resPesq.ids) {
+      var pos = {};
+      s.forEach(function (c, i) { pos[c.id] = i; });
+      s.sort(function (a, b) { return (resPesq.ids[b.id] || 0) - (resPesq.ids[a.id] || 0) || pos[a.id] - pos[b.id]; });
+    }
     return s;
   }
   function render() {
@@ -228,7 +245,17 @@
             );
           })
           .join("")
+      : resPesq && resPesq.ids && !resPesq.total
+      ? '<div class="empty"><p class="disp" style="font-size:28px">' + UI.lista.nadaTitulo + "</p>" +
+        "<p>" + escHtml(UI.lista.semCasosCom.replace("{q}", st.q.trim())) + "</p>" +
+        (resPesq.sugestoes.length
+          ? "<p>" + UI.lista.talvez + " " + resPesq.sugestoes.map(function (w) { return '<a href="#" data-sug="' + escHtml(w) + '">' + escHtml(w) + "</a>"; }).join(" · ") + "</p>"
+          : "") +
+        '<p><a href="mailto:geral@causasderaiz.org">' + UI.lista.enviarCaso + "</a></p></div>"
       : '<div class="empty"><p class="disp" style="font-size:28px">' + UI.lista.nadaTitulo + '</p><p>' + UI.lista.nadaTexto + "</p></div>";
+    $("#list").querySelectorAll("a[data-sug]").forEach(function (a) {
+      a.onclick = function (ev) { ev.preventDefault(); $("#q").value = a.dataset.sug; pesquisar(a.dataset.sug); };
+    });
     $("#list").querySelectorAll(".card").forEach(function (b) {
       b.onclick = function () { openCausa(b.dataset.id); };
       b.onmouseenter = function () { hi(b.dataset.id, true); };
