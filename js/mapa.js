@@ -209,7 +209,10 @@
   }
   function sorted(list) {
     var s = list.slice();
-    if (st.ord === "az") s.sort(function (a, b) { return a.t.localeCompare(b.t, IDIOMA); });
+    // com o filtro de estado em "Todas", a lista vai sempre por número do caso (01, 02, 03…);
+    // nos outros filtros vale a ordem escolhida em "Ordenar", como antes
+    if (st.est === "todas") s.sort(function (a, b) { return (a.num || 0) - (b.num || 0); });
+    else if (st.ord === "az") s.sort(function (a, b) { return a.t.localeCompare(b.t, IDIOMA); });
     else if (st.ord === "verif") s.sort(function (a, b) { return b.verif.localeCompare(a.verif); });
     else s.sort(function (a, b) { return (b.prazo ? 1 : 0) - (a.prazo ? 1 : 0) || PESO[a.est] - PESO[b.est] || a.t.localeCompare(b.t, IDIOMA); });
     // com pesquisa ativa: primeiro os casos com as próprias palavras, depois os encontrados por sinónimo,
