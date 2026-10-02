@@ -152,7 +152,7 @@
     markers[c.id] = m;
   });
 
-  var SATELITE_MIN_ZOOM = 7;
+  var SATELITE_MIN_ZOOM = 4; // permite afastar até ver Madeira e Açores
   var satelite = L.tileLayer("https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
     minZoom: SATELITE_MIN_ZOOM, maxZoom: 19,
     attribution: "© Esri, Maxar, Earthstar Geographics",
