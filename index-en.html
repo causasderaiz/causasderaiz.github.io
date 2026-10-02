@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=730dce71ab">
+<link rel="stylesheet" href="/css/site.css?v=7bfd486f4c">
 
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
 <script src="/vendor/leaflet/leaflet.js"></script>
@@ -155,32 +155,56 @@
   </div>
 </section>
 
-<section class="outrosmapas">
+
+<section class="outrosmapas videos">
   <div class="wrap">
-    <p class="mono" style="color:var(--ink-soft)">Other resources</p>
-    <h2 class="disp">Other maps</h2>
+    <p class="mono" style="color:var(--ink-soft)">Watch</p>
+    <h2 class="disp">Videos</h2>
     <div class="mapascards">
       <div class="mapacard">
-        <p class="mono">Real time · ICNF/GNR</p>
-        <h3>Wildfire map</h3>
-        <p class="txt">Active fires and burned area, updated by the minute.</p>
-        <a href="https://fogos.pt" target="_blank" rel="noopener">fogos.pt →</a>
+        <button class="video" type="button" data-youtube="v84rhSxS_R4" aria-label="Play video: No to the mine, yes to Life! 4th Camp in Defence of Barroso (in Portuguese)">
+          <img src="https://i.ytimg.com/vi/v84rhSxS_R4/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true">▶</span>
+        </button>
+        <p class="mono">PÓLEN</p>
+        <h3>No to the mine, yes to Life! 4th Camp in Defence of Barroso (in Portuguese)</h3>
+        <p class="txt">Lithium mine in Covas do Barroso</p><a href="/barroso-en.html">See the case →</a>
       </div>
       <div class="mapacard">
-        <p class="mono">MiningWatch Portugal</p>
-        <h3>Mining map</h3>
-        <p class="txt">Mining concessions, prospecting and operations across the country.</p>
-        <a href="https://miningwatch.pt/mapadominerio/index.en.html" target="_blank" rel="noopener">miningwatch.pt →</a>
+        <button class="video" type="button" data-youtube="n_oI9hDZcTU" aria-label="Play video: Guardians of the Tagus: Vala Real (in Portuguese)">
+          <img src="https://i.ytimg.com/vi/n_oI9hDZcTU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true">▶</span>
+        </button>
+        <p class="mono">PÓLEN</p>
+        <h3>Guardians of the Tagus: Vala Real (in Portuguese)</h3>
+        <p class="txt"></p>
       </div>
       <div class="mapacard">
-        <p class="mono">Global</p>
-        <h3>Climate TRACE</h3>
-        <p class="txt">Greenhouse gas emissions, by facility, worldwide.</p>
-        <a href="https://climatetrace.org" target="_blank" rel="noopener">climatetrace.org →</a>
+        <button class="video" type="button" data-youtube="F_JvgEYN_P0" aria-label="Play video: Dunas Livres: defending the Alentejo coast (in Portuguese)">
+          <img src="https://i.ytimg.com/vi/F_JvgEYN_P0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true">▶</span>
+        </button>
+        <p class="mono">PÓLEN</p>
+        <h3>Dunas Livres: defending the Alentejo coast (in Portuguese)</h3>
+        <p class="txt"></p>
       </div>
     </div>
+    <p style="margin-top:26px"><a class="btn" href="https://www.youtube.com/@causasderaiz/playlists" target="_blank" rel="noopener">All videos on YouTube →</a></p>
   </div>
 </section>
+<script>
+document.querySelectorAll(".videos .video").forEach(function (b) {
+  b.addEventListener("click", function () {
+    var f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.youtube + "?autoplay=1&rel=0";
+    f.title = b.getAttribute("aria-label");
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    b.replaceWith(f);
+  });
+});
+</script>
+
 
 
 <section class="sobrecurto">
