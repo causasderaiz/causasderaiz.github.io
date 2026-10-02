@@ -114,7 +114,7 @@
   };
 
   // ---------- mapa Leaflet ----------
-  var map = L.map("map", { scrollWheelZoom: true, zoomControl: false }).setView([39.5, -8.2], 6);
+  var map = L.map("map", { scrollWheelZoom: true, zoomControl: false, zoomSnap: 0.25, zoomDelta: 0.5 }).setView([39.5, -8.2], 6);
   L.control.zoom({ position: "topright" }).addTo(map);
   var osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap contributors" });
 
@@ -134,13 +134,13 @@
     });
   };
   var VISTAS = {};
-  VISTAS[UI.busca.todoPais] = [[36.9, -9.6], [42.2, -6.1]];
+  VISTAS[UI.busca.todoPais] = [[36.5, -9.6], [42.2, -6.1]];
   TAX.regioes.ordem.forEach(function (slug) {
     var bboxes = {
       norte: [[40.8, -8.9], [42.2, -6.6]], centro: [[39.3, -9.1], [41.0, -6.9]],
       "lisboa-vale-tejo": [[38.3, -9.6], [39.7, -8.3]], alentejo: [[37.4, -9.0], [38.8, -7.0]],
       algarve: [[36.9, -9.0], [37.6, -7.4]], madeira: [[32.6, -17.3], [32.9, -16.6]],
-      acores: [[36.9, -31.3], [39.8, -25.0]], nacional: [[36.9, -9.6], [42.2, -6.1]],
+      acores: [[36.9, -31.3], [39.8, -25.0]], nacional: [[36.5, -9.6], [42.2, -6.1]],
     };
     if (bboxes[slug]) VISTAS[TAX.regioes.labels[slug][IDIOMA]] = bboxes[slug];
   });
