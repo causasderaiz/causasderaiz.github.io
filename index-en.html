@@ -246,7 +246,7 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
       <p style="color:var(--paper);font-size:16px;font-weight:300;max-width:38ch;margin:14px 0 0">For the land, the water, the forests, for us.</p>
     </div>
     <div>
-      <form id="boletim-form" class="newsletter-form" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfsRyJMdZKYTfdxpjSyQjn_sPojwy9DxjVPfjn2Pi407BuoOQ/formResponse" method="POST" onsubmit="window.boletimSubmitted=true;(function(f){
+      <form id="boletim-form" class="newsletter-form" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfsRyJMdZKYTfdxpjSyQjn_sPojwy9DxjVPfjn2Pi407BuoOQ/formResponse" method="POST" onsubmit="if(this.querySelector('.hp').value){this.reset();return false;}window.boletimSubmitted=true;(function(f){
         var nome=(f.querySelector('[name=\'entry.78862279\']').value||'').trim();
         var el=document.getElementById('boletim-thanks');
         el.textContent='Thank you'+(nome?', '+nome.split(' ')[0]:'')+'! You\'re on the list; the next newsletter will land in your inbox.';
@@ -254,6 +254,7 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
         <input type="text" name="entry.78862279" placeholder="Your name" required>
         <input type="email" name="entry.2068041067" placeholder="Your email" required>
         <input type="text" name="entry.964112802" placeholder="Your location (optional)">
+        <input type="text" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="Leave empty" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <button type="submit">Subscribe</button>
       </form>
       <p id="boletim-thanks" class="newsletter-thanks">Thank you! You're on the list; the next newsletter will land in your inbox.</p>
