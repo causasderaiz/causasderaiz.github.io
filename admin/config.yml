@@ -49,8 +49,8 @@ collections:
         required: false
         collapsed: true
         fields:
-          - { label: "Ficheiro em src/images/originals/img", name: folderFile, required: false, widget: string }
-          - { label: "Ficheiro de partilha na raiz do site", name: rootFile, required: false, widget: string }
+          - { label: "Foto do caso (carregar; só fotos próprias ou autorizadas)", name: folderFile, required: false, widget: image, choose_url: false, hint: "JPG, a maior resolução possível. Guarda o ficheiro com o identificador do caso no nome." }
+          - { label: "Ficheiro de partilha (deixa vazio: é preenchido sozinho)", name: rootFile, required: false, widget: string }
           - { label: "Só na raiz", name: imgRootOnly, required: false, widget: boolean, default: false }
       - label: "Português"
         name: pt
@@ -204,7 +204,8 @@ collections:
               - { label: "Texto (2 ou 3 frases; 'POR ESCOLHER' esconde o bloco na edição publicada)", name: texto, widget: text, required: false }
               - { label: "Vídeo do YouTube (código), se houver", name: youtube, widget: string, required: false }
               - { label: "Crédito do vídeo", name: credito, widget: string, required: false }
-              - { label: "Foto (endereço da imagem autorizada), se não houver vídeo", name: foto, widget: string, required: false }
+              - { label: "Foto (carregar; só fotos próprias ou autorizadas), se não houver vídeo", name: foto, widget: image, required: false, media_folder: "/src/estatico/img-boletim", public_folder: "/img-boletim", choose_url: false, hint: "JPG, de preferência com 1600 px ou mais de largura." }
+              - { label: "Crédito da foto (quem a tirou)", name: fotoCredito, widget: string, required: false }
               - label: "Fonte"
                 name: fonte
                 widget: object
