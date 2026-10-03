@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Medronheiro">
+<rect width="300" height="400" fill="#e3c58c"/>
+<path d="M0 330 Q150 300 300 330 V400 H0Z" fill="#6f7f34"/>
+<path d="M150 340 C148 300 146 280 150 250" stroke="#7a4a2a" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M150 290 C130 270 112 262 96 240" stroke="#7a4a2a" stroke-width="8" fill="none" stroke-linecap="round"/>
+<path d="M152 276 C172 258 190 250 206 228" stroke="#7a4a2a" stroke-width="8" fill="none" stroke-linecap="round"/>
+<g fill="#2f7d4f">
+<ellipse cx="150" cy="176" rx="96" ry="78"/></g>
+<g fill="#3f9461">
+<ellipse cx="110" cy="150" rx="26" ry="11" transform="rotate(-30 110 150)"/><ellipse cx="186" cy="146" rx="26" ry="11" transform="rotate(25 186 146)"/>
+<ellipse cx="150" cy="120" rx="24" ry="10"/><ellipse cx="120" cy="206" rx="24" ry="10" transform="rotate(20 120 206)"/><ellipse cx="190" cy="204" rx="24" ry="10" transform="rotate(-20 190 204)"/></g>
+<g fill="#d9553b"><circle cx="96" cy="176" r="11"/><circle cx="128" cy="168" r="10"/><circle cx="168" cy="184" r="11"/><circle cx="202" cy="168" r="10"/><circle cx="150" cy="150" r="9"/><circle cx="116" cy="222" r="10"/><circle cx="186" cy="226" r="10"/><circle cx="214" cy="200" r="9"/></g>
+<g fill="#e8c547"><circle cx="146" cy="214" r="9"/><circle cx="84" cy="200" r="8"/><circle cx="220" cy="140" r="8"/></g>
+<g fill="#f3f0e8" opacity=".6"><circle cx="93" cy="172" r="3"/><circle cx="165" cy="180" r="3"/><circle cx="199" cy="164" r="3"/></g>
+<rect x="0" y="0" width="300" height="400" fill="none" stroke="#1f2a24" stroke-width="6"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Lontra">
+<rect width="300" height="400" fill="#9fd8f5"/>
+<path d="M0 250 Q75 232 150 250 T300 250 V400 H0Z" fill="#6fb8d9"/>
+<path d="M0 300 Q75 284 150 300 T300 300 V400 H0Z" fill="#4f9cc2"/>
+<g fill="none" stroke="#f3f0e8" stroke-width="3" stroke-linecap="round" opacity=".8"><path d="M40 268 q12-6 24 0"/><path d="M210 320 q12-6 24 0"/><path d="M120 350 q12-6 24 0"/></g>
+<ellipse cx="160" cy="255" rx="92" ry="34" fill="#7a4a2a"/>
+<path d="M240 250 q40 4 52 -20 q-14 30 -48 34z" fill="#7a4a2a"/>
+<circle cx="88" cy="214" r="42" fill="#7a4a2a"/>
+<ellipse cx="80" cy="232" rx="26" ry="18" fill="#c9a27a"/>
+<circle cx="62" cy="182" r="10" fill="#5e3820"/><circle cx="112" cy="180" r="10" fill="#5e3820"/>
+<circle cx="74" cy="206" r="5" fill="#1f2a24"/><circle cx="102" cy="206" r="5" fill="#1f2a24"/>
+<circle cx="76" cy="204" r="1.6" fill="#fff"/><circle cx="104" cy="204" r="1.6" fill="#fff"/>
+<ellipse cx="88" cy="222" rx="8" ry="5.5" fill="#1f2a24"/>
+<g stroke="#1f2a24" stroke-width="1.6" stroke-linecap="round"><path d="M70 226 l-26 -4"/><path d="M70 231 l-26 4"/><path d="M106 226 l26 -4"/><path d="M106 231 l26 4"/></g>
+<ellipse cx="70" cy="262" rx="14" ry="9" fill="#5e3820"/><ellipse cx="110" cy="266" rx="14" ry="9" fill="#5e3820"/>
+<rect x="0" y="0" width="300" height="400" fill="none" stroke="#1f2a24" stroke-width="6"/>
+</svg>

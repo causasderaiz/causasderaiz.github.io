@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Sisão">
+<rect width="300" height="400" fill="#cfe6d6"/>
+<path d="M0 300 Q150 270 300 300 V400 H0Z" fill="#e8c547"/>
+<path d="M0 340 Q150 320 300 340 V400 H0Z" fill="#b9d49a"/>
+<g fill="#d9553b"><circle cx="40" cy="318" r="6"/><circle cx="252" cy="330" r="6"/><circle cx="210" cy="312" r="5"/><circle cx="70" cy="350" r="5"/></g>
+<path d="M120 310 l-6 40 M160 310 l6 40" stroke="#5b665e" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="146" cy="268" rx="70" ry="44" fill="#c8a46a"/>
+<path d="M80 262 q66 -40 132 0 q-66 22 -132 0z" fill="#a8844f"/>
+<g stroke="#7a5a30" stroke-width="2" fill="none"><path d="M100 252 q8 -6 16 0"/><path d="M130 246 q8 -6 16 0"/><path d="M160 248 q8 -6 16 0"/><path d="M188 256 q8 -6 16 0"/></g>
+<ellipse cx="150" cy="292" rx="48" ry="16" fill="#f3f0e8"/>
+<path d="M196 248 C210 200 214 170 220 150 L236 150 C236 176 226 214 212 252Z" fill="#1f2a24"/>
+<path d="M206 214 l24 -6 l-2 10 l-22 6z" fill="#f3f0e8"/><path d="M210 186 l20 -6 l-1 9 l-19 6z" fill="#f3f0e8"/>
+<circle cx="230" cy="142" r="16" fill="#8a7a5a"/>
+<path d="M244 140 l18 4 l-18 5z" fill="#e8c547"/>
+<circle cx="234" cy="138" r="3.5" fill="#1f2a24"/><circle cx="235" cy="137" r="1.2" fill="#fff"/>
+<g fill="none" stroke="#2f7d4f" stroke-width="3" stroke-linecap="round"><path d="M40 80 q14 -12 28 0 q14 -12 28 0"/><path d="M200 60 q10 -8 20 0 q10 -8 20 0"/></g>
+<rect x="0" y="0" width="300" height="400" fill="none" stroke="#1f2a24" stroke-width="6"/>
+</svg>

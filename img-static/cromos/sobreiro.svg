@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Sobreiro">
+<rect width="300" height="400" fill="#f3f0e8"/>
+<circle cx="236" cy="70" r="26" fill="#e8c547"/>
+<path d="M0 320 Q150 290 300 320 V400 H0Z" fill="#b9d49a"/>
+<path d="M0 350 Q150 330 300 350 V400 H0Z" fill="#9cc98a"/>
+<path d="M134 330 C138 270 128 230 112 196 L132 192 C146 222 150 204 150 176 L166 178 C166 210 172 226 186 196 L204 202 C186 234 172 270 176 330Z" fill="#a0764a"/>
+<g stroke="#6b4a2a" stroke-width="3" fill="none" stroke-linecap="round"><path d="M146 320 q-6 -20 2 -40"/><path d="M162 300 q6 -22 -2 -44"/><path d="M152 260 q-4 -14 2 -26"/></g>
+<path d="M140 330 h36 v-40 c-10 6 -26 6 -36 0z" fill="#b8431f" opacity=".85"/>
+<g fill="#2f7d4f"><circle cx="150" cy="140" r="62"/><circle cx="96" cy="164" r="44"/><circle cx="206" cy="166" r="46"/><circle cx="122" cy="108" r="40"/><circle cx="184" cy="106" r="42"/></g>
+<g fill="#6f7f34" opacity=".7"><circle cx="120" cy="150" r="14"/><circle cx="182" cy="134" r="12"/><circle cx="208" cy="176" r="10"/><circle cx="96" cy="176" r="10"/></g>
+<rect x="0" y="0" width="300" height="400" fill="none" stroke="#1f2a24" stroke-width="6"/>
+</svg>

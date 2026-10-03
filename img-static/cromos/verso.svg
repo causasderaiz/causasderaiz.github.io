@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Cromo por desvirar">
+<rect width="300" height="400" fill="#1f2a24"/>
+<rect x="18" y="18" width="264" height="364" fill="none" stroke="#cfe6d6" stroke-width="2" stroke-dasharray="8 8"/>
+<g fill="none" stroke="#2f7d4f" stroke-width="10" stroke-linecap="round"><path d="M150 120 C150 170 150 210 150 250"/><path d="M150 250 C120 270 104 296 96 320"/><path d="M150 250 C180 270 196 296 204 320"/><path d="M150 278 C140 300 136 316 134 334"/><path d="M150 278 C160 300 164 316 166 334"/></g>
+<circle cx="150" cy="104" r="22" fill="#b8431f"/>
+<text x="150" y="372" text-anchor="middle" font-family="Space Mono, monospace" font-size="15" letter-spacing="3" fill="#f3f0e8">A RAIZ</text>
+</svg>

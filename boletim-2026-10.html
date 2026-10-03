@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=b9e72ffdcf">
+<link rel="stylesheet" href="/css/site.css?v=a60d30a50b">
 
 
 <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -55,7 +55,7 @@
 
 
 <main>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Tenor+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <div class="rz" data-nivel="2">
 <div class="rz-aviso">Protótipo por aprovar: esta página só se vê por link</div>
 
@@ -206,6 +206,26 @@
     </div>
   </div>
 </section>
+<section class="rz-sec rz-cromo-sec" data-min="1">
+  <div class="rz-wrap rz-lado">
+    <p class="rz-rot verde">A caderneta<small>2026/27</small></p>
+    <div class="rz-cromo-zona">
+      <button class="rz-cromo" type="button" data-n="1" data-chave="araiz-caderneta-2026-27" disabled aria-label="Cromo n.º 1 de 4, por desvirar">
+        <span class="rz-cromo-dentro">
+          <img class="rz-cromo-verso" src="/img-static/cromos/verso.svg" alt="">
+          <img class="rz-cromo-frente" src="/img-static/cromos/lontra.svg" alt="Lontra">
+        </span>
+      </button>
+      <div>
+        <p class="rz-mono laranja">Cromo n.º 1 de 4 · Água</p>
+        <h2 class="rz-cromo-titulo" data-nome="Lontra">Um cromo virado ao contrário</h2>
+        <p class="rz-cromo-ajuda">Chega ao fim desta edição para o poderes desvirar.</p>
+        <p>Junta os 4 cromos do ano, um por edição. Quem completar a caderneta 2026/27 recebe um leque bordado à mão.</p>
+        <a class="rz-btn" href="/caderneta.html">Ver a minha caderneta</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="rz-fim">
   <div class="rz-wrap">
@@ -228,6 +248,23 @@
   }
   bs.forEach(function (b) { b.addEventListener("click", function () { nivel(b.dataset.n); }); });
   try { var g = localStorage.getItem("araiz-nivel"); if (g) nivel(g); } catch (e) {}
+  // Caderneta: o cromo só se desvira depois de chegar ao fim da edição; guarda-se só neste aparelho.
+  var cb = rz.querySelector(".rz-cromo");
+  if (cb) {
+    var chave = cb.dataset.chave, n = cb.dataset.n, t = rz.querySelector(".rz-cromo-titulo"), aj = rz.querySelector(".rz-cromo-ajuda");
+    var ler = function () { try { return JSON.parse(localStorage.getItem(chave) || "{}"); } catch (x) { return {}; } };
+    var mostrar = function () { cb.classList.add("virado"); cb.disabled = false; cb.setAttribute("aria-label", "Cromo n.º " + n + ": " + t.dataset.nome); t.textContent = t.dataset.nome; aj.textContent = "Já está na tua caderneta."; };
+    if (ler()[n]) mostrar();
+    var fim = rz.querySelector(".rz-fim");
+    var ativar = function () { if (!cb.classList.contains("virado")) { cb.disabled = false; cb.classList.add("pronto"); aj.textContent = "Chegaste ao fim: carrega no cromo para o desvirar."; } };
+    if ("IntersectionObserver" in window) { new IntersectionObserver(function (es, o) { if (es[0].isIntersecting) { ativar(); o.disconnect(); } }).observe(fim); } else { ativar(); }
+    cb.addEventListener("click", function () {
+      if (cb.classList.contains("virado")) return;
+      var d = ler(); d[n] = new Date().toISOString().slice(0, 10);
+      try { localStorage.setItem(chave, JSON.stringify(d)); } catch (x) {}
+      mostrar();
+    });
+  }
   rz.querySelectorAll(".rz-video[data-youtube]").forEach(function (b) {
     b.addEventListener("click", function () {
       var f = document.createElement("iframe");
