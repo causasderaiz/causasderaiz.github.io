@@ -1014,16 +1014,16 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 @media(max-width:700px){.rz-cromo-zona{grid-template-columns:minmax(0,1fr)}.rz-cromo{margin:0 auto;width:200px}.cdn-grelha{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.rz-cromo-dentro{transition:none}.rz-cromo.pronto .rz-cromo-dentro{animation:none}}
 /* Biodiversidade: espécies em perigo */
-.rz-bio{background:var(--rz-azul-claro);border-radius:18px;padding:26px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:center}
+.rz-bio{background:var(--rz-azul-claro);border-radius:18px;padding:22px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:center}
 .rz-bio + .rz-bio{margin-top:18px}
-.rz-bio img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(23,79,114,.25)}
+.rz-bio-foto{margin:0}.rz-bio-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:52% 50%;border-radius:12px;display:block;box-shadow:0 6px 18px rgba(23,79,114,.25)}.rz-bio-foto figcaption{font-family:"Space Mono",monospace;font-size:10.5px;color:var(--rz-cinza);margin-top:6px}
 .rz-bio-num{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:6px 0 10px}
 .rz-bio-num b{font-family:"Space Mono",monospace;font-size:clamp(34px,3.6vw,48px);color:var(--rz-azul);line-height:1}
 .rz-bio-num span{font-size:15px}
 .rz-bio .rz-quad i{background:#fff}.rz-bio .rz-quad i.on{background:var(--rz-azul)}
 .rz-bio h3{font-family:"Asap Condensed","Arial Narrow",sans-serif;font-weight:600;font-size:30px;margin:0;line-height:1.05}
 .rz-bio h3 em{font-family:"Source Serif 4",Georgia,serif;font-weight:400;font-size:17px;color:var(--rz-cinza);margin-left:8px}
-@media(max-width:700px){.rz-bio{grid-template-columns:minmax(0,1fr);padding:20px}.rz-bio img{max-width:200px}}
+@media(max-width:800px){.rz-bio{grid-template-columns:minmax(0,1fr);padding:16px}}
 
 .rz-cartao .rz-quad + .rz-num{font-size:clamp(24px,2.2vw,31px)}
 /* Boletim: quatro partes com faixas de cor (contraste) e zona de ação */

@@ -220,6 +220,7 @@ collections:
               - { label: "Nome comum", name: nome, widget: string }
               - { label: "Nome científico", name: cientifico, widget: string, required: false }
               - { label: "Ilustração ou foto (autorizada)", name: img, widget: image, required: false, media_folder: "/src/estatico/img-boletim", public_folder: "/img-boletim", choose_url: false }
+              - { label: "Crédito da foto", name: fotoCredito, widget: string, required: false }
               - { label: "Número em destaque (ex.: 1 736)", name: numero, widget: string }
               - { label: "O que é o número (com período e fonte)", name: unidade, widget: string }
               - { label: "Barra: quadrados que restam", name: restam, widget: number, value_type: int, required: false }
