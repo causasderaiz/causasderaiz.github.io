@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=2fecbb412f">
+<link rel="stylesheet" href="/css/site.css?v=6cac26cfd7">
 
 
 <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -68,9 +68,9 @@
       <div class="rz-tempo">
         <p class="rz-mono"><b>Quanto tempo tens?</b> <span>a página adapta-se</span></p>
         <div class="rz-niveis" role="radiogroup" aria-label="Profundidade de leitura">
-          <button type="button" data-n="1" role="radio" aria-checked="false"><b>2 min</b>Superfície<small>Números, filmes e uma ação.</small></button>
-          <button type="button" data-n="2" role="radio" aria-checked="true"><b>6 min</b>Tronco<small>O caso do trimestre e o que aprender.</small></button>
-          <button type="button" data-n="3" role="radio" aria-checked="false"><b>9 min</b>Raiz<small>Tudo, com a regeneração e os casos.</small></button>
+          <button type="button" data-n="1" role="radio" aria-checked="false"><b>2 min</b>Superfície<small>Números, filmes e onde agir.</small></button>
+          <button type="button" data-n="2" role="radio" aria-checked="true"><b>6 min</b>Tronco<small>Mais o caso, a biodiversidade e o que aprender.</small></button>
+          <button type="button" data-n="3" role="radio" aria-checked="false"><b>9 min</b>Raiz<small>Tudo, com a regeneração e os casos em tribunal.</small></button>
         </div>
       </div>
     </div>
@@ -79,15 +79,16 @@
   </div>
   <nav class="rz-wrap rz-leitura" aria-label="Nesta leitura">
     <span class="rz-mono">Nesta leitura</span>
-    <a href="#em-30" data-min="1">Em 30 segundos <b>30 s</b></a>
-    <a href="#caso" data-min="2">Caso do trimestre <b>2 min</b></a>
-    <a href="#aprender" data-min="2">Aprender <b>1 min 30</b></a>
-    <a href="#regenerar" data-min="3">Regenerar <b>1 min</b></a><a href="#biodiversidade" data-min="2">Biodiversidade <b>1 min</b></a>
-    <a href="#movimento" data-min="3">Casos <b>1 min 30</b></a>
-    <a href="#filmes" data-min="1">Filmes e agir <b>1 min</b></a>
+    <a href="#perceber" data-min="1" class="verde">1 Perceber</a>
+    <a href="#ver" data-min="1" class="azul">2 Ver e aprender</a>
+    <a href="#regenerar-parte" data-min="3" class="verde-escuro">3 Regenerar</a>
+    <a href="#agir" data-min="1" class="laranja">4 Agir</a>
   </nav>
 </header>
 
+<div class="rz-parte verde" id="perceber" data-min="1">
+  <div class="rz-wrap"><span class="rz-parte-n">1</span><div><h2>Perceber</h2><p>O que aconteceu neste trimestre e porque importa.</p></div></div>
+</div>
 <section class="rz-sec" id="em-30" data-min="1">
   <div class="rz-wrap rz-lado">
     <p class="rz-rot">Em 30 segundos<small>sempre visível</small></p>
@@ -111,7 +112,7 @@
 
 <section class="rz-sec" id="caso" data-min="2">
   <div class="rz-wrap rz-lado">
-    <p class="rz-rot laranja">01 O caso do trimestre<small>2 min</small></p>
+    <p class="rz-rot laranja">O caso do trimestre<small>2 min</small></p>
     <div class="rz-duas">
       <div>
         <h2>Vouzela tornou-se o maior fogo da Europa em 2026</h2>
@@ -121,10 +122,28 @@
     </div>
   </div>
 </section>
+<section class="rz-sec" id="biodiversidade" data-min="2">
+  <div class="rz-wrap rz-lado">
+    <p class="rz-rot azul">Biodiversidade<small>1 min</small></p>
+    <div>
+      <h2>Espécies em perigo</h2>
+      <article class="rz-bio"><img src="/img-static/cromos/sisao.svg" alt="Sisão" loading="lazy">
+        <div>
+          <h3>Sisão<em>Tetrax tetrax</em></h3>
+          <div class="rz-bio-num"><b>1 736</b><span>machos em Portugal (4.º Censo Nacional, 2026)</span></div><div class="rz-quad" role="img" aria-label="cerca de menos 90% desde 2006"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div><p class="rz-mono azul">cerca de menos 90% desde 2006</p>
+          <p style="margin-top:12px">A troca do cereal extensivo por olival e amendoal intensivos, o pastoreio mais intenso, menos pousios e as linhas elétricas estão a levar o sisão para a extinção em Portugal. Sete organizações (SPEA, LPN, WWF Portugal, Palombar, FAPAS, GEOTA e ZERO) pedem um plano de emergência interministerial.</p><p class="rz-fonte">Fonte: <a href="https://wilder.pt/historias/populacao-portuguesa-de-sisao-caiu-90-desde-2006-organizacoes-pedem-plano-de-emergencia-interministerial" target="_blank" rel="noopener">Wilder: população portuguesa de sisão caiu 90% desde 2006 (26 jun. 2026)</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
+<div class="rz-parte azul" id="ver" data-min="1">
+  <div class="rz-wrap"><span class="rz-parte-n">2</span><div><h2>Ver e aprender</h2><p>Filmes, explicações e o que precisas de saber para participar.</p></div></div>
+</div>
 <section class="rz-sec" id="aprender" data-min="2">
   <div class="rz-wrap rz-lado">
-    <p class="rz-rot azul">02 Aprender<small>1 min 30</small></p>
+    <p class="rz-rot azul">Aprender<small>1 min 30</small></p>
     <div class="rz-duas">
       <div><div class="rz-video rz-vazio"><span class="rz-play" aria-hidden="true">▶</span><span class="rz-vleg"><b>O que é uma consulta pública?</b><span>vídeo por fazer</span></span></div>
         <h2 style="margin-top:22px">O que é uma consulta pública?</h2>
@@ -135,9 +154,36 @@
     </div>
   </div>
 </section>
+
+<section class="rz-sec" id="filmes" data-min="1">
+  <div class="rz-wrap rz-lado">
+    <p class="rz-rot azul">Filmes do trimestre<small>ver sem ler</small></p>
+    <div>
+    <div class="rz-filmes"><div><button class="rz-video" type="button" data-youtube="v84rhSxS_R4" aria-label="Ver vídeo: Não à mina, sim à Vida! IV Acampamento em Defesa do Barroso">
+  <img src="https://i.ytimg.com/vi/v84rhSxS_R4/hqdefault.jpg" alt="" loading="lazy">
+  <span class="rz-play" aria-hidden="true">▶</span>
+  <span class="rz-vleg"><b>Não à mina, sim à Vida! IV Acampamento em Defesa do Barroso</b><span>PÓLEN · realização Rita Brás</span></span>
+</button></div><div><button class="rz-video" type="button" data-youtube="n_oI9hDZcTU" aria-label="Ver vídeo: Guardiões do Tejo: Vala Real">
+  <img src="https://i.ytimg.com/vi/n_oI9hDZcTU/hqdefault.jpg" alt="" loading="lazy">
+  <span class="rz-play" aria-hidden="true">▶</span>
+  <span class="rz-vleg"><b>Guardiões do Tejo: Vala Real</b><span>PÓLEN · realização Rita Brás</span></span>
+</button></div><div><button class="rz-video" type="button" data-youtube="F_JvgEYN_P0" aria-label="Ver vídeo: Dunas Livres: em defesa do litoral alentejano">
+  <img src="https://i.ytimg.com/vi/F_JvgEYN_P0/hqdefault.jpg" alt="" loading="lazy">
+  <span class="rz-play" aria-hidden="true">▶</span>
+  <span class="rz-vleg"><b>Dunas Livres: em defesa do litoral alentejano</b><span>PÓLEN · realização Rita Brás</span></span>
+</button></div>
+    </div>
+    <p style="margin-top:18px"><a class="rz-btn azul" href="https://www.youtube.com/@causasderaiz/playlists" target="_blank" rel="noopener">Mais vídeos no nosso canal</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="rz-parte verde-escuro" id="regenerar-parte" data-min="3">
+  <div class="rz-wrap"><span class="rz-parte-n">3</span><div><h2>Regenerar</h2><p>Quem está a construir a alternativa.</p></div></div>
+</div>
 <section class="rz-sec rz-escuro" id="regenerar" data-min="3">
   <div class="rz-wrap">
-    <p class="rz-rot verde-claro">03 Regenerar<small>1 min</small></p>
+    <p class="rz-rot verde-claro">Quem constrói a alternativa<small>1 min</small></p>
     <h2>O que volta a crescer depois do fogo</h2>
     <div class="rz-regen">
       <figure><div class="rz-ph">foto por escolher</div>
@@ -152,17 +198,177 @@
     </div>
   </div>
 </section>
-<section class="rz-sec" id="biodiversidade" data-min="2">
-  <div class="rz-wrap rz-lado">
-    <p class="rz-rot azul">04 Biodiversidade<small>1 min</small></p>
-    <div>
-      <h2>Espécies em perigo</h2>
-      <article class="rz-bio"><img src="/img-static/cromos/sisao.svg" alt="Sisão" loading="lazy">
-        <div>
-          <h3>Sisão<em>Tetrax tetrax</em></h3>
-          <div class="rz-bio-num"><b>1 736</b><span>machos em Portugal (4.º Censo Nacional, 2026)</span></div><div class="rz-quad" role="img" aria-label="cerca de menos 90% desde 2006"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div><p class="rz-mono azul">cerca de menos 90% desde 2006</p>
-          <p style="margin-top:12px">A troca do cereal extensivo por olival e amendoal intensivos, o pastoreio mais intenso, menos pousios e as linhas elétricas estão a levar o sisão para a extinção em Portugal. Sete organizações (SPEA, LPN, WWF Portugal, Palombar, FAPAS, GEOTA e ZERO) pedem um plano de emergência interministerial.</p><p class="rz-fonte">Fonte: <a href="https://wilder.pt/historias/populacao-portuguesa-de-sisao-caiu-90-desde-2006-organizacoes-pedem-plano-de-emergencia-interministerial" target="_blank" rel="noopener">Wilder: população portuguesa de sisão caiu 90% desde 2006 (26 jun. 2026)</a></p>
-        </div>
+
+<div class="rz-parte laranja" id="agir" data-min="1">
+  <div class="rz-wrap"><span class="rz-parte-n">4</span><div><h2>Agir</h2><p>Petições, consultas e casos onde a tua ação conta. Atualizado a partir do mapa.</p></div></div>
+</div>
+<section class="rz-sec" data-min="1">
+  <div class="rz-wrap">
+    <div class="rz-agir">
+      <div><p class="rz-mono laranja">Agir hoje</p><p class="rz-agir-t">Em <em>5 minutos</em> fazes diferença</p></div><a class="rz-acao laranja" href="https://peticaopublica.com/?pi=protecao-territorio" target="_blank" rel="noopener"><b>Assina →</b>Mina de lítio e feldspato no Projeto C-192 Adagoi</a><a class="rz-acao verde" href="https://participa.pt/pt/consulta/barragem-da-foupana" target="_blank" rel="noopener"><b>Participa →</b>Barragem da Foupana: nova barragem ameaça a última ribeira livre do Algarve</a>
+    </div>
+  </div>
+</section>
+
+<section class="rz-sec rz-zona" id="peticoes" data-min="1">
+  <div class="rz-wrap">
+    <p class="rz-rot laranja">Petições para assinar<small>27 abertas no dia desta edição</small></p>
+    <div class="rz-acoes" data-mais="6">
+      <article class="rz-acao-c">
+        <a href="/pellets-cercal-alentejo.html"><img src="/img/gen/pellets-cercal-alentejo-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/pellets-cercal-alentejo.html">&quot;Não conseguimos respirar&quot;: fábrica de pellets no Cercal do Alentejo</a></b><small>Cercal do Alentejo, Santiago do Cacém</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT126539" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c">
+        <a href="/jardins-se-porto.html"><img src="/img/gen/jardins-se-porto-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/jardins-se-porto.html">&quot;Nem a Sé se salva?&quot;: petição pela preservação dos jardins da Diocese no morro da Sé do Porto</a></b><small>Morro da Sé, Porto</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT132421" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c">
+        <a href="/artilharia-um-campolide.html"><img src="/img/gen/artilharia-um-campolide-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/artilharia-um-campolide.html">Artilharia Um: moradores de Campolide contestam projeto de 683 fogos isento de avaliação ambiental</a></b><small>Rua de Artilharia Um, Campolide, Lisboa</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=artilharia-um" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c">
+        <a href="/girabolhos.html"><img src="/img/gen/girabolhos-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/girabolhos.html">Barragem de Girabolhos</a></b><small>Rio Mondego, Seia/Gouveia, Serra da Estrela</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=geota-rios-livres" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c">
+        <a href="/biometano-torres-novas.html"><img src="/img/gen/biometano-torres-novas-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/biometano-torres-novas.html">Central de biometano da Gasdaterra junto a Árgea, Torres Novas</a></b><small>Árgea, Torres Novas, Médio Tejo</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT131272" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c">
+        <a href="/sintra-cascais.html"><img src="/img/gen/sintra-cascais-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/sintra-cascais.html">Contra a Urbanização do Parque Natural de Sintra-Cascais</a></b><small>Sintra, distrito de Lisboa</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT132295" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/costa-terra-melides.html"><img src="/img/gen/costa-terra-melides-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/costa-terra-melides.html">Costa Terra: resort de luxo fecha praias públicas em Melides</a></b><small>Melides, Grândola (litoral entre Tróia e Melides)</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=dunas-livres-troia" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/descontaminacao-ilha-terceira.html"><img src="/img/gen/descontaminacao-ilha-terceira-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/descontaminacao-ilha-terceira.html">Descontaminação dos solos e aquíferos da Ilha Terceira: quase sete décadas de contaminação pela Base das Lajes</a></b><small>Ilha Terceira, Açores, junto à Base das Lajes</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=terceira" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/litoral-greenpeace.html"><img src="/img/gen/litoral-greenpeace-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/litoral-greenpeace.html">Greenpeace alerta que um quarto da costa portuguesa está em recuo e pede moratória à construção</a></b><small>Litoral continental, com destaque para Sesimbra e Grândola</small>
+        <a class="rz-btn laranja" href="https://www.greenpeace.pt/como-ajudar/peticoes/litoral/" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/marao.html"><img src="/img/gen/marao-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/marao.html">Hibridização fotovoltaica no Parque Eólico de Penedo Ruivo, Serra do Marão</a></b><small>Amarante e Baião, Serra do Marão</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/mobile/pview.aspx?pi=PT130242" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/lagoa-salgada.html"><img src="/img/gen/lagoa-salgada-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/lagoa-salgada.html">Mina da Lagoa Salgada: petição pede o cancelamento do projeto</a></b><small>Grândola e Alcácer do Sal, litoral alentejano</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT125518" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/mina-adagoi.html"><img src="/img/gen/mina-adagoi-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/mina-adagoi.html">Mina de lítio e feldspato no Projeto C-192 Adagoi</a></b><small>Capeludos e Bragado, Vila Pouca de Aguiar, distrito de Vila Real</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=protecao-territorio" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/trilhos-madeira.html"><img src="/img/gen/trilhos-madeira-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/trilhos-madeira.html">Não à privatização dos trilhos naturais da Madeira</a></b><small>Região Autónoma da Madeira</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT125916" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/costa-caparica-arvores.html"><img src="/img/gen/costa-caparica-arvores-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/costa-caparica-arvores.html">Parem o abate de árvores na Costa da Caparica</a></b><small>Praça Padre Manuel Bernardes e Torre das Argolas, Costa da Caparica, Almada</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT132029" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/aranha-cavernicola-arrabida.html"><img src="/img/gen/aranha-cavernicola-arrabida-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/aranha-cavernicola-arrabida.html">Pela proteção da aranha-cavernícola-do-Frade e do seu habitat</a></b><small>Gruta do Frade, Sesimbra, Parque Natural da Arrábida</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT130753" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/fortes-ferreira-alentejo.html"><img src="/img/gen/fortes-ferreira-alentejo-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/fortes-ferreira-alentejo.html">Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo</a></b><small>Fortes, Ferreira do Alentejo, distrito de Beja</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT131002" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/pedreira-lajedo-santo-tirso.html"><img src="/img/gen/pedreira-lajedo-santo-tirso-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/pedreira-lajedo-santo-tirso.html">Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova</a></b><small>Monte Córdova, Santo Tirso</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=pedreiralajedonao" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/nordeste-vivo-mogadouro.html"><img src="/img/gen/nordeste-vivo-mogadouro-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/nordeste-vivo-mogadouro.html">Planalto Mirandês: já mais de 1.500 hectares de painéis solares</a></b><small>Mogadouro e Miranda do Douro, Planalto Mirandês</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT131073" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/sao-luis-odemira.html"><img src="/img/gen/sao-luis-odemira-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/sao-luis-odemira.html">Por um futuro sustentável para São Luís, Odemira</a></b><small>São Luís, Odemira, Poldreiros do Meio / Lameiros</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT128742" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/eolico-penamacor-2.html"><img src="/img/gen/eolico-penamacor-2-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/eolico-penamacor-2.html">Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas</a></b><small>Serra de Santo André, freguesias de Meimoa e Penamacor, distrito de Castelo Branco</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT129537" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/sophia-beira.html"><img src="/img/gen/sophia-beira-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/sophia-beira.html">Sophia e Beira: petição pede suspensão das duas megacentrais solares</a></b><small>Fundão, Penamacor e Idanha-a-Nova, Beira Baixa</small>
+        <a class="rz-btn laranja" href="https://participacao.parlamento.pt/initiatives/5569" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/eolico-mira-odemira.html"><img src="/img/gen/eolico-mira-odemira-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/eolico-mira-odemira.html">Travar o Projeto Eólico do Mira, da Galp, em Odemira</a></b><small>Odemira e Ourique, distrito de Beja</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/?pi=PT131724" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/movimento-meco-livre.html"><img src="/img/gen/movimento-meco-livre-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/movimento-meco-livre.html">Meco Livre</a></b><small>Meco e Azóia, Sesimbra, distrito de Setúbal</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=aguaemsesimbra" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/megacentrais-solares-divor-evora.html"><img src="/img/gen/megacentrais-solares-divor-evora-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/megacentrais-solares-divor-evora.html">Megacentrais solares do Divor, a norte de Évora</a></b><small>Graça do Divor e zona norte e nordeste de Évora, com parte em Arraiolos, distrito de Évora</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT121352" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/muda-defesa-arvores.html"><img src="/img/gen/muda-defesa-arvores-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/muda-defesa-arvores.html">MUDA: contra o abate de árvores e a má gestão do arvoredo urbano</a></b><small>Grande Lisboa, com ação a nível nacional</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT120154" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/eolicas-serra-ossa.html"><img src="/img/gen/eolicas-serra-ossa-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/eolicas-serra-ossa.html">Não às Eólicas na Serra d&#39;Ossa: petição contra parque eólico no Alentejo Central</a></b><small>Serra d&#39;Ossa, Alentejo Central (Estremoz, Redondo, Borba, Vila Viçosa e Alandroal)</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT132905" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+      <article class="rz-acao-c rz-extra">
+        <a href="/hotel-vale-olival-armacao-pera.html"><img src="/img/gen/hotel-vale-olival-armacao-pera-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/hotel-vale-olival-armacao-pera.html">Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra</a></b><small>Vale do Olival, Armação de Pêra, concelho de Silves, Algarve</small>
+        <a class="rz-btn laranja" href="https://peticaopublica.com/pview.aspx?pi=PT128984" target="_blank" rel="noopener">Assinar</a></div>
+      </article>
+    </div><p style="margin-top:16px"><button class="rz-btn contorno rz-mais" type="button">Mostrar todas as 27 petições</button></p>
+    <p class="rz-rot azul" style="margin-top:40px">Consultas públicas abertas<small>a tua opinião entra no processo</small></p>
+    <div class="rz-acoes">
+      <article class="rz-acao-c">
+        <a href="/barragem-foupana.html"><img src="/img/gen/barragem-foupana-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/barragem-foupana.html">Barragem da Foupana: nova barragem ameaça a última ribeira livre do Algarve</a></b><small>🗳 Consulta pública até 12 de outubro</small>
+        <a class="rz-btn azul" href="https://participa.pt/pt/consulta/barragem-da-foupana" target="_blank" rel="noopener">Participar</a></div>
+      </article>
+      <article class="rz-acao-c">
+        <a href="/biometano-abrigada-alenquer.html"><img src="/img/gen/biometano-abrigada-alenquer-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/biometano-abrigada-alenquer.html">Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)</a></b><small>◐ Consulta pública da AIA encerrou a 29 de setembro de 2026 com 417 participações; em análise · Assembleia Municipal declarou o projeto sem interesse municipal</small>
+        <a class="rz-btn azul" href="https://participa.pt/pt/consulta/uab-abrigada--unidade-de-producao-de-biometano-de-origem-renovavel-de-abrigada" target="_blank" rel="noopener">Participar</a></div>
+      </article>
+    </div>
+    <p class="rz-rot verde" style="margin-top:40px">Outras formas de agir</p>
+    <div class="rz-acoes">
+      <article class="rz-acao-c">
+        <a href="/rio-almansor.html"><img src="/img/gen/rio-almansor-480.webp" alt="" loading="lazy"></a>
+        <div><b><a href="/rio-almansor.html">AMORA: moradores de Montemor-o-Novo organizam-se para regenerar o Rio Almansor</a></b><small>Rio Almansor, Montemor-o-Novo, Alentejo</small>
+        <a class="rz-btn" href="https://amoralmansor.pt/torne-se-socio/inscricao-de-socios/" target="_blank" rel="noopener">Torna-te sócio da AMORA</a></div>
       </article>
     </div>
   </div>
@@ -170,7 +376,7 @@
 
 <section class="rz-sec" id="movimento" data-min="3">
   <div class="rz-wrap rz-lado">
-    <p class="rz-rot laranja">05 Casos em movimento<small>1 min 30</small></p>
+    <p class="rz-rot laranja">Em tribunal e a acompanhar<small>1 min 30</small></p>
     <div class="rz-casos">
       <a class="rz-caso" href="/mina-adagoi.html">
         <img src="/img/gen/mina-adagoi-480.webp" alt="" loading="lazy">
@@ -190,34 +396,6 @@
         <b>Mina de lítio em Covas do Barroso</b>
         <small>Boticas, Vila Real, Trás-os-Montes (região do Barroso)</small>
       </a>
-    </div>
-  </div>
-</section>
-
-<section class="rz-sec" id="filmes" data-min="1">
-  <div class="rz-wrap rz-lado">
-    <p class="rz-rot">Filmes do trimestre<small>ver sem ler</small></p>
-    <div class="rz-filmes"><div><button class="rz-video" type="button" data-youtube="v84rhSxS_R4" aria-label="Ver vídeo: Não à mina, sim à Vida! IV Acampamento em Defesa do Barroso">
-  <img src="https://i.ytimg.com/vi/v84rhSxS_R4/hqdefault.jpg" alt="" loading="lazy">
-  <span class="rz-play" aria-hidden="true">▶</span>
-  <span class="rz-vleg"><b>Não à mina, sim à Vida! IV Acampamento em Defesa do Barroso</b><span>PÓLEN · realização Rita Brás</span></span>
-</button></div><div><button class="rz-video" type="button" data-youtube="n_oI9hDZcTU" aria-label="Ver vídeo: Guardiões do Tejo: Vala Real">
-  <img src="https://i.ytimg.com/vi/n_oI9hDZcTU/hqdefault.jpg" alt="" loading="lazy">
-  <span class="rz-play" aria-hidden="true">▶</span>
-  <span class="rz-vleg"><b>Guardiões do Tejo: Vala Real</b><span>PÓLEN · realização Rita Brás</span></span>
-</button></div><div><button class="rz-video" type="button" data-youtube="F_JvgEYN_P0" aria-label="Ver vídeo: Dunas Livres: em defesa do litoral alentejano">
-  <img src="https://i.ytimg.com/vi/F_JvgEYN_P0/hqdefault.jpg" alt="" loading="lazy">
-  <span class="rz-play" aria-hidden="true">▶</span>
-  <span class="rz-vleg"><b>Dunas Livres: em defesa do litoral alentejano</b><span>PÓLEN · realização Rita Brás</span></span>
-</button></div>
-    </div>
-  </div>
-</section>
-
-<section class="rz-sec" data-min="1">
-  <div class="rz-wrap">
-    <div class="rz-agir">
-      <div><p class="rz-mono laranja">Agir hoje</p><p class="rz-agir-t">Em <em>5 minutos</em> fazes diferença</p></div><a class="rz-acao laranja" href="https://peticaopublica.com/?pi=protecao-territorio" target="_blank" rel="noopener"><b>Assina →</b>Mina de lítio e feldspato no Projeto C-192 Adagoi</a><a class="rz-acao verde" href="https://participa.pt/pt/consulta/barragem-da-foupana" target="_blank" rel="noopener"><b>Participa →</b>Barragem da Foupana: nova barragem ameaça a última ribeira livre do Algarve</a>
     </div>
   </div>
 </section>
@@ -280,6 +458,8 @@
       mostrar();
     });
   }
+  var mais = rz.querySelector(".rz-mais");
+  if (mais) mais.addEventListener("click", function () { rz.querySelectorAll(".rz-extra").forEach(function (x) { x.classList.remove("rz-extra"); }); mais.remove(); });
   rz.querySelectorAll(".rz-video[data-youtube]").forEach(function (b) {
     b.addEventListener("click", function () {
       var f = document.createElement("iframe");
