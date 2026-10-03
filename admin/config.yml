@@ -1,11 +1,11 @@
 # Editor Causas de Raiz (Sveltia CMS) em https://causasderaiz.org/admin/
-# Grava SEMPRE no ramo "rascunhos": nada é publicado sem a aprovação da Sílvia
+# Grava diretamente no ramo main (decisão da Sílvia, 3 out. 2026: colaboradores autónomos);
 # (junção de rascunhos em main; a publicação automática só corre em main).
 # Login: GitHub, através do serviço sveltia-cms-auth no Cloudflare (conta do Causas de Raiz).
 backend:
   name: github
   repo: causasderaiz/causasderaiz-src
-  branch: rascunhos
+  branch: main
   base_url: https://sveltia-cms-auth.causasderaiz.workers.dev
   commit_messages:
     create: "Editor: novo caso {{slug}}"
