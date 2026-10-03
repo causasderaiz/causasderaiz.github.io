@@ -118,6 +118,8 @@
   L.control.zoom({ position: "topright" }).addTo(map);
   var osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap contributors" });
 
+  // compara links ignorando http/https, www, barra final, parâmetros e âncoras
+  var normUrl = function (u) { return String(u || "").trim().replace(/^https?:\/\/(www\.)?/i, "").replace(/[#?].*$/, "").replace(/\/+$/, "").toLowerCase(); };
   var googleEarthUrl = function (c) { return c.ll ? "https://earth.google.com/web/@" + c.ll[0] + "," + c.ll[1] + ",0a,900d,0y,0h,0t,0r" : ""; };
   function googleEarthAreaUrl() {
     var ct = map.getCenter(), z = map.getZoom();
@@ -324,7 +326,7 @@
       '<div class="section-lbl"><span class="mono">' + UI.painel.fontes + "</span></div>" +
       '<ol class="fontes">' +
       F.fontes.map(function (f) { return '<li><a href="' + f[1] + '" target="_blank" rel="noopener">' + f[0] + "</a></li>"; }).join("") +
-      (F.link ? '<li><a href="' + F.link + '" target="_blank" rel="noopener">' + (F.linkL || "Saber mais") + "</a></li>" : "") +
+      (F.link && !F.fontes.some(function (f) { return normUrl(f[1]) === normUrl(F.link); }) ? '<li><a href="' + F.link + '" target="_blank" rel="noopener">' + (F.linkL || "Saber mais") + "</a></li>" : "") +
       "</ol></div>";
     $("#sharelink").onclick = function () {
       var url = location.origin + "/" + id + (IDIOMA === "en" ? "-en" : "") + ".html";
