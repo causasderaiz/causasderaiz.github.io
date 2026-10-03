@@ -976,3 +976,21 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 .tut-regras b{display:block;font-size:17px;margin-bottom:4px}
 @media(max-width:860px){.tut-passo{grid-template-columns:1fr}.tut-fluxo{grid-template-columns:repeat(2,minmax(0,1fr))}.tut-regras{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.tut-alvo{animation:none}}
+/* Boletim no telemóvel: títulos sem sobreposição e molduras mais leves (pedido da Sílvia, 3 out. 2026) */
+@media(max-width:600px){
+  .ar-topo{height:440px;min-height:0}
+  .ar-topo::after{background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,0) 38%,rgba(0,0,0,0) 58%,rgba(0,0,0,.6))}
+  .ar-topo h2{font-size:84px;left:16px;bottom:12px}
+  .ar-topo .sub{top:16px;bottom:auto;left:16px;right:16px;max-width:none;text-align:left;font-size:16px;line-height:1.35}
+  .ar-corpo{padding:36px 0}
+  .ar-bloco,.ar-filme,.ar-regen,.ar-cartao{box-shadow:4px 4px 0 rgba(0,0,0,.85);border-width:2px}
+  .ar-num{box-shadow:4px 4px 0 var(--line);border-width:2px;padding:16px 18px}
+  .ar-num b{font-size:64px}
+  .ar-selo{box-shadow:5px 5px 0 var(--line);border-width:3px}
+  .ar-selo h1{font-size:64px}
+  .ar-bloco h3,.ar-regen h3{font-size:28px}
+  .ar-agir h3{font-size:40px}
+  .ar-indice a{font-size:30px;padding:14px 16px}
+  .ar-filme{min-height:230px}
+  .ar-filme .play{width:72px;height:72px;font-size:26px}
+}
