@@ -205,7 +205,34 @@ collections:
             fields:
               - { label: "Título da fonte", name: titulo, widget: string, required: false }
               - { label: "Link", name: url, widget: string, required: false }
-      - label: "04 Casos em movimento"
+      - label: "04 Biodiversidade: espécies em perigo"
+        name: biodiversidade
+        widget: object
+        required: false
+        fields:
+          - { label: "Tempo de leitura", name: tempo, widget: string }
+          - { label: "Título", name: titulo, widget: string }
+          - label: "Espécies"
+            name: especies
+            widget: list
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: "Nome comum", name: nome, widget: string }
+              - { label: "Nome científico", name: cientifico, widget: string, required: false }
+              - { label: "Ilustração ou foto (autorizada)", name: img, widget: image, required: false, media_folder: "/src/estatico/img-boletim", public_folder: "/img-boletim", choose_url: false }
+              - { label: "Número em destaque (ex.: 1 736)", name: numero, widget: string }
+              - { label: "O que é o número (com período e fonte)", name: unidade, widget: string }
+              - { label: "Barra: quadrados que restam", name: restam, widget: number, value_type: int, required: false }
+              - { label: "Barra: total de quadrados", name: de, widget: number, value_type: int, required: false }
+              - { label: "Texto da barra (ex.: menos 90% desde 2006)", name: quedaTexto, widget: string, required: false }
+              - { label: "Texto (ameaças e o que se pede, só com fonte)", name: texto, widget: text }
+              - label: "Fonte"
+                name: fonte
+                widget: object
+                fields:
+                  - { label: "Título da fonte", name: titulo, widget: string }
+                  - { label: "Link", name: url, widget: string }
+      - label: "05 Casos em movimento"
         name: movimento
         widget: object
         fields:
