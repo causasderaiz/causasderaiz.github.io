@@ -159,7 +159,7 @@ collections:
           - { label: "Cor", name: cor, widget: select, options: [{label: "Laranja", value: "laranja"}, {label: "Verde", value: "verde"}], default: "laranja" }
           - { label: "Barra: quadrados cheios", name: n, widget: number, value_type: int, required: false }
           - { label: "Barra: total de quadrados", name: de, widget: number, value_type: int, required: false }
-      - label: "01 O caso do trimestre"
+      - label: "O caso do trimestre (vai no capítulo Fogo)"
         name: caso
         widget: object
         fields:
@@ -233,31 +233,81 @@ collections:
                 fields:
                   - { label: "Título da fonte", name: titulo, widget: string }
                   - { label: "Link", name: url, widget: string }
-      - label: "05 Casos em movimento"
+      - label: "Em tribunal e a acompanhar"
         name: movimento
         widget: object
         fields:
           - { label: "Tempo de leitura", name: tempo, widget: string }
           - { label: "Casos (identificadores, 3)", name: casos, widget: list, field: { label: "Caso", name: id, widget: string } }
-      - label: "Filmes do trimestre"
-        name: filmes
+      - label: "O trimestre no mapa"
+        name: mapa
         widget: object
+        required: false
         fields:
-          - { label: "Tempo", name: tempo, widget: string }
+          - { label: "Título", name: titulo, widget: string }
+          - { label: "Texto", name: texto, widget: text }
+      - label: "Capítulos: Água, Terra, Fogo, Ar"
+        name: elementos
+        widget: list
+        summary: "{{fields.titulo}}"
+        fields:
+          - { label: "Elemento", name: id, widget: select, options: [{label: "Água", value: "agua"}, {label: "Terra", value: "terra"}, {label: "Fogo", value: "fogo"}, {label: "Ar", value: "ar"}] }
+          - { label: "Título", name: titulo, widget: string }
+          - { label: "Índice (3 palavras)", name: indice, widget: string }
+          - { label: "Frase sobre a foto", name: sub, widget: string }
+          - { label: "Caso cuja foto se usa (identificador)", name: caso, widget: string, required: false }
+          - { label: "Ou foto própria (autorizada)", name: foto, widget: image, required: false, media_folder: "/src/estatico/img-boletim", public_folder: "/img-boletim", choose_url: false }
+          - label: "Gráfico animado"
+            name: dado
+            widget: object
+            required: false
+            fields:
+              - { label: "Tipo", name: tipo, widget: select, options: [{label: "Barras", value: "barras"}, {label: "Colunas por ano", value: "colunas"}] }
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Número em destaque", name: destaque, widget: string }
+              - label: "Valores"
+                name: itens
+                widget: list
+                summary: "{{fields.rotulo}}: {{fields.valor}}"
+                fields:
+                  - { label: "Rótulo (ex.: 2025)", name: rotulo, widget: string }
+                  - { label: "Valor escrito (ex.: 87 760 ha)", name: valor, widget: string }
+                  - { label: "Tamanho da barra (0 a 100)", name: pct, widget: number, value_type: int }
+              - { label: "Texto", name: texto, widget: text }
+              - { label: "Fonte", name: fonte, widget: string }
           - label: "Filmes"
-            name: itens
+            name: filmes
             widget: list
+            required: false
             summary: "{{fields.titulo}}"
             fields:
               - { label: "Código do YouTube (o que vem depois de v=)", name: youtube, widget: string }
               - { label: "Título", name: titulo, widget: string }
               - { label: "Crédito (autor / realização)", name: credito, widget: string, required: false }
+          - { label: "Blocos extra neste capítulo", name: extras, widget: select, multiple: true, required: false, options: [{label: "Caso do trimestre", value: "caso"}, {label: "Biodiversidade", value: "biodiversidade"}, {label: "Reel", value: "reel"}, {label: "Regenerar", value: "regenerar"}] }
+      - label: "Reel do trimestre"
+        name: reel
+        widget: object
+        required: false
+        fields:
+          - { label: "Vídeo MP4", name: mp4, widget: file, media_folder: "/src/estatico/video", public_folder: "/video", choose_url: false }
+          - { label: "Imagem de capa", name: poster, widget: image, required: false, media_folder: "/src/estatico/video", public_folder: "/video", choose_url: false }
+          - { label: "Título", name: titulo, widget: string }
+          - { label: "Texto", name: texto, widget: text }
+          - label: "Fonte dos dados"
+            name: fonte
+            widget: object
+            required: false
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Link", name: url, widget: string }
       - label: "Agir hoje"
         name: agirHoje
         widget: object
         fields:
           - { label: "Caso com petição para assinar (identificador)", name: assina, widget: string, required: false }
           - { label: "Caso com consulta para participar (identificador)", name: participa, widget: string, required: false }
+          - { label: "Prazo da consulta (AAAA-MM-DD)", name: prazoParticipa, widget: string, required: false }
       - label: "Números (do mapa; não mudar)"
         name: numeros
         widget: object
