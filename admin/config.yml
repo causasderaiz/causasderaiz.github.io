@@ -51,6 +51,7 @@ collections:
         fields:
           - { label: "Foto do caso (carregar; só fotos próprias ou autorizadas)", name: folderFile, required: false, widget: image, choose_url: false, hint: "JPG, a maior resolução possível. Guarda o ficheiro com o identificador do caso no nome." }
           - { label: "Ficheiro de partilha (deixa vazio: é preenchido sozinho)", name: rootFile, required: false, widget: string }
+          - { label: "Crédito da imagem (opcional, ex.: Imagem: Google Earth)", name: credito, required: false, widget: string }
           - { label: "Só na raiz", name: imgRootOnly, required: false, widget: boolean, default: false }
       - label: "Português"
         name: pt
