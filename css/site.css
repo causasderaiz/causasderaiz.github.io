@@ -1244,3 +1244,27 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 .rz .rz-barra .rz-niveis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .rz .rz-barra .rz-leitura{padding-top:16px;padding-bottom:14px;margin-top:18px;border-top:1px solid rgba(23,26,18,.15)}
 @media(max-width:800px){.rz .rz-barra .rz-tempo{grid-template-columns:minmax(0,1fr)}.rz .rz-barra .rz-niveis small{display:none}.rz .rz-capa{min-height:86vh}.rz-capa-foto::after{background:linear-gradient(0deg,rgba(14,63,38,.92) 0,rgba(14,63,38,.55) 55%,rgba(14,63,38,.15) 100%)}}
+
+/* Fichas: cronologia por anos (4 out. 2026) */
+.cr-tit{font-size:clamp(22px,2.2vw,32px);margin-top:40px}
+.cr-contexto{font-size:17px;max-width:66ch;margin-top:12px}
+.cr-anos{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.cr-anos a{border:2px solid var(--line);padding:3px 10px;color:var(--ink);background:var(--paper)}
+.cr-anos a:hover{background:var(--ink);color:var(--cream)}
+.cr{border-left:3px solid var(--line);margin-top:18px;padding-left:0}
+.cr-ano{margin:0 0 6px}
+.cr-ano summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:14px;padding:10px 0 10px 22px;position:relative}
+.cr-ano summary::-webkit-details-marker{display:none}
+.cr-ano summary::before{content:"";position:absolute;left:-9px;top:20px;width:15px;height:15px;background:var(--red);border:2px solid var(--line)}
+.cr-ano:not([open]) summary::before{background:var(--paper)}
+.cr-a{font-family:"Londrina Solid",cursive;font-size:clamp(34px,3.6vw,48px);line-height:1}
+.cr-ano summary .mono{color:var(--ink-soft)}
+.cr-ano summary::after{content:"+";font-family:"Space Mono",monospace;margin-left:auto;font-size:18px}
+.cr-ano[open] summary::after{content:"−"}
+.cr-ano ol{list-style:none;margin:0 0 14px;padding:0 0 0 22px;display:grid;gap:16px}
+.cr-ano li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;position:relative}
+.cr-ano li::before{content:"";position:absolute;left:-29px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--line)}
+.cr-d{color:var(--red-dark);padding-top:3px}
+.cr-ano li p{margin:0;font-size:16.5px;max-width:62ch}
+.cr-f{display:inline-block;margin-top:6px;font-size:10.5px;color:var(--ink-soft);border-bottom:1px solid rgba(23,26,18,.25)}
+@media(max-width:600px){.cr-ano li{grid-template-columns:minmax(0,1fr);gap:2px}}
