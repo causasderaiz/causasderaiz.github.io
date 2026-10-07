@@ -1288,3 +1288,37 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
   .acts .acao-lateral{display:none}
   .mono{font-size:13px}
 }
+
+/* Pré-visualização de design 2 (out. 2026) */
+/* pontos agrupados no mapa */
+.pin-grupo{display:grid;place-items:center;border:3px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);box-shadow:3px 3px 0 var(--line);font-family:"Space Mono",monospace;font-size:14px;font-weight:700}
+.marker-cluster{background:transparent}
+/* menos sombras: só botões, cartões, pesquisa e caixas de destaque */
+.facts,.indep,.legend,.camadas,.jump,.numcaso,.rank,.rank:hover,.newsletter-form,.newsletter-thanks,.mapacard,.step,.progress100{box-shadow:none}
+/* texto pequeno mais legível */
+.card .loc{font-size:14.5px}
+.card .who-min{font-size:13.5px}
+.who span{font-size:14px}
+.mapacard p.txt,.mapacard a{font-size:14.5px}
+.cr-f{font-size:12px}
+.casohero-cred{font-size:11.5px}
+.rank .m{font-size:13px}
+.chip{font-size:14px}
+.seg button,.searchrow select{font-size:14px}
+.step p{font-size:16.5px;color:var(--ink)}
+.jump,.camadas button{font-size:11.5px}
+/* regiões: no computador ficam como estavam; o botão só existe no telemóvel */
+.regioes-toggle{display:none}
+.regioes-lista{display:contents}
+@media(max-width:760px){
+  .hero{padding:22px 0 18px}
+  .hero p.lede,.hero .wrap > div > p.mono:first-child{display:none}
+  .hero h1{margin-top:0}
+  #map{height:70vh;min-height:420px}
+  .regioes-toggle{display:inline-block}
+  .regioes-lista{display:none}
+  .maptools.aberto .regioes-lista{display:flex;flex-direction:column;gap:6px;flex-basis:100%}
+  #geoBtn{display:none}
+  .legend{transform:scale(.9);transform-origin:bottom left}
+}
+@media(max-width:760px){#jumps.aberto .regioes-lista .jump{background:var(--paper)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:3px 3px 0 var(--line)}}

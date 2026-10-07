@@ -128,6 +128,16 @@
     return "https://earth.google.com/web/@" + ct.lat.toFixed(6) + "," + ct.lng.toFixed(6) + ",0a," + dist + "d,0y,0h,0t,0r";
   }
   var markers = {};
+  // pontos próximos agrupados num círculo com o número de casos; separam-se ao aproximar
+  var grupo = L.markerClusterGroup ? L.markerClusterGroup({
+    showCoverageOnHover: false, maxClusterRadius: 38, spiderfyOnMaxZoom: true,
+    iconCreateFunction: function (cl) {
+      var n = cl.getChildCount(), d = n < 10 ? 40 : n < 25 ? 46 : 54;
+      return L.divIcon({ className: "", iconSize: [d, d], iconAnchor: [d / 2, d / 2],
+        html: '<span class="pin-grupo" style="width:' + d + 'px;height:' + d + 'px">' + n + "</span>" });
+    },
+  }) : null;
+  var camadaPontos = grupo || map;
   var icone = function (c, i) {
     var isDatacenter = temCat(c, "datacenter");
     return L.divIcon({
@@ -148,11 +158,13 @@
   });
   LUTAS.forEach(function (c, i) {
     if (!c.ll) return;
-    var m = L.marker(c.ll, { icon: icone(c, i), title: c.t, riseOnHover: true }).addTo(map);
+    var m = L.marker(c.ll, { icon: icone(c, i), title: c.t, riseOnHover: true }).addTo(camadaPontos);
     m.bindTooltip("<b>" + c.t + "</b><br>" + c.loc + "<br><i>" + c.status + "</i>", { direction: "top", offset: [0, -18] });
     m.on("click", function () { openCausa(c.id); });
     markers[c.id] = m;
   });
+
+  if (grupo) { if (!map.options.maxZoom) map.options.maxZoom = 19; grupo.addTo(map); }
 
   var SATELITE_MIN_ZOOM = 4; // permite afastar até ver Madeira e Açores
   var satelite = L.tileLayer("https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
@@ -161,7 +173,8 @@
   }).addTo(map);
   map.setMinZoom(SATELITE_MIN_ZOOM);
   $("#jumps").innerHTML =
-    Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") +
+    '<button class="jump regioes-toggle" type="button" aria-expanded="false">' + (IDIOMA === "en" ? "Regions" : "Regiões") + ' ▾</button>' +
+    '<span class="regioes-lista">' + Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") + "</span>" +
     '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
     '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>';
   $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (b) {
@@ -171,6 +184,13 @@
     };
   });
   $("#geoBtn").onclick = function () { window.open(googleEarthAreaUrl(), "_blank", "noopener"); };
+  $("#jumps").querySelector(".regioes-toggle").addEventListener("click", function () {
+    var ab = $("#jumps").classList.toggle("aberto");
+    this.setAttribute("aria-expanded", ab ? "true" : "false");
+  });
+  $("#jumps").querySelectorAll(".regioes-lista .jump").forEach(function (b) {
+    b.addEventListener("click", function () { $("#jumps").classList.remove("aberto"); $("#jumps").querySelector(".regioes-toggle").setAttribute("aria-expanded", "false"); });
+  });
   $("#camadas").addEventListener("click", function (e) {
     var b = e.target.closest("button[data-camada]");
     if (!b) return;
@@ -274,12 +294,14 @@
     LUTAS.forEach(function (c) {
       var m = markers[c.id];
       if (!m) return;
-      var has = map.hasLayer(m);
-      if (ids[c.id] && !has) m.addTo(map);
-      if (!ids[c.id] && has) map.removeLayer(m);
+      var has = camadaPontos.hasLayer(m);
+      if (ids[c.id] && !has) camadaPontos.addLayer(m);
+      if (!ids[c.id] && has) camadaPontos.removeLayer(m);
     });
     $("#s-urg").textContent = LUTAS.filter(function (c) { return acaoTipo(c) === "peticao"; }).length;
     $("#s-sb").textContent = LUTAS.filter(function (c) { return acaoTipo(c) === "consulta"; }).length;
+    if ($("#h-pet")) $("#h-pet").textContent = $("#s-urg").textContent;
+    if ($("#h-con")) $("#h-con").textContent = $("#s-sb").textContent;
     $("#n-tot").textContent = LUTAS.length;
     $("#n-org").textContent = new Set(LUTAS.flatMap(function (c) { return c.quem || []; }).map(function (q) { return q.trim(); }).filter(Boolean)).size;
     $("#n-reg").textContent = new Set(LUTAS.map(function (c) { return c.reg; })).size;

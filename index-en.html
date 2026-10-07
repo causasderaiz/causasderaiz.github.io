@@ -31,10 +31,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=cc7ff00816">
+<link rel="stylesheet" href="/css/site.css?v=458b18d08c">
 
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
 <script src="/vendor/leaflet/leaflet.js"></script>
+<link rel="stylesheet" href="/vendor/leaflet.markercluster/MarkerCluster.css">
+<script src="/vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
 
 
 <script data-goatcounter="https://causasderaiz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -79,7 +81,7 @@
       <p class="mono" style="margin:0 0 16px;font-size:20px">Portugal, Madeira and the Azores</p>
       <h1>Map of environmental <span class="em">struggles</span> in <span class="em2">Portugal</span></h1>
       <p class="lede">Each point is a real place, a community resisting and a way to act. Filter by open petition, public consultation, court case or theme.</p>
-      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ 116 cases documented · Updated October 7</p>
+      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ 116 cases documented · <span id="h-pet">0</span> open petitions · <span id="h-con">0</span> open consultations · Updated October 7</p>
     </div>
     <div class="searchbar" id="busca">
       <div class="searchrow">
@@ -335,7 +337,7 @@ window.SINONIMOS = [["solar","fotovoltaica","fotovoltaico","painel solar","pain�
 </script>
 
 <script src="/js/pesquisa-mapa.js?v=f438291972"></script>
-<script src="/js/mapa.js?v=9326b0de98"></script>
+<script src="/js/mapa.js?v=cff660eb9d"></script>
 
 </body>
 </html>
