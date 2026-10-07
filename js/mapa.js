@@ -353,6 +353,16 @@
     tt = setTimeout(function () { el.classList.remove("on"); }, 2600);
   }
 
+  // telemóvel: filtros recolhidos atrás do botão "Filtrar"
+  (function () {
+    var b = $("#filtrar"), box = $("#busca");
+    if (!b || !box) return;
+    b.addEventListener("click", function () {
+      var aberto = box.classList.toggle("aberto");
+      b.setAttribute("aria-expanded", aberto ? "true" : "false");
+    });
+  })();
+
   // barra de alertas: grandes conflitos em destaque (src/_data/alertas.json), um de cada vez
   (function () {
     var itens = document.querySelectorAll("#alerta-prazo .alerta-item");

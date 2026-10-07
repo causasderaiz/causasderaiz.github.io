@@ -1269,3 +1269,22 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 .cr-ano li p{margin:0;font-size:16.5px;max-width:62ch}
 .cr-f{display:inline-block;margin-top:6px;font-size:10.5px;color:var(--ink-soft);border-bottom:1px solid rgba(23,26,18,.25)}
 @media(max-width:600px){.cr-ano li{grid-template-columns:minmax(0,1fr);gap:2px}}
+
+/* Pré-visualização de design (out. 2026): telemóvel mais claro e etiquetas mais legíveis */
+.mono{font-size:12.5px;letter-spacing:.1em}
+.tag{font-size:11.5px;padding:3px 8px}
+.legend div{font-size:11.5px}
+.crumb{font-size:12.5px}
+.chip i{font-size:11px;opacity:.75}
+.casotop .mono{line-height:1.5}
+.filtrar-toggle,.acts-topo{display:none}
+@media(max-width:760px){
+  .searchbar .sep,.searchbar #reg,.searchbar #ord,.searchbar #chips{display:none}
+  .searchbar.aberto .sep,.searchbar.aberto #reg,.searchbar.aberto #ord{display:block}
+  .searchbar.aberto #chips{display:flex}
+  .filtrar-toggle{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;border-top:3px solid var(--line);background:var(--paper);padding:14px 18px;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.04em;cursor:pointer}
+  .searchbar.aberto .filtrar-toggle span{display:inline-block;transform:rotate(180deg)}
+  .acts-topo{display:grid;gap:10px;margin-top:18px}
+  .acts .acao-lateral{display:none}
+  .mono{font-size:13px}
+}
