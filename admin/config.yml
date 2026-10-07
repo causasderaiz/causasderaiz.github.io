@@ -42,6 +42,15 @@ collections:
       - { label: "Verificado em (data em que leste as fontes)", name: verif, widget: datetime, time_format: false, format: "YYYY-MM-DD", picker_utc: true }
       - { label: "Coordenadas [latitude, longitude]", name: ll, required: false, widget: list, field: { label: "Coordenada", name: c, widget: number, value_type: float }, hint: "Ex.: 41.6897 e -7.6772 (copiar do Google Maps)" }
       - { label: "Link da petição ou consulta (botão de ação)", name: pet, widget: string, required: false }
+      - label: "Recolha de fundos (botão Apoiar com donativo)"
+        name: fundos
+        widget: list
+        required: false
+        hint: "Só recolhas de quem luta neste conflito (GoFundMe, PPL, página de donativos do movimento)."
+        fields:
+          - { label: "Quem recolhe (aparece no botão)", name: titulo, widget: string }
+          - { label: "Quem recolhe, em inglês (opcional)", name: tituloEn, widget: string, required: false }
+          - { label: "Link da recolha de fundos", name: url, widget: string }
       - { label: "Caso em construção (só por link, fora do mapa)", name: emConstrucao, widget: boolean, required: false, default: false }
       - label: "Foto"
         name: image
