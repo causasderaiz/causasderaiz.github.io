@@ -128,16 +128,7 @@
     return "https://earth.google.com/web/@" + ct.lat.toFixed(6) + "," + ct.lng.toFixed(6) + ",0a," + dist + "d,0y,0h,0t,0r";
   }
   var markers = {};
-  // pontos próximos agrupados num círculo com o número de casos; separam-se ao aproximar
-  var grupo = L.markerClusterGroup ? L.markerClusterGroup({
-    showCoverageOnHover: false, maxClusterRadius: 38, spiderfyOnMaxZoom: true,
-    iconCreateFunction: function (cl) {
-      var n = cl.getChildCount(), d = n < 10 ? 40 : n < 25 ? 46 : 54;
-      return L.divIcon({ className: "", iconSize: [d, d], iconAnchor: [d / 2, d / 2],
-        html: '<span class="pin-grupo" style="width:' + d + 'px;height:' + d + 'px">' + n + "</span>" });
-    },
-  }) : null;
-  var camadaPontos = grupo || map;
+  var camadaPontos = map; // cada ponto com o seu número, sem agrupar (decisão da Sílvia, 7 out. 2026)
   var icone = function (c, i) {
     var isDatacenter = temCat(c, "datacenter");
     return L.divIcon({
@@ -164,7 +155,6 @@
     markers[c.id] = m;
   });
 
-  if (grupo) { if (!map.options.maxZoom) map.options.maxZoom = 19; grupo.addTo(map); }
 
   var SATELITE_MIN_ZOOM = 4; // permite afastar até ver Madeira e Açores
   var satelite = L.tileLayer("https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
