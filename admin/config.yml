@@ -51,6 +51,7 @@ collections:
           - { label: "Quem recolhe (aparece no botão)", name: titulo, widget: string }
           - { label: "Quem recolhe, em inglês (opcional)", name: tituloEn, widget: string, required: false }
           - { label: "Link da recolha de fundos", name: url, widget: string }
+      - { label: "Caso local, sem imprensa (mostra aviso na ficha)", name: local, widget: boolean, required: false, default: false, hint: "Só com pelo menos 2 fontes primárias abertas e lidas (petição com texto integral, ata, edital, comunicado do movimento)." }
       - { label: "Caso em construção (só por link, fora do mapa)", name: emConstrucao, widget: boolean, required: false, default: false }
       - label: "Foto"
         name: image
