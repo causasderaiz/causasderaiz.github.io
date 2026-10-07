@@ -353,12 +353,20 @@
     tt = setTimeout(function () { el.classList.remove("on"); }, 2600);
   }
 
+  // barra de alertas: grandes conflitos em destaque (src/_data/alertas.json), um de cada vez
   (function () {
-    var c = LUTAS.find(function (x) { return x.prazo && acaoTipo(x) === "peticao"; }) || LUTAS[0];
-    if (!c || !$("#alerta-prazo")) return;
-    $("#alerta-prazo").innerHTML =
-      "<b>" + c.t.split(":")[0] + "</b>, " + c.loc.split(",")[0] + ". " + c.status.replace(/^[^ ]+ /, "") + ". " +
-      (c.pet ? '<a href="' + c.pet + '" target="_blank" rel="noopener">' + (c.petLabel || "Agir") + "</a>" : '<a href="/' + c.id + (IDIOMA === "en" ? "-en" : "") + '.html">Ver</a>');
+    var itens = document.querySelectorAll("#alerta-prazo .alerta-item");
+    if (itens.length < 2) return;
+    var i = 0, parado = false;
+    var barra = $("#alerta-prazo");
+    barra.addEventListener("mouseenter", function () { parado = true; });
+    barra.addEventListener("mouseleave", function () { parado = false; });
+    setInterval(function () {
+      if (parado) return;
+      itens[i].hidden = true;
+      i = (i + 1) % itens.length;
+      itens[i].hidden = false;
+    }, 8000);
   })();
 
   if ($("#deadlines")) {
