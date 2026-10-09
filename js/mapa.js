@@ -93,7 +93,19 @@
       })
       .join("")
   );
-  $("#chips").querySelectorAll(".chip").forEach(function (b) {
+  // chip dos PIN logo a seguir ao dos data centers, no mesmo estilo (sublinhado castanho)
+  var chipDc = $("#chips").querySelector('.chip[data-cat="datacenter"]');
+  var chipPinHtml = '<button class="chip chip--pin" data-pin="1" aria-pressed="false">' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + " <i>" + ((window.PINS_DATA || { lista: [] }).lista.length) + "</i></button>";
+  if (chipDc) chipDc.insertAdjacentHTML("afterend", chipPinHtml); else $("#estado").insertAdjacentHTML("beforebegin", chipPinHtml);
+  $("#chips").querySelectorAll(".chip[data-pin]").forEach(function (b) {
+    b.onclick = function () {
+      st.soPins = !st.soPins;
+      b.setAttribute("aria-pressed", String(st.soPins));
+      if (st.soPins && typeof camadaPins !== "undefined" && !map.hasLayer(camadaPins)) { camadaPins.addTo(map); $("#pinsBtn").setAttribute("aria-pressed", "true"); }
+      render();
+    };
+  });
+  $("#chips").querySelectorAll(".chip[data-cat]").forEach(function (b) {
     b.onclick = function () {
       var k = b.dataset.cat;
       st.cats.has(k) ? st.cats.delete(k) : st.cats.add(k);
@@ -108,6 +120,7 @@
   $("#reset").onclick = function () {
     st.q = ""; resPesq = null; st.reg = ""; st.est = "todas"; st.cats.clear(); st.ord = "prazo";
     $("#q").value = ""; $("#reg").value = ""; $("#ord").value = "prazo";
+    st.soPins = false;
     $("#chips").querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
     $("#estado").querySelectorAll("button").forEach(function (b, i) { b.setAttribute("aria-pressed", i === 0); });
     render();
@@ -203,6 +216,7 @@
 
   var PESO = { urgente: 0, consulta: 1, tribunal: 2, acompanhamento: 3, vitoria: 4 };
   function match(c) {
+    if (st.soPins) return false;
     if (st.est !== "todas") {
       var tp = acaoTipo(c);
       if (st.est === "peticao" && tp !== "peticao") return false;
@@ -239,8 +253,18 @@
   }
   function render() {
     var vis = sorted(LUTAS.filter(match));
-    $("#count").textContent = vis.length + " / " + LUTAS.length;
-    $("#list").innerHTML = vis.length
+    var PL = (window.PINS_DATA || { lista: [] }).lista;
+    $("#count").textContent = st.soPins ? PL.length + " PIN" : vis.length + " / " + LUTAS.length;
+    $("#list").innerHTML = st.soPins
+      ? PL.map(function (p) {
+          return '<button class="card card--pin" data-pin-id="' + p.id + '"><div>' +
+            '<div class="row"><span class="pinpin' + (p.hist ? " hist" : "") + '">PIN</span>' + (p.codigo ? '<span class="mono" style="color:var(--ink-soft)">' + p.codigo + "</span>" : "") +
+            '<span class="mono" style="color:var(--ink-soft)">' + p.tipo[IDIOMA === "en" ? 1 : 0] + "</span></div>" +
+            "<h3>" + escHtml(p.nome) + "</h3>" +
+            '<div class="loc">' + escHtml(p.concelho) + "</div>" +
+            '<div class="who-min">' + p.estado[IDIOMA === "en" ? 1 : 0] + "</div></div></button>";
+        }).join("")
+      : vis.length
       ? vis
           .map(function (c, i) {
             var img = imgTagAttrs(c);
@@ -272,7 +296,10 @@
     $("#list").querySelectorAll("a[data-sug]").forEach(function (a) {
       a.onclick = function (ev) { ev.preventDefault(); $("#q").value = a.dataset.sug; pesquisar(a.dataset.sug); };
     });
-    $("#list").querySelectorAll(".card").forEach(function (b) {
+    $("#list").querySelectorAll(".card[data-pin-id]").forEach(function (b) {
+      b.onclick = function () { var p = PL.find(function (x) { return x.id === b.dataset.pinId; }); if (p) openPin(p); };
+    });
+    $("#list").querySelectorAll(".card[data-id]").forEach(function (b) {
       b.onclick = function () { openCausa(b.dataset.id); };
       b.onmouseenter = function () { hi(b.dataset.id, true); };
       b.onmouseleave = function () { hi(b.dataset.id, false); };

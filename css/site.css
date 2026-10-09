@@ -1328,3 +1328,5 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 .pinpin{display:inline-grid;place-items:center;min-width:34px;height:22px;padding:0 5px;background:#6b4423;color:#fff;border:2px solid var(--line);border-radius:3px;box-shadow:2px 2px 0 var(--line);font-family:"Space Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.06em;line-height:1}
 #pinsBtn[aria-pressed="false"]{opacity:.55}
 .pinpin.hist{border-style:dashed;opacity:.85}
+.card--pin{grid-template-columns:1fr}
+.chip--pin{box-shadow:inset 0 -4px 0 #6b4423}
