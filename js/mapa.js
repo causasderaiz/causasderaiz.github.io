@@ -97,8 +97,6 @@
   var chipDc = $("#chips").querySelector('.chip[data-cat="datacenter"]');
   var chipPinHtml = '<button class="chip chip--pin" data-pin="1" aria-pressed="false">' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + " <i>" + ((window.PINS_DATA || { lista: [] }).lista.length) + "</i></button>";
   if (chipDc) chipDc.insertAdjacentHTML("afterend", chipPinHtml); else $("#estado").insertAdjacentHTML("beforebegin", chipPinHtml);
-  // ligação à BRAVA, Rede de Resistência Rural (pedido da Sílvia, 9 out. 2026): não é filtro, abre o site deles
-  $("#estado").insertAdjacentHTML("beforebegin", '<a class="chip chip--brava" href="https://rederesistenciarural.org" target="_blank" rel="noopener"><img src="/img-static/parceiros/brava.svg" alt="BRAVA" width="58" height="19"> ' + (IDIOMA === "en" ? "Collectives" : "Coletivos") + " ↗</a>");
   $("#chips").querySelectorAll(".chip[data-pin]").forEach(function (b) {
     b.onclick = function () {
       st.soPins = !st.soPins;
@@ -182,7 +180,9 @@
     '<span class="regioes-lista">' + Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") + "</span>" +
     '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
     '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>' +
-    '<button class="jump" id="pinsBtn" type="button" aria-pressed="true" title="' + (IDIOMA === "en" ? "Projects of Potential National Interest" : "Projetos de Potencial Interesse Nacional") + '"><span class="pinpin" style="font-size:9px;padding:1px 4px">PIN</span> ' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + '</button>';
+    '<button class="jump" id="pinsBtn" type="button" aria-pressed="true" title="' + (IDIOMA === "en" ? "Projects of Potential National Interest" : "Projetos de Potencial Interesse Nacional") + '"><span class="pinpin" style="font-size:9px;padding:1px 4px">PIN</span> ' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + '</button>' +
+    // ligação à BRAVA, Rede de Resistência Rural (pedido da Sílvia, 9 out. 2026): abre o site deles
+    '<a class="jump jump--brava" href="https://rederesistenciarural.org" target="_blank" rel="noopener"><img src="/img-static/parceiros/brava.svg" alt="BRAVA" width="52" height="17"> ' + (IDIOMA === "en" ? "Collectives" : "Coletivos") + ' ↗</a>';
   $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (b) {
     b.onclick = function () {
       $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
