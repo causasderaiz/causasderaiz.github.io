@@ -291,7 +291,7 @@
         (resPesq.sugestoes.length
           ? "<p>" + UI.lista.talvez + " " + resPesq.sugestoes.map(function (w) { return '<a href="#" data-sug="' + escHtml(w) + '">' + escHtml(w) + "</a>"; }).join(" · ") + "</p>"
           : "") +
-        '<p><a href="mailto:geral@causasderaiz.org">' + UI.lista.enviarCaso + "</a></p></div>"
+        '<p><a href="/enviar-caso' + (IDIOMA === "en" ? "-en" : "") + '.html">' + UI.lista.enviarCaso + "</a></p></div>"
       : '<div class="empty"><p class="disp" style="font-size:28px">' + UI.lista.nadaTitulo + '</p><p>' + UI.lista.nadaTexto + "</p></div>";
     $("#list").querySelectorAll("a[data-sug]").forEach(function (a) {
       a.onclick = function (ev) { ev.preventDefault(); $("#q").value = a.dataset.sug; pesquisar(a.dataset.sug); };

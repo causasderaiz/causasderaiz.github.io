@@ -1330,3 +1330,8 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 .pinpin.hist{border-style:dashed;opacity:.85}
 .card--pin{grid-template-columns:1fr}
 .chip--pin{box-shadow:inset 0 -4px 0 #6b4423}
+/* sem preto no mapa (pedido da Sílvia, 9 out. 2026): tribunal passa a roxo; botão de camada ativo a verde */
+:root{--tribunal:#5b2a86}
+.pin.tribunal{background:var(--tribunal);color:#fff}
+.tag.tribunal{background:var(--tribunal);color:#fff}
+.camadas button[aria-pressed="true"]{background:var(--green-bright);color:var(--ink)}
