@@ -71,7 +71,8 @@
 
 <section class="tool">
   <div class="wrap" style="max-width:760px">
-    <form id="enviar" class="formcaso" novalidate>
+    
+<form id="enviar" class="formcaso" novalidate>
       <label>O que se passa? <b>*</b>
         <textarea name="oque" rows="5" required placeholder="Ex.: vão abater um montado de sobreiros para um loteamento; a população recolheu assinaturas"></textarea>
       </label>
@@ -97,8 +98,6 @@
       <button class="btn btn--ink" type="submit">Enviar →</button>
       <p class="mono" style="opacity:.8;margin-top:18px">O que acontece a seguir: lemos o envio, procuramos fontes independentes e, se o caso cumprir a <a href="/metodologia.html">metodologia</a>, entra no mapa. Se não cumprir, fica guardado em observação.</p>
     </form>
-  </div>
-</section>
 
 <style>
 .formcaso label{display:block;font-weight:700;margin:0 0 18px}
@@ -119,6 +118,10 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("onde")) + "&body=" + encodeURIComponent(corpo);
 });
 </script>
+
+
+  </div>
+</section>
 
 </main>
 

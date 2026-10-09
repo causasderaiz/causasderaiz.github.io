@@ -225,7 +225,7 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
       <p class="mono">Ajuda o mapa a crescer</p>
       <h3>Conheces uma luta que devia estar aqui?</h3>
       <p class="txt">Diz-nos onde é, quem está envolvido e que fontes existem. Verificamos e, se cumprir os critérios, entra no mapa.</p>
-      <a class="btn" href="/enviar-caso.html">Enviar um caso →</a>
+      <a class="btn" href="/enviar-caso.html" data-abre-caso>Enviar um caso →</a>
     </div>
     <div class="cta-denuncia">
       <p class="mono">A quem denunciar</p>
@@ -290,6 +290,77 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://causasderaiz.org/#site","name":"Causas de Raiz","url":"https://causasderaiz.org/","inLanguage":["pt-PT","en"],"publisher":{"@id":"https://causasderaiz.org/#org"}},{"@type":"Organization","@id":"https://causasderaiz.org/#org","name":"Causas de Raiz","url":"https://causasderaiz.org/","logo":"https://causasderaiz.org/img-static/apple-touch-icon.png","email":"geral@causasderaiz.org","sameAs":["https://www.instagram.com/terraaguafloresta/","https://www.facebook.com/profile.php?id=61593008168392","https://www.youtube.com/@causasderaiz"],"description":"Uma iniciativa cidadã, independente e sem fins lucrativos, que mapeia as lutas e conflitos ambientais de Portugal Continental, da Madeira e dos Açores."}]}
+</script>
+
+<dialog id="dlg-caso" class="dlg-caso" aria-label="Enviar um caso">
+  <div class="dlg-top"><span class="mono">Enviar um caso</span><button type="button" class="x" data-fecha-caso aria-label="Fechar">✕</button></div>
+  <div class="dlg-corpo">
+<form id="enviar" class="formcaso" novalidate>
+      <label>O que se passa? <b>*</b>
+        <textarea name="oque" rows="5" required placeholder="Ex.: vão abater um montado de sobreiros para um loteamento; a população recolheu assinaturas"></textarea>
+      </label>
+      <label>Onde? (localidade e concelho) <b>*</b>
+        <input name="onde" type="text" required placeholder="Ex.: Morgavel, Sines">
+      </label>
+      <label>Quem está a lutar? (movimento, associação, moradores)
+        <input name="quem" type="text" placeholder="Nome e, se houver, site ou página nas redes">
+      </label>
+      <label>Link ou documento que mostre o caso <b>*</b>
+        <input name="link1" type="url" required placeholder="https:// notícia, petição, consulta pública, ata">
+      </label>
+      <label>Outro link (opcional)
+        <input name="link2" type="url" placeholder="https://">
+      </label>
+      <label>O teu email <b>*</b> <span class="mono" style="color:var(--ink-soft)">(nunca é publicado)</span>
+        <input name="email" type="email" required>
+      </label>
+      <label class="hp" aria-hidden="true">Não preencher
+        <input name="site" type="text" tabindex="-1" autocomplete="off">
+      </label>
+      <p class="erro" id="erro" role="alert"></p>
+      <button class="btn btn--ink" type="submit">Enviar →</button>
+      <p class="mono" style="opacity:.8;margin-top:18px">O que acontece a seguir: lemos o envio, procuramos fontes independentes e, se o caso cumprir a <a href="/metodologia.html">metodologia</a>, entra no mapa. Se não cumprir, fica guardado em observação.</p>
+    </form>
+
+<style>
+.formcaso label{display:block;font-weight:700;margin:0 0 18px}
+.formcaso input,.formcaso textarea{display:block;width:100%;margin-top:6px;padding:12px;border:3px solid var(--line);background:var(--paper);font:inherit;font-weight:400;color:var(--ink)}
+.formcaso .hp{position:absolute;left:-9999px}
+.formcaso .erro{color:var(--red-dark);font-weight:700;min-height:1.2em}
+</style>
+<script>
+document.getElementById("enviar").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
+  if (v("site")) return; // robô
+  if (!v("oque") || !v("onde") || !v("email")) { erro.textContent = "Faltam campos obrigatórios."; return; }
+  if (!/^https?:\/\/\S+\.\S+/.test(v("link1"))) { erro.textContent = "Precisamos de pelo menos um link (começa por http)."; return; }
+  erro.textContent = "";
+  var corpo = "O que se passa:\n" + v("oque") + "\n\nOnde: " + v("onde") + "\nQuem está a lutar: " + v("quem") +
+    "\n\nLinks:\n" + v("link1") + "\n" + v("link2") + "\n\nContacto: " + v("email");
+  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("onde")) + "&body=" + encodeURIComponent(corpo);
+});
+</script>
+
+</div>
+</dialog>
+<style>
+.dlg-caso{width:min(720px,calc(100vw - 32px));max-height:calc(100vh - 32px);padding:0;border:3px solid var(--line);background:var(--cream);box-shadow:8px 8px 0 var(--line);color:var(--ink)}
+.dlg-caso::backdrop{background:rgba(23,26,18,.55)}
+.dlg-caso .dlg-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:3px solid var(--line);position:sticky;top:0;background:var(--cream)}
+.dlg-caso .dlg-corpo{padding:20px 18px}
+.dlg-caso .x{border:3px solid var(--line);background:var(--paper);font-size:18px;width:40px;height:40px;cursor:pointer}
+</style>
+<script>
+(function () {
+  var d = document.getElementById("dlg-caso");
+  if (!d || !d.showModal) return; // sem suporte: o link abre a página do formulário
+  document.querySelectorAll("[data-abre-caso]").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); d.showModal(); });
+  });
+  d.querySelector("[data-fecha-caso]").addEventListener("click", function () { d.close(); });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+})();
 </script>
 
 </main>
