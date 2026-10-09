@@ -408,6 +408,7 @@
       linha(EN ? "Type" : "Tipo", p.tipo[L2]) +
       linha(EN ? "PIN status" : "Estado do PIN", p.estado[L2]) +
       (p.risco ? linha(EN ? "To check" : "A verificar", p.risco[L2]) : "") +
+      linha(EN ? "Diário da República" : "Diário da República", p.dr ? p.dr[L2] : (EN ? "No act found yet" : "Ainda sem ato encontrado")) +
       "</div>" +
       (p.desc ? '<p style="font-size:17px;margin-top:16px"><b>' + p.desc[L2] + "</b></p>" : "") +
       '<p style="margin-top:14px">' + (EN
