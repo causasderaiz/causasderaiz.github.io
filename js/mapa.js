@@ -166,7 +166,8 @@
     '<button class="jump regioes-toggle" type="button" aria-expanded="false">' + (IDIOMA === "en" ? "Regions" : "Regiões") + ' ▾</button>' +
     '<span class="regioes-lista">' + Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") + "</span>" +
     '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
-    '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>';
+    '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>' +
+    '<button class="jump" id="pinsBtn" type="button" aria-pressed="true" title="' + (IDIOMA === "en" ? "Projects of Potential National Interest" : "Projetos de Potencial Interesse Nacional") + '"><span class="pinpin" style="font-size:9px;padding:1px 4px">PIN</span> ' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + '</button>';
   $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (b) {
     b.onclick = function () {
       $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
@@ -311,6 +312,7 @@
     var acaoLabel = c.petLabel ? c.petLabel.replace(/^[^A-Za-zÀ-ú]+/, "").replace(/\s*→\s*$/, "") : "";
     var acao = c.pet ? '<a class="btn btn--ink" href="' + c.pet + '" target="_blank" rel="noopener">' + acaoLabel + "</a>" : "";
     var badge = estadoBadge(c);
+    $(".panel-top .mono").textContent = UI.painel.fichaDoCaso;
     $("#pbody").innerHTML =
       '<img class="panel-hero" src="' + img.src + '" srcset="' + img.srcset + '" sizes="480px" alt="' + c.loc + '">' +
       '<div class="pad">' +
@@ -347,6 +349,53 @@
     $("#panel").classList.add("open"); $("#panel").setAttribute("aria-hidden", "false");
     $("#scrim").classList.add("on");
     render();
+  }
+  // Projetos PIN (Potencial Interesse Nacional): camada própria, sem número, sem agrupar.
+  // Só marcamos onde estão; a ficha diz que ainda não temos informação (pedido da Sílvia, 9 out. 2026).
+  var PINS = window.PINS_DATA || { lista: [] };
+  var EN = IDIOMA === "en";
+  var camadaPins = L.layerGroup().addTo(map);
+  PINS.lista.forEach(function (p) {
+    var m = L.marker(p.ll, { icon: L.divIcon({ className: "", iconSize: [34, 22], iconAnchor: [17, 11], html: '<span class="pinpin' + (p.hist ? " hist" : "") + '">PIN</span>' }), title: p.nome, zIndexOffset: -500 }).addTo(camadaPins);
+    m.bindTooltip("<b>" + (p.codigo ? p.codigo + " · " : "") + p.nome + "</b><br>" + p.concelho + " · " + p.tipo[EN ? 1 : 0] + "<br><i>" + p.estado[EN ? 1 : 0] + "</i>", { direction: "top", offset: [0, -12] });
+    m.on("click", function () { openPin(p); });
+  });
+  $("#pinsBtn").onclick = function () {
+    var on = map.hasLayer(camadaPins);
+    if (on) map.removeLayer(camadaPins); else camadaPins.addTo(map);
+    this.setAttribute("aria-pressed", String(!on));
+  };
+  function openPin(p) {
+    map.flyTo(p.ll, 11, { duration: 0.9 });
+    var L2 = EN ? 1 : 0;
+    var caso = p.caso ? LUTAS.find(function (x) { return x.id === p.caso; }) : null;
+    var linha = function (rot, val) { return '<div><span class="mono">' + rot + "</span><span>" + val + "</span></div>"; };
+    $(".panel-top .mono").textContent = EN ? "PIN record" : "Ficha PIN";
+    $("#pbody").innerHTML =
+      '<div class="pad">' +
+      '<div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="pinpin' + (p.hist ? " hist" : "") + '">PIN</span>' + (p.codigo ? '<span class="numcaso">' + p.codigo + "</span>" : "") + '<span class="mono">' + (EN ? "Project of Potential National Interest" : "Projeto de Potencial Interesse Nacional") + "</span></div>" +
+      "<h2>" + escHtml(p.nome) + "</h2>" +
+      '<div class="loc">' + escHtml(p.concelho) + "</div>" +
+      '<p class="mono" style="color:var(--ink-soft);margin-top:6px">' + (EN ? "Approximate location: the point marks the municipality, not the site." : "Localização aproximada: o ponto marca o concelho, não o terreno.") + "</p>" +
+      '<div class="facts" style="margin-top:14px">' +
+      linha(EN ? "Type" : "Tipo", p.tipo[L2]) +
+      linha(EN ? "PIN status" : "Estado do PIN", p.estado[L2]) +
+      (p.risco ? linha(EN ? "To check" : "A verificar", p.risco[L2]) : "") +
+      "</div>" +
+      (p.desc ? '<p style="font-size:17px;margin-top:16px"><b>' + p.desc[L2] + "</b></p>" : "") +
+      '<p style="margin-top:14px">' + (EN
+        ? "PIN status is granted by the Permanent Investor Support Committee (CPAI), which follows the administrative processing of these projects. It is for investments of at least 25 million euros that create at least 50 direct jobs."
+        : "O estatuto PIN é atribuído pela Comissão Permanente de Apoio ao Investidor (CPAI), que acompanha a tramitação administrativa destes projetos. Destina-se a investimentos de pelo menos 25 milhões de euros que criem pelo menos 50 postos de trabalho diretos.") + "</p>" +
+      '<div class="note">' + (p.desc ? (EN
+        ? "Do you know more about this project, its impacts or any opposition? Write to us with a link or document: "
+        : "Sabes mais sobre este projeto, os seus impactos ou contestação? Escreve-nos com um link ou documento: ") : (EN
+        ? "We do not yet have information on this project's impacts or on any opposition. Do you know something? Write to us with a link or document: "
+        : "Ainda não temos informação sobre os impactos deste projeto nem sobre contestação. Sabes alguma coisa? Escreve-nos com um link ou documento: ")) + '<a href="mailto:geral@causasderaiz.org">geral@causasderaiz.org</a></div>' +
+      (caso ? '<div class="actions"><a class="btn btn--sm btn--green" href="/' + caso.id + (EN ? "-en" : "") + '.html" target="_blank" rel="noopener">' + (EN ? "See the related case" : "Ver o caso relacionado") + ": " + escHtml(caso.t) + "</a></div>" : "") +
+      '<div class="section-lbl"><span class="mono">' + UI.painel.fontes + "</span></div>" +
+      '<ol class="fontes">' + p.fontes.map(function (f) { return '<li><a href="' + f.url + '" target="_blank" rel="noopener">' + f[IDIOMA] + "</a></li>"; }).join("") + "</ol></div>";
+    $("#panel").classList.add("open"); $("#panel").setAttribute("aria-hidden", "false");
+    $("#scrim").classList.add("on");
   }
   function closePanel() {
     $("#panel").classList.remove("open"); $("#panel").setAttribute("aria-hidden", "true");
