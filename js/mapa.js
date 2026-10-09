@@ -101,7 +101,7 @@
     b.onclick = function () {
       st.soPins = !st.soPins;
       b.setAttribute("aria-pressed", String(st.soPins));
-      if (st.soPins && typeof camadaPins !== "undefined" && !map.hasLayer(camadaPins)) { camadaPins.addTo(map); $("#pinsBtn").setAttribute("aria-pressed", "true"); }
+      if (st.soPins && typeof camadaPins !== "undefined" && !map.hasLayer(camadaPins)) { camadaPins.addTo(map); }
       render();
     };
   });
@@ -180,7 +180,6 @@
     '<span class="regioes-lista">' + Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") + "</span>" +
     '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
     '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>' +
-    '<button class="jump" id="pinsBtn" type="button" aria-pressed="true" title="' + (IDIOMA === "en" ? "Projects of Potential National Interest" : "Projetos de Potencial Interesse Nacional") + '"><span class="pinpin" style="font-size:9px;padding:1px 4px">PIN</span> ' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + '</button>' +
     // ligação à BRAVA, Rede de Resistência Rural (pedido da Sílvia, 9 out. 2026): abre o site deles
     '<a class="jump jump--brava" href="https://rederesistenciarural.org" target="_blank" rel="noopener"><img src="/img-static/parceiros/brava.svg" alt="BRAVA" width="52" height="17"> ' + (IDIOMA === "en" ? "Collectives" : "Coletivos") + ' ↗</a>';
   $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (b) {
@@ -389,11 +388,6 @@
     m.bindTooltip("<b>" + (p.codigo ? p.codigo + " · " : "") + p.nome + "</b><br>" + p.concelho + " · " + p.tipo[EN ? 1 : 0] + "<br><i>" + p.estado[EN ? 1 : 0] + "</i>", { direction: "top", offset: [0, -12] });
     m.on("click", function () { openPin(p); });
   });
-  $("#pinsBtn").onclick = function () {
-    var on = map.hasLayer(camadaPins);
-    if (on) map.removeLayer(camadaPins); else camadaPins.addTo(map);
-    this.setAttribute("aria-pressed", String(!on));
-  };
   function openPin(p) {
     map.flyTo(p.ll, 11, { duration: 0.9 });
     var L2 = EN ? 1 : 0;
