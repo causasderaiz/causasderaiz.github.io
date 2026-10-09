@@ -97,6 +97,8 @@
   var chipDc = $("#chips").querySelector('.chip[data-cat="datacenter"]');
   var chipPinHtml = '<button class="chip chip--pin" data-pin="1" aria-pressed="false">' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + " <i>" + ((window.PINS_DATA || { lista: [] }).lista.length) + "</i></button>";
   if (chipDc) chipDc.insertAdjacentHTML("afterend", chipPinHtml); else $("#estado").insertAdjacentHTML("beforebegin", chipPinHtml);
+  // ligação à BRAVA, Rede de Resistência Rural (pedido da Sílvia, 9 out. 2026): não é filtro, abre o site deles
+  $("#estado").insertAdjacentHTML("beforebegin", '<a class="chip chip--brava" href="https://rederesistenciarural.org" target="_blank" rel="noopener"><img src="/img-static/parceiros/brava.svg" alt="BRAVA" width="58" height="19"> ' + (IDIOMA === "en" ? "Collectives" : "Coletivos") + " ↗</a>");
   $("#chips").querySelectorAll(".chip[data-pin]").forEach(function (b) {
     b.onclick = function () {
       st.soPins = !st.soPins;
