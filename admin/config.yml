@@ -42,6 +42,7 @@ collections:
       - { label: "Verificado em (data em que leste as fontes)", name: verif, widget: datetime, time_format: false, format: "YYYY-MM-DD", picker_utc: true }
       - { label: "Coordenadas [latitude, longitude]", name: ll, required: false, widget: list, field: { label: "Coordenada", name: c, widget: number, value_type: float }, hint: "Ex.: 41.6897 e -7.6772 (copiar do Google Maps)" }
       - { label: "Link da petição ou consulta (botão de ação)", name: pet, widget: string, required: false }
+      - { label: "Links dos envolvidos (site ou rede de cada coletivo)", name: quemLinks, required: false, widget: list, field: { label: "Link", name: url, widget: string, required: false }, hint: "Pela mesma ordem da lista \"Quem está envolvido\". Deixar vazio quem não tem site." }
       - label: "Recolha de fundos (botão Apoiar com donativo)"
         name: fundos
         widget: list
