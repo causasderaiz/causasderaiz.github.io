@@ -66,17 +66,33 @@
     "beforeend",
     TAX.regioes.ordem.map(function (slug) { return '<option value="' + slug + '">' + TAX.regioes.labels[slug][IDIOMA] + "</option>"; }).join("")
   );
-  $("#estado").innerHTML =
-    '<button data-est="todas" aria-pressed="true">' + UI.estados.todas + "</button>" +
-    [
-      ["peticao", UI.estados.peticao],
-      ["consulta", UI.estados.consulta],
-      ["tribunal", UI.estados.tribunal],
-      ["vitoria", UI.estados.vitoria],
-      ["acompanhamento", UI.estados.acompanhamento],
-    ]
-      .map(function (kl) { return '<button data-est="' + kl[0] + '" aria-pressed="false">' + kl[1] + "</button>"; })
-      .join("");
+  // os botões vêm no HTML (filtros-chips.njk); só se gera aqui se faltarem
+  if (!$("#estado").querySelector("button")) {
+    $("#estado").innerHTML =
+      '<button data-est="todas" aria-pressed="true">' + UI.estados.todas + "</button>" +
+      [
+        ["peticao", UI.estados.peticao],
+        ["consulta", UI.estados.consulta],
+        ["tribunal", UI.estados.tribunal],
+        ["vitoria", UI.estados.vitoria],
+        ["acompanhamento", UI.estados.acompanhamento],
+      ]
+        .map(function (kl) { return '<button data-est="' + kl[0] + '" aria-pressed="false">' + kl[1] + "</button>"; })
+        .join("");
+    $("#estado").insertAdjacentHTML(
+      "beforebegin",
+      TAX.categorias.ordem
+        .map(function (k) {
+          var n = LUTAS.filter(function (c) { return temCat(c, k); }).length;
+          return '<button class="chip' + (n ? "" : " chip--vazio") + '" data-cat="' + k + '" aria-pressed="false">' + CATLBL[k] + " <i>" + n + "</i></button>";
+        })
+        .join("")
+    );
+    // chip dos PIN logo a seguir ao dos data centers, no mesmo estilo (sublinhado castanho)
+    var chipDc = $("#chips").querySelector('.chip[data-cat="datacenter"]');
+    var chipPinHtml = '<button class="chip chip--pin" data-pin="1" aria-pressed="false">' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + " <i>" + ((window.PINS_DATA || { lista: [] }).lista.length) + "</i></button>";
+    if (chipDc) chipDc.insertAdjacentHTML("afterend", chipPinHtml); else $("#estado").insertAdjacentHTML("beforebegin", chipPinHtml);
+  }
   $("#estado").querySelectorAll("button").forEach(function (b) {
     b.onclick = function () {
       st.est = b.dataset.est;
@@ -84,19 +100,6 @@
       render();
     };
   });
-  $("#estado").insertAdjacentHTML(
-    "beforebegin",
-    TAX.categorias.ordem
-      .map(function (k) {
-        var n = LUTAS.filter(function (c) { return temCat(c, k); }).length;
-        return '<button class="chip' + (n ? "" : " chip--vazio") + '" data-cat="' + k + '" aria-pressed="false">' + CATLBL[k] + " <i>" + n + "</i></button>";
-      })
-      .join("")
-  );
-  // chip dos PIN logo a seguir ao dos data centers, no mesmo estilo (sublinhado castanho)
-  var chipDc = $("#chips").querySelector('.chip[data-cat="datacenter"]');
-  var chipPinHtml = '<button class="chip chip--pin" data-pin="1" aria-pressed="false">' + (IDIOMA === "en" ? "PIN projects" : "Projetos PIN") + " <i>" + ((window.PINS_DATA || { lista: [] }).lista.length) + "</i></button>";
-  if (chipDc) chipDc.insertAdjacentHTML("afterend", chipPinHtml); else $("#estado").insertAdjacentHTML("beforebegin", chipPinHtml);
   $("#chips").querySelectorAll(".chip[data-pin]").forEach(function (b) {
     b.onclick = function () {
       st.soPins = !st.soPins;

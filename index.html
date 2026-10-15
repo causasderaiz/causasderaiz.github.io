@@ -28,10 +28,26 @@
 <link rel="alternate" hreflang="en" href="https://causasderaiz.org/index-en.html">
 <link rel="alternate" hreflang="x-default" href="https://causasderaiz.org/">
 <link rel="alternate" type="application/rss+xml" title="A Raiz, boletim do Causas de Raiz" href="https://causasderaiz.org/boletim.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css?v=fb30399701">
+
+<link rel="preload" href="/fontes/londrina-solid-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fontes/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fontes/space-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Londrina Solid';font-style:normal;font-weight:300;font-display:swap;src:url(/fontes/londrina-solid-300-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Londrina Solid';font-style:normal;font-weight:400;font-display:swap;src:url(/fontes/londrina-solid-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Londrina Solid';font-style:normal;font-weight:900;font-display:swap;src:url(/fontes/londrina-solid-900-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url(/fontes/space-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;src:url(/fontes/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(/fontes/space-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(/fontes/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(/fontes/space-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(/fontes/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/fontes/space-mono-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/fontes/space-mono-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:700;font-display:swap;src:url(/fontes/space-mono-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Space Mono';font-style:normal;font-weight:700;font-display:swap;src:url(/fontes/space-mono-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
+<link rel="stylesheet" href="/css/site.css?v=7fec0b4724">
 
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
 <script src="/vendor/leaflet/leaflet.js"></script>
@@ -80,7 +96,7 @@
       <p class="mono" style="margin:0 0 16px;font-size:20px">Portugal Continental, Madeira e Açores</p>
       <h1>Mapa dos <span class="em">conflitos</span> ambientais em <span class="em2">Portugal</span></h1>
       <p class="lede">Cada ponto é um lugar concreto, uma comunidade que resiste e uma forma de agir. Filtra por petição aberta, consulta pública, processo em tribunal ou tema.</p>
-      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ 128 casos documentados · <span id="h-pet">0</span> petições abertas · <span id="h-con">0</span> consultas abertas · Atualizado a 13 de outubro</p>
+      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ 128 casos documentados · <span id="h-pet">0</span> petições abertas · <span id="h-con">0</span> consultas abertas · Atualizado a 15 de outubro</p>
     </div>
     <div class="searchbar" id="busca">
       <div class="searchrow">
@@ -101,7 +117,9 @@
       <button type="button" class="filtrar-toggle" id="filtrar" aria-expanded="false" aria-controls="chips">Filtrar por tema e estado <span aria-hidden="true">▾</span></button>
       <div class="filters" id="chips">
         <span class="mono" style="margin-right:4px">Temas</span>
-        <div class="seg" id="estado"></div>
+        <button class="chip" data-cat="energia" aria-pressed="false">Energia <i>9</i></button><button class="chip" data-cat="eolicas" aria-pressed="false">Eólicas <i>9</i></button><button class="chip" data-cat="megasolares" aria-pressed="false">MegaSolares <i>10</i></button><button class="chip" data-cat="mineracao" aria-pressed="false">Mineração <i>19</i></button><button class="chip" data-cat="agua" aria-pressed="false">Água <i>28</i></button><button class="chip" data-cat="imobiliario" aria-pressed="false">Imobiliário / Ordenamento <i>21</i></button><button class="chip" data-cat="praias" aria-pressed="false">Praias <i>7</i></button><button class="chip" data-cat="infraestrutura" aria-pressed="false">Infraestrutura <i>12</i></button><button class="chip" data-cat="datacenter" aria-pressed="false">Data center <i>3</i></button><button class="chip chip--pin" data-pin="1" aria-pressed="false">Projetos PIN <i>39</i></button><button class="chip" data-cat="comunidade" aria-pressed="false">Comunidade <i>10</i></button><button class="chip" data-cat="incendios" aria-pressed="false">Incêndios <i>6</i></button><button class="chip" data-cat="racismo-ambiental" aria-pressed="false">Racismo ambiental <i>3</i></button><button class="chip" data-cat="poluicao" aria-pressed="false">Poluição <i>32</i></button><button class="chip" data-cat="arvoredo" aria-pressed="false">Arvoredo urbano <i>3</i></button><button class="chip" data-cat="biodiversidade" aria-pressed="false">Biodiversidade <i>81</i></button><button class="chip" data-cat="agropecuaria" aria-pressed="false">Agropecuária e agricultura intensiva <i>4</i></button>
+<div class="seg" id="estado"><button data-est="todas" aria-pressed="true">Todas</button><button data-est="peticao" aria-pressed="false">⚡ Petição ativa</button><button data-est="consulta" aria-pressed="false">🗳 Consulta pública</button><button data-est="tribunal" aria-pressed="false">⚖ Em tribunal</button><button data-est="vitoria" aria-pressed="false">✓ Vitória</button><button data-est="acompanhamento" aria-pressed="false">◐ Acompanhamento</button></div>
+
       </div>
     </div>
   </div>
@@ -442,7 +460,7 @@ window.SINONIMOS = [["solar","fotovoltaica","fotovoltaico","painel solar","pain�
 </script>
 
 <script src="/js/pesquisa-mapa.js?v=f438291972"></script>
-<script src="/js/mapa.js?v=769d06591d"></script>
+<script src="/js/mapa.js?v=e098814568"></script>
 
 </body>
 </html>
