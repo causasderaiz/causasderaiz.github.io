@@ -94,9 +94,9 @@
   <div class="wrap">
     <div>
       <p class="mono" style="margin:0 0 16px;font-size:20px">Portugal Continental, Madeira e Açores</p>
-      <h1>Mapa dos <span class="em">conflitos</span> ambientais em <span class="em2">Portugal</span></h1>
-      <p class="lede">Cada ponto é um lugar concreto, uma comunidade que resiste e uma forma de agir. Filtra por petição aberta, consulta pública, processo em tribunal ou tema.</p>
-      <p class="mono" style="margin:14px 0 0;font-size:16px;color:var(--green-bright-text)">✓ 132 casos documentados · <span id="h-pet">0</span> petições abertas · <span id="h-con">0</span> consultas abertas · Atualizado a 19 de outubro</p>
+      <h1>Mapa dos <span class="em">conflitos</span> <span class="em2">ambientais</span></h1>
+      <p class="lede">Cada ponto é um lugar onde uma comunidade defende a terra, a água ou a floresta, e uma forma de te juntares.</p>
+      <p class="estado-linha"><b id="h-pet">0</b> petições abertas · <b id="h-con">0</b> consultas abertas · atualizado a 19 de outubro</p>
     </div>
     <div class="searchbar" id="busca">
       <div class="searchrow">
@@ -243,7 +243,7 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
     <div class="cta-caso">
       <p class="mono">Ajuda o mapa a crescer</p>
       <h3>Conheces uma luta que devia estar aqui?</h3>
-      <p class="txt">Diz-nos onde é, quem está envolvido e que fontes existem. Verificamos e, se cumprir os critérios, entra no mapa.</p>
+      <p class="txt">Diz-nos onde é e quem está envolvido. Se cumprir os critérios, entra no mapa.</p>
       <a class="btn" href="/enviar-caso.html" data-abre-caso>Enviar um caso →</a>
     </div>
     <div class="cta-denuncia">
@@ -267,21 +267,14 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
       <p class="frase">Reunimos as lutas e conflitos ambientais de Portugal Continental, da Madeira e dos Açores: onde acontecem, quem está envolvido e como participar.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
         <a class="btn btn--sm" href="/sobre.html">Sobre</a>
-        <a class="btn btn--sm" href="/metodologia.html">Metodologia</a>
         <a class="btn btn--sm" href="mailto:geral@causasderaiz.org">Contacto</a>
       </div>
     </div>
-    <aside class="indep">
-      <p class="mono">Independente</p>
-      <p><b>Sem filiação partidária.</b></p>
-      <p style="margin-top:8px"><b>Sem financiamento de empresas com interesses nos casos documentados.</b></p>
-      <p style="margin-top:12px">Sem publicidade e sem cookies de rastreio. <a href="/metodologia.html">Metodologia</a>.</p>
-    </aside>
   </div>
 </section>
 
 <div class="national">
-  <div><b id="n-tot">0</b><span class="mono">casos documentados</span></div>
+  <div><b id="n-tot">0</b><span class="mono">casos no mapa</span></div>
   <div><b id="s-urg">0</b><span class="mono">petições abertas para assinar</span></div>
   <div><b id="s-sb">0</b><span class="mono">consultas públicas abertas</span></div>
   <div><b id="n-org">0</b><span class="mono">organizações e movimentos envolvidos</span></div>
@@ -307,6 +300,29 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
   </div>
 </section>
 
+<style>
+/* Home mais limpa (Sílvia, 19 out. 2026): menos molduras e sombras, mais espaço, letra mono mais calma */
+.hero{background:var(--cream);border-bottom:0;padding:clamp(40px,5vw,72px) 0 28px}
+.hero h1{font-size:clamp(24px,7.4vw,92px);white-space:nowrap}
+.hero p.lede{font-size:clamp(18px,1.5vw,21px);max-width:46ch}
+.estado-linha{margin:18px 0 0;font-size:16px;color:var(--ink-soft)}
+.estado-linha b{color:var(--red-dark)}
+.searchbar{box-shadow:none;border:2px solid var(--line);border-radius:6px;overflow:hidden}
+.filters{border-top:1px solid rgba(23,26,18,.12)}
+.mono{letter-spacing:.06em}
+.alerta{border-bottom:0}
+.alerta .wrap{padding:10px 24px;gap:14px;flex-wrap:nowrap}
+.alerta-item{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board{border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+.how,.propose{border-bottom:0;padding:72px 0}
+.step{box-shadow:none;border:2px solid var(--line);border-radius:6px}
+.national{border-top:1px solid rgba(23,26,18,.15);border-bottom:1px solid rgba(23,26,18,.15);background:var(--cream)}
+.national div{border-right:1px solid rgba(23,26,18,.15)}
+.sobregrid{grid-template-columns:1fr!important}
+.propose .cta-caso,.propose .cta-denuncia,.how .btn,.propose .btn,.sobrecurto .btn,.newsletter .btn,section .btn{box-shadow:none!important}
+.propose .cta-caso,.propose .cta-denuncia{border-width:2px!important;border-radius:6px}
+@media (max-width:700px){.alerta .mono{display:none}.estado-linha{font-size:15px}}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://causasderaiz.org/#site","name":"Causas de Raiz","url":"https://causasderaiz.org/","inLanguage":["pt-PT","en"],"publisher":{"@id":"https://causasderaiz.org/#org"}},{"@type":"Organization","@id":"https://causasderaiz.org/#org","name":"Causas de Raiz","url":"https://causasderaiz.org/","logo":"https://causasderaiz.org/img-static/apple-touch-icon.png","email":"geral@causasderaiz.org","sameAs":["https://www.instagram.com/terraaguafloresta/","https://www.facebook.com/profile.php?id=61593008168392","https://www.youtube.com/@causasderaiz","https://www.linkedin.com/in/causas-de-raiz-98b824441/"],"description":"Uma iniciativa cidadã, independente e sem fins lucrativos, que mapeia as lutas e conflitos ambientais de Portugal Continental, da Madeira e dos Açores."}]}
 </script>
