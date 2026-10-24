@@ -324,6 +324,11 @@
     $("#s-sb").textContent = LUTAS.filter(function (c) { return acaoTipo(c) === "consulta"; }).length;
     if ($("#h-pet")) $("#h-pet").textContent = $("#s-urg").textContent;
     if ($("#h-con")) $("#h-con").textContent = $("#s-sb").textContent;
+    // Linha do topo: total de casos e singular/plural (Sílvia, 24 out. 2026: "1 consultas" não)
+    if ($("#h-tot")) $("#h-tot").textContent = LUTAS.length;
+    var en = IDIOMA === "en";
+    if ($("#h-pet-l")) $("#h-pet-l").textContent = $("#s-urg").textContent === "1" ? (en ? "open petition" : "petição aberta") : (en ? "open petitions" : "petições abertas");
+    if ($("#h-con-l")) $("#h-con-l").textContent = $("#s-sb").textContent === "1" ? (en ? "open consultation" : "consulta aberta") : (en ? "open consultations" : "consultas abertas");
     $("#n-tot").textContent = LUTAS.length;
     $("#n-org").textContent = new Set(LUTAS.flatMap(function (c) { return c.quem || []; }).map(function (q) { return q.trim(); }).filter(Boolean)).size;
     $("#n-reg").textContent = new Set(LUTAS.map(function (c) { return c.reg; })).size;
