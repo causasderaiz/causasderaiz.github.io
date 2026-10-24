@@ -327,6 +327,7 @@
     $("#n-tot").textContent = LUTAS.length;
     $("#n-org").textContent = new Set(LUTAS.flatMap(function (c) { return c.quem || []; }).map(function (q) { return q.trim(); }).filter(Boolean)).size;
     $("#n-reg").textContent = new Set(LUTAS.map(function (c) { return c.reg; })).size;
+    if (typeof filtrarPins === "function" && marcadoresPins) filtrarPins();
   }
   function hi(id, on) {
     var m = markers[id];
@@ -386,11 +387,38 @@
   var PINS = window.PINS_DATA || { lista: [] };
   var EN = IDIOMA === "en";
   var camadaPins = L.layerGroup().addTo(map);
+  var marcadoresPins = [];
   PINS.lista.forEach(function (p) {
     var m = L.marker(p.ll, { icon: L.divIcon({ className: "", iconSize: [34, 22], iconAnchor: [17, 11], html: '<span class="pinpin' + (p.hist ? " hist" : "") + '">PIN</span>' }), title: p.nome, zIndexOffset: -500 }).addTo(camadaPins);
     m.bindTooltip("<b>" + (p.codigo ? p.codigo + " · " : "") + p.nome + "</b><br>" + p.concelho + " · " + p.tipo[EN ? 1 : 0] + "<br><i>" + p.estado[EN ? 1 : 0] + "</i>", { direction: "top", offset: [0, -12] });
     m.on("click", function () { openPin(p); });
+    marcadoresPins.push({ p: p, m: m });
   });
+  // Os PIN obedecem aos filtros e à pesquisa como os casos (pedido da Sílvia, 24 out. 2026):
+  // sem filtros aparecem todos; com o filtro de estado (petições, consultas, tribunal...) saem,
+  // porque não têm estado de luta; com região, tema ou pesquisa ficam só os que correspondem.
+  function normPin(s) {
+    return String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  }
+  function pinVisivel(p) {
+    if (st.soPins) return true;
+    if (st.est !== "todas") return false;
+    if (st.reg && p.reg !== st.reg) return false;
+    if (st.cats.size && !st.cats.has(p.cat)) return false;
+    var q = normPin(st.q);
+    if (q) {
+      var hay = " " + normPin([p.codigo, p.nome, p.concelho, p.tipo.join(" "), (p.risco || []).join(" "), (p.desc || []).join(" ")].join(" ")) + " ";
+      return q.split(" ").filter(function (w) { return w.length > 2; }).every(function (w) { return hay.indexOf(" " + w) !== -1; });
+    }
+    return true;
+  }
+  function filtrarPins() {
+    marcadoresPins.forEach(function (x) {
+      var v = pinVisivel(x.p), tem = camadaPins.hasLayer(x.m);
+      if (v && !tem) camadaPins.addLayer(x.m);
+      if (!v && tem) camadaPins.removeLayer(x.m);
+    });
+  }
   function openPin(p) {
     map.flyTo(p.ll, 11, { duration: 0.9 });
     var L2 = EN ? 1 : 0;
