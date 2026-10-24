@@ -73,8 +73,8 @@ section.band:nth-of-type(even) .card{background:var(--cream)}
 .tag.red{background:var(--red);color:var(--cream)}
 .tag.green{background:var(--green-bright)}
 ul.plain{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px;max-width:78ch}
-ul.plain li{display:grid;grid-template-columns:24px 1fr;gap:12px}
-ul.plain li::before{content:"";width:13px;height:13px;background:var(--red);border:3px solid var(--line);border-radius:50%;margin-top:6px}
+ul.plain li{position:relative;padding-left:36px}
+ul.plain li::before{content:"";position:absolute;left:0;top:6px;width:13px;height:13px;background:var(--red);border:3px solid var(--line);border-radius:50%}
 ul.plain.g li::before{background:var(--green-bright)}
 .nb{border:3px solid var(--line);background:var(--cream);padding:18px 20px;margin:26px 0}
 footer{padding:40px 0 60px;font-size:14px}
