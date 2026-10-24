@@ -64,6 +64,7 @@ collections:
           - { label: "Ficheiro de partilha (deixa vazio: é preenchido sozinho)", name: rootFile, required: false, widget: string }
           - { label: "Crédito da imagem (opcional, ex.: Imagem: Google Earth)", name: credito, required: false, widget: string }
           - { label: "Só na raiz", name: imgRootOnly, required: false, widget: boolean, default: false }
+          - { label: "Enquadramento da foto na ficha (opcional, ex.: 50% 10% para mostrar a parte de cima)", name: pos, required: false, widget: string, hint: "Primeiro número: esquerda (0%) a direita (100%). Segundo: topo (0%) a fundo (100%). Vazio: centro." }
       - label: "Português"
         name: pt
         widget: object
