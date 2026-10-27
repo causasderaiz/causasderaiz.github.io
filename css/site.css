@@ -1288,6 +1288,8 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
   .acts .acao-lateral{display:none}
   /* telemóvel: estado e petição/consulta logo no topo, sem scroll (Sílvia, 27 out. 2026) */
   .casohero img{height:150px}
+  .panel-hero{height:130px!important;object-fit:cover}
+  .acao-topo{margin:12px 0 14px}
   .casotop{padding-top:16px}
   .casotop .grid2>div:first-child{display:flex;flex-direction:column}
   .casotop .grid2>div:first-child>*{order:6}

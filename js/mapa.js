@@ -358,13 +358,14 @@
       '<span class="tag ' + badge.k + '">' + badge.i + " " + badge.l + "</span>" +
       '<span class="mono">' + c.catLabel + "</span>" +
       "</div>" +
+      // estado e petição/consulta logo no topo, sem scroll no telemóvel (Sílvia, 27 out. 2026)
+      '<p class="mono" style="color:var(--red-dark);margin-top:12px">' + c.status + "</p>" +
+      (acao ? '<div class="actions acao-topo">' + acao + "</div>" : "") +
       "<h2>" + c.t + "</h2>" +
       '<div class="loc">' + c.loc + " · " + c.regLabel + "</div>" +
-      '<p class="mono" style="color:var(--red-dark);margin-top:12px">' + c.status + "</p>" +
       (F.stat ? '<p class="mono" style="color:var(--ink-soft);margin-top:6px">' + F.stat + "</p>" : "") +
       '<p style="font-size:17px"><b>' + c.res + "</b></p>" +
       '<div class="actions">' +
-      acao +
       (c.ll ? '<a class="btn btn--sm" href="' + googleEarthUrl(c) + '" target="_blank" rel="noopener">' + UI.painel.googleEarth + "</a>" : "") +
       '<button class="btn btn--sm" id="sharelink">' + UI.painel.copiarLink + "</button>" +
       '<a class="btn btn--sm btn--green" href="/' + c.id + (IDIOMA === "en" ? "-en" : "") + '.html" target="_blank" rel="noopener">' + UI.painel.verFichaCompleta + "</a>" +
