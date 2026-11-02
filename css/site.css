@@ -1249,6 +1249,7 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 /* Fichas: cronologia por anos (4 out. 2026) */
 .cr-tit{font-size:clamp(22px,2.2vw,32px);margin-top:40px}
 .cr-contexto{font-size:17px;max-width:66ch;margin-top:12px}
+.cr-ameacas{max-width:66ch;margin-top:14px}.cr-ameacas p{font-size:17px;margin-top:10px}
 .cr-anos{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
 .cr-anos a{border:2px solid var(--line);padding:3px 10px;color:var(--ink);background:var(--paper)}
 .cr-anos a:hover{background:var(--ink);color:var(--cream)}
