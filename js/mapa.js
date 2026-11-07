@@ -15,7 +15,7 @@
   var UI = window.UI;
   var IDIOMA = window.IDIOMA || "pt";
 
-  var ESTICON = { urgente: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐", vigilancia: "◎" };
+  var ESTICON = { urgente: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐", vigilancia: "🚩" };
   var ESTLBL = TAX.estados[IDIOMA];
   var CATLBL = TAX.categorias[IDIOMA];
   // categoria principal ou uma das secundárias (cat2 é uma lista)
@@ -150,7 +150,7 @@
     var isDatacenter = temCat(c, "datacenter");
     return L.divIcon({
       className: "", iconSize: [34, 34], iconAnchor: [17, 17],
-      html: '<span class="pin ' + estadoBadge(c).k + (c.prazo ? " prazo" : "") + (isDatacenter ? " datacenter" : "") + (c.redFlag ? " redflag" : "") + '">' + String(c.num || i + 1).padStart(2, "0") + "</span>",
+      html: '<span class="pin ' + estadoBadge(c).k + (c.prazo ? " prazo" : "") + (isDatacenter ? " datacenter" : "") + (c.redFlag || c.est === "vigilancia" ? " redflag" : "") + '">' + String(c.num || i + 1).padStart(2, "0") + "</span>",
     });
   };
   var VISTAS = {};

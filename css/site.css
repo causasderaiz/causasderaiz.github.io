@@ -1356,10 +1356,9 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 #alerta-prazo{display:grid}
 #alerta-prazo .alerta-item{grid-area:1/1;align-self:center}
 #alerta-prazo .alerta-item[hidden]{display:block!important;visibility:hidden}
-/* estado "Em vigilância" (Sílvia, 7 nov. 2026): projetos anunciados por confirmar, a laranja */
-:root{--vigilancia:#f07a1a}
-.pin.vigilancia{background:var(--vigilancia);color:var(--ink)}
-.tag.vigilancia{background:var(--vigilancia);color:var(--ink)}
+/* estado "Red flag" (Sílvia, 7 nov. 2026): projetos sob vigilância, contorno tracejado vermelho e bandeira */
+.pin.vigilancia{background:var(--paper);border:3px dashed var(--red);color:var(--red-dark)}
+.tag.vigilancia{background:var(--paper);outline:2px dashed var(--red);outline-offset:-2px;color:var(--red-dark)}
 /* red flag (Sílvia, 7 nov. 2026): bandeira vermelha por cima do número do caso no mapa */
 .pin.redflag{position:relative;overflow:visible}
 .pin.redflag::after{content:"\1F6A9";position:absolute;left:50%;bottom:100%;transform:translate(-30%,2px);font-size:18px;line-height:1;pointer-events:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))}
