@@ -1356,3 +1356,7 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 #alerta-prazo{display:grid}
 #alerta-prazo .alerta-item{grid-area:1/1;align-self:center}
 #alerta-prazo .alerta-item[hidden]{display:block!important;visibility:hidden}
+/* estado "Em vigilância" (Sílvia, 7 nov. 2026): projetos anunciados por confirmar, a laranja */
+:root{--vigilancia:#f07a1a}
+.pin.vigilancia{background:var(--vigilancia);color:var(--ink)}
+.tag.vigilancia{background:var(--vigilancia);color:var(--ink)}

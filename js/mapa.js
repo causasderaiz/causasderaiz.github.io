@@ -15,7 +15,7 @@
   var UI = window.UI;
   var IDIOMA = window.IDIOMA || "pt";
 
-  var ESTICON = { urgente: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐" };
+  var ESTICON = { urgente: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐", vigilancia: "◎" };
   var ESTLBL = TAX.estados[IDIOMA];
   var CATLBL = TAX.categorias[IDIOMA];
   // categoria principal ou uma das secundárias (cat2 é uma lista)
@@ -76,6 +76,7 @@
         ["tribunal", UI.estados.tribunal],
         ["vitoria", UI.estados.vitoria],
         ["acompanhamento", UI.estados.acompanhamento],
+        ["vigilancia", UI.estados.vigilancia],
       ]
         .map(function (kl) { return '<button data-est="' + kl[0] + '" aria-pressed="false">' + kl[1] + "</button>"; })
         .join("");
@@ -218,7 +219,7 @@
   });
   map.fitBounds(VISTAS[UI.busca.todoPais], { padding: [28, 28] });
 
-  var PESO = { urgente: 0, consulta: 1, tribunal: 2, acompanhamento: 3, vitoria: 4 };
+  var PESO = { urgente: 0, consulta: 1, tribunal: 2, acompanhamento: 3, vitoria: 4, vigilancia: 5 };
   function match(c) {
     if (st.soPins) return false;
     if (st.est !== "todas") {
@@ -227,6 +228,7 @@
       if (st.est === "consulta" && tp !== "consulta") return false;
       if (st.est === "tribunal" && c.est !== "tribunal") return false;
       if (st.est === "vitoria" && c.est !== "vitoria") return false;
+      if (st.est === "vigilancia" && c.est !== "vigilancia") return false;
       if (st.est === "acompanhamento" && !(c.est === "acompanhamento" || (c.est === "urgente" && !c.pet))) return false;
     }
     if (st.reg && c.reg !== st.reg) return false;
