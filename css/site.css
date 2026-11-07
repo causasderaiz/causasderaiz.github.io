@@ -1360,3 +1360,6 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 :root{--vigilancia:#f07a1a}
 .pin.vigilancia{background:var(--vigilancia);color:var(--ink)}
 .tag.vigilancia{background:var(--vigilancia);color:var(--ink)}
+/* red flag (Sílvia, 7 nov. 2026): bandeira vermelha por cima do número do caso no mapa */
+.pin.redflag{position:relative;overflow:visible}
+.pin.redflag::after{content:"\1F6A9";position:absolute;left:50%;bottom:100%;transform:translate(-30%,2px);font-size:18px;line-height:1;pointer-events:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))}
