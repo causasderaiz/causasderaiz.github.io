@@ -334,11 +334,11 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
       <label>Your name
         <input name="nome" type="text">
       </label>
-      <label>The case (what and where) <b>*</b>
-        <input name="caso" type="text" required placeholder="E.g. wind farm in Chaves">
+      <label>The case (what and where)
+        <input name="caso" type="text" placeholder="E.g. wind farm in Chaves">
       </label>
-      <label>Description <b>*</b>
-        <textarea name="desc" rows="6" required placeholder="What is happening, who is fighting it and, if you have one, a link to a news story, petition or public consultation"></textarea>
+      <label>Description
+        <textarea name="desc" rows="6" placeholder="What is happening, who is fighting it and, if you have one, a link to a news story, petition or public consultation"></textarea>
       </label>
       <label class="hp" aria-hidden="true">Do not fill in
         <input name="site" type="text" tabindex="-1" autocomplete="off">
@@ -359,8 +359,6 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   e.preventDefault();
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
-  if (!v("caso") || !v("desc")) { erro.textContent = "Please fill in the case and the description."; return; }
-  erro.textContent = "";
   var corpo = "Name: " + v("nome") + "\nCase: " + v("caso") + "\n\nDescription:\n" + v("desc");
   location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Case for the map: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });

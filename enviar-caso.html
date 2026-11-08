@@ -95,11 +95,11 @@
       <label>O teu nome
         <input name="nome" type="text">
       </label>
-      <label>O caso (o quê e onde) <b>*</b>
-        <input name="caso" type="text" required placeholder="Ex.: parque eólico em Chaves">
+      <label>O caso (o quê e onde)
+        <input name="caso" type="text" placeholder="Ex.: parque eólico em Chaves">
       </label>
-      <label>Descrição <b>*</b>
-        <textarea name="desc" rows="6" required placeholder="O que se passa, quem está a lutar e, se tiveres, um link para notícia, petição ou consulta pública"></textarea>
+      <label>Descrição
+        <textarea name="desc" rows="6" placeholder="O que se passa, quem está a lutar e, se tiveres, um link para notícia, petição ou consulta pública"></textarea>
       </label>
       <label class="hp" aria-hidden="true">Não preencher
         <input name="site" type="text" tabindex="-1" autocomplete="off">
@@ -120,8 +120,6 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   e.preventDefault();
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
-  if (!v("caso") || !v("desc")) { erro.textContent = "Preenche o caso e a descrição."; return; }
-  erro.textContent = "";
   var corpo = "Nome: " + v("nome") + "\nCaso: " + v("caso") + "\n\nDescrição:\n" + v("desc");
   location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });
