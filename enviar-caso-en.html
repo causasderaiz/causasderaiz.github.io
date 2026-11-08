@@ -92,14 +92,14 @@
   <div class="wrap" style="max-width:760px">
     
 <form id="enviar" class="formcaso" novalidate>
-      <label>Your name
-        <input name="nome" type="text">
+      <label>Your email
+        <input name="email" type="email">
       </label>
-      <label>The case (what and where)
-        <input name="caso" type="text" placeholder="E.g. wind farm in Chaves">
+      <label>Name of the group or the case
+        <input name="caso" type="text">
       </label>
-      <label>Description
-        <textarea name="desc" rows="6" placeholder="What is happening, who is fighting it and, if you have one, a link to a news story, petition or public consultation"></textarea>
+      <label>Message
+        <textarea name="desc" rows="6"></textarea>
       </label>
       <label class="hp" aria-hidden="true">Do not fill in
         <input name="site" type="text" tabindex="-1" autocomplete="off">
@@ -120,7 +120,7 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   e.preventDefault();
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
-  var corpo = "Name: " + v("nome") + "\nCase: " + v("caso") + "\n\nDescription:\n" + v("desc");
+  var corpo = v("desc") + "\n\n" + v("caso") + "\n" + v("email");
   location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Case for the map: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });
 </script>

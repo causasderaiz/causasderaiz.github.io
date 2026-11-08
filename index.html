@@ -331,14 +331,14 @@ document.querySelectorAll(".videos .video").forEach(function (b) {
   <div class="dlg-top"><span class="mono">Enviar um caso</span><button type="button" class="x" data-fecha-caso aria-label="Fechar">✕</button></div>
   <div class="dlg-corpo">
 <form id="enviar" class="formcaso" novalidate>
-      <label>O teu nome
-        <input name="nome" type="text">
+      <label>O teu email
+        <input name="email" type="email">
       </label>
-      <label>O caso (o quê e onde)
-        <input name="caso" type="text" placeholder="Ex.: parque eólico em Chaves">
+      <label>Nome do coletivo ou do caso
+        <input name="caso" type="text">
       </label>
-      <label>Descrição
-        <textarea name="desc" rows="6" placeholder="O que se passa, quem está a lutar e, se tiveres, um link para notícia, petição ou consulta pública"></textarea>
+      <label>Mensagem
+        <textarea name="desc" rows="6"></textarea>
       </label>
       <label class="hp" aria-hidden="true">Não preencher
         <input name="site" type="text" tabindex="-1" autocomplete="off">
@@ -359,7 +359,7 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   e.preventDefault();
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
-  var corpo = "Nome: " + v("nome") + "\nCaso: " + v("caso") + "\n\nDescrição:\n" + v("desc");
+  var corpo = v("desc") + "\n\n" + v("caso") + "\n" + v("email");
   location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });
 </script>
