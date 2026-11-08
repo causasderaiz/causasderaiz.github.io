@@ -84,7 +84,7 @@
   <div class="wrap">
     <p class="mono" style="color:var(--ink-soft);margin:0 0 14px">Send a case</p>
     <h1>Send a <span>case</span></h1>
-    <p class="lede">What is happening, where and who is fighting, with at least one link or document.</p>
+    <p class="lede">What is happening, where and who is fighting. If you have a link or document, add it.</p>
   </div>
 </section>
 
@@ -92,23 +92,14 @@
   <div class="wrap" style="max-width:760px">
     
 <form id="enviar" class="formcaso" novalidate>
-      <label>What is happening? <b>*</b>
-        <textarea name="oque" rows="5" required placeholder="E.g. a cork oak woodland is to be felled for a housing development; residents have collected signatures"></textarea>
+      <label>Your name
+        <input name="nome" type="text">
       </label>
-      <label>Where? (place and municipality) <b>*</b>
-        <input name="onde" type="text" required placeholder="E.g. Morgavel, Sines">
+      <label>The case (what and where) <b>*</b>
+        <input name="caso" type="text" required placeholder="E.g. wind farm in Chaves">
       </label>
-      <label>Who is fighting it? (movement, association, residents)
-        <input name="quem" type="text" placeholder="Name and, if any, website or social media page">
-      </label>
-      <label>Link or document showing the case <b>*</b>
-        <input name="link1" type="url" required placeholder="https:// news story, petition, public consultation, minutes">
-      </label>
-      <label>Another link (optional)
-        <input name="link2" type="url" placeholder="https://">
-      </label>
-      <label>Your email <b>*</b> <span class="mono" style="color:var(--ink-soft)">(never published)</span>
-        <input name="email" type="email" required>
+      <label>Description <b>*</b>
+        <textarea name="desc" rows="6" required placeholder="What is happening, who is fighting it and, if you have one, a link to a news story, petition or public consultation"></textarea>
       </label>
       <label class="hp" aria-hidden="true">Do not fill in
         <input name="site" type="text" tabindex="-1" autocomplete="off">
@@ -129,12 +120,10 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   e.preventDefault();
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
-  if (!v("oque") || !v("onde") || !v("email")) { erro.textContent = "Some required fields are missing."; return; }
-  if (!/^https?:\/\/\S+\.\S+/.test(v("link1"))) { erro.textContent = "We need at least one link (starting with http)."; return; }
+  if (!v("caso") || !v("desc")) { erro.textContent = "Please fill in the case and the description."; return; }
   erro.textContent = "";
-  var corpo = "What is happening:\n" + v("oque") + "\n\nWhere: " + v("onde") + "\nWho is fighting it: " + v("quem") +
-    "\n\nLinks:\n" + v("link1") + "\n" + v("link2") + "\n\nContact: " + v("email");
-  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Case for the map: " + v("onde")) + "&body=" + encodeURIComponent(corpo);
+  var corpo = "Name: " + v("nome") + "\nCase: " + v("caso") + "\n\nDescription:\n" + v("desc");
+  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Case for the map: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });
 </script>
 

@@ -84,7 +84,7 @@
   <div class="wrap">
     <p class="mono" style="color:var(--ink-soft);margin:0 0 14px">Enviar um caso</p>
     <h1>Enviar um <span>caso</span></h1>
-    <p class="lede">O que se passa, onde e quem está a lutar, com pelo menos um link ou documento.</p>
+    <p class="lede">O que se passa, onde e quem está a lutar. Se tiveres um link ou documento, junta-o.</p>
   </div>
 </section>
 
@@ -92,23 +92,14 @@
   <div class="wrap" style="max-width:760px">
     
 <form id="enviar" class="formcaso" novalidate>
-      <label>O que se passa? <b>*</b>
-        <textarea name="oque" rows="5" required placeholder="Ex.: vão abater um montado de sobreiros para um loteamento; a população recolheu assinaturas"></textarea>
+      <label>O teu nome
+        <input name="nome" type="text">
       </label>
-      <label>Onde? (localidade e concelho) <b>*</b>
-        <input name="onde" type="text" required placeholder="Ex.: Morgavel, Sines">
+      <label>O caso (o quê e onde) <b>*</b>
+        <input name="caso" type="text" required placeholder="Ex.: parque eólico em Chaves">
       </label>
-      <label>Quem está a lutar? (movimento, associação, moradores)
-        <input name="quem" type="text" placeholder="Nome e, se houver, site ou página nas redes">
-      </label>
-      <label>Link ou documento que mostre o caso <b>*</b>
-        <input name="link1" type="url" required placeholder="https:// notícia, petição, consulta pública, ata">
-      </label>
-      <label>Outro link (opcional)
-        <input name="link2" type="url" placeholder="https://">
-      </label>
-      <label>O teu email <b>*</b> <span class="mono" style="color:var(--ink-soft)">(nunca é publicado)</span>
-        <input name="email" type="email" required>
+      <label>Descrição <b>*</b>
+        <textarea name="desc" rows="6" required placeholder="O que se passa, quem está a lutar e, se tiveres, um link para notícia, petição ou consulta pública"></textarea>
       </label>
       <label class="hp" aria-hidden="true">Não preencher
         <input name="site" type="text" tabindex="-1" autocomplete="off">
@@ -129,12 +120,10 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   e.preventDefault();
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
-  if (!v("oque") || !v("onde") || !v("email")) { erro.textContent = "Faltam campos obrigatórios."; return; }
-  if (!/^https?:\/\/\S+\.\S+/.test(v("link1"))) { erro.textContent = "Precisamos de pelo menos um link (começa por http)."; return; }
+  if (!v("caso") || !v("desc")) { erro.textContent = "Preenche o caso e a descrição."; return; }
   erro.textContent = "";
-  var corpo = "O que se passa:\n" + v("oque") + "\n\nOnde: " + v("onde") + "\nQuem está a lutar: " + v("quem") +
-    "\n\nLinks:\n" + v("link1") + "\n" + v("link2") + "\n\nContacto: " + v("email");
-  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("onde")) + "&body=" + encodeURIComponent(corpo);
+  var corpo = "Nome: " + v("nome") + "\nCaso: " + v("caso") + "\n\nDescrição:\n" + v("desc");
+  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });
 </script>
 
