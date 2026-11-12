@@ -76,6 +76,16 @@ h2::after{content:"";flex:1;border-top:2px dashed var(--ink)}
 .chip--peticao{background:var(--sage)}
 .chip--fundos{background:var(--cream)}
 .part{position:absolute;top:6px;right:6px;width:32px;height:32px;border:0;background:none;color:var(--ink-soft);font-size:20px;line-height:1;cursor:pointer;border-radius:50%}
+.dest{position:relative;background:var(--paper);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.dest-foto img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;border-bottom:3px solid var(--ink)}
+.dest-tx{padding:14px 16px 16px}
+.dest-tx b{display:block;font-family:"Londrina Solid",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:30px;line-height:.95}
+.dest-tx>span{display:block;margin-top:6px;font-size:15px;color:var(--ink-soft)}
+.dest-bts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.dest-bts a{padding:11px 16px;border:3px solid var(--ink);font-weight:700;font-size:15px}
+.bt-am{background:var(--amarelo)}
+.bt-vd{background:var(--sage)}
+.dest .part{background:var(--paper);border:2px solid var(--ink)}
 .part:hover,.part:focus-visible{background:var(--sage);color:var(--ink)}
 .carimbo:hover,.cartao:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--amarelo);outline-offset:2px}
@@ -105,6 +115,21 @@ footer a{border-bottom:2px solid var(--red)}
 <main>
   <div class="cx">
     <a class="carimbo carimbo--mapa" href="/" data-goatcounter-click="links-mapa">Ver o mapa<small>Todos os conflitos ambientais de Portugal continental, Madeira e Açores</small></a>
+
+    <h2>Post de hoje</h2>
+    <div class="dest">
+      <a class="dest-foto" href="/foz-almargem-trafal-quarteira.html" data-goatcounter-click="links-destaque-foto-foz-almargem-trafal-quarteira"><img src="/img/gen/foz-almargem-trafal-quarteira-480.jpeg?v=31ee4fb1" alt="Quarteira, Loulé, distrito de Faro" width="560" height="315"></a>
+      <div class="dest-tx">
+        <b>Foz do Almargem</b>
+        <span>um restaurante, um estacionamento no pinhal e um aparthotel avançam dentro da reserva natural</span>
+        <div class="dest-bts">
+          <a class="bt-am" href="https://peticaopublica.com/?pi=PT124724" target="_blank" rel="noopener" data-goatcounter-click="links-destaque-peticao-foz-almargem-trafal-quarteira">Assinar a petição</a>
+          <a class="bt-vd" href="/foz-almargem-trafal-quarteira.html" data-goatcounter-click="links-destaque-caso-foz-almargem-trafal-quarteira">Ver o caso</a>
+        </div>
+      </div>
+      <button class="part" type="button" data-url="https://causasderaiz.org/foz-almargem-trafal-quarteira.html" data-tit="Foz do Almargem" aria-label="Partilhar este caso">⋯</button>
+    </div>
+    
 
     
     <h2>Consultas públicas abertas</h2>
@@ -147,13 +172,6 @@ footer a{border-bottom:2px solid var(--red)}
 
     
     <h2>Petições</h2>
-    <div class="cartao">
-  <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT124724" target="_blank" rel="noopener" data-goatcounter-click="links-peticao-foz-almargem-trafal-quarteira" data-goatcounter-title="Foz do Almargem">
-    <img src="/img/gen/foz-almargem-trafal-quarteira-480.jpeg?v=31ee4fb1" alt="" loading="lazy" width="96" height="96">
-    <span class="tx"><b>Foz do Almargem</b><span>Quarteira, Loulé</span><em class="chip chip--peticao">Assinar</em></span>
-  </a>
-  <button class="part" type="button" data-url="https://causasderaiz.org/foz-almargem-trafal-quarteira.html" data-tit="Foz do Almargem" aria-label="Partilhar: Foz do Almargem">⋯</button>
-</div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=31594413" target="_blank" rel="noopener" data-goatcounter-click="links-peticao-moradias-luxo-parque-ribeirinho-faro" data-goatcounter-title="Parque Ribeirinho de Faro">
     <img src="/img/gen/moradias-luxo-parque-ribeirinho-faro-480.jpeg?v=e4198896" alt="" loading="lazy" width="96" height="96">
@@ -216,6 +234,13 @@ footer a{border-bottom:2px solid var(--red)}
     <span class="tx"><b>Bairro do Talude Militar</b><span>Talude Militar, Loures</span><em class="chip chip--peticao">Assinar</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/talude-militar-loures.html" data-tit="Bairro do Talude Militar" aria-label="Partilhar: Bairro do Talude Militar">⋯</button>
+</div>
+    <div class="cartao">
+  <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT132670" target="_blank" rel="noopener" data-goatcounter-click="links-peticao-biometano-abrigada-alenquer" data-goatcounter-title="Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)">
+    <img src="/img/gen/biometano-abrigada-alenquer-480.jpeg?v=5f0ebaea" alt="" loading="lazy" width="96" height="96">
+    <span class="tx"><b>Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)</b><span>Abrigada e Cabanas de Torres, Alenquer</span><em class="chip chip--peticao">Assinar</em></span>
+  </a>
+  <button class="part" type="button" data-url="https://causasderaiz.org/biometano-abrigada-alenquer.html" data-tit="Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)" aria-label="Partilhar: Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)">⋯</button>
 </div>
     
 
