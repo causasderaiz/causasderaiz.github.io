@@ -76,7 +76,6 @@
         ["tribunal", UI.estados.tribunal],
         ["vitoria", UI.estados.vitoria],
         ["acompanhamento", UI.estados.acompanhamento],
-        ["vigilancia", UI.estados.vigilancia],
       ]
         .map(function (kl) { return '<button data-est="' + kl[0] + '" aria-pressed="false">' + kl[1] + "</button>"; })
         .join("");
