@@ -199,15 +199,28 @@
   var ZAER_FONTE = IDIOMA === "en"
     ? 'Acceleration zones: <a href="https://ssaigt.dgterritorio.pt/" target="_blank" rel="noopener">official map (RCM 172-A/2026)</a>, approximate location'
     : 'Zonas de aceleração: <a href="https://ssaigt.dgterritorio.pt/" target="_blank" rel="noopener">mapa oficial (RCM 172-A/2026)</a>, localização aproximada';
-  var zaer = {};
-  ["solar", "eolica"].forEach(function (k) {
-    zaer[k] = L.imageOverlay("/img-static/zaer/zaer-" + k + ".png", [[36.85, -9.65], [42.25, -6.05]], { opacity: 0.6, interactive: false, attribution: ZAER_FONTE, className: "zaer-camada" });
-  });
+  // Polígonos vetoriais (lisos em qualquer zoom; contorno visível mesmo com o mapa afastado). Sílvia, 12 nov. 2026.
+  var ZAER_COR = { solar: ["#dea550", "#6b430a"], eolica: ["#d58fb8", "#5e2450"] };
+  map.createPane("zaer"); map.getPane("zaer").style.zIndex = 450; map.getPane("zaer").style.pointerEvents = "none";
+  var zaer = {}, zaerDados = null;
+  function zaerCamada(k) {
+    if (!zaer[k]) {
+      var fc = { type: "FeatureCollection", features: (zaerDados[k] || []).map(function (r) { return { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: r } }; }) };
+      // rebordo escuro largo por baixo + traço da cor por cima: zonas pequenas continuam visíveis com o país inteiro no ecrã
+      zaer[k] = L.layerGroup([
+        L.geoJSON(fc, { pane: "zaer", interactive: false, attribution: ZAER_FONTE, style: { color: ZAER_COR[k][1], weight: 5, opacity: 0.9, lineJoin: "round", fill: false }, smoothFactor: 0 }),
+        L.geoJSON(fc, { pane: "zaer", interactive: false, style: { color: ZAER_COR[k][0], weight: 2.5, opacity: 1, lineJoin: "round", fillColor: ZAER_COR[k][0], fillOpacity: 0.9 }, smoothFactor: 0 })
+      ]);
+    }
+    return zaer[k];
+  }
   $("#jumps").querySelectorAll("button[data-zaer]").forEach(function (b) {
     b.addEventListener("click", function () {
-      var c = zaer[b.dataset.zaer], liga = !map.hasLayer(c);
-      if (liga) c.addTo(map); else map.removeLayer(c);
+      var liga = b.getAttribute("aria-pressed") !== "true";
       b.setAttribute("aria-pressed", liga ? "true" : "false");
+      function aplica() { var c = zaerCamada(b.dataset.zaer); if (liga) c.addTo(map); else map.removeLayer(c); }
+      if (zaerDados) return aplica();
+      fetch("/img-static/zaer/zaer.json?v=1").then(function (r) { return r.json(); }).then(function (d) { zaerDados = d; aplica(); });
     });
   });
   $("#jumps").querySelector(".regioes-toggle").addEventListener("click", function () {
