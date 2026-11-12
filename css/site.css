@@ -1362,3 +1362,11 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 /* red flag (Sílvia, 7 nov. 2026): bandeira vermelha por cima do número do caso no mapa */
 .pin.redflag{position:relative;overflow:visible}
 .pin.redflag::after{content:"\1F6A9";position:absolute;left:50%;bottom:100%;transform:translate(-30%,2px);font-size:18px;line-height:1;pointer-events:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))}
+
+/* Zonas de aceleração (ZAER): botões opcionais com a cor da mancha; solar dourado, eólica lilás-rosa (Sílvia, 4 nov. 2026) */
+.jump--zaer[data-zaer="solar"]{box-shadow:inset 0 -4px 0 #dea550}
+.jump--zaer[data-zaer="eolica"]{box-shadow:inset 0 -4px 0 #d58fb8}
+.jump--zaer[data-zaer="solar"][aria-pressed="true"]{background:#dea550;color:var(--ink)}
+.jump--zaer[data-zaer="eolica"][aria-pressed="true"]{background:#d58fb8;color:var(--ink)}
+.zaer-curto{display:none}
+@media(max-width:760px){.zaer-longo{display:none}.zaer-curto{display:inline}}

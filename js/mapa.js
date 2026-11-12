@@ -184,6 +184,10 @@
     '<span class="regioes-lista">' + Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") + "</span>" +
     '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
     '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>' +
+    // Zonas de aceleração de renováveis aprovadas (RCM 172-A/2026), camadas opcionais (Sílvia, 4 e 12 nov. 2026).
+    // Só há a imagem oficial da DGT: reprojetada para o mapa, localização aproximada (~0,5 km).
+    '<button class="jump jump--zaer" data-zaer="solar" type="button" aria-pressed="false">' + (IDIOMA === "en" ? '<span class="zaer-longo">Acceleration zones: solar</span><span class="zaer-curto">Solar zones</span>' : '<span class="zaer-longo">Zonas de aceleração: solar</span><span class="zaer-curto">Zonas solares</span>') + '</button>' +
+    '<button class="jump jump--zaer" data-zaer="eolica" type="button" aria-pressed="false">' + (IDIOMA === "en" ? '<span class="zaer-longo">Acceleration zones: wind</span><span class="zaer-curto">Wind zones</span>' : '<span class="zaer-longo">Zonas de aceleração: eólica</span><span class="zaer-curto">Zonas eólicas</span>') + '</button>' +
     // ligação à BRAVA, Rede de Resistência Rural (pedido da Sílvia, 9 out. 2026): abre o site deles
     '<a class="jump jump--brava" href="https://rederesistenciarural.org" target="_blank" rel="noopener"><img src="/img-static/parceiros/brava.svg" alt="BRAVA" width="52" height="17"> ' + (IDIOMA === "en" ? "Collectives" : "Coletivos") + ' ↗</a>';
   $("#jumps").querySelectorAll(".jump[data-k]").forEach(function (b) {
@@ -193,6 +197,20 @@
     };
   });
   $("#geoBtn").onclick = function () { window.open(googleEarthAreaUrl(), "_blank", "noopener"); };
+  var ZAER_FONTE = IDIOMA === "en"
+    ? 'Acceleration zones: <a href="https://ssaigt.dgterritorio.pt/" target="_blank" rel="noopener">official map (RCM 172-A/2026)</a>, approximate location'
+    : 'Zonas de aceleração: <a href="https://ssaigt.dgterritorio.pt/" target="_blank" rel="noopener">mapa oficial (RCM 172-A/2026)</a>, localização aproximada';
+  var zaer = {};
+  ["solar", "eolica"].forEach(function (k) {
+    zaer[k] = L.imageOverlay("/img-static/zaer/zaer-" + k + ".png", [[36.85, -9.65], [42.25, -6.05]], { opacity: 0.6, interactive: false, attribution: ZAER_FONTE, className: "zaer-camada" });
+  });
+  $("#jumps").querySelectorAll("button[data-zaer]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var c = zaer[b.dataset.zaer], liga = !map.hasLayer(c);
+      if (liga) c.addTo(map); else map.removeLayer(c);
+      b.setAttribute("aria-pressed", liga ? "true" : "false");
+    });
+  });
   $("#jumps").querySelector(".regioes-toggle").addEventListener("click", function () {
     var ab = $("#jumps").classList.toggle("aberto");
     this.setAttribute("aria-expanded", ab ? "true" : "false");
