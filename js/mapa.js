@@ -307,7 +307,7 @@
             var badge = estadoBadge(c);
             return (
               '<button class="card ' + (st.sel === c.id ? "sel" : "") + '" data-id="' + c.id + '">' +
-              '<img class="thumb" src="' + img.src + '" srcset="' + img.srcset + '" sizes="120px" alt="' + c.loc + '" loading="lazy">' +
+              '<img class="thumb" src="' + img.src + '" srcset="' + img.srcset + '" sizes="120px"' + (c.imagem && c.imagem.pos ? ' style="object-position:' + c.imagem.pos + '"' : "") + ' alt="' + c.loc + '" loading="lazy">' +
               "<div>" +
               '<div class="row">' +
               '<span class="mono" style="color:var(--ink-soft)">' + String(c.num || i + 1).padStart(2, "0") + "</span>" +
@@ -383,7 +383,7 @@
     var badge = estadoBadge(c);
     $(".panel-top .mono").textContent = UI.painel.fichaDoCaso;
     $("#pbody").innerHTML =
-      '<img class="panel-hero" src="' + img.src + '" srcset="' + img.srcset + '" sizes="480px" alt="' + c.loc + '">' +
+      '<img class="panel-hero" src="' + img.src + '" srcset="' + img.srcset + '" sizes="480px"' + (c.imagem && c.imagem.pos ? ' style="object-position:' + c.imagem.pos + '"' : "") + ' alt="' + c.loc + '">' +
       '<div class="pad">' +
       '<div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">' +
       '<span class="numcaso">Nº ' + String(c.num || "").padStart(2, "0") + "</span>" +
