@@ -305,7 +305,7 @@ document.getElementById("caso").innerHTML=
   '<div><span class="mono">Região</span><span>'+c.reg+'</span></div>'+
   '<div><span class="mono">Tema</span><span>'+c.catLabel+'</span></div>'+
   '<div><span class="mono">Quem luta</span><span>'+c.quem.join(" · ")+'</span></div>'+
-  ((L.especies&&L.especies.length)?'<div><span class="mono">Espécies ameaçadas</span><span>'+L.especies.join('<br>')+'</span></div>':'')+
+  ((L.especies&&L.especies.length)?'<div><span class="mono">Espécies ameaçadas</span><span>'+L.especies.map(function(e){return (e.nome?e.nome+' (<i>'+e.cientifico+'</i>)':'<i>'+e.cientifico+'</i>')+(e.foto?' · <a href="'+e.foto+'" target="_blank" rel="noopener">foto ↗</a>':'')}).join('<br>')+'</span></div>':'')+
 '</div>'+
 '<div class="acts">'+
   (c.pet?'<a class="btn btn--ink" href="'+c.pet+'" target="_blank" rel="noopener">'+acaoL+'</a>':'')+
