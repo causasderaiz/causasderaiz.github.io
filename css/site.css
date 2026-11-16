@@ -1370,3 +1370,6 @@ td b{font-family:"Londrina Solid",cursive;font-size:22px;text-transform:uppercas
 .jump--zaer[data-zaer="eolica"][aria-pressed="true"]{background:#d58fb8;color:var(--ink)}
 .zaer-curto{display:none}
 @media(max-width:760px){.zaer-longo{display:none}.zaer-curto{display:inline}}
+
+/* seta 01 ↓ / N ↑ da lista (16 nov. 2026) */
+.side-head #dir,.side-head #count{white-space:nowrap}

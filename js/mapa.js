@@ -20,7 +20,7 @@
   var CATLBL = TAX.categorias[IDIOMA];
   // categoria principal ou uma das secundárias (cat2 é uma lista)
   function temCat(c, k) { return c.cat === k || (c.cat2 || []).indexOf(k) !== -1; }
-  var st = { q: "", reg: "", est: "todas", cats: new Set(), ord: "prazo", sel: null };
+  var st = { q: "", reg: "", est: "todas", cats: new Set(), ord: "prazo", sel: null, desc: false, porNum: false };
   // pesquisa (#q): ver pesquisa-mapa.js e src/_data/sinonimos.json
   var PESQ = window.PesquisaMapa ? window.PesquisaMapa.criarIndice(LUTAS, FICHAS, window.SINONIMOS || []) : null;
   var resPesq = null;
@@ -118,10 +118,11 @@
   });
   $("#q").oninput = function (ev) { pesquisar(ev.target.value); };
   $("#reg").onchange = function (ev) { st.reg = ev.target.value; render(); };
-  $("#ord").onchange = function (ev) { st.ord = ev.target.value; render(); };
+  $("#ord").onchange = function (ev) { st.ord = ev.target.value; st.porNum = false; render(); };
+  $("#dir").onclick = function () { st.desc = !st.desc; st.porNum = true; render(); };
   $("#go").onclick = function () { window.scrollTo({ top: $("#mapa").offsetTop - 64, behavior: "smooth" }); };
   $("#reset").onclick = function () {
-    st.q = ""; resPesq = null; st.reg = ""; st.est = "todas"; st.cats.clear(); st.ord = "prazo";
+    st.q = ""; resPesq = null; st.reg = ""; st.est = "todas"; st.cats.clear(); st.ord = "prazo"; st.desc = false; st.porNum = false;
     $("#q").value = ""; $("#reg").value = ""; $("#ord").value = "prazo";
     st.soPins = false;
     $("#chips").querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
@@ -274,7 +275,8 @@
     var s = list.slice();
     // com o filtro de estado em "Todas", a lista vai sempre por número do caso (01, 02, 03…);
     // nos outros filtros vale a ordem escolhida em "Ordenar", como antes
-    if (st.est === "todas") s.sort(function (a, b) { return (a.num || 0) - (b.num || 0); });
+    // seta "01 ↓ / N ↑" (Sílvia, 16 nov. 2026): começar no 01 ou no último; depois de carregada vale em todos os filtros
+    if (st.est === "todas" || st.porNum) s.sort(function (a, b) { return st.desc ? (b.num || 0) - (a.num || 0) : (a.num || 0) - (b.num || 0); });
     else if (st.ord === "az") s.sort(function (a, b) { return a.t.localeCompare(b.t, IDIOMA); });
     else if (st.ord === "verif") s.sort(function (a, b) { return b.verif.localeCompare(a.verif); });
     else s.sort(function (a, b) { return (b.prazo ? 1 : 0) - (a.prazo ? 1 : 0) || PESO[a.est] - PESO[b.est] || a.t.localeCompare(b.t, IDIOMA); });
@@ -290,6 +292,9 @@
   function render() {
     var vis = sorted(LUTAS.filter(match));
     var PL = (window.PINS_DATA || { lista: [] }).lista;
+    var maxNum = LUTAS.reduce(function (m, c) { return Math.max(m, c.num || 0); }, 0);
+    $("#dir").textContent = st.desc ? maxNum + " ↑" : "01 ↓";
+    $("#dir").style.display = st.soPins ? "none" : "";
     $("#count").textContent = st.soPins ? PL.length + " PIN" : vis.length + " / " + LUTAS.length;
     $("#list").innerHTML = st.soPins
       ? PL.map(function (p) {
