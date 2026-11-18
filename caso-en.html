@@ -148,7 +148,7 @@ footer{padding:clamp(38px,5vw,72px) 0 clamp(30px,4vw,54px);border-top:3px solid 
 
 header.top nav a.btn{color:var(--ink);border-bottom:3px solid var(--line)}
 
-.tag.urgente{background:var(--red);color:var(--cream)}
+.tag.ativo{background:var(--red);color:var(--cream)}
 .tag.consulta{background:var(--green-bright)}
 .tag.tribunal{background:var(--ink);color:var(--cream)}
 .tag.vitoria{background:var(--green);color:var(--cream)}
@@ -247,7 +247,7 @@ html{scrollbar-color:var(--red) var(--cream);scrollbar-width:thin}
 <script>document.write('<script src="fichas-en.js?v='+20260917+'"><\/script>')</script>
 <script>
 const ESTLBL=Object.fromEntries(ESTADOS);
-const ESTICON={urgente:"⚡",consulta:"🗳",tribunal:"⚖",vitoria:"✓",acompanhamento:"◐"};
+const ESTICON={ativo:"⚡",consulta:"🗳",tribunal:"⚖",vitoria:"✓",acompanhamento:"◐"};
 function acaoTipo(c){
   if(!c.pet)return"";
   const l=(c.petLabel||"").toLowerCase();
@@ -256,7 +256,7 @@ function acaoTipo(c){
   return"peticao";
 }
 function estadoBadge(c){
-  if(c.est==="urgente")return c.pet?{k:"urgente",i:"⚡",l:"Petition open"}:{k:"situacao",i:"⚡",l:"Active situation"};
+  if(c.est==="ativo")return c.pet?{k:"ativo",i:"⚡",l:"Petition open"}:{k:"situacao",i:"⚡",l:"Active situation"};
   return{k:c.est,i:ESTICON[c.est]||"",l:ESTLBL[c.est]||c.est};
 }
 const dfmt=iso=>{const p=iso.split("-");return p[2]+"/"+p[1]+"/"+p[0]};

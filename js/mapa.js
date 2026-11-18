@@ -15,7 +15,7 @@
   var UI = window.UI;
   var IDIOMA = window.IDIOMA || "pt";
 
-  var ESTICON = { urgente: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐", vigilancia: "🚩" };
+  var ESTICON = { ativo: "⚡", consulta: "🗳", tribunal: "⚖", vitoria: "✓", acompanhamento: "◐", vigilancia: "🚩" };
   var ESTLBL = TAX.estados[IDIOMA];
   var CATLBL = TAX.categorias[IDIOMA];
   // categoria principal ou uma das secundárias (cat2 é uma lista)
@@ -53,9 +53,9 @@
     return "peticao";
   }
   function estadoBadge(c) {
-    if (c.est === "urgente") {
+    if (c.est === "ativo") {
       return c.pet
-        ? { k: "urgente", i: "⚡", l: UI.estados.peticaoAtiva }
+        ? { k: "ativo", i: "⚡", l: UI.estados.peticaoAtiva }
         : { k: "situacao", i: "⚡", l: UI.estados.situacaoAtiva };
     }
     return { k: c.est, i: ESTICON[c.est] || "", l: ESTLBL[c.est] || c.est };
@@ -250,7 +250,7 @@
   });
   map.fitBounds(VISTAS[UI.busca.todoPais], { padding: [28, 28] });
 
-  var PESO = { urgente: 0, consulta: 1, tribunal: 2, acompanhamento: 3, vitoria: 4, vigilancia: 5 };
+  var PESO = { ativo: 0, consulta: 1, tribunal: 2, acompanhamento: 3, vitoria: 4, vigilancia: 5 };
   function match(c) {
     if (st.soPins) return false;
     if (st.est !== "todas") {
@@ -260,7 +260,7 @@
       if (st.est === "tribunal" && c.est !== "tribunal") return false;
       if (st.est === "vitoria" && c.est !== "vitoria") return false;
       if (st.est === "vigilancia" && c.est !== "vigilancia") return false;
-      if (st.est === "acompanhamento" && !(c.est === "acompanhamento" || (c.est === "urgente" && !c.pet))) return false;
+      if (st.est === "acompanhamento" && !(c.est === "acompanhamento" || (c.est === "ativo" && !c.pet))) return false;
     }
     if (st.reg && c.reg !== st.reg) return false;
     if (st.cats.size && !st.cats.has(c.cat) && !(c.cat2 || []).some(function (k) { return st.cats.has(k); })) return false;
