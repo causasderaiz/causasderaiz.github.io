@@ -67,9 +67,9 @@ main .cx{display:flex;flex-direction:column;gap:16px;padding-top:16px;padding-bo
 h2{font-family:"Londrina Solid",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:26px;line-height:1;color:var(--red);margin:18px 0 0;display:flex;align-items:center;gap:12px}
 h2::after{content:"";flex:1;border-top:2px solid var(--red)}
 .cartao{position:relative;background:var(--paper);border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:0 3px 0 var(--ink);transition:transform .12s,box-shadow .12s}
-.cartao-lk{display:grid;grid-template-columns:118px 1fr;min-height:118px}
-.cartao img{width:118px;height:100%;object-fit:cover}
-.cartao .tx{padding:14px 46px 15px 16px;min-width:0}
+.cartao-lk{display:block}
+.cartao img{width:100%;aspect-ratio:4/1;height:auto;object-fit:cover}
+.cartao .tx{display:block;padding:12px 16px 14px;min-width:0}
 .cartao b{display:block;font-size:19px;line-height:1.22;text-wrap:balance}
 .cartao .tx>span{display:block;font-size:17px;color:var(--ink-soft);margin-top:5px}
 .chip{display:inline-block;margin-top:10px;padding:6px 14px;font-style:normal;font-weight:700;font-size:16px;white-space:nowrap;border:0;border-radius:999px}
@@ -86,7 +86,7 @@ h2::after{content:"";flex:1;border-top:2px solid var(--red)}
 .dest-bts a{padding:9px 16px;border:2px solid var(--ink);border-radius:999px;font-weight:700;font-size:16px}
 .bt-am{background:var(--amarelo)}
 .bt-vd{background:var(--sage)}
-.dest .part{background:var(--paper);border:2px solid var(--ink)}
+.dest .part,.cartao .part{background:var(--paper);border:2px solid var(--ink)}
 .campanha{display:flex;flex-direction:column;gap:6px;margin-top:6px}
 .campanha-et{margin:0;color:var(--green);font-size:15px}
 .campanha .cartao{background:var(--green);color:var(--cream)}
@@ -139,49 +139,49 @@ footer a{border-bottom:2px solid var(--red)}
     
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/unidade-de-producao-de-biometano-de-ferreira-do-alentejo" data-goatcounter-click="links-consulta-biometano-penique-ferreira-alentejo" data-goatcounter-title="Biometano de Ferreira do Alentejo">
-    <img src="/img/gen/biometano-penique-ferreira-alentejo-480.jpeg?v=b9ac3ad9" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/biometano-penique-ferreira-alentejo-480.jpeg?v=b9ac3ad9" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Biometano de Ferreira do Alentejo</b><span>Odivelas, Ferreira do Alentejo</span><em class="chip chip--consulta">Participar até 25 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/biometano-penique-ferreira-alentejo.html" data-tit="Biometano de Ferreira do Alentejo" aria-label="Partilhar: Biometano de Ferreira do Alentejo">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/projeto-solar-fotovoltaico-flutuante-e-hibrido-eolico-de-vilar-tabuaco" data-goatcounter-click="links-consulta-solar-flutuante-albufeira-vilar-tabuaco" data-goatcounter-title="Painéis solares flutuantes na albufeira de Vilar">
-    <img src="/img/gen/solar-flutuante-albufeira-vilar-tabuaco-480.jpeg?v=701a93e4" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/solar-flutuante-albufeira-vilar-tabuaco-480.jpeg?v=701a93e4" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Painéis solares flutuantes na albufeira de Vilar</b><span>Entre Sernancelhe, Moimenta da Beira e Tabuaço</span><em class="chip chip--consulta">Participar até 24 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/solar-flutuante-albufeira-vilar-tabuaco.html" data-tit="Painéis solares flutuantes na albufeira de Vilar" aria-label="Partilhar: Painéis solares flutuantes na albufeira de Vilar">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/pda-parque-eolico-das-terras-altas-de-chaves" data-goatcounter-click="links-consulta-parque-eolico-terras-altas-chaves" data-goatcounter-title="Parque Eólico das Terras Altas de Chaves">
-    <img src="/img/gen/parque-eolico-terras-altas-chaves-480.jpeg?v=599c79b2" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/parque-eolico-terras-altas-chaves-480.jpeg?v=599c79b2" alt="" loading="lazy" width="560" height="140" style="object-position:50% 38%">
     <span class="tx"><b>Parque Eólico das Terras Altas de Chaves</b><span>São Julião de Montenegro e Avelelas, Chaves</span><em class="chip chip--consulta">Participar até 25 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/parque-eolico-terras-altas-chaves.html" data-tit="Parque Eólico das Terras Altas de Chaves" aria-label="Partilhar: Parque Eólico das Terras Altas de Chaves">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT132905" data-goatcounter-click="links-peticao-eolicas-serra-ossa" data-goatcounter-title="Não às Eólicas na Serra d&#39;Ossa">
-    <img src="/img/gen/eolicas-serra-ossa-480.jpeg?v=b1206adb" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/eolicas-serra-ossa-480.jpeg?v=b1206adb" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Não às Eólicas na Serra d&#39;Ossa</b><span>Serra d&#39;Ossa, Alentejo Central</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/eolicas-serra-ossa.html" data-tit="Não às Eólicas na Serra d&#39;Ossa" aria-label="Partilhar: Não às Eólicas na Serra d&#39;Ossa">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT125518" data-goatcounter-click="links-peticao-lagoa-salgada" data-goatcounter-title="Mina da Lagoa Salgada: cobre, chumbo e zinco junto ao litoral alentejano">
-    <img src="/img/gen/lagoa-salgada-480.jpeg?v=0488a040" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/lagoa-salgada-480.jpeg?v=0488a040" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Mina da Lagoa Salgada: cobre, chumbo e zinco junto ao litoral alentejano</b><span>Grândola e Alcácer do Sal, litoral alentejano</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/lagoa-salgada.html" data-tit="Mina da Lagoa Salgada" aria-label="Partilhar: Mina da Lagoa Salgada: cobre, chumbo e zinco junto ao litoral alentejano">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT124724" data-goatcounter-click="links-peticao-foz-almargem-trafal-quarteira" data-goatcounter-title="Foz do Almargem">
-    <img src="/img/gen/foz-almargem-trafal-quarteira-480.jpeg?v=1601057b" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/foz-almargem-trafal-quarteira-480.jpeg?v=1601057b" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Foz do Almargem</b><span>Quarteira, Loulé</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/foz-almargem-trafal-quarteira.html" data-tit="Foz do Almargem" aria-label="Partilhar: Foz do Almargem">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=31594413" data-goatcounter-click="links-peticao-moradias-luxo-parque-ribeirinho-faro" data-goatcounter-title="Parque Ribeirinho de Faro">
-    <img src="/img/gen/moradias-luxo-parque-ribeirinho-faro-480.jpeg?v=e4198896" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/moradias-luxo-parque-ribeirinho-faro-480.jpeg?v=e4198896" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Parque Ribeirinho de Faro</b><span>Faro</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/moradias-luxo-parque-ribeirinho-faro.html" data-tit="Parque Ribeirinho de Faro" aria-label="Partilhar: Parque Ribeirinho de Faro">⋯</button>
@@ -193,63 +193,63 @@ footer a{border-bottom:2px solid var(--red)}
     <h2>Consultas públicas</h2>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/consulta-publica-aoprojeto-loteamento-das-clarissas-unidade-de-execucao-do-quartel-de-sacavem" data-goatcounter-click="links-consulta-loteamento-clarissas-quartel-sacavem" data-goatcounter-title="Setecentos e sessenta fogos no antigo Quartel de Sacavém, à volta de um convento por classificar">
-    <img src="/img/gen/loteamento-clarissas-quartel-sacavem-480.jpeg?v=a316ee41" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/loteamento-clarissas-quartel-sacavem-480.jpeg?v=a316ee41" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Setecentos e sessenta fogos no antigo Quartel de Sacavém, à volta de um convento por classificar</b><span>Sacavém e Prior Velho, Loures</span><em class="chip chip--consulta">Participar até 20 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/loteamento-clarissas-quartel-sacavem.html" data-tit="Setecentos e sessenta fogos no antigo Quartel de Sacavém, à volta de um convento por classificar" aria-label="Partilhar: Setecentos e sessenta fogos no antigo Quartel de Sacavém, à volta de um convento por classificar">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/pda-interligacao-centrais-solares-fotovoltaica-casal-da-valeira-e-vale-pequeno-a-400-kv-a-resp" data-goatcounter-click="links-consulta-linha-400kv-casal-valeira-chamusca" data-goatcounter-title="O montado da Carregueira pode ganhar uma linha de 400 kV para as centrais solares de Casal da Valeira e Vale Pequeno">
-    <img src="/img/gen/linha-400kv-casal-valeira-chamusca-480.jpeg?v=8b3c1ab8" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/linha-400kv-casal-valeira-chamusca-480.jpeg?v=8b3c1ab8" alt="" loading="lazy" width="560" height="140" style="object-position:50% 65%">
     <span class="tx"><b>O montado da Carregueira pode ganhar uma linha de 400 kV para as centrais solares de Casal da Valeira e Vale Pequeno</b><span>Até ao Posto de Corte de Abrantes, no Pego</span><em class="chip chip--consulta">Participar até 24 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/linha-400kv-casal-valeira-chamusca.html" data-tit="O montado da Carregueira pode ganhar uma linha de 400 kV para as centrais solares de Casal da Valeira e Vale Pequeno" aria-label="Partilhar: O montado da Carregueira pode ganhar uma linha de 400 kV para as centrais solares de Casal da Valeira e Vale Pequeno">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/projeto-solar-fotovoltaico-flutuante-e-hibrido-eolico-de-vilar-tabuaco" data-goatcounter-click="links-consulta-solar-flutuante-albufeira-vilar-tabuaco" data-goatcounter-title="Painéis solares flutuantes na albufeira de Vilar">
-    <img src="/img/gen/solar-flutuante-albufeira-vilar-tabuaco-480.jpeg?v=701a93e4" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/solar-flutuante-albufeira-vilar-tabuaco-480.jpeg?v=701a93e4" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Painéis solares flutuantes na albufeira de Vilar</b><span>Entre Sernancelhe, Moimenta da Beira e Tabuaço</span><em class="chip chip--consulta">Participar até 24 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/solar-flutuante-albufeira-vilar-tabuaco.html" data-tit="Painéis solares flutuantes na albufeira de Vilar" aria-label="Partilhar: Painéis solares flutuantes na albufeira de Vilar">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/unidade-de-producao-de-biometano-de-ferreira-do-alentejo" data-goatcounter-click="links-consulta-biometano-penique-ferreira-alentejo" data-goatcounter-title="Biometano de Ferreira do Alentejo">
-    <img src="/img/gen/biometano-penique-ferreira-alentejo-480.jpeg?v=b9ac3ad9" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/biometano-penique-ferreira-alentejo-480.jpeg?v=b9ac3ad9" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Biometano de Ferreira do Alentejo</b><span>Odivelas, Ferreira do Alentejo</span><em class="chip chip--consulta">Participar até 25 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/biometano-penique-ferreira-alentejo.html" data-tit="Biometano de Ferreira do Alentejo" aria-label="Partilhar: Biometano de Ferreira do Alentejo">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/pda-parque-eolico-das-terras-altas-de-chaves" data-goatcounter-click="links-consulta-parque-eolico-terras-altas-chaves" data-goatcounter-title="Parque Eólico das Terras Altas de Chaves">
-    <img src="/img/gen/parque-eolico-terras-altas-chaves-480.jpeg?v=599c79b2" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/parque-eolico-terras-altas-chaves-480.jpeg?v=599c79b2" alt="" loading="lazy" width="560" height="140" style="object-position:50% 38%">
     <span class="tx"><b>Parque Eólico das Terras Altas de Chaves</b><span>São Julião de Montenegro e Avelelas, Chaves</span><em class="chip chip--consulta">Participar até 25 nov.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/parque-eolico-terras-altas-chaves.html" data-tit="Parque Eólico das Terras Altas de Chaves" aria-label="Partilhar: Parque Eólico das Terras Altas de Chaves">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/recape-3353-ampliacao-da-mina-do-barroso" data-goatcounter-click="links-consulta-barroso" data-goatcounter-title="Mina de lítio em Covas do Barroso">
-    <img src="/img/gen/barroso-480.jpeg?v=27bf82e8" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/barroso-480.jpeg?v=27bf82e8" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Mina de lítio em Covas do Barroso</b><span>Vila Real, Trás-os-Montes</span><em class="chip chip--consulta">Participar até 4 dez.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/barroso.html" data-tit="Mina de lítio em Covas do Barroso" aria-label="Partilhar: Mina de lítio em Covas do Barroso">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/aia3969-central-solar-fotovoltaica-terra-ruiva" data-goatcounter-click="links-consulta-central-solar-terra-ruiva-cachopo-tavira" data-goatcounter-title="Central solar de Terra Ruiva">
-    <img src="/img/gen/central-solar-terra-ruiva-cachopo-tavira-480.jpeg?v=480e6672" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/central-solar-terra-ruiva-cachopo-tavira-480.jpeg?v=480e6672" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Central solar de Terra Ruiva</b><span>Cachopo, Tavira</span><em class="chip chip--consulta">Participar até 9 dez.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/central-solar-terra-ruiva-cachopo-tavira.html" data-tit="Central solar de Terra Ruiva" aria-label="Partilhar: Central solar de Terra Ruiva">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/paper-prime-vila-velha-de-rodao" data-goatcounter-click="links-consulta-paper-prime-vila-velha-de-rodao" data-goatcounter-title="Paper Prime: fábrica de papel pede mais 48% de produção junto ao Tejo">
-    <img src="/img/gen/paper-prime-vila-velha-de-rodao-480.jpeg?v=d4202c91" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/paper-prime-vila-velha-de-rodao-480.jpeg?v=d4202c91" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Paper Prime: fábrica de papel pede mais 48% de produção junto ao Tejo</b><span>Zona Industrial de Vila Velha de Ródão</span><em class="chip chip--consulta">Participar até 15 dez.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/paper-prime-vila-velha-de-rodao.html" data-tit="Paper Prime" aria-label="Partilhar: Paper Prime: fábrica de papel pede mais 48% de produção junto ao Tejo">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://participa.pt/pt/consulta/pedido-de-prospecao-e-pesquisa-vila-de-rei" data-goatcounter-click="links-consulta-prospecao-ouro-zezere-vila-de-rei" data-goatcounter-title="As margens do Zêzere podem abrir-se à prospeção de ouro e de outros minérios">
-    <img src="/img/gen/prospecao-ouro-zezere-vila-de-rei-480.jpeg?v=be98f4e1" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/prospecao-ouro-zezere-vila-de-rei-480.jpeg?v=be98f4e1" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>As margens do Zêzere podem abrir-se à prospeção de ouro e de outros minérios</b><span>Alvaiázere, Ansião e Figueiró dos Vinhos</span><em class="chip chip--consulta">Participar até 4 jan.</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/prospecao-ouro-zezere-vila-de-rei.html" data-tit="As margens do Zêzere podem abrir-se à prospeção de ouro e de outros minérios" aria-label="Partilhar: As margens do Zêzere podem abrir-se à prospeção de ouro e de outros minérios">⋯</button>
@@ -260,224 +260,224 @@ footer a{border-bottom:2px solid var(--red)}
     <h2>Petições</h2>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT131042" data-goatcounter-click="links-peticao-platanos-estrada-sintra-colares" data-goatcounter-title="As associações de Sintra contestam os abates e as podas da Infraestruturas de Portugal nos plátanos centenários da estrada de Colares">
-    <img src="/img/gen/platanos-estrada-sintra-colares-480.jpeg?v=c437c84d" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/platanos-estrada-sintra-colares-480.jpeg?v=c437c84d" alt="" loading="lazy" width="560" height="140" style="object-position:50% 30%">
     <span class="tx"><b>As associações de Sintra contestam os abates e as podas da Infraestruturas de Portugal nos plátanos centenários da estrada de Colares</b><span>EN 247-4 e EN 9-1, Parque Natural de Sintra-Cascais</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/platanos-estrada-sintra-colares.html" data-tit="As associações de Sintra contestam os abates e as podas da Infraestruturas de Portugal nos plátanos centenários da estrada de Colares" aria-label="Partilhar: As associações de Sintra contestam os abates e as podas da Infraestruturas de Portugal nos plátanos centenários da estrada de Colares">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT124724" data-goatcounter-click="links-peticao-foz-almargem-trafal-quarteira" data-goatcounter-title="Foz do Almargem">
-    <img src="/img/gen/foz-almargem-trafal-quarteira-480.jpeg?v=1601057b" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/foz-almargem-trafal-quarteira-480.jpeg?v=1601057b" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Foz do Almargem</b><span>Quarteira, Loulé</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/foz-almargem-trafal-quarteira.html" data-tit="Foz do Almargem" aria-label="Partilhar: Foz do Almargem">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=31594413" data-goatcounter-click="links-peticao-moradias-luxo-parque-ribeirinho-faro" data-goatcounter-title="Parque Ribeirinho de Faro">
-    <img src="/img/gen/moradias-luxo-parque-ribeirinho-faro-480.jpeg?v=e4198896" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/moradias-luxo-parque-ribeirinho-faro-480.jpeg?v=e4198896" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Parque Ribeirinho de Faro</b><span>Faro</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/moradias-luxo-parque-ribeirinho-faro.html" data-tit="Parque Ribeirinho de Faro" aria-label="Partilhar: Parque Ribeirinho de Faro">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT124401" data-goatcounter-click="links-peticao-cortes-rasos-pinhal-dunar-ovar" data-goatcounter-title="Pinhal Dunar de Ovar: cortes rasos em 363 hectares de pinhal">
-    <img src="/img/gen/cortes-rasos-pinhal-dunar-ovar-480.jpeg?v=ac44a4b7" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/cortes-rasos-pinhal-dunar-ovar-480.jpeg?v=ac44a4b7" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Pinhal Dunar de Ovar: cortes rasos em 363 hectares de pinhal</b><span>Perímetro Florestal das Dunas de Ovar, Ovar</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/cortes-rasos-pinhal-dunar-ovar.html" data-tit="Pinhal Dunar de Ovar" aria-label="Partilhar: Pinhal Dunar de Ovar: cortes rasos em 363 hectares de pinhal">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT130367" data-goatcounter-click="links-peticao-campo-tiro-alter-do-chao" data-goatcounter-title="Campo de Tiro da Força Aérea em Alter do Chão">
-    <img src="/img/gen/campo-tiro-alter-do-chao-480.jpeg?v=75c0029a" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/campo-tiro-alter-do-chao-480.jpeg?v=75c0029a" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Campo de Tiro da Força Aérea em Alter do Chão</b><span>Fronteira e Monforte, Alto Alentejo</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/campo-tiro-alter-do-chao.html" data-tit="Campo de Tiro da Força Aérea em Alter do Chão" aria-label="Partilhar: Campo de Tiro da Força Aérea em Alter do Chão">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT128984" data-goatcounter-click="links-peticao-hotel-vale-olival-armacao-pera" data-goatcounter-title="Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra">
-    <img src="/img/gen/hotel-vale-olival-armacao-pera-480.jpeg?v=e5b6fc69" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/hotel-vale-olival-armacao-pera-480.jpeg?v=e5b6fc69" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra</b><span>Silves, Algarve</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/hotel-vale-olival-armacao-pera.html" data-tit="Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra" aria-label="Partilhar: Hotel de 50 milhões de euros no Vale do Olival, Armação de Pêra">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT132905" data-goatcounter-click="links-peticao-eolicas-serra-ossa" data-goatcounter-title="Não às Eólicas na Serra d&#39;Ossa">
-    <img src="/img/gen/eolicas-serra-ossa-480.jpeg?v=b1206adb" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/eolicas-serra-ossa-480.jpeg?v=b1206adb" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Não às Eólicas na Serra d&#39;Ossa</b><span>Serra d&#39;Ossa, Alentejo Central</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/eolicas-serra-ossa.html" data-tit="Não às Eólicas na Serra d&#39;Ossa" aria-label="Partilhar: Não às Eólicas na Serra d&#39;Ossa">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT120154" data-goatcounter-click="links-peticao-muda-defesa-arvores" data-goatcounter-title="MUDA: contra o abate de árvores e a má gestão do arvoredo urbano">
-    <img src="/img/gen/muda-defesa-arvores-480.jpeg?v=61b93472" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/muda-defesa-arvores-480.jpeg?v=61b93472" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>MUDA: contra o abate de árvores e a má gestão do arvoredo urbano</b><span>Grande Lisboa, com ação a nível nacional</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/muda-defesa-arvores.html" data-tit="MUDA" aria-label="Partilhar: MUDA: contra o abate de árvores e a má gestão do arvoredo urbano">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT133068" data-goatcounter-click="links-peticao-parque-nacional-peneda-geres" data-goatcounter-title="Parque Nacional da Peneda-Gerês">
-    <img src="/img/gen/parque-nacional-peneda-geres-480.jpeg?v=8dfc2a15" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/parque-nacional-peneda-geres-480.jpeg?v=8dfc2a15" alt="" loading="lazy" width="560" height="140" style="object-position:30% 45%">
     <span class="tx"><b>Parque Nacional da Peneda-Gerês</b><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/parque-nacional-peneda-geres.html" data-tit="Parque Nacional da Peneda-Gerês" aria-label="Partilhar: Parque Nacional da Peneda-Gerês">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT121352" data-goatcounter-click="links-peticao-megacentrais-solares-divor-evora" data-goatcounter-title="Megacentrais solares do Divor, a norte de Évora">
-    <img src="/img/gen/megacentrais-solares-divor-evora-480.jpeg?v=7387bab7" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/megacentrais-solares-divor-evora-480.jpeg?v=7387bab7" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Megacentrais solares do Divor, a norte de Évora</b><span>Graça do Divor e zona norte e nordeste de Évora, com parte em Arraiolos</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/megacentrais-solares-divor-evora.html" data-tit="Megacentrais solares do Divor, a norte de Évora" aria-label="Partilhar: Megacentrais solares do Divor, a norte de Évora">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT126356" data-goatcounter-click="links-peticao-talude-militar-loures" data-goatcounter-title="Bairro do Talude Militar">
-    <img src="/img/gen/talude-militar-loures-480.jpeg?v=c4ede219" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/talude-militar-loures-480.jpeg?v=c4ede219" alt="" loading="lazy" width="560" height="140" style="object-position:50% 0%">
     <span class="tx"><b>Bairro do Talude Militar</b><span>Talude Militar, Loures</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/talude-militar-loures.html" data-tit="Bairro do Talude Militar" aria-label="Partilhar: Bairro do Talude Militar">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT132670" data-goatcounter-click="links-peticao-biometano-abrigada-alenquer" data-goatcounter-title="Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)">
-    <img src="/img/gen/biometano-abrigada-alenquer-480.jpeg?v=5f0ebaea" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/biometano-abrigada-alenquer-480.jpeg?v=5f0ebaea" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)</b><span>Abrigada e Cabanas de Torres, Alenquer</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/biometano-abrigada-alenquer.html" data-tit="Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)" aria-label="Partilhar: Central de biometano da Gás da Terra nas Marés, Abrigada (Alenquer)">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT131724" data-goatcounter-click="links-peticao-eolico-mira-odemira" data-goatcounter-title="Travar o Projeto Eólico do Mira, da Galp, em Odemira">
-    <img src="/img/gen/eolico-mira-odemira-480.jpeg?v=ae6de210" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/eolico-mira-odemira-480.jpeg?v=ae6de210" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Travar o Projeto Eólico do Mira, da Galp, em Odemira</b><span>Odemira e Ourique</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/eolico-mira-odemira.html" data-tit="Travar o Projeto Eólico do Mira, da Galp, em Odemira" aria-label="Partilhar: Travar o Projeto Eólico do Mira, da Galp, em Odemira">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT129537" data-goatcounter-click="links-peticao-eolico-penamacor-2" data-goatcounter-title="Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas">
-    <img src="/img/gen/eolico-penamacor-2-480.jpeg?v=815f62c0" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/eolico-penamacor-2-480.jpeg?v=815f62c0" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas</b><span>Serra de Santo André, freguesias de Meimoa e Penamacor</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/eolico-penamacor-2.html" data-tit="Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas" aria-label="Partilhar: Reequipamento do Parque Eólico Penamacor 2 autoriza abate de 755 árvores protegidas">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT128742" data-goatcounter-click="links-peticao-sao-luis-odemira" data-goatcounter-title="Por um futuro sustentável para São Luís, Odemira">
-    <img src="/img/gen/sao-luis-odemira-480.jpeg?v=f69e4a7d" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/sao-luis-odemira-480.jpeg?v=f69e4a7d" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Por um futuro sustentável para São Luís, Odemira</b><span>Odemira, Poldreiros do Meio / Lameiros</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/sao-luis-odemira.html" data-tit="Por um futuro sustentável para São Luís, Odemira" aria-label="Partilhar: Por um futuro sustentável para São Luís, Odemira">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT131073" data-goatcounter-click="links-peticao-nordeste-vivo-mogadouro" data-goatcounter-title="Planalto Mirandês: já mais de 1.500 hectares de painéis solares">
-    <img src="/img/gen/nordeste-vivo-mogadouro-480.jpeg?v=79a81680" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/nordeste-vivo-mogadouro-480.jpeg?v=79a81680" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Planalto Mirandês: já mais de 1.500 hectares de painéis solares</b><span>Mogadouro e Miranda do Douro, Planalto Mirandês</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/nordeste-vivo-mogadouro.html" data-tit="Planalto Mirandês" aria-label="Partilhar: Planalto Mirandês: já mais de 1.500 hectares de painéis solares">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=pedreiralajedonao" data-goatcounter-click="links-peticao-pedreira-lajedo-santo-tirso" data-goatcounter-title="Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova">
-    <img src="/img/gen/pedreira-lajedo-santo-tirso-480.jpeg?v=b7d8cf7f" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/pedreira-lajedo-santo-tirso-480.jpeg?v=b7d8cf7f" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova</b><span>Monte Córdova, Santo Tirso</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/pedreira-lajedo-santo-tirso.html" data-tit="Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova" aria-label="Partilhar: Pelo encerramento definitivo da pedreira do Lajedo, Monte Córdova">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT131002" data-goatcounter-click="links-peticao-fortes-ferreira-alentejo" data-goatcounter-title="Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo">
-    <img src="/img/gen/fortes-ferreira-alentejo-480.jpeg?v=34656552" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/fortes-ferreira-alentejo-480.jpeg?v=34656552" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo</b><span>Fortes, Ferreira do Alentejo</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/fortes-ferreira-alentejo.html" data-tit="Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo" aria-label="Partilhar: Pelo direito a respirar ar limpo em Fortes, Ferreira do Alentejo">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT130753" data-goatcounter-click="links-peticao-aranha-cavernicola-arrabida" data-goatcounter-title="Pela proteção da aranha-cavernícola-do-Frade e do seu habitat">
-    <img src="/img/gen/aranha-cavernicola-arrabida-480.jpeg?v=7b5be72d" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/aranha-cavernicola-arrabida-480.jpeg?v=7b5be72d" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Pela proteção da aranha-cavernícola-do-Frade e do seu habitat</b><span>Sesimbra, Parque Natural da Arrábida</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/aranha-cavernicola-arrabida.html" data-tit="Pela proteção da aranha-cavernícola-do-Frade e do seu habitat" aria-label="Partilhar: Pela proteção da aranha-cavernícola-do-Frade e do seu habitat">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT132029" data-goatcounter-click="links-peticao-costa-caparica-arvores" data-goatcounter-title="Parem o abate de árvores na Costa da Caparica">
-    <img src="/img/gen/costa-caparica-arvores-480.jpeg?v=ed94c676" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/costa-caparica-arvores-480.jpeg?v=ed94c676" alt="" loading="lazy" width="560" height="140" style="object-position:50% 45%">
     <span class="tx"><b>Parem o abate de árvores na Costa da Caparica</b><span>Costa da Caparica, Almada</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/costa-caparica-arvores.html" data-tit="Parem o abate de árvores na Costa da Caparica" aria-label="Partilhar: Parem o abate de árvores na Costa da Caparica">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT125916" data-goatcounter-click="links-peticao-trilhos-madeira" data-goatcounter-title="Não à privatização dos trilhos naturais da Madeira">
-    <img src="/img/gen/trilhos-madeira-480.jpeg?v=aaf4792c" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/trilhos-madeira-480.jpeg?v=aaf4792c" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Não à privatização dos trilhos naturais da Madeira</b><span>Região Autónoma da Madeira</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/trilhos-madeira.html" data-tit="Não à privatização dos trilhos naturais da Madeira" aria-label="Partilhar: Não à privatização dos trilhos naturais da Madeira">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=protecao-territorio" data-goatcounter-click="links-peticao-mina-adagoi" data-goatcounter-title="Mina de lítio e feldspato no Projeto C-192 Adagoi">
-    <img src="/img/gen/mina-adagoi-480.jpeg?v=0da23eeb" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/mina-adagoi-480.jpeg?v=0da23eeb" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Mina de lítio e feldspato no Projeto C-192 Adagoi</b><span>Capeludos e Bragado, Vila Pouca de Aguiar</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/mina-adagoi.html" data-tit="Mina de lítio e feldspato no Projeto C-192 Adagoi" aria-label="Partilhar: Mina de lítio e feldspato no Projeto C-192 Adagoi">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT125518" data-goatcounter-click="links-peticao-lagoa-salgada" data-goatcounter-title="Mina da Lagoa Salgada: cobre, chumbo e zinco junto ao litoral alentejano">
-    <img src="/img/gen/lagoa-salgada-480.jpeg?v=0488a040" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/lagoa-salgada-480.jpeg?v=0488a040" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Mina da Lagoa Salgada: cobre, chumbo e zinco junto ao litoral alentejano</b><span>Grândola e Alcácer do Sal, litoral alentejano</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/lagoa-salgada.html" data-tit="Mina da Lagoa Salgada" aria-label="Partilhar: Mina da Lagoa Salgada: cobre, chumbo e zinco junto ao litoral alentejano">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=PT132833" data-goatcounter-click="links-peticao-matosinhos-ribeira-leca" data-goatcounter-title="Matosinhos">
-    <img src="/img/gen/matosinhos-ribeira-leca-480.jpeg?v=b03a5609" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/matosinhos-ribeira-leca-480.jpeg?v=b03a5609" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Matosinhos</b><span>Rio Leça e ribeiras de Leça da Palmeira e Matosinhos</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/matosinhos-ribeira-leca.html" data-tit="Matosinhos" aria-label="Partilhar: Matosinhos">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=terceira" data-goatcounter-click="links-peticao-descontaminacao-ilha-terceira" data-goatcounter-title="Descontaminação dos solos e aquíferos da Ilha Terceira">
-    <img src="/img/gen/descontaminacao-ilha-terceira-480.jpeg?v=2eb18cd8" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/descontaminacao-ilha-terceira-480.jpeg?v=2eb18cd8" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Descontaminação dos solos e aquíferos da Ilha Terceira</b><span>Açores, junto à Base das Lajes</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/descontaminacao-ilha-terceira.html" data-tit="Descontaminação dos solos e aquíferos da Ilha Terceira" aria-label="Partilhar: Descontaminação dos solos e aquíferos da Ilha Terceira">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=dunas-livres-troia" data-goatcounter-click="links-peticao-costa-terra-melides" data-goatcounter-title="Costa Terra: resort de luxo fecha praias públicas em Melides">
-    <img src="/img/gen/costa-terra-melides-480.jpeg?v=8a7a11ef" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/costa-terra-melides-480.jpeg?v=8a7a11ef" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Costa Terra: resort de luxo fecha praias públicas em Melides</b><span>Melides, Grândola</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/costa-terra-melides.html" data-tit="Costa Terra" aria-label="Partilhar: Costa Terra: resort de luxo fecha praias públicas em Melides">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT132295" data-goatcounter-click="links-peticao-sintra-cascais" data-goatcounter-title="Contra a Urbanização do Parque Natural de Sintra-Cascais">
-    <img src="/img/gen/sintra-cascais-480.jpeg?v=20570823" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/sintra-cascais-480.jpeg?v=20570823" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Contra a Urbanização do Parque Natural de Sintra-Cascais</b><span>Sintra</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/sintra-cascais.html" data-tit="Contra a Urbanização do Parque Natural de Sintra-Cascais" aria-label="Partilhar: Contra a Urbanização do Parque Natural de Sintra-Cascais">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT131272" data-goatcounter-click="links-peticao-biometano-torres-novas" data-goatcounter-title="Central de biometano da Gasdaterra junto a Árgea, Torres Novas">
-    <img src="/img/gen/biometano-torres-novas-480.jpeg?v=6b8a2448" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/biometano-torres-novas-480.jpeg?v=6b8a2448" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Central de biometano da Gasdaterra junto a Árgea, Torres Novas</b><span>Torres Novas, Médio Tejo</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/biometano-torres-novas.html" data-tit="Central de biometano da Gasdaterra junto a Árgea, Torres Novas" aria-label="Partilhar: Central de biometano da Gasdaterra junto a Árgea, Torres Novas">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=geota-rios-livres" data-goatcounter-click="links-peticao-girabolhos" data-goatcounter-title="Barragem de Girabolhos">
-    <img src="/img/gen/girabolhos-480.jpeg?v=25b6b569" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/girabolhos-480.jpeg?v=25b6b569" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Barragem de Girabolhos</b><span>Seia/Gouveia, Serra da Estrela</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/girabolhos.html" data-tit="Barragem de Girabolhos" aria-label="Partilhar: Barragem de Girabolhos">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=artilharia-um" data-goatcounter-click="links-peticao-artilharia-um-campolide" data-goatcounter-title="Artilharia Um">
-    <img src="/img/gen/artilharia-um-campolide-480.jpeg?v=5992111d" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/artilharia-um-campolide-480.jpeg?v=5992111d" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Artilharia Um</b><span>Campolide, Lisboa</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/artilharia-um-campolide.html" data-tit="Artilharia Um" aria-label="Partilhar: Artilharia Um">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/pview.aspx?pi=ADPLP" data-goatcounter-click="links-peticao-agueda-eucaliptos" data-goatcounter-title="Águeda">
-    <img src="/img/gen/agueda-eucaliptos-480.jpeg?v=ccc36665" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/agueda-eucaliptos-480.jpeg?v=ccc36665" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>Águeda</b><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/agueda-eucaliptos.html" data-tit="Águeda" aria-label="Partilhar: Águeda">⋯</button>
 </div>
     <div class="cartao">
   <a class="cartao-lk" href="https://peticaopublica.com/?pi=PT126539" data-goatcounter-click="links-peticao-pellets-cercal-alentejo" data-goatcounter-title="&quot;Não conseguimos respirar&quot;">
-    <img src="/img/gen/pellets-cercal-alentejo-480.jpeg?v=e357d68d" alt="" loading="lazy" width="96" height="96">
+    <img src="/img/gen/pellets-cercal-alentejo-480.jpeg?v=e357d68d" alt="" loading="lazy" width="560" height="140">
     <span class="tx"><b>&quot;Não conseguimos respirar&quot;</b><span>Cercal do Alentejo, Santiago do Cacém</span><em class="chip chip--peticao">Assinar a petição</em></span>
   </a>
   <button class="part" type="button" data-url="https://causasderaiz.org/pellets-cercal-alentejo.html" data-tit="&quot;Não conseguimos respirar&quot;" aria-label="Partilhar: &quot;Não conseguimos respirar&quot;">⋯</button>
