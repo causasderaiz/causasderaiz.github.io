@@ -180,10 +180,67 @@
     attribution: "© Esri, Maxar, Earthstar Geographics",
   }).addTo(map);
   map.setMinZoom(SATELITE_MIN_ZOOM);
+  // Ortofotos oficiais da DGT (WMS geo.dgterritorio.gov.pt, CC BY 4.0), Portugal continental (Sílvia, 20 nov. 2026).
+  // Crédito obrigatório pela licença: "Informação geográfica cedida pela Direção-Geral do Território".
+  // Por baixo fica o satélite Esri (ilhas e fora do continente). Se a DGT não responder, volta sozinho ao satélite.
+  var ORTOS = [
+    ["2025", "ortos2025", "Ortos2025-RGB"],
+    ["2023", "ortosat2023", "ortoSat2023-CorVerdadeira", ["satélite", "satellite"]],
+    ["2021", "ortos2021", "Ortos2021-RGB", ["só Norte", "north only"]],
+    ["2018", "ortos2018", "Ortos2018-RGB"],
+    ["2015", "ortos2015", "Ortos2015-RGB"],
+    ["2012", "ortos2012", "Ortos2012-RGB"],
+    ["2010", "ortos2010", "Ortos2010-RGB"]
+  ];
+  var ORTO_CREDITO = 'Ortofotos <a href="https://www.dgterritorio.gov.pt/" target="_blank" rel="noopener">DGT</a> {ano}: Informação geográfica cedida pela Direção-Geral do Território (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>)';
+  var orto = null, ortoAno = 0, ortoAnel = null;
+  // Mosaicos dentro do continente em JPEG (leves); na costa e na fronteira em PNG transparente, para não tapar o mar e Espanha a branco.
+  // Contorno: CAOP 2025, 400 m para dentro (src/img-static/orto/continente.json).
+  function dentroAnel(lat, lng) {
+    var a = ortoAnel, d = false;
+    for (var i = 0, j = a.length - 1; i < a.length; j = i++) {
+      if ((a[i][1] > lat) !== (a[j][1] > lat) && lng < (a[j][0] - a[i][0]) * (lat - a[i][1]) / (a[j][1] - a[i][1]) + a[i][0]) d = !d;
+    }
+    return d;
+  }
+  var OrtoWMS = L.TileLayer.WMS.extend({
+    getTileUrl: function (coords) {
+      var u = L.TileLayer.WMS.prototype.getTileUrl.call(this, coords), b = this._tileCoordsToBounds(coords);
+      var dentro = ortoAnel && [b.getNorthWest(), b.getNorthEast(), b.getSouthWest(), b.getSouthEast(), b.getCenter()].every(function (p) { return dentroAnel(p.lat, p.lng); });
+      return dentro ? u : u.replace(/format=image%2Fjpeg/i, "format=image%2Fpng").replace(/transparent=false/i, "transparent=true");
+    }
+  });
+  function ortoMostrar(i) {
+    function por() {
+      if (orto && map.hasLayer(orto)) map.removeLayer(orto);
+      if ($("#camadas").querySelector('[data-camada="orto"]').getAttribute("aria-pressed") !== "true") return;
+      orto = ortoCamada(i); orto.addTo(map);
+    }
+    if (ortoAnel) return por();
+    fetch("/img-static/orto/continente.json").then(function (r) { return r.json(); }).then(function (j) { ortoAnel = j.anel; }).catch(function () {}).then(por);
+  }
+  function ortoCamada(i) {
+    var o = ORTOS[i];
+    var l = new OrtoWMS("https://geo.dgterritorio.gov.pt/wms/" + o[1] + "?", {
+      layers: o[2], styles: "", format: "image/jpeg", transparent: false, version: "1.3.0",
+      bounds: L.latLngBounds([36.9, -9.6], [42.2, -6.1]), minZoom: 6, maxZoom: 20,
+      updateWhenIdle: true, keepBuffer: 1, attribution: ORTO_CREDITO.replace("{ano}", o[0])
+    });
+    var ok = 0, erros = 0;
+    l.on("tileload", function () { ok++; });
+    l.on("tileerror", function () { erros++; if (!ok && erros >= 4) ortoFalhou(l); });
+    setTimeout(function () { if (map.hasLayer(l) && !ok && map.getZoom() >= 6 && map.getBounds().intersects(l.options.bounds)) ortoFalhou(l); }, 10000);
+    return l;
+  }
+  function ortoFalhou(l) {
+    if (l !== orto || !map.hasLayer(l)) return;
+    var b = $("#camadas").querySelector('[data-camada="satelite"]');
+    if (b) b.click();
+  }
   $("#jumps").innerHTML =
     '<button class="jump regioes-toggle" type="button" aria-expanded="false">' + (IDIOMA === "en" ? "Regions" : "Regiões") + ' ▾</button>' +
     '<span class="regioes-lista">' + Object.keys(VISTAS).map(function (k) { return '<button class="jump" data-k="' + k + '">' + k + "</button>"; }).join("") + "</span>" +
-    '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button></span>' +
+    '<span class="camadas" id="camadas" role="group" aria-label="Estilo do mapa"><button type="button" data-camada="mapa" aria-pressed="false">Mapa</button><button type="button" data-camada="satelite" aria-pressed="true">Satélite</button><button type="button" data-camada="orto" aria-pressed="false">' + (IDIOMA === "en" ? "Orthophoto" : "Ortofoto") + '</button><select class="orto-ano" id="ortoAno" aria-label="' + (IDIOMA === "en" ? "Orthophoto year" : "Ano da ortofoto") + '" hidden>' + ORTOS.map(function (o, i) { return '<option value="' + i + '">' + o[0] + (o[3] ? " (" + o[3][IDIOMA === "en" ? 1 : 0] + ")" : "") + "</option>"; }).join("") + '</select></span>' +
     '<button class="jump" id="geoBtn" type="button" title="Google Earth">🌍 Google Earth</button>' +
     // Zonas de aceleração de renováveis aprovadas (RCM 172-A/2026), camadas opcionais (Sílvia, 4 e 12 nov. 2026).
     // Só há a imagem oficial da DGT: reprojetada para o mapa, localização aproximada (~0,5 km).
@@ -235,8 +292,15 @@
   $("#camadas").addEventListener("click", function (e) {
     var b = e.target.closest("button[data-camada]");
     if (!b) return;
-    var querSatelite = b.dataset.camada === "satelite";
+    var querOrto = b.dataset.camada === "orto";
+    var querSatelite = b.dataset.camada === "satelite" || querOrto;
     $("#camadas").querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    $("#ortoAno").hidden = !querOrto;
+    if (orto && map.hasLayer(orto)) map.removeLayer(orto);
+    if (querOrto) {
+      ortoMostrar(ortoAno);
+      if (map.getZoom() < 7) map.setView([39.6, -8.1], 7);
+    }
     if (querSatelite) {
       if (map.getZoom() < SATELITE_MIN_ZOOM) map.setZoom(SATELITE_MIN_ZOOM);
       map.setMinZoom(SATELITE_MIN_ZOOM);
@@ -248,6 +312,10 @@
       if (!map.hasLayer(osm)) osm.addTo(map);
     }
     document.getElementById("map").classList.toggle("tema-classico", !querSatelite);
+  });
+  $("#ortoAno").addEventListener("change", function () {
+    ortoAno = +this.value;
+    ortoMostrar(ortoAno);
   });
   map.fitBounds(VISTAS[UI.busca.todoPais], { padding: [28, 28] });
 

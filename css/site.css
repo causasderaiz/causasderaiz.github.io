@@ -256,6 +256,9 @@ h1 .em{color:var(--red)} h1 .em2{color:var(--green-text)}
 .camadas{display:inline-flex;border:3px solid var(--line);box-shadow:3px 3px 0 var(--line);background:var(--paper)}
 .camadas button{border:0;background:transparent;padding:6px 11px;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
 .camadas button:first-child{border-right:3px solid var(--line)}
+.camadas button[data-camada="satelite"]{border-right:3px solid var(--line)}
+.camadas .orto-ano{border:0;border-left:3px solid var(--line);background:var(--paper);color:var(--ink);font-family:"Space Mono",monospace;font-size:14px;font-weight:700;padding:4px 6px}
+.camadas .orto-ano[hidden]{display:none}
 .camadas button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
 .legend{position:absolute;left:14px;bottom:22px;z-index:500;background:var(--paper);border:3px solid var(--line);box-shadow:4px 4px 0 var(--line);padding:11px 13px;display:grid;gap:6px}
 .legend div{display:flex;align-items:center;gap:8px;font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
