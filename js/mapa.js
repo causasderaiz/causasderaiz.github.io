@@ -3,14 +3,32 @@
  *
  * Lógica do mapa interativo (Leaflet), lista e painel de detalhe. Adaptado
  * do JavaScript original do index.html, mas agora lê os dados injetados
- * pelo build (window.CAUSAS_DATA / FICHAS_DATA / TAXONOMIAS / UI / IDIOMA)
+ * pelo build (window.CAUSAS_DATA / FICHAS_URL / TAXONOMIAS / UI / IDIOMA)
  * em vez de carregar dados.js/fichas.js como <script> separados. A filtragem
  * continua toda no browser, tal como no site original.
  */
 (function () {
   "use strict";
   var LUTAS = window.CAUSAS_DATA || [];
-  var FICHAS = window.FICHAS_DATA || {};
+  // As fichas (texto, fontes) vêm à parte, de /fichas-mapa.json, depois de a página abrir:
+  // dentro da página eram 830 KB que prendiam o telemóvel ao carregar (Core Web Vitals, INP; 20 nov. 2026).
+  var FICHAS = window.FICHAS_DATA || null;
+  var fichasPedido = null;
+  function carregarFichas() {
+    if (FICHAS) return Promise.resolve(FICHAS);
+    if (!fichasPedido) {
+      fichasPedido = fetch(window.FICHAS_URL || "/fichas-mapa.json")
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (d) {
+          FICHAS = d;
+          PESQ = null; // o índice passa a incluir o texto das fichas
+          if (st.q) pesquisar(st.q);
+          return d;
+        })
+        .catch(function () { fichasPedido = null; return {}; });
+    }
+    return fichasPedido;
+  }
   var TAX = window.TAXONOMIAS;
   var UI = window.UI;
   var IDIOMA = window.IDIOMA || "pt";
@@ -22,12 +40,18 @@
   function temCat(c, k) { return c.cat === k || (c.cat2 || []).indexOf(k) !== -1; }
   var st = { q: "", reg: "", est: "todas", cats: new Set(), ord: "prazo", sel: null, desc: false, porNum: false };
   // pesquisa (#q): ver pesquisa-mapa.js e src/_data/sinonimos.json
-  var PESQ = window.PesquisaMapa ? window.PesquisaMapa.criarIndice(LUTAS, FICHAS, window.SINONIMOS || []) : null;
+  // o índice da pesquisa só se constrói quando alguém escreve (não pesa no arranque)
+  var PESQ = null;
+  function indicePesquisa() {
+    if (!PESQ && window.PesquisaMapa) PESQ = window.PesquisaMapa.criarIndice(LUTAS, FICHAS || {}, window.SINONIMOS || []);
+    return PESQ;
+  }
   var resPesq = null;
   function escHtml(s) { return String(s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
   function pesquisar(q) {
     st.q = q;
-    resPesq = PESQ && q.trim() ? PESQ.procurar(q) : null;
+    var P = q.trim() ? indicePesquisa() : null;
+    resPesq = P ? P.procurar(q) : null;
     render();
   }
   var $ = function (s) { return document.querySelector(s); };
@@ -118,6 +142,7 @@
     };
   });
   $("#q").oninput = function (ev) { pesquisar(ev.target.value); };
+  $("#q").addEventListener("focus", carregarFichas);
   $("#reg").onchange = function (ev) { st.reg = ev.target.value; render(); };
   $("#ord").onchange = function (ev) { st.ord = ev.target.value; st.porNum = false; render(); };
   $("#dir").onclick = function () { st.desc = !st.desc; st.porNum = true; render(); };
@@ -335,7 +360,7 @@
     if (st.reg && c.reg !== st.reg) return false;
     if (st.cats.size && !st.cats.has(c.cat) && !(c.cat2 || []).some(function (k) { return st.cats.has(k); })) return false;
     if (resPesq && resPesq.ids) return !!resPesq.ids[c.id];
-    if (st.q && !PESQ) {
+    if (st.q && !window.PesquisaMapa) {
       var hay = (c.t + " " + c.loc + " " + c.catLabel + " " + c.cat + " " + c.res + " " + c.regLabel + " " + c.quem.join(" ") + " " + c.status + " " + (c.kw || []).join(" ")).toLowerCase();
       if (hay.indexOf(st.q.toLowerCase()) === -1) return false;
     }
@@ -447,11 +472,12 @@
     var el = m.getElement();
     if (el) el.querySelector(".pin").classList.toggle("on", on);
   }
-  function openCausa(id) {
+  function openCausa(id, jaPedidas) {
+    if (!FICHAS && !jaPedidas) { carregarFichas().then(function () { openCausa(id, true); }); return; }
     var c = LUTAS.find(function (x) { return x.id === id; });
     st.sel = id;
     if (c.ll) map.flyTo(c.ll, c.reg === "madeira" || c.reg === "acores" ? 9 : 10, { duration: 0.9 });
-    var F = FICHAS[c.id] || { corpo: "", fontes: [], stat: "", link: "", linkL: "" };
+    var F = (FICHAS || {})[c.id] || { corpo: "", fontes: [], stat: "", link: "", linkL: "" };
     var img = imgTagAttrs(c);
     var acaoLabel = c.petLabel ? c.petLabel.replace(/^[^A-Za-zÀ-ú]+/, "").replace(/\s*→\s*$/, "") : "";
     var acao = c.pet ? '<a class="btn btn--ink" href="' + c.pet + '" target="_blank" rel="noopener">' + acaoLabel + "</a>" : "";
@@ -643,4 +669,9 @@
   })();
 
   render();
+
+  // fichas: pedidas logo que a página acaba de abrir, quando o browser está livre
+  window.addEventListener("load", function () {
+    (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(carregarFichas);
+  });
 })();
