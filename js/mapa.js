@@ -371,10 +371,15 @@
     // com o filtro de estado em "Todas", a lista vai sempre por número do caso (01, 02, 03…);
     // nos outros filtros vale a ordem escolhida em "Ordenar", como antes
     // seta "01 ↓ / N ↑" (Sílvia, 16 nov. 2026): começar no 01 ou no último; depois de carregada vale em todos os filtros
-    if (st.est === "todas" || st.porNum) s.sort(function (a, b) { return st.desc ? (b.num || 0) - (a.num || 0) : (a.num || 0) - (b.num || 0); });
+    // prioridade é agir (Sílvia, 20 nov. 2026): primeiro petições, depois consultas públicas, depois o resto;
+    // a seta "01 ↓ / N ↑" continua a ordenar só por número
+    function prio(c) { var t = acaoTipo(c); if (t === "peticao" && c.est !== "vitoria") return 0; if (c.est === "consulta" || t === "consulta") return 1; return 2; }
+    function porNum(a, b) { return st.desc ? (b.num || 0) - (a.num || 0) : (a.num || 0) - (b.num || 0); }
+    if (st.porNum) s.sort(porNum);
+    else if (st.est === "todas") s.sort(function (a, b) { return prio(a) - prio(b) || porNum(a, b); });
     else if (st.ord === "az") s.sort(function (a, b) { return a.t.localeCompare(b.t, IDIOMA); });
     else if (st.ord === "verif") s.sort(function (a, b) { return b.verif.localeCompare(a.verif); });
-    else s.sort(function (a, b) { return (b.prazo ? 1 : 0) - (a.prazo ? 1 : 0) || PESO[a.est] - PESO[b.est] || a.t.localeCompare(b.t, IDIOMA); });
+    else s.sort(function (a, b) { return prio(a) - prio(b) || (b.prazo ? 1 : 0) - (a.prazo ? 1 : 0) || PESO[a.est] - PESO[b.est] || a.t.localeCompare(b.t, IDIOMA); });
     // com pesquisa ativa: primeiro os casos com as próprias palavras, depois os encontrados por sinónimo,
     // mantendo dentro de cada grupo a ordenação escolhida
     if (resPesq && resPesq.ids) {
