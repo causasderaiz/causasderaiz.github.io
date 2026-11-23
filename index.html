@@ -360,7 +360,7 @@ document.getElementById("enviar").addEventListener("submit", function (e) {
   var f = e.target, v = function (n) { return (f[n].value || "").trim(); }, erro = document.getElementById("erro");
   if (v("site")) return; // robô
   var corpo = v("desc") + "\n\n" + v("caso") + "\n" + v("email");
-  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Caso para o mapa: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
+  location.href = "mailto:geral@causasderaiz.org?subject=" + encodeURIComponent("Conflito para o mapa: " + v("caso")) + "&body=" + encodeURIComponent(corpo);
 });
 </script>
 
